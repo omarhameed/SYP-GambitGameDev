@@ -17,7 +17,7 @@ class Target:
   
     # Draw target statically.
     def draw(self):
-        pg.draw.rect(self.screen, "white", (self.x_pos, self.y_pos, self.size, self.size))
+        pg.draw.rect(self.screen, "red", (self.x_pos, self.y_pos, self.size, self.size))
     
     # Flicker target.
     def flicker(self):
