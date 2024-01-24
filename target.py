@@ -3,19 +3,26 @@ import pygame as pg
 pg.init()
 
 class Target:
-    # Initialize target
-    def __init__(self, screen, x_pos, y_pos, freq, focused):
+    # Class attributes.
+    timer = 0
+
+    # Constructor function.
+    def __init__(self, screen, x_pos, y_pos, size, freq):
+        # Instance attributes.
         self.screen = screen
         self.x_pos = x_pos
         self.y_pos = y_pos
+        self.size = size
         self.freq = freq
-        self.focused = focused
-        self.timer = 0
   
-    # Draw target on screen at predetermined position
+    # Draw target statically.
     def draw(self):
+        pg.draw.rect(self.screen, "white", (self.x_pos, self.y_pos, self.size, self.size))
+    
+    # Flicker target.
+    def flicker(self):
         if self.timer >= self.freq:
-            pg.draw.rect(self.screen, (255, 255, 255), (self.x_pos, self.y_pos, 64, 64))
+            self.draw()
             self.timer = 0
-        self.timer += 1
-        
+        else:
+            self.timer +=1

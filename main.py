@@ -30,8 +30,7 @@ textpos = text.get_rect(centerx = screen.get_width() / 2, y=10)
 screen.blit(text, textpos)
 
 # Super basic way to draw a square (target) at a given location
-target_1 = Target(screen, 127, 127, 20, -1)
-target_2 = Target(screen, 255, 511, 2, -1)
+target_1 = Target(screen, ((screen.get_width() / 2) - 256 / 2), ((screen.get_height() / 2) - 128), 256, 1)
 
 while True:
     for event in pg.event.get():
@@ -43,11 +42,11 @@ while True:
 
     screen.fill("black")
 
-    target_1.draw()
-    target_2.draw()
+    target_1.flicker()
+
     screen.blit(text, textpos)
 
     pg.display.flip()
 
     # Limit the framerate to the integer specified
-    clock.tick(144)
+    clock.tick(60)
