@@ -3,10 +3,18 @@
 
 import sys
 import pygame as pg
+import random
 
 from target import Target
 
 pg.init()
+
+# Function to dynamically determine how to arrange targets on screen.
+def target_arrange(num_targets):
+    x_pos = 0
+    for i in range(num_targets):
+        x_pos = (DISPLAY.get_width() / (num_targets + 1)) + x_pos
+        targets[i].flicker(random.randint(1, 8), x_pos, (DISPLAY.get_height() / 2))
 
 # Initalizes the main display surface.
 WIDTH = 1920
@@ -26,13 +34,15 @@ font = pg.font.Font(None, 32)
 text = font.render("Welcome to the GAMBIT Flicker Demo! Please be aware there will be many flashing lights.", True, "black")
 textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
 
-# Super basic way to draw a square (target) at a given location
-target_1 = Target(DISPLAY, ((DISPLAY.get_width() / 2) - 256 / 2), ((DISPLAY.get_height() / 2) - 128), 256, 4)
+# Super basic way to draw a square (target) at a given location.
+targets = []
+for i in range(9):
+    targets.append(Target(DISPLAY))
 
 # Game state variable that tracks which portion of the game's execution we are in.
 state = 0
 timer_event = pg.USEREVENT + 1
-pg.time.set_timer(timer_event, 5000)
+pg.time.set_timer(timer_event, 3000)
 
 # Game loop begins!
 while True:
@@ -42,7 +52,7 @@ while True:
             pg.quit()
             sys.exit()
 
-        # Timer event that triggers every 5000 frames.
+        # Timer event that triggers every 3000 frames.
         if event.type == timer_event:
             if state >= 5:
                 state = 0
@@ -65,7 +75,7 @@ while True:
         # Add code for Test 1!
         text = font.render("Test 1. A single flickering target will be shown.", True, "black")
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
-        target_1.flicker()
+        target_arrange(1)
 
     # Begin Test 2.
     if state == 2:
@@ -73,6 +83,7 @@ while True:
         # Add code for Test 2!
         text = font.render("Test 2. Three targets will be shown flickering at differing frequencies.", True, "black")
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
+        target_arrange(3)
 
     # Begin Test 3.
     if state == 3:
@@ -80,6 +91,7 @@ while True:
         # Add code for Test 3!
         text = font.render("Test 3. Four targets will be shown at each of the four corners of the display.", True, "black")
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
+        target_arrange(4)
 
     # Begin Test 4.         
     if state == 4:
@@ -87,6 +99,7 @@ while True:
         # Add code for Test 4!
         text = font.render("Test 4. Nine targets will be shown in a 9x9 grid.", True, "black")
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
+        target_arrange(9)
 
     # Congratulate the user!
     if state == 5:

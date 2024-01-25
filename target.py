@@ -5,24 +5,21 @@ pg.init()
 class Target:
     # Class attributes.
     timer = 0
+    size = 64
 
     # Constructor function.
-    def __init__(self, screen, x_pos, y_pos, size, freq):
+    def __init__(self, screen):
         # Instance attributes.
         self.screen = screen
-        self.x_pos = x_pos
-        self.y_pos = y_pos
-        self.size = size
-        self.freq = freq
   
     # Draw target statically.
-    def draw(self):
-        pg.draw.rect(self.screen, "red", (self.x_pos, self.y_pos, self.size, self.size))
+    def draw(self, x_pos, y_pos):
+        pg.draw.rect(self.screen, "red", (x_pos, y_pos, self.size, self.size))
     
     # Flicker target.
-    def flicker(self):
-        if self.timer >= self.freq:
-            self.draw()
+    def flicker(self, rate, x_pos, y_pos):
+        if self.timer >= rate:
+            self.draw(x_pos, y_pos)
             self.timer = 0
         else:
             self.timer +=1
