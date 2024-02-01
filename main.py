@@ -4,21 +4,56 @@
 import sys
 import pygame as pg
 import random
+import time 
 
 from target import Target
 
 pg.init()
+last_position_change_time = 0
+position_change_interval = 5  # determines speed lower == faster
+# Assuming current_time() returns the current time in seconds
+def current_time():
+    return time.time()
+
+def target_disp(x_target, num_targets):
+    global last_position_change_time, position_change_interval, rand_target_x
+
+    # Calculate the time passed since the last position change
+    countdown = current_time() - last_position_change_time
+
+    if countdown >= position_change_interval:
+        # Update the position and reset the timer
+        rand_target_x = random.choice(x_target)
+        last_position_change_time = current_time()  # Reset the last position change time to now
+        position_change_interval = 2  # If you need to reset the interval
+
+        
+
+    y_pos = (DISPLAY.get_height() / 2)  # Center of the screen
+    targets[0].draw_x(rand_target_x, y_pos)  # Draw an 'X'
+    
 
 # Function to dynamically determine how to arrange targets on screen.
 def target_arrange(num_targets):
     x_pos = 0
+    # Initialize the array to store x_pos values
+    x_target = []
+   
     for i in range(num_targets):
         x_pos = (DISPLAY.get_width() / (num_targets + 1)) + x_pos
+        # Store the x_pos value in the array
+        x_target.append(x_pos)
         targets[i].flicker(random.randint(1, 8), x_pos, (DISPLAY.get_height() / 2))
 
+    target_disp(x_target, num_targets)
+
+
+    
+
+
 # Initalizes the main display surface.
-WIDTH = 1920
-HEIGHT = 1080
+WIDTH = 1080
+HEIGHT = 1070
 DISPLAY = pg.display.set_mode((WIDTH, HEIGHT))
 
 # Set the framerate (can be set higher if you have a high-framerate display).
@@ -77,6 +112,7 @@ while True:
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
         target_arrange(1)
 
+
     # Begin Test 2.
     if state == 2:
         print(f"State: {state}")
@@ -84,6 +120,7 @@ while True:
         text = font.render("Test 2. Three targets will be shown flickering at differing frequencies.", True, "black")
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
         target_arrange(3)
+
 
     # Begin Test 3.
     if state == 3:
