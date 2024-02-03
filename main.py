@@ -10,50 +10,97 @@ from target import Target
 
 pg.init()
 last_position_change_time = 0
-position_change_interval = 5  # determines speed lower == faster
-# Assuming current_time() returns the current time in seconds
+position_change_interval = 30  # determines number of seconds to change the target selector 
+
+# Global variable to track if it's the first run
+first_run = True
+
+#  function returns the number of seconds passed since epoch, this is used to set an interval 
 def current_time():
     return time.time()
 
-def target_disp(x_target, num_targets):
-    global last_position_change_time, position_change_interval, rand_target_x
+ 
+   
 
-    # Calculate the time passed since the last position change
-    countdown = current_time() - last_position_change_time
-
-    if countdown >= position_change_interval:
-        # Update the position and reset the timer
-        rand_target_x = random.choice(x_target)
-        last_position_change_time = current_time()  # Reset the last position change time to now
-        position_change_interval = 2  # If you need to reset the interval
-
-        
-
-    y_pos = (DISPLAY.get_height() / 2)  # Center of the screen
-    targets[0].draw_x(rand_target_x, y_pos)  # Draw an 'X'
     
 
 # Function to dynamically determine how to arrange targets on screen.
 def target_arrange(num_targets):
     x_pos = 0
+    y_pos = 0 
     # Initialize the array to store x_pos values
     x_target = []
-   
-    for i in range(num_targets):
-        x_pos = (DISPLAY.get_width() / (num_targets + 1)) + x_pos
-        # Store the x_pos value in the array
-        x_target.append(x_pos)
-        targets[i].flicker(random.randint(1, 8), x_pos, (DISPLAY.get_height() / 2))
+    y_target =[]
+    global last_position_change_time, position_change_interval
+    black_target_index = -1
 
-    target_disp(x_target, num_targets)
+    if num_targets != 9:
+        y_pos = (DISPLAY.get_height() / 2)
+        for i in range(num_targets):
+            x_pos = (DISPLAY.get_width() / (num_targets + 1)) + x_pos
+            
+            # Store the x_pos value in the array
+            x_target.append(x_pos)
+            y_target.append(y_pos)
+            targets[i].flicker(random.randint(1, 8), x_target[i], y_target[i], "red")
+            # Calculate the time passed since the last position change
+
+            
+            
+            countdown = current_time() - last_position_change_time
+            print(f"Countdown: {countdown}, Interval: {i}")  # Debugging line
+
+            if countdown >= position_change_interval  :
+                
+                black_target_index = random.randint(0, num_targets - 1)  # Choose a new target to be black.
+                last_position_change_time = current_time()  # Reset the last position change time to now
+                position_change_interval = 5  # Reset the interval
+                print(f"New black target is {black_target_index}")  # Print the new target for demonstration purposes
+            else:
+                pass
+            if i == black_target_index : 
+                print(f"New black target is {black_target_index}")  # Print the new target for demonstration purposes
+
+                targets[i].flicker(random.randint(1, 8), x_target[i], y_target[i], "green")
+            else :
+                targets[i].flicker(random.randint(1, 8), x_target[i], y_target[i], "red")
+
+
+
+    else: 
+        # Code for arranging targets in a 3x3 grid
+        grid_size = 3  # Because it's a 3x3 grid
+        x_gap = DISPLAY.get_width() / (grid_size + 1)
+        y_gap = DISPLAY.get_height() / (grid_size + 1)
+        positions = [(x_gap * (i % grid_size + 1), y_gap * (i // grid_size + 1)) for i in range(num_targets)]
+
+        for i, (x_pos, y_pos) in enumerate(positions):
+            x_target.append(x_pos)  # Append x_pos instead of x_gap
+            y_target.append(y_pos)  # Append y_pos instead of y_gap
+            
+            
+            if i == black_target_index : 
+                print("hit it")
+                targets[i].flicker(random.randint(1, 8), x_target[i], y_target[i], "green")
+            else:
+                targets[i].flicker(random.randint(1, 8), x_target[i], y_target[i], "red")
+            # Calculate the time passed since the last position change
+            countdown = current_time() - last_position_change_time
+            if countdown >= position_change_interval  :
+                black_target_index = random.randint(0, num_targets - 1)  # Choose a new target to be black.
+                last_position_change_time = current_time()  # Reset the last position change time to now
+                position_change_interval = 5  # Reset the interval
+
+
+
 
 
     
 
 
 # Initalizes the main display surface.
-WIDTH = 1080
-HEIGHT = 1070
+WIDTH = 2000
+HEIGHT = 800
 DISPLAY = pg.display.set_mode((WIDTH, HEIGHT))
 
 # Set the framerate (can be set higher if you have a high-framerate display).
@@ -134,7 +181,7 @@ while True:
     if state == 4:
         print(f"State: {state}")
         # Add code for Test 4!
-        text = font.render("Test 4. Nine targets will be shown in a 9x9 grid.", True, "black")
+        text = font.render("Test 4. Nine targets will be shown in a 3x3 grid.", True, "black")
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
         target_arrange(9)
 
