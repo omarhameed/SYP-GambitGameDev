@@ -84,6 +84,7 @@ import sys
 import pygame as pg
 import random
 import time 
+import csv
 
 from target import Target
 
@@ -93,6 +94,7 @@ new_state = False
 previous_state = -1
 focus_target_index = None  
 
+logged_data = []
 
 #  function returns the number of seconds passed since epoch, this is used to set an interval 
 def current_time():
@@ -121,6 +123,7 @@ def target_disp(x_target, y_target, num_targets):
             last_position_change_time = current_time()  # Reset the last position change time to now
         targets[0].draw_x(x_target[focus_target_index], y_target[focus_target_index], "BLUE")  # Draw an 'X'
         #targets[i].flicker_x(random.randint(1, 8), x_target[focus_target_index], y_target[focus_target_index], "blue")
+        log_data(state, focus_target_index, x_target[focus_target_index], y_target[focus_target_index], current_time()-test_start_time)
         
     
 
@@ -129,8 +132,9 @@ def target_disp(x_target, y_target, num_targets):
 
     
 
-# Function to dynamically determine how to arrange targets on screen.
 def target_arrange(num_targets):
+    
+
     x_pos = 0
     y_pos = 0 
     # Initialize the array to store x_pos values
@@ -158,10 +162,7 @@ def target_arrange(num_targets):
             x_target.append(x_pos)  # Append x_pos instead of x_gap
             y_target.append(y_pos)  # Append y_pos instead of y_gap
     else : 
-        # Positions for the four corners
-        # Positions for the four corners with a margin
-        test = DISPLAY.get_height()
-        print(f"Height: {test}")
+
         x_margin = 64  # You can adjust this value as needed
         y_margin = 50
         corner_positions = [
@@ -178,12 +179,22 @@ def target_arrange(num_targets):
 
 
     target_disp(x_target, y_target, num_targets)
-
-
-
-
     
 
+
+
+
+    # Define a function to save data to a CSV file
+def save_data_to_csv():
+    global logged_data
+    with open('flicker_data.csv', 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerow(["State", "Target Index", "X Position", "Y Position", "Time"])
+        writer.writerows(logged_data)
+
+def log_data(state, target_index, x_pos, y_pos, current_time):
+    global logged_data
+    logged_data.append([state, target_index, x_pos, y_pos, current_time])
 
 # Initalizes the main display surface.
 WIDTH = 1080
@@ -193,7 +204,7 @@ DISPLAY = pg.display.set_mode((WIDTH, HEIGHT))
 # Set the framerate (can be set higher if you have a high-framerate display).
 FPS = 70
 framerate = pg.time.Clock()
-
+test_start_time = current_time()
 # Play music!
 pg.mixer.music.load("music/menu.mp3")
 pg.mixer.music.play(-1)
@@ -217,7 +228,8 @@ pg.time.set_timer(timer_event, 3000)
 while True:
     for event in pg.event.get():
         # User exits the program.
-        if event.type == pg.QUIT: 
+        if event.type == pg.QUIT:
+            save_data_to_csv()  # Save the data before exiting
             pg.quit()
             sys.exit()
 
@@ -239,7 +251,7 @@ while True:
         print(f"Entering new state: {state}")
         new_state = False  # Reset new_state after handling the new state
 
-    # Show title screen.
+
     if state == 0:
         print(f"State: {state}")
         focus_target_index = 0
