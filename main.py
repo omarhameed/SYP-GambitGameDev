@@ -121,15 +121,9 @@ def target_disp(x_target, y_target, num_targets):
             focus_target_index = random.randint(0, num_targets - 1) 
             focus_target_index = random.randint(0, num_targets - 1) 
             last_position_change_time = current_time()  # Reset the last position change time to now
-        targets[0].draw_x(x_target[focus_target_index], y_target[focus_target_index], "BLUE")  # Draw an 'X'
+            targets[0].draw_x(x_target[focus_target_index], y_target[focus_target_index], "BLUE")  # Draw an 'X'
         #targets[i].flicker_x(random.randint(1, 8), x_target[focus_target_index], y_target[focus_target_index], "blue")
         log_data(state, focus_target_index, x_target[focus_target_index], y_target[focus_target_index], current_time()-test_start_time)
-        
-    
-
- 
-   
-
     
 
 def target_arrange(num_targets):
@@ -221,8 +215,12 @@ for i in range(9):
 
 # Game state variable that tracks which portion of the game's execution we are in.
 state = 0
+trials_rem = 0 #Remaining trials
 timer_event = pg.USEREVENT + 1
-pg.time.set_timer(timer_event, 3000)
+pg.time.set_timer(timer_event, 5000)
+
+trial_num = ""
+test_trials = 10
 
 # Game loop begins!
 while True:
@@ -233,17 +231,22 @@ while True:
             pg.quit()
             sys.exit()
 
-        # Timer event that triggers every 3000 frames.
+        # Timer event that triggers every 50 frames.
         if event.type == timer_event:
-            if state >= 5:
-                state = 0
-            else:
-                state += 1
+            if trials_rem != 0:
+                trials_rem -= 1
+                DISPLAY.fill("white")
+                pg.display.update()
+                time.sleep(1) # Sleep for 1 second
+            if trials_rem == 0:
+                if state >= 5:
+                    state = 0
+                else:
+                    state += 1
             # Check if the state has changed
             if state != previous_state:
                 new_state = True
                 previous_state = state  # Update previous_state to the new state
-
 
     # Clear the display.
     DISPLAY.fill("white")
@@ -261,35 +264,47 @@ while True:
     
     # Begin Test 1.
     if state == 1:
+        if trials_rem == 0:
+            trials_rem = test_trials
+        trial_num = "Trial " + str(test_trials - trials_rem + 1)
         print(f"State: {state}")
         # Add code for Test 1!
-        text = font.render("Test 1. A single flickering target will be shown.", True, "black")
+        text = font.render("Test 1, " + trial_num +". A single flickering target will be shown.", True, "black")
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
         target_arrange(1)
 
 
     # Begin Test 2.
     if state == 2:
+        if trials_rem == 0:
+            trials_rem = test_trials
+        trial_num = "Trial " + str(test_trials - trials_rem + 1)
         print(f"State: {state}")
         # Add code for Test 2!
-        text = font.render("Test 2. Three targets will be shown flickering at differing frequencies.", True, "black")
+        text = font.render("Test 2, " + trial_num +". Three targets will be shown flickering at differing frequencies.", True, "black")
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
         target_arrange(3)
 
 
     # Begin Test 3.
     if state == 3:
+        if trials_rem == 0:
+            trials_rem = test_trials
+        trial_num = "Trial " + str(test_trials - trials_rem + 1)
         print(f"State: {state}")
         # Add code for Test 3!
-        text = font.render("Test 3. Four targets will be shown at each of the four corners of the display.", True, "black")
+        text = font.render("Test 3, " + trial_num +". Four targets will be shown at each of the four corners of the display.", True, "black")
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
         target_arrange(4)
 
     # Begin Test 4.         
     if state == 4:
+        if trials_rem == 0:
+            trials_rem = test_trials
+        trial_num = "Trial " + str(test_trials - trials_rem + 1)
         print(f"State: {state}")
         # Add code for Test 4!
-        text = font.render("Test 4. Nine targets will be shown in a 3x3 grid.", True, "black")
+        text = font.render("Test 4, " + trial_num +". Nine targets will be shown in a 3x3 grid.", True, "black")
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
         target_arrange(9)
 
