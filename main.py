@@ -170,15 +170,9 @@ def target_arrange(num_targets):
             x_target.append(x_pos)
             y_target.append(y_pos)
 
-
-
     target_disp(x_target, y_target, num_targets)
     
-
-
-
-
-    # Define a function to save data to a CSV file
+# Define a function to save data to a CSV file
 def save_data_to_csv():
     global logged_data
     with open('flicker_data.csv', 'w', newline='') as file:
@@ -231,18 +225,24 @@ while True:
             pg.quit()
             sys.exit()
 
-        # Timer event that triggers every 50 frames.
+        # Timer event that triggers every 5000 frames.
         if event.type == timer_event:
+            #if there are remaining trials in a test
             if trials_rem != 0:
                 trials_rem -= 1
                 DISPLAY.fill("white")
                 pg.display.update()
-                time.sleep(1) # Sleep for 1 second
+                pg.time.set_timer(timer_event, 0) # Stop timer between trials
+                pg.time.wait(1000) # Wait 1 sec
+                pg.time.set_timer(timer_event, 5000) # Restart timer
+
+            #No remainging trials
             if trials_rem == 0:
                 if state >= 5:
                     state = 0
                 else:
                     state += 1
+
             # Check if the state has changed
             if state != previous_state:
                 new_state = True
