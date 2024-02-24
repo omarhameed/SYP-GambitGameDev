@@ -216,6 +216,27 @@ pg.time.set_timer(timer_event, 5000)
 trial_num = ""
 test_trials = 10
 
+# Create a surface for the button
+button_surface = pg.Surface((100, 50))
+
+# Draw the button's text and border on the surface
+pg.draw.rect(button_surface, (0, 0, 0), (0, 0, 100, 50))
+pg.draw.rect(button_surface, (255, 255, 255), (1, 1, 98, 48))
+pg.draw.rect(button_surface, (0, 0, 0), (1, 1, 98, 1), 2)
+pg.draw.rect(button_surface, (0, 0, 0), (1, 48, 98, 1), 2)
+#pg.draw.text(button_surface, "Click Me!", (25, 25), (255, 255, 255))
+
+# Create a pygame.Rect object that represents the button's boundaries
+button_rect = pg.Rect(0, 0, 100, 50)
+
+# Create a pygame.event.MOUSEBUTTONDOWN event handler that checks if the mouse is clicked inside the button's boundaries
+def on_mouse_button_down(event):
+    if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1 and button_rect.collidepoint(event.pos):
+        print("Button clicked!")
+
+# Call the pygame.display.update() function to display the button on the screen
+pg.display.update()
+
 # Game loop begins!
 while True:
     for event in pg.event.get():
@@ -250,6 +271,15 @@ while True:
 
     # Clear the display.
     DISPLAY.fill("white")
+    # Draw the button's text and border on the surface
+    pg.draw.rect(button_surface, (0, 0, 0), (0, 0, 100, 50))
+    pg.draw.rect(button_surface, (255, 255, 255), (1, 1, 98, 48))
+    pg.draw.rect(button_surface, (0, 0, 0), (1, 1, 98, 1), 2)
+    pg.draw.rect(button_surface, (0, 0, 0), (1, 48, 98, 1), 2)
+    #pg.draw.text(button_surface, "Click Me!", (25, 25), (255, 255, 255))
+
+    # Create a pygame.Rect object that represents the button's boundaries
+    button_rect = pg.Rect(0, 0, 100, 50)
     if new_state:
         print(f"Entering new state: {state}")
         new_state = False  # Reset new_state after handling the new state
