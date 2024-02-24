@@ -82,6 +82,9 @@
 
 import sys
 import pygame as pg
+import pygame_widgets as pw
+from pygame_widgets.button import Button
+from pygame_widgets.dropdown import Dropdown
 import random
 import time 
 import csv
@@ -184,6 +187,28 @@ def log_data(state, target_index, x_pos, y_pos, current_time):
     global logged_data
     logged_data.append([state, target_index, x_pos, y_pos, current_time])
 
+def start_test():
+    test_num = dropdown.getSelected()
+    global run_test
+    global run_all_tests
+    global state
+    if test_num == None:
+        run_all_tests = True
+        state = 1
+    else:
+        state = test_num
+        run_all_tests = False
+    run_test = True
+
+#Initialize timer for first trial total number of trials
+def trial_check():
+    global trials_rem
+    global trial_num
+    if trials_rem == 0:
+        pg.time.set_timer(timer_event, 5000)
+        trials_rem = test_trials
+    trial_num = "Trial " + str(test_trials - trials_rem + 1)
+
 # Initalizes the main display surface.
 WIDTH = 1080
 HEIGHT = 800
@@ -202,6 +227,25 @@ font = pg.font.Font(None, 32)
 text = font.render("Welcome to the GAMBIT Flicker Demo! Please be aware there will be many flashing lights.", True, "black")
 textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
 
+start_button = Button(DISPLAY, 425, 50, 100, 40, text = 'Start', 
+    font=pg.font.SysFont('calibri', 20),
+    onClick=lambda: start_test())
+#stop_button = Button(DISPLAY, 100, 100, 300, 150, text = 'Start')
+#continue_button = Button(DISPLAY, 100, 100, 300, 150, text = 'Start')
+
+dropdown = Dropdown(
+    DISPLAY, 575, 50, 140, 40, name='Select Test',
+    choices=[
+        'All Tests',
+        'Test 1',
+        'Test 2',
+        'Test 3',
+        'Test 4',
+    ],
+    font=pg.font.SysFont('calibri', 20),
+    borderRadius=3, values=[None, 1, 2, 3, 4], direction='down', textHAlign='centre'
+)
+
 # Super basic way to draw a square (target) at a given location.
 targets = []
 for i in range(9):
@@ -211,31 +255,11 @@ for i in range(9):
 state = 0
 trials_rem = 0 #Remaining trials
 timer_event = pg.USEREVENT + 1
-pg.time.set_timer(timer_event, 5000)
 
+run_test = False #Allow test to only run once start button is pressed
+run_all_tests = True #Allow control over which test is run
 trial_num = ""
 test_trials = 10
-
-# Create a surface for the button
-button_surface = pg.Surface((100, 50))
-
-# Draw the button's text and border on the surface
-pg.draw.rect(button_surface, (0, 0, 0), (0, 0, 100, 50))
-pg.draw.rect(button_surface, (255, 255, 255), (1, 1, 98, 48))
-pg.draw.rect(button_surface, (0, 0, 0), (1, 1, 98, 1), 2)
-pg.draw.rect(button_surface, (0, 0, 0), (1, 48, 98, 1), 2)
-#pg.draw.text(button_surface, "Click Me!", (25, 25), (255, 255, 255))
-
-# Create a pygame.Rect object that represents the button's boundaries
-button_rect = pg.Rect(0, 0, 100, 50)
-
-# Create a pygame.event.MOUSEBUTTONDOWN event handler that checks if the mouse is clicked inside the button's boundaries
-def on_mouse_button_down(event):
-    if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1 and button_rect.collidepoint(event.pos):
-        print("Button clicked!")
-
-# Call the pygame.display.update() function to display the button on the screen
-pg.display.update()
 
 # Game loop begins!
 while True:
@@ -248,10 +272,12 @@ while True:
 
         # Timer event that triggers every 5000 frames.
         if event.type == timer_event:
+
             #if there are remaining trials in a test
             if trials_rem != 0:
                 trials_rem -= 1
                 DISPLAY.fill("white")
+                DISPLAY.blit(text, textpos)
                 pg.display.update()
                 pg.time.set_timer(timer_event, 0) # Stop timer between trials
                 pg.time.wait(1000) # Wait 1 sec
@@ -261,8 +287,10 @@ while True:
             if trials_rem == 0:
                 if state >= 5:
                     state = 0
-                else:
+                elif run_all_tests:
                     state += 1
+                else:
+                    state = 5
 
             # Check if the state has changed
             if state != previous_state:
@@ -271,84 +299,72 @@ while True:
 
     # Clear the display.
     DISPLAY.fill("white")
-    # Draw the button's text and border on the surface
-    pg.draw.rect(button_surface, (0, 0, 0), (0, 0, 100, 50))
-    pg.draw.rect(button_surface, (255, 255, 255), (1, 1, 98, 48))
-    pg.draw.rect(button_surface, (0, 0, 0), (1, 1, 98, 1), 2)
-    pg.draw.rect(button_surface, (0, 0, 0), (1, 48, 98, 1), 2)
-    #pg.draw.text(button_surface, "Click Me!", (25, 25), (255, 255, 255))
 
-    # Create a pygame.Rect object that represents the button's boundaries
-    button_rect = pg.Rect(0, 0, 100, 50)
     if new_state:
         print(f"Entering new state: {state}")
         new_state = False  # Reset new_state after handling the new state
 
-
     if state == 0:
-        print(f"State: {state}")
+        #print(f"State: {state}")
         focus_target_index = 0
         # Add code for title screen!
         text = font.render("Welcome to the GAMBIT Flicker Demo! Please be aware there will be many flashing lights.", True, "black")
         textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
     
-    # Begin Test 1.
-    if state == 1:
-        if trials_rem == 0:
-            trials_rem = test_trials
-        trial_num = "Trial " + str(test_trials - trials_rem + 1)
-        print(f"State: {state}")
-        # Add code for Test 1!
-        text = font.render("Test 1, " + trial_num +". A single flickering target will be shown.", True, "black")
-        textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
-        target_arrange(1)
+    #Only display user controls when tests are not running
+    if not run_test:
+        pw.update(pg.event.get())
+
+    #Wait until tests should be run
+    else:
+        # Begin Test 1.
+        if state == 1:
+            trial_check()
+            print(f"State: {state}")
+            # Add code for Test 1!
+            text = font.render("Test 1, " + trial_num +". A single flickering target will be shown.", True, "black")
+            textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
+            target_arrange(1)
 
 
-    # Begin Test 2.
-    if state == 2:
-        if trials_rem == 0:
-            trials_rem = test_trials
-        trial_num = "Trial " + str(test_trials - trials_rem + 1)
-        print(f"State: {state}")
-        # Add code for Test 2!
-        text = font.render("Test 2, " + trial_num +". Three targets will be shown flickering at differing frequencies.", True, "black")
-        textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
-        target_arrange(3)
+        # Begin Test 2.
+        if state == 2:
+            trial_check()
+            print(f"State: {state}")
+            # Add code for Test 2!
+            text = font.render("Test 2, " + trial_num +". Three targets will be shown flickering at differing frequencies.", True, "black")
+            textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
+            target_arrange(3)
 
 
-    # Begin Test 3.
-    if state == 3:
-        if trials_rem == 0:
-            trials_rem = test_trials
-        trial_num = "Trial " + str(test_trials - trials_rem + 1)
-        print(f"State: {state}")
-        # Add code for Test 3!
-        text = font.render("Test 3, " + trial_num +". Four targets will be shown at each of the four corners of the display.", True, "black")
-        textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
-        target_arrange(4)
+        # Begin Test 3.
+        if state == 3:
+            trial_check()
+            print(f"State: {state}")
+            # Add code for Test 3!
+            text = font.render("Test 3, " + trial_num +". Four targets will be shown at each of the four corners of the display.", True, "black")
+            textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
+            target_arrange(4)
 
-    # Begin Test 4.         
-    if state == 4:
-        if trials_rem == 0:
-            trials_rem = test_trials
-        trial_num = "Trial " + str(test_trials - trials_rem + 1)
-        print(f"State: {state}")
-        # Add code for Test 4!
-        text = font.render("Test 4, " + trial_num +". Nine targets will be shown in a 3x3 grid.", True, "black")
-        textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
-        target_arrange(9)
+        # Begin Test 4.         
+        if state == 4:
+            trial_check()
+            print(f"State: {state}")
+            # Add code for Test 4!
+            text = font.render("Test 4, " + trial_num +". Nine targets will be shown in a 3x3 grid.", True, "black")
+            textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
+            target_arrange(9)
 
-    # Congratulate the user!
-    if state == 5:
-        print(f"State: {state}")
-        # Add code!
-        text = font.render("Thank you for taking part in our experiment!", True, "black")
-        textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
+        # Congratulate the user!
+        if state == 5:
+            run_test = False
+            print(f"State: {state}")
+            # Add code!
+            text = font.render("Thank you for taking part in our experiment!", True, "black")
+            textpos = text.get_rect(centerx = DISPLAY.get_width() / 2, y=10)
 
     DISPLAY.blit(text, textpos)
-
     pg.display.update()
-
 
     # Limit the framerate to the integer specified
     framerate.tick(FPS)
