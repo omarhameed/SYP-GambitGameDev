@@ -31,4 +31,8 @@ This directory emphasizes the graphical user interface (GUI) for the game or exp
 - `MindGame.ui`: A UI file for visual design, possibly with Qt Designer or similar tools.
 - Project and solution files (`MindGameGUI.pyproj`, `MindGameGUI.sln`) for development with Python and Visual Studio, indicating a blend of these tools in GUI development.
 
+## EEG-Experiment-psychopy
+
+This new directory focuses on the implementation of EEG experiments using PsychoPy, a powerful software package for creating psychology stimuli in Python. The provided script, created with PsychoPy3 Experiment Builder (v2023.2.3), outlines a structured approach to running an EEG experiment. It includes the initialization of experiment parameters, participant information gathering, and the setup for data collection and logging. This script represents a comprehensive framework for executing behavioral experiments with EEG data collection, showcasing the integration of PsychoPy's capabilities into the project's experimental design framework.
+
 Overall, the repository is geared towards the development of an EEG-based game or experiment, with a significant focus on data analysis, experimental setup, and user interface design.
