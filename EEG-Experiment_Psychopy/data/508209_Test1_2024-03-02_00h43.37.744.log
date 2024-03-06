@@ -1,0 +1,40 @@
+8.2041 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+9.6515 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+9.6520 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fc681c922b0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fc681c92250>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fc681c920a0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fc680cad8b0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.6522 	EXP 	window1: mouseVisible = True
+9.6522 	EXP 	window1: backgroundImage = ''
+9.6522 	EXP 	window1: backgroundFit = 'none'
+9.6544 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+9.6544 	EXP 	window1: recordFrameIntervals = False
+9.7340 	EXP 	window1: recordFrameIntervals = True
+10.5681 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+10.5692 	EXP 	window1: mouseVisible = False
+13.7233 	EXP 	Test1: status = STARTED
+13.7237 	EXP 	window1: mouseVisible = True
+13.7335 	EXP 	Created welcome_message_countdown = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.01, italic=False, languageStyle='LTR', name='welcome_message_countdown', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.7337 	EXP 	window1: mouseVisible = True
+13.7357 	EXP 	Created polygon = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([ 1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([ 1, -1, -1]), lineWidth=1.0, name='polygon', opacity=1.0, ori=0.0, pos=array([1., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.7358 	EXP 	window1: mouseVisible = True
+13.7848 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0.8, 1. ]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=1)
+13.7850 	EXP 	window1: mouseVisible = True
+13.7870 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text_2', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+0.0393 	WARNING 	t of last frame was 34.43ms (=1/29)
+0.0393 	EXP 	welcome_message_countdown: autoDraw = True
+1.0094 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+1.0098 	EXP 	New trial (rep=0, index=0): None
+1.0223 	EXP 	welcome_message_countdown: autoDraw = False
+1.0223 	EXP 	polygon: autoDraw = True
+1.0223 	EXP 	text: autoDraw = True
+2.9419 	WARNING 	t of last frame was 22.94ms (=1/43)
+6.0137 	EXP 	polygon: autoDraw = False
+6.0137 	EXP 	text: autoDraw = False
+6.0137 	EXP 	text_2: autoDraw = True
+6.9958 	EXP 	text_2: autoDraw = False
+6.9959 	EXP 	Test1: status = STOPPED
+7.5578 	EXP 	window1: mouseVisible = True

@@ -1,0 +1,26 @@
+15.5716 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+15.5774 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fde73f07700>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fde73f076a0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fde73f07520>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fde72b18160>, multiSample=False, name='window1', numSamples=2, pos=(15, 107), screen=0, size=array([3840, 2160]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+15.5776 	EXP 	window1: mouseVisible = True
+15.5777 	EXP 	window1: backgroundImage = ''
+15.5777 	EXP 	window1: backgroundFit = 'none'
+15.5799 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+15.5799 	EXP 	window1: recordFrameIntervals = False
+15.7754 	EXP 	window1: recordFrameIntervals = True
+15.8462 	WARNING 	t of last frame was 22.05ms (=1/45)
+15.8672 	WARNING 	t of last frame was 21.01ms (=1/47)
+15.9593 	WARNING 	t of last frame was 21.76ms (=1/45)
+16.0120 	WARNING 	t of last frame was 20.71ms (=1/48)
+16.1724 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+17.4044 	EXP 	Screen (0) actual frame rate measured at 60.27Hz
+17.4048 	EXP 	window1: recordFrameIntervals = True
+17.4056 	EXP 	window1: mouseVisible = False
+17.4414 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+19.8311 	EXP 	Test1: status = STARTED
+19.8318 	EXP 	window1: mouseVisible = True
+19.8406 	EXP 	Created welcome_message = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='welcome_message', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+19.8409 	EXP 	window1: mouseVisible = True
+19.8415 	DEPRECATION 	Found file '/Users/omarg/Desktop/SYP/Floor_Sign_Yield_Caution_Sign_Creative_Safety_Supply__92002.jpg', failed to load as an image
+19.8542 	EXP 	window1: mouseVisible = True

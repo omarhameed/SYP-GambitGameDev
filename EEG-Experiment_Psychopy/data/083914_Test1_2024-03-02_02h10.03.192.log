@@ -1,0 +1,55 @@
+9.2584 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+9.2587 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f8c91f87430>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f8c91f873d0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f8c91f87250>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f8c90b8eac0>, multiSample=False, name='window1', numSamples=2, pos=(0, 53), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.2589 	EXP 	window1: mouseVisible = True
+9.2589 	EXP 	window1: backgroundImage = ''
+9.2589 	EXP 	window1: backgroundFit = 'none'
+9.2609 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+9.2609 	EXP 	window1: recordFrameIntervals = False
+9.3597 	EXP 	window1: recordFrameIntervals = True
+10.0604 	WARNING 	t of last frame was 20.25ms (=1/49)
+10.4596 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+10.4598 	EXP 	window1: mouseVisible = True
+10.5020 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+13.7470 	EXP 	Test1: status = STARTED
+13.7475 	EXP 	window1: mouseVisible = True
+13.7571 	EXP 	Created welcome_message_countdown = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.01, italic=False, languageStyle='LTR', name='welcome_message_countdown', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.7573 	EXP 	window1: mouseVisible = True
+13.7591 	EXP 	Created obj1_t2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([ 1., -1., -1.]), lineColorSpace='rgb', lineRGB=array([ 1, -1, -1]), lineWidth=1.0, name='obj1_t2', opacity=1.0, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.7593 	EXP 	window1: mouseVisible = True
+13.7610 	EXP 	Created obj2_t2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj2_t2', opacity=1.0, ori=0.0, pos=array([-0.25,  0.  ]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.7611 	EXP 	window1: mouseVisible = True
+13.7627 	EXP 	Created obj3_t2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj3_t2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.7628 	EXP 	window1: mouseVisible = True
+13.7639 	EXP 	Created welcome_message_countdown = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.01, italic=False, languageStyle='LTR', name='welcome_message_countdown', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+0.0822 	WARNING 	t of last frame was 70.34ms (=1/14)
+0.0822 	EXP 	welcome_message_countdown: autoDraw = True
+0.1116 	WARNING 	t of last frame was 29.41ms (=1/34)
+0.6051 	WARNING 	t of last frame was 26.38ms (=1/37)
+0.6956 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+1.0136 	EXP 	Created sequence: sequential, trialTypes=1, nReps=2, seed=None
+1.0139 	EXP 	New trial (rep=0, index=0): None
+1.0286 	EXP 	welcome_message_countdown: autoDraw = False
+1.0286 	EXP 	obj1_t2: autoDraw = True
+1.0286 	EXP 	obj2_t2: autoDraw = True
+1.0286 	EXP 	obj3_t2: autoDraw = True
+6.0118 	EXP 	New trial (rep=1, index=0): None
+6.0219 	EXP 	obj1_t2: autoDraw = False
+6.0219 	EXP 	obj2_t2: autoDraw = False
+6.0219 	EXP 	obj3_t2: autoDraw = False
+6.0219 	EXP 	obj1_t2: autoDraw = True
+6.0219 	EXP 	obj2_t2: autoDraw = True
+6.0219 	EXP 	obj3_t2: autoDraw = True
+11.0084 	EXP 	obj1_t2: autoDraw = False
+11.0084 	EXP 	obj2_t2: autoDraw = False
+11.0084 	EXP 	obj3_t2: autoDraw = False
+11.0084 	EXP 	welcome_message_countdown: autoDraw = True
+11.9971 	EXP 	welcome_message_countdown: autoDraw = False
+11.9971 	EXP 	welcome_message_countdown: autoDraw = False
+11.9972 	EXP 	Test1: status = STOPPED
+12.0125 	EXP 	window1: mouseVisible = True

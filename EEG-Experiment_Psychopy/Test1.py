@@ -1,8 +1,8 @@
-#!/usr/bin/env python
+﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on Sat Mar  2 23:37:49 2024
+    on Sun Mar  3 00:26:26 2024
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -158,7 +158,7 @@ def setupWindow(expInfo=None, win=None):
     if win is None:
         # if not given a window to setup, make one
         win = visual.Window(
-            size=[1020, 1000], fullscr=False, screen=0,
+            size=[1920, 1080], fullscr=True, screen=0,
             winType='pyglet', allowStencil=False,
             monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
@@ -325,18 +325,18 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     cation_sign = visual.ImageStim(
         win=win,
         name='cation_sign', 
-        image='Floor_Sign_Yield_Caution_Sign_Creative_Safety_Supply__92002.jpg', mask=None, anchor='center',
+        image='/Users/omarg/Desktop/SYP/Floor_Sign_Yield_Caution_Sign_Creative_Safety_Supply__92002.jpg', mask=None, anchor='center',
         ori=0.0, pos=(0.3, 0.3), size=(0.2, 0.2),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-1.0)
     
     # --- Initialize components for Routine "Test_1" ---
-    obj1_t1 = visual.Rect(
-        win=win, name='obj1_t1',
+    ob1_t1 = visual.Rect(
+        win=win, name='ob1_t1',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0,0), anchor='top-right',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='black',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
         opacity=None, depth=0.0, interpolate=True)
     
     # --- Initialize components for Routine "blank1s" ---
@@ -359,13 +359,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         win=win, name='obj2_t2',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(-0.25, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
     obj3_t2 = visual.Rect(
         win=win, name='obj3_t2',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-2.0, interpolate=True)
     
     # --- Initialize components for Routine "Test_3" ---
@@ -390,7 +390,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     obj4_t3 = visual.Rect(
         win=win, name='obj4_t3',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, -0.08), anchor='center',
+        ori=0.0, pos=(0.25, 0.1), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
         opacity=None, depth=-3.0, interpolate=True)
     
@@ -399,56 +399,59 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         win=win, name='obj1_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=0.0, interpolate=True)
     obj2_t4 = visual.Rect(
         win=win, name='obj2_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(-0.25, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
     obj3_t4 = visual.Rect(
         win=win, name='obj3_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0.25, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-2.0, interpolate=True)
     obj4_t4 = visual.Rect(
         win=win, name='obj4_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(-0.25, 0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-3.0, interpolate=True)
     obj5_t4 = visual.Rect(
         win=win, name='obj5_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0.25, 0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-4.0, interpolate=True)
     obj6_t4 = visual.Rect(
         win=win, name='obj6_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0, 0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-5.0, interpolate=True)
     obj7_t4 = visual.Rect(
         win=win, name='obj7_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(-0.25, -0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-6.0, interpolate=True)
     obj8_t4 = visual.Rect(
         win=win, name='obj8_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0.25, -0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-7.0, interpolate=True)
     obj9_t4 = visual.Rect(
         win=win, name='obj9_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0, -0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='black',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-8.0, interpolate=True)
+    sound_1 = sound.Sound('song.mp3', secs=1.0, stereo=True, hamming=True,
+        name='sound_1')
+    sound_1.setVolume(1.0)
     
     # create some handy timers
     if globalClock is None:
@@ -588,7 +591,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         routineTimer.addTime(-10.000000)
     
     # set up handler to look after randomisation of conditions etc
-    trials_2 = data.TrialHandler(nReps=1.0, method='random', 
+    trials_2 = data.TrialHandler(nReps=5.0, method='random', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_2')
@@ -621,7 +624,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # update component parameters for each repeat
         thisExp.addData('Test_1.started', globalClock.getTime())
         # keep track of which components have finished
-        Test_1Components = [obj1_t1]
+        Test_1Components = [ob1_t1]
         for thisComponent in Test_1Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -642,58 +645,40 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
- 
             # update/draw components on each frame
-                        # update/draw components on each frame
-            # Frequencies for each object
-            freq_obj1 = 10  # 10Hz flicker
-
-
-            # Frames per cycle for each object (full cycle = one on and one off phase)
-            frames_per_cycle_obj1 = 60 // freq_obj1
-
-            # Update opacities based on current frame number for each stimulus
-            # Object 1
-            if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
-                obj1_t1.opacity = 1  # Opaque
-            else:
-                obj1_t1.opacity = 0  # Transparent
-
-
-            # *obj1_t1* updates
             
-            # if obj1_t1 is starting this frame...
-            if obj1_t1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # *ob1_t1* updates
+            
+            # if ob1_t1 is starting this frame...
+            if ob1_t1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                 # keep track of start time/frame for later
-                obj1_t1.frameNStart = frameN  # exact frame index
-                obj1_t1.tStart = t  # local t and not account for scr refresh
-                obj1_t1.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj1_t1, 'tStartRefresh')  # time at next scr refresh
+                ob1_t1.frameNStart = frameN  # exact frame index
+                ob1_t1.tStart = t  # local t and not account for scr refresh
+                ob1_t1.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(ob1_t1, 'tStartRefresh')  # time at next scr refresh
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj1_t1.started')
+                thisExp.timestampOnFlip(win, 'ob1_t1.started')
                 # update status
-                obj1_t1.status = STARTED
-                obj1_t1.setAutoDraw(True)
-
-
+                ob1_t1.status = STARTED
+                ob1_t1.setAutoDraw(True)
             
-            # if obj1_t1 is active this frame...
-            if obj1_t1.status == STARTED:
+            # if ob1_t1 is active this frame...
+            if ob1_t1.status == STARTED:
                 # update params
                 pass
             
-            # if obj1_t1 is stopping this frame...
-            if obj1_t1.status == STARTED:
+            # if ob1_t1 is stopping this frame...
+            if ob1_t1.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj1_t1.tStartRefresh + 10-frameTolerance:
+                if tThisFlipGlobal > ob1_t1.tStartRefresh + 10-frameTolerance:
                     # keep track of stop time/frame for later
-                    obj1_t1.tStop = t  # not accounting for scr refresh
-                    obj1_t1.frameNStop = frameN  # exact frame index
+                    ob1_t1.tStop = t  # not accounting for scr refresh
+                    ob1_t1.frameNStop = frameN  # exact frame index
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj1_t1.stopped')
+                    thisExp.timestampOnFlip(win, 'ob1_t1.stopped')
                     # update status
-                    obj1_t1.status = FINISHED
-                    obj1_t1.setAutoDraw(False)
+                    ob1_t1.status = FINISHED
+                    ob1_t1.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -831,7 +816,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     
     # set up handler to look after randomisation of conditions etc
-    trials = data.TrialHandler(nReps=1.0, method='sequential', 
+    trials = data.TrialHandler(nReps=2.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials')
@@ -886,36 +871,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
-            # update/draw components on each frame
-            # Frequencies for each object
-            freq_obj1 = 10  # 10Hz flicker
-            freq_obj2 = 5   # 5Hz flicker
-            freq_obj3 = 2   # 2Hz flicker
-
-            # Frames per cycle for each object (full cycle = one on and one off phase)
-            frames_per_cycle_obj1 = 60 // freq_obj1
-            frames_per_cycle_obj2 = 60 // freq_obj2
-            frames_per_cycle_obj3 = 60 // freq_obj3
-
-            # Update opacities based on current frame number for each stimulus
-            # Object 1
-            if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
-                obj1_t2.opacity = 1  # Opaque
-            else:
-                obj1_t2.opacity = 0  # Transparent
-
-            # Object 2
-            if (frameN % frames_per_cycle_obj2) < (frames_per_cycle_obj2 / 2):
-                obj2_t2.opacity = 1  # Opaque
-            else:
-                obj2_t2.opacity = 0  # Transparent
-
-            # Object 3
-            if (frameN % frames_per_cycle_obj3) < (frames_per_cycle_obj3 / 2):
-                obj3_t2.opacity = 1  # Opaque
-            else:
-                obj3_t2.opacity = 0  # Transparent
-
+            
             # *obj1_t2* updates
             
             # if obj1_t2 is starting this frame...
@@ -1055,7 +1011,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     
     # set up handler to look after randomisation of conditions etc
-    trials_3 = data.TrialHandler(nReps=1.0, method='random', 
+    trials_3 = data.TrialHandler(nReps=10.0, method='random', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_3')
@@ -1110,43 +1066,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
-                        # update/draw components on each frame
-            # Frequencies for each object
-            freq_obj1 = 10  # 10Hz flicker
-            freq_obj2 = 5   # 5Hz flicker
-            freq_obj3 = 2   # 2Hz flicker
-            freq_obj4 = 15   # 15Hz flicker
-
-            # Frames per cycle for each object (full cycle = one on and one off phase)
-            frames_per_cycle_obj1 = 60 // freq_obj1
-            frames_per_cycle_obj2 = 60 // freq_obj2
-            frames_per_cycle_obj3 = 60 // freq_obj3
-            frames_per_cycle_obj4 = 60 // freq_obj4
-
-            # Update opacities based on current frame number for each stimulus
-            # Object 1
-            if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
-                obj1_t3.opacity = 1  # Opaque
-            else:
-                obj1_t3.opacity = 0  # Transparent
-
-            # Object 2
-            if (frameN % frames_per_cycle_obj2) < (frames_per_cycle_obj2 / 2):
-                obj2_t3.opacity = 1  # Opaque
-            else:
-                obj2_t3.opacity = 0  # Transparent
-
-            # Object 3
-            if (frameN % frames_per_cycle_obj3) < (frames_per_cycle_obj3 / 2):
-                obj3_t3.opacity = 1  # Opaque
-            else:
-                obj3_t3.opacity = 0  # Transparent
-
-            # Object 4
-            if (frameN % frames_per_cycle_obj4) < (frames_per_cycle_obj4 / 2):
-                obj4_t3.opacity = 1  # Opaque
-            else:
-                obj4_t3.opacity = 0  # Transparent
+            
             # *obj1_t3* updates
             
             # if obj1_t3 is starting this frame...
@@ -1319,7 +1239,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     
     # set up handler to look after randomisation of conditions etc
-    trials_4 = data.TrialHandler(nReps=1.0, method='random', 
+    trials_4 = data.TrialHandler(nReps=10.0, method='random', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_4')
@@ -1351,8 +1271,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         continueRoutine = True
         # update component parameters for each repeat
         thisExp.addData('Test_4.started', globalClock.getTime())
+        sound_1.setSound('song.mp3', secs=1.0, hamming=True)
+        sound_1.setVolume(1.0, log=False)
+        sound_1.seek(0)
         # keep track of which components have finished
-        Test_4Components = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4, obj6_t4, obj7_t4, obj8_t4, obj9_t4]
+        Test_4Components = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4, obj6_t4, obj7_t4, obj8_t4, obj9_t4, sound_1]
         for thisComponent in Test_4Components:
             thisComponent.tStart = None
             thisComponent.tStop = None
@@ -1374,85 +1297,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
-            #---------------------
-# Frequencies for each object
-            freq_obj1 = 10  # 10Hz flicker
-            freq_obj2 = 5   # 5Hz flicker
-            freq_obj3 = 2   # 2Hz flicker
-            freq_obj4 = 15   # 15Hz flicker
-            freq_obj5 = 8   # 8Hz flicker
-            freq_obj6 = 12   # 12Hz flicker
-            freq_obj7 = 20   # 20Hz flicker
-            freq_obj8 = 25   # 25Hz flicker
-            freq_obj9 = 25   # 25Hz flicker
-
-            # Frames per cycle for each object (full cycle = one on and one off phase)
-            frames_per_cycle_obj1 = 60 // freq_obj1
-            frames_per_cycle_obj2 = 60 // freq_obj2
-            frames_per_cycle_obj3 = 60 // freq_obj3
-            frames_per_cycle_obj4 = 60 // freq_obj4
-
-            frames_per_cycle_obj5 = 60 // freq_obj5
-            frames_per_cycle_obj6 = 60 // freq_obj6
-            frames_per_cycle_obj7 = 60 // freq_obj7
-            frames_per_cycle_obj8 = 60 // freq_obj8
-            frames_per_cycle_obj9 = 60 // freq_obj9
-            # Update opacities based on current frame number for each stimulus
-            # Object 1
-            if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
-                obj1_t4.opacity = 1  # Opaque
-            else:
-                obj1_t4.opacity = 0  # Transparent
-
-            # Object 2
-            if (frameN % frames_per_cycle_obj2) < (frames_per_cycle_obj2 / 2):
-                obj2_t4.opacity = 1  # Opaque
-            else:
-                obj2_t4.opacity = 0  # Transparent
-
-            # Object 3
-            if (frameN % frames_per_cycle_obj3) < (frames_per_cycle_obj3 / 2):
-                obj3_t4.opacity = 1  # Opaque
-            else:
-                obj3_t4.opacity = 0  # Transparent
-
-            # Object 4
-            if (frameN % frames_per_cycle_obj4) < (frames_per_cycle_obj4 / 2):
-                obj4_t4.opacity = 1  # Opaque
-            else:
-                obj4_t4.opacity = 0  # Transparent
-
-
-            # Object 5
-            if (frameN % frames_per_cycle_obj5) < (frames_per_cycle_obj5 / 2):
-                obj5_t4.opacity = 1  # Opaque
-            else:
-                obj5_t4.opacity = 0  # Transparent
-
-            # Object 6
-            if (frameN % frames_per_cycle_obj6) < (frames_per_cycle_obj6 / 2):
-                obj6_t4.opacity = 1  # Opaque
-            else:
-                obj6_t4.opacity = 0  # Transparent
-
-            # Object 7
-            if (frameN % frames_per_cycle_obj7) < (frames_per_cycle_obj7 / 2):
-                obj7_t4.opacity = 1  # Opaque
-            else:
-                obj7_t4.opacity = 0  # Transparent
-
-            # Object 8
-            if (frameN % frames_per_cycle_obj8) < (frames_per_cycle_obj8 / 2):
-                obj8_t4.opacity = 1  # Opaque
-            else:
-                obj8_t4.opacity = 0  # Transparent
             
-            # Object 9
-            if (frameN % frames_per_cycle_obj9) < (frames_per_cycle_obj9 / 2):
-                obj9_t4.opacity = 1  # Opaque
-            else:
-                obj9_t4.opacity = 0  # Transparent
-            #---------------------
             # *obj1_t4* updates
             
             # if obj1_t4 is starting this frame...
@@ -1750,6 +1595,36 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     obj9_t4.status = FINISHED
                     obj9_t4.setAutoDraw(False)
             
+            # if sound_1 is starting this frame...
+            if sound_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                sound_1.frameNStart = frameN  # exact frame index
+                sound_1.tStart = t  # local t and not account for scr refresh
+                sound_1.tStartRefresh = tThisFlipGlobal  # on global time
+                # add timestamp to datafile
+                thisExp.addData('sound_1.started', tThisFlipGlobal)
+                # update status
+                sound_1.status = STARTED
+                sound_1.play(when=win)  # sync with win flip
+            
+            # if sound_1 is stopping this frame...
+            if sound_1.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > sound_1.tStartRefresh + 1.0-frameTolerance:
+                    # keep track of stop time/frame for later
+                    sound_1.tStop = t  # not accounting for scr refresh
+                    sound_1.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'sound_1.stopped')
+                    # update status
+                    sound_1.status = FINISHED
+                    sound_1.stop()
+            # update sound_1 status according to whether it's playing
+            if sound_1.isPlaying:
+                sound_1.status = STARTED
+            elif sound_1.isFinished:
+                sound_1.status = FINISHED
+            
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
                 thisExp.status = FINISHED
@@ -1776,6 +1651,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
         thisExp.addData('Test_4.stopped', globalClock.getTime())
+        sound_1.pause()  # ensure sound has stopped at end of Routine
         # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
         if routineForceEnded:
             routineTimer.reset()
@@ -1866,7 +1742,7 @@ def quit(thisExp, win=None, inputs=None, thisSession=None):
     logging.flush()
     if thisSession is not None:
         thisSession.stop()
-    # terminate Python process\
+    # terminate Python process
     core.quit()
 
 
@@ -1885,5 +1761,4 @@ if __name__ == '__main__':
         inputs=inputs
     )
     saveData(thisExp=thisExp)
-    quit(thisExp=thisExp, win=win, inputs=inputs)
     quit(thisExp=thisExp, win=win, inputs=inputs)

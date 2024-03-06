@@ -1,0 +1,39 @@
+7.4578 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+8.9029 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+8.9033 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fb663d111f0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fb663d11190>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fb663caeb50>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fb6600e7820>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.9035 	EXP 	window1: mouseVisible = True
+8.9035 	EXP 	window1: backgroundImage = ''
+8.9036 	EXP 	window1: backgroundFit = 'none'
+8.9065 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.9065 	EXP 	window1: recordFrameIntervals = False
+8.9859 	EXP 	window1: recordFrameIntervals = True
+9.8262 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+9.8272 	EXP 	window1: mouseVisible = False
+12.7327 	EXP 	Test1: status = STARTED
+12.7332 	EXP 	window1: mouseVisible = True
+12.7424 	EXP 	Created welcome_message_countdown = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='welcome_message_countdown', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+0.0882 	WARNING 	t of last frame was 83.69ms (=1/11)
+0.0882 	EXP 	welcome_message_countdown: autoDraw = True
+2.0668 	DATA 	Mouse: Left button down, pos=(662,1080)
+2.6011 	DATA 	Mouse:  Left button up, pos=(631,866)
+5.3468 	WARNING 	t of last frame was 27.92ms (=1/35)
+5.4919 	WARNING 	t of last frame was 23.24ms (=1/43)
+15.4338 	DATA 	Keypress: left
+15.4407 	WARNING 	t of last frame was 31.29ms (=1/31)
+15.7831 	DATA 	Keypress: left
+17.0274 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+18.2761 	DATA 	Keypress: left
+18.5112 	DATA 	Keypress: left
+18.6939 	DATA 	Keypress: left
+18.8954 	DATA 	Keypress: left
+19.0498 	DATA 	Keypress: left
+19.8474 	DATA 	Keypress: left
+20.0130 	EXP 	welcome_message_countdown: autoDraw = False
+20.0130 	EXP 	Test1: status = STOPPED
+20.5691 	EXP 	window1: mouseVisible = True

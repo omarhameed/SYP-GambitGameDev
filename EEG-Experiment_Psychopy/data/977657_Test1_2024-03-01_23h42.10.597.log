@@ -1,0 +1,67 @@
+12.2277 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1920, 1080]. Using actual size
+13.7057 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+13.7060 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f7f8c4a42b0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f7f8c4a4250>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7f7f8c4a40a0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7f7f8b85b8e0>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+13.7062 	EXP 	window1: mouseVisible = True
+13.7062 	EXP 	window1: backgroundImage = ''
+13.7062 	EXP 	window1: backgroundFit = 'none'
+13.7084 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+13.7085 	EXP 	window1: recordFrameIntervals = False
+13.7892 	EXP 	window1: recordFrameIntervals = True
+14.6216 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+14.6225 	EXP 	window1: mouseVisible = False
+17.9476 	EXP 	Test1: status = STARTED
+17.9481 	EXP 	window1: mouseVisible = True
+17.9561 	EXP 	Created welcome_message_countdown = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='welcome_message_countdown', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+0.1005 	WARNING 	t of last frame was 90.23ms (=1/11)
+0.1005 	EXP 	welcome_message_countdown: autoDraw = True
+4.6768 	WARNING 	t of last frame was 25.02ms (=1/39)
+7.7665 	WARNING 	t of last frame was 23.91ms (=1/41)
+8.5457 	DATA 	Mouse: wheel shift=(0,0), pos=(796,493)
+8.5793 	DATA 	Mouse: wheel shift=(0,0), pos=(796,493)
+8.6288 	DATA 	Mouse: wheel shift=(0,-2), pos=(796,493)
+8.6622 	DATA 	Mouse: wheel shift=(0,-4), pos=(796,493)
+8.6793 	DATA 	Mouse: wheel shift=(0,-5), pos=(796,493)
+8.7123 	DATA 	Mouse: wheel shift=(0,-6), pos=(796,493)
+8.8997 	DATA 	Mouse: wheel shift=(0,0), pos=(796,493)
+8.9126 	DATA 	Mouse: wheel shift=(0,1), pos=(796,493)
+8.9290 	DATA 	Mouse: wheel shift=(0,4), pos=(796,493)
+8.9460 	DATA 	Mouse: wheel shift=(0,5), pos=(796,493)
+8.9622 	DATA 	Mouse: wheel shift=(0,6), pos=(796,493)
+8.9792 	DATA 	Mouse: wheel shift=(0,7), pos=(796,493)
+9.0792 	DATA 	Mouse: wheel shift=(0,6), pos=(796,493)
+9.1965 	DATA 	Mouse: wheel shift=(0,0), pos=(796,493)
+9.2286 	DATA 	Mouse: wheel shift=(0,-1), pos=(796,493)
+9.2335 	DATA 	Mouse: wheel shift=(0,-4), pos=(796,493)
+9.2621 	DATA 	Mouse: wheel shift=(0,-5), pos=(796,493)
+9.2667 	DATA 	Mouse: wheel shift=(0,-6), pos=(796,493)
+9.2955 	DATA 	Mouse: wheel shift=(0,-7), pos=(796,493)
+9.3292 	DATA 	Mouse: wheel shift=(0,-7), pos=(796,493)
+9.6953 	DATA 	Mouse: wheel shift=(0,0), pos=(796,493)
+9.7004 	DATA 	Mouse: wheel shift=(0,-1), pos=(796,493)
+9.7291 	DATA 	Mouse: wheel shift=(0,-9), pos=(796,493)
+9.7622 	DATA 	Mouse: wheel shift=(0,-6), pos=(796,493)
+9.7792 	DATA 	Mouse: wheel shift=(0,-7), pos=(797,493)
+9.7958 	DATA 	Mouse: wheel shift=(0,-7), pos=(797,494)
+9.9836 	DATA 	Mouse: wheel shift=(0,0), pos=(797,494)
+10.1340 	DATA 	Mouse: wheel shift=(0,0), pos=(797,494)
+10.1680 	DATA 	Mouse: wheel shift=(0,0), pos=(797,494)
+10.2288 	DATA 	Mouse: wheel shift=(0,2), pos=(797,494)
+10.2953 	DATA 	Mouse: wheel shift=(0,3), pos=(797,494)
+10.3621 	DATA 	Mouse: wheel shift=(0,4), pos=(797,494)
+10.4292 	DATA 	Mouse: wheel shift=(0,4), pos=(797,494)
+13.2741 	WARNING 	t of last frame was 25.79ms (=1/38)
+13.2773 	DATA 	Keypress: lctrl
+13.6161 	DATA 	Keypress: right
+13.6216 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+14.0503 	DATA 	Keypress: left
+14.2672 	DATA 	Keypress: left
+17.2165 	DATA 	Mouse: wheel shift=(0,0), pos=(815,498)
+20.0116 	EXP 	welcome_message_countdown: autoDraw = False
+20.0117 	EXP 	Test1: status = STOPPED
+20.5826 	EXP 	window1: mouseVisible = True

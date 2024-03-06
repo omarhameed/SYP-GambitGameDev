@@ -1,0 +1,26 @@
+9.6002 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+9.6004 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa07b712400>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa07b7123a0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa07b712220>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fa07a0afa30>, multiSample=False, name='window1', numSamples=2, pos=(0, 53), screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.6006 	EXP 	window1: mouseVisible = True
+9.6006 	EXP 	window1: backgroundImage = ''
+9.6006 	EXP 	window1: backgroundFit = 'none'
+9.6031 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+9.6031 	EXP 	window1: recordFrameIntervals = False
+9.6972 	EXP 	window1: recordFrameIntervals = True
+9.8835 	WARNING 	t of last frame was 20.98ms (=1/47)
+9.9169 	WARNING 	t of last frame was 21.30ms (=1/46)
+9.9835 	WARNING 	t of last frame was 20.80ms (=1/48)
+10.1834 	WARNING 	t of last frame was 21.02ms (=1/47)
+10.3169 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+10.7463 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+10.7464 	EXP 	window1: mouseVisible = True
+10.7892 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+14.1020 	EXP 	Test1: status = STARTED
+14.1025 	EXP 	window1: mouseVisible = True
+14.1121 	EXP 	Created welcome_message_countdown = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.01, italic=False, languageStyle='LTR', name='welcome_message_countdown', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+14.1228 	EXP 	window1: mouseVisible = True

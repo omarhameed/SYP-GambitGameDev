@@ -1,0 +1,17 @@
+9.6224 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa8de5394c0>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa8de539460>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa8de5392e0>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fa8dcf33b20>, multiSample=False, name='window1', numSamples=2, pos=(240, 180), screen=0, size=array([3840, 2160]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+9.6227 	EXP 	window1: mouseVisible = True
+9.6228 	EXP 	window1: backgroundImage = ''
+9.6228 	EXP 	window1: backgroundFit = 'none'
+9.6256 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+9.6256 	EXP 	window1: recordFrameIntervals = False
+9.7931 	EXP 	window1: recordFrameIntervals = True
+10.0695 	EXP 	Screen (0) actual frame rate measured at 57.93Hz
+10.0697 	EXP 	window1: recordFrameIntervals = False
+10.0705 	EXP 	window1: mouseVisible = False
+10.1183 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+13.1468 	EXP 	Test1: status = STARTED
+13.1473 	EXP 	window1: mouseVisible = True
+13.1602 	EXP 	Created welcome_message = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([ 1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='welcome_message', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+13.1604 	EXP 	window1: mouseVisible = True
+13.1610 	DEPRECATION 	Found file '/Users/omarg/Desktop/SYP/Floor_Sign_Yield_Caution_Sign_Creative_Safety_Supply__92002.jpg', failed to load as an image
+13.1831 	EXP 	window1: mouseVisible = True
