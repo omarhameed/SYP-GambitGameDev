@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on Sat Mar  2 23:37:49 2024
+    on March 06, 2024, at 17:42
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -107,7 +107,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='/Applications/PsychoPy.app/Contents/Resources/EEG_Experiment/Test1.py',
+        originPath='C:\\Users\\evanl\\Desktop\\SYP-GambitGameDev-main\\EEG-Experiment_Psychopy\\Test1_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -158,7 +158,7 @@ def setupWindow(expInfo=None, win=None):
     if win is None:
         # if not given a window to setup, make one
         win = visual.Window(
-            size=[1020, 1000], fullscr=False, screen=0,
+            size=[1920, 1080], fullscr=True, screen=0,
             winType='pyglet', allowStencil=False,
             monitor='testMonitor', color=[0,0,0], colorSpace='rgb',
             backgroundImage='', backgroundFit='none',
@@ -319,25 +319,32 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         text='',
         font='Open Sans',
         pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-        color='red', colorSpace='rgb', opacity=None, 
+        color=[1.0000, 1.0000, 1.0000], colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=0.0);
-    cation_sign = visual.ImageStim(
+    caution_sign = visual.ImageStim(
         win=win,
-        name='cation_sign', 
+        name='caution_sign', 
         image='Floor_Sign_Yield_Caution_Sign_Creative_Safety_Supply__92002.jpg', mask=None, anchor='center',
         ori=0.0, pos=(0.3, 0.3), size=(0.2, 0.2),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-1.0)
     
-    # --- Initialize components for Routine "Test_1" ---
+    # --- Initialize components for Routine "test_1" ---
     obj1_t1 = visual.Rect(
         win=win, name='obj1_t1',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0,0), anchor='top-right',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='black',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=0.0, interpolate=True)
+    test_1_mess = visual.TextStim(win=win, name='test_1_mess',
+        text='Focus on the black square',
+        font='Open Sans',
+        pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-1.0);
     
     # --- Initialize components for Routine "blank1s" ---
     blank_screen = visual.TextStim(win=win, name='blank_screen',
@@ -359,96 +366,149 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         win=win, name='obj2_t2',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(-0.25, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
     obj3_t2 = visual.Rect(
         win=win, name='obj3_t2',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-2.0, interpolate=True)
+    test_2_mess = visual.TextStim(win=win, name='test_2_mess',
+        text='Focus on the black square',
+        font='Open Sans',
+        pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-3.0);
     
-    # --- Initialize components for Routine "Test_3" ---
+    # --- Initialize components for Routine "blank1s" ---
+    blank_screen = visual.TextStim(win=win, name='blank_screen',
+        text=None,
+        font='Open Sans',
+        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
+    
+    # --- Initialize components for Routine "test_3" ---
     obj1_t3 = visual.Rect(
         win=win, name='obj1_t3',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, 0.1), anchor='top-right',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        ori=0.0, pos=(0.25, 0.25), anchor='center',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='black',
         opacity=None, depth=0.0, interpolate=True)
     obj2_t3 = visual.Rect(
         win=win, name='obj2_t3',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, 0.1), anchor='center',
+        ori=0.0, pos=(-0.25, 0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
     obj3_t3 = visual.Rect(
         win=win, name='obj3_t3',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, -0.1), anchor='center',
+        ori=0.0, pos=(0.25, -0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
         opacity=None, depth=-2.0, interpolate=True)
     obj4_t3 = visual.Rect(
         win=win, name='obj4_t3',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, -0.08), anchor='center',
+        ori=0.0, pos=(-0.25, -0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
         opacity=None, depth=-3.0, interpolate=True)
+    test_3_mess = visual.TextStim(win=win, name='test_3_mess',
+        text='Focus on the black square',
+        font='Open Sans',
+        pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-4.0);
     
-    # --- Initialize components for Routine "Test_4" ---
+    # --- Initialize components for Routine "blank1s" ---
+    blank_screen = visual.TextStim(win=win, name='blank_screen',
+        text=None,
+        font='Open Sans',
+        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
+    
+    # --- Initialize components for Routine "test_4" ---
     obj1_t4 = visual.Rect(
         win=win, name='obj1_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='black',
         opacity=None, depth=0.0, interpolate=True)
     obj2_t4 = visual.Rect(
         win=win, name='obj2_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(-0.25, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
     obj3_t4 = visual.Rect(
         win=win, name='obj3_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
         ori=0.0, pos=(0.25, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-2.0, interpolate=True)
     obj4_t4 = visual.Rect(
         win=win, name='obj4_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, 0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        ori=0.0, pos=(-0.25, 0.25), anchor='center',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-3.0, interpolate=True)
     obj5_t4 = visual.Rect(
         win=win, name='obj5_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, 0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        ori=0.0, pos=(0.25, 0.25), anchor='center',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-4.0, interpolate=True)
     obj6_t4 = visual.Rect(
         win=win, name='obj6_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0, 0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        ori=0.0, pos=(0, 0.25), anchor='center',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-5.0, interpolate=True)
     obj7_t4 = visual.Rect(
         win=win, name='obj7_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, -0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        ori=0.0, pos=(-0.25, -0.25), anchor='center',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-6.0, interpolate=True)
     obj8_t4 = visual.Rect(
         win=win, name='obj8_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, -0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='white',
+        ori=0.0, pos=(0.25, -0.25), anchor='center',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-7.0, interpolate=True)
     obj9_t4 = visual.Rect(
         win=win, name='obj9_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0, -0.1), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='red', fillColor='black',
+        ori=0.0, pos=(0, -0.25), anchor='center',
+        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-8.0, interpolate=True)
+    sound_1 = sound.Sound('A', secs=1.0, stereo=True, hamming=True,
+        name='sound_1')
+    sound_1.setVolume(1.0)
+    test_4_mess = visual.TextStim(win=win, name='test_4_mess',
+        text='Focus on the black square',
+        font='Open Sans',
+        pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-10.0);
+    
+    # --- Initialize components for Routine "blank1s" ---
+    blank_screen = visual.TextStim(win=win, name='blank_screen',
+        text=None,
+        font='Open Sans',
+        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
+    
+    # --- Initialize components for Routine "GoodBye" ---
     
     # create some handy timers
     if globalClock is None:
@@ -466,7 +526,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # update component parameters for each repeat
     thisExp.addData('WelcomeScreen.started', globalClock.getTime())
     # keep track of which components have finished
-    WelcomeScreenComponents = [welcome_message, cation_sign]
+    WelcomeScreenComponents = [welcome_message, caution_sign]
     for thisComponent in WelcomeScreenComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -522,38 +582,38 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 welcome_message.status = FINISHED
                 welcome_message.setAutoDraw(False)
         
-        # *cation_sign* updates
+        # *caution_sign* updates
         
-        # if cation_sign is starting this frame...
-        if cation_sign.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # if caution_sign is starting this frame...
+        if caution_sign.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
             # keep track of start time/frame for later
-            cation_sign.frameNStart = frameN  # exact frame index
-            cation_sign.tStart = t  # local t and not account for scr refresh
-            cation_sign.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(cation_sign, 'tStartRefresh')  # time at next scr refresh
+            caution_sign.frameNStart = frameN  # exact frame index
+            caution_sign.tStart = t  # local t and not account for scr refresh
+            caution_sign.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(caution_sign, 'tStartRefresh')  # time at next scr refresh
             # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'cation_sign.started')
+            thisExp.timestampOnFlip(win, 'caution_sign.started')
             # update status
-            cation_sign.status = STARTED
-            cation_sign.setAutoDraw(True)
+            caution_sign.status = STARTED
+            caution_sign.setAutoDraw(True)
         
-        # if cation_sign is active this frame...
-        if cation_sign.status == STARTED:
+        # if caution_sign is active this frame...
+        if caution_sign.status == STARTED:
             # update params
             pass
         
-        # if cation_sign is stopping this frame...
-        if cation_sign.status == STARTED:
+        # if caution_sign is stopping this frame...
+        if caution_sign.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > cation_sign.tStartRefresh + 10-frameTolerance:
+            if tThisFlipGlobal > caution_sign.tStartRefresh + 10-frameTolerance:
                 # keep track of stop time/frame for later
-                cation_sign.tStop = t  # not accounting for scr refresh
-                cation_sign.frameNStop = frameN  # exact frame index
+                caution_sign.tStop = t  # not accounting for scr refresh
+                caution_sign.frameNStop = frameN  # exact frame index
                 # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'cation_sign.stopped')
+                thisExp.timestampOnFlip(win, 'caution_sign.stopped')
                 # update status
-                cation_sign.status = FINISHED
-                cation_sign.setAutoDraw(False)
+                caution_sign.status = FINISHED
+                caution_sign.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -588,7 +648,315 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         routineTimer.addTime(-10.000000)
     
     # set up handler to look after randomisation of conditions etc
-    trials_2 = data.TrialHandler(nReps=1.0, method='random', 
+    trials_1 = data.TrialHandler(nReps=1.0, method='sequential', 
+        extraInfo=expInfo, originPath=-1,
+        trialList=[None],
+        seed=None, name='trials_1')
+    thisExp.addLoop(trials_1)  # add the loop to the experiment
+    thisTrial_1 = trials_1.trialList[0]  # so we can initialise stimuli with some values
+    # abbreviate parameter names if possible (e.g. rgb = thisTrial_1.rgb)
+    if thisTrial_1 != None:
+        for paramName in thisTrial_1:
+            globals()[paramName] = thisTrial_1[paramName]
+    
+    for thisTrial_1 in trials_1:
+        currentLoop = trials_1
+        thisExp.timestampOnFlip(win, 'thisRow.t')
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                inputs=inputs, 
+                win=win, 
+                timers=[routineTimer], 
+                playbackComponents=[]
+        )
+        # abbreviate parameter names if possible (e.g. rgb = thisTrial_1.rgb)
+        if thisTrial_1 != None:
+            for paramName in thisTrial_1:
+                globals()[paramName] = thisTrial_1[paramName]
+        
+        # set up handler to look after randomisation of conditions etc
+        repetition_1 = data.TrialHandler(nReps=5.0, method='sequential', 
+            extraInfo=expInfo, originPath=-1,
+            trialList=[None],
+            seed=None, name='repetition_1')
+        thisExp.addLoop(repetition_1)  # add the loop to the experiment
+        thisRepetition_1 = repetition_1.trialList[0]  # so we can initialise stimuli with some values
+        # abbreviate parameter names if possible (e.g. rgb = thisRepetition_1.rgb)
+        if thisRepetition_1 != None:
+            for paramName in thisRepetition_1:
+                globals()[paramName] = thisRepetition_1[paramName]
+        
+        for thisRepetition_1 in repetition_1:
+            currentLoop = repetition_1
+            thisExp.timestampOnFlip(win, 'thisRow.t')
+            # pause experiment here if requested
+            if thisExp.status == PAUSED:
+                pauseExperiment(
+                    thisExp=thisExp, 
+                    inputs=inputs, 
+                    win=win, 
+                    timers=[routineTimer], 
+                    playbackComponents=[]
+            )
+            # abbreviate parameter names if possible (e.g. rgb = thisRepetition_1.rgb)
+            if thisRepetition_1 != None:
+                for paramName in thisRepetition_1:
+                    globals()[paramName] = thisRepetition_1[paramName]
+            
+            # --- Prepare to start Routine "test_1" ---
+            continueRoutine = True
+            # update component parameters for each repeat
+            thisExp.addData('test_1.started', globalClock.getTime())
+            # keep track of which components have finished
+            test_1Components = [obj1_t1, test_1_mess]
+            for thisComponent in test_1Components:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
+                if hasattr(thisComponent, 'status'):
+                    thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            frameN = -1
+            
+            # --- Run Routine "test_1" ---
+            routineForceEnded = not continueRoutine
+            while continueRoutine and routineTimer.getTime() < 5.0:
+                # get current time
+                t = routineTimer.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                # update/draw components on each frame
+
+
+                 # Frequencies for each object
+                freq_obj1 = 10  # 10Hz flicker
+
+                # Frames per cycle for each object (full cycle = one on and one off phase)
+                frames_per_cycle_obj1 = 60 // freq_obj1
+
+                # Update opacities based on current frame number for each stimulus
+                # Object 1
+                if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
+                    obj1_t1.opacity = 1  # Opaque
+                else:
+                 obj1_t1.opacity = 0  # Transparent
+                
+                # *obj1_t1* updates
+                
+                # if obj1_t1 is starting this frame...
+                if obj1_t1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj1_t1.frameNStart = frameN  # exact frame index
+                    obj1_t1.tStart = t  # local t and not account for scr refresh
+                    obj1_t1.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj1_t1, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'obj1_t1.started')
+                    # update status
+                    obj1_t1.status = STARTED
+                    obj1_t1.setAutoDraw(True)
+                
+                # if obj1_t1 is active this frame...
+                if obj1_t1.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj1_t1 is stopping this frame...
+                if obj1_t1.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj1_t1.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj1_t1.tStop = t  # not accounting for scr refresh
+                        obj1_t1.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj1_t1.stopped')
+                        # update status
+                        obj1_t1.status = FINISHED
+                        obj1_t1.setAutoDraw(False)
+                
+                # *test_1_mess* updates
+                
+                # if test_1_mess is starting this frame...
+                if test_1_mess.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    test_1_mess.frameNStart = frameN  # exact frame index
+                    test_1_mess.tStart = t  # local t and not account for scr refresh
+                    test_1_mess.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(test_1_mess, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'test_1_mess.started')
+                    # update status
+                    test_1_mess.status = STARTED
+                    test_1_mess.setAutoDraw(True)
+                
+                # if test_1_mess is active this frame...
+                if test_1_mess.status == STARTED:
+                    # update params
+                    pass
+                
+                # if test_1_mess is stopping this frame...
+                if test_1_mess.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > test_1_mess.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        test_1_mess.tStop = t  # not accounting for scr refresh
+                        test_1_mess.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'test_1_mess.stopped')
+                        # update status
+                        test_1_mess.status = FINISHED
+                        test_1_mess.setAutoDraw(False)
+                
+                # check for quit (typically the Esc key)
+                if defaultKeyboard.getKeys(keyList=["escape"]):
+                    thisExp.status = FINISHED
+                if thisExp.status == FINISHED or endExpNow:
+                    endExperiment(thisExp, inputs=inputs, win=win)
+                    return
+                
+                # check if all components have finished
+                if not continueRoutine:  # a component has requested a forced-end of Routine
+                    routineForceEnded = True
+                    break
+                continueRoutine = False  # will revert to True if at least one component still running
+                for thisComponent in test_1Components:
+                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                        continueRoutine = True
+                        break  # at least one component has not yet finished
+                
+                # refresh the screen
+                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                    win.flip()
+            
+            # --- Ending Routine "test_1" ---
+            for thisComponent in test_1Components:
+                if hasattr(thisComponent, "setAutoDraw"):
+                    thisComponent.setAutoDraw(False)
+            thisExp.addData('test_1.stopped', globalClock.getTime())
+            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+            if routineForceEnded:
+                routineTimer.reset()
+            else:
+                routineTimer.addTime(-5.000000)
+            
+            # --- Prepare to start Routine "blank1s" ---
+            continueRoutine = True
+            # update component parameters for each repeat
+            thisExp.addData('blank1s.started', globalClock.getTime())
+            # keep track of which components have finished
+            blank1sComponents = [blank_screen]
+            for thisComponent in blank1sComponents:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
+                if hasattr(thisComponent, 'status'):
+                    thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            frameN = -1
+            
+            # --- Run Routine "blank1s" ---
+            routineForceEnded = not continueRoutine
+            while continueRoutine and routineTimer.getTime() < 1.0:
+                # get current time
+                t = routineTimer.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                # update/draw components on each frame
+                # is it time to end the Routine? (based on local clock)
+                if tThisFlip > 1-frameTolerance:
+                    continueRoutine = False
+                
+                # *blank_screen* updates
+                
+                # if blank_screen is starting this frame...
+                if blank_screen.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    blank_screen.frameNStart = frameN  # exact frame index
+                    blank_screen.tStart = t  # local t and not account for scr refresh
+                    blank_screen.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(blank_screen, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'blank_screen.started')
+                    # update status
+                    blank_screen.status = STARTED
+                    blank_screen.setAutoDraw(True)
+                
+                # if blank_screen is active this frame...
+                if blank_screen.status == STARTED:
+                    # update params
+                    pass
+                
+                # if blank_screen is stopping this frame...
+                if blank_screen.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > blank_screen.tStartRefresh + 1.0-frameTolerance:
+                        # keep track of stop time/frame for later
+                        blank_screen.tStop = t  # not accounting for scr refresh
+                        blank_screen.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'blank_screen.stopped')
+                        # update status
+                        blank_screen.status = FINISHED
+                        blank_screen.setAutoDraw(False)
+                
+                # check for quit (typically the Esc key)
+                if defaultKeyboard.getKeys(keyList=["escape"]):
+                    thisExp.status = FINISHED
+                if thisExp.status == FINISHED or endExpNow:
+                    endExperiment(thisExp, inputs=inputs, win=win)
+                    return
+                
+                # check if all components have finished
+                if not continueRoutine:  # a component has requested a forced-end of Routine
+                    routineForceEnded = True
+                    break
+                continueRoutine = False  # will revert to True if at least one component still running
+                for thisComponent in blank1sComponents:
+                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                        continueRoutine = True
+                        break  # at least one component has not yet finished
+                
+                # refresh the screen
+                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                    win.flip()
+            
+            # --- Ending Routine "blank1s" ---
+            for thisComponent in blank1sComponents:
+                if hasattr(thisComponent, "setAutoDraw"):
+                    thisComponent.setAutoDraw(False)
+            thisExp.addData('blank1s.stopped', globalClock.getTime())
+            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+            if routineForceEnded:
+                routineTimer.reset()
+            else:
+                routineTimer.addTime(-1.000000)
+            thisExp.nextEntry()
+            
+            if thisSession is not None:
+                # if running in a Session with a Liaison client, send data up to now
+                thisSession.sendExperimentData()
+        # completed 5.0 repeats of 'repetition_1'
+        
+        thisExp.nextEntry()
+        
+        if thisSession is not None:
+            # if running in a Session with a Liaison client, send data up to now
+            thisSession.sendExperimentData()
+    # completed 10.0 repeats of 'trials_1'
+    
+    
+    # set up handler to look after randomisation of conditions etc
+    trials_2 = data.TrialHandler(nReps=10.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_2')
@@ -616,446 +984,367 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             for paramName in thisTrial_2:
                 globals()[paramName] = thisTrial_2[paramName]
         
-        # --- Prepare to start Routine "Test_1" ---
-        continueRoutine = True
-        # update component parameters for each repeat
-        thisExp.addData('Test_1.started', globalClock.getTime())
-        # keep track of which components have finished
-        Test_1Components = [obj1_t1]
-        for thisComponent in Test_1Components:
-            thisComponent.tStart = None
-            thisComponent.tStop = None
-            thisComponent.tStartRefresh = None
-            thisComponent.tStopRefresh = None
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        # reset timers
-        t = 0
-        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        frameN = -1
+        # set up handler to look after randomisation of conditions etc
+        repetition_2 = data.TrialHandler(nReps=5.0, method='sequential', 
+            extraInfo=expInfo, originPath=-1,
+            trialList=[None],
+            seed=None, name='repetition_2')
+        thisExp.addLoop(repetition_2)  # add the loop to the experiment
+        thisRepetition_2 = repetition_2.trialList[0]  # so we can initialise stimuli with some values
+        # abbreviate parameter names if possible (e.g. rgb = thisRepetition_2.rgb)
+        if thisRepetition_2 != None:
+            for paramName in thisRepetition_2:
+                globals()[paramName] = thisRepetition_2[paramName]
         
-        # --- Run Routine "Test_1" ---
-        routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 10.0:
-            # get current time
-            t = routineTimer.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
- 
-            # update/draw components on each frame
-                        # update/draw components on each frame
-            # Frequencies for each object
-            freq_obj1 = 10  # 10Hz flicker
-
-
-            # Frames per cycle for each object (full cycle = one on and one off phase)
-            frames_per_cycle_obj1 = 60 // freq_obj1
-
-            # Update opacities based on current frame number for each stimulus
-            # Object 1
-            if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
-                obj1_t1.opacity = 1  # Opaque
-            else:
-                obj1_t1.opacity = 0  # Transparent
-
-
-            # *obj1_t1* updates
+        for thisRepetition_2 in repetition_2:
+            currentLoop = repetition_2
+            thisExp.timestampOnFlip(win, 'thisRow.t')
+            # pause experiment here if requested
+            if thisExp.status == PAUSED:
+                pauseExperiment(
+                    thisExp=thisExp, 
+                    inputs=inputs, 
+                    win=win, 
+                    timers=[routineTimer], 
+                    playbackComponents=[]
+            )
+            # abbreviate parameter names if possible (e.g. rgb = thisRepetition_2.rgb)
+            if thisRepetition_2 != None:
+                for paramName in thisRepetition_2:
+                    globals()[paramName] = thisRepetition_2[paramName]
             
-            # if obj1_t1 is starting this frame...
-            if obj1_t1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj1_t1.frameNStart = frameN  # exact frame index
-                obj1_t1.tStart = t  # local t and not account for scr refresh
-                obj1_t1.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj1_t1, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj1_t1.started')
-                # update status
-                obj1_t1.status = STARTED
-                obj1_t1.setAutoDraw(True)
-
-
-            
-            # if obj1_t1 is active this frame...
-            if obj1_t1.status == STARTED:
-                # update params
-                pass
-            
-            # if obj1_t1 is stopping this frame...
-            if obj1_t1.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj1_t1.tStartRefresh + 10-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj1_t1.tStop = t  # not accounting for scr refresh
-                    obj1_t1.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj1_t1.stopped')
-                    # update status
-                    obj1_t1.status = FINISHED
-                    obj1_t1.setAutoDraw(False)
-            
-            # check for quit (typically the Esc key)
-            if defaultKeyboard.getKeys(keyList=["escape"]):
-                thisExp.status = FINISHED
-            if thisExp.status == FINISHED or endExpNow:
-                endExperiment(thisExp, inputs=inputs, win=win)
-                return
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                routineForceEnded = True
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in Test_1Components:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
-            
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
-        
-        # --- Ending Routine "Test_1" ---
-        for thisComponent in Test_1Components:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        thisExp.addData('Test_1.stopped', globalClock.getTime())
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if routineForceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-10.000000)
-        
-        # --- Prepare to start Routine "blank1s" ---
-        continueRoutine = True
-        # update component parameters for each repeat
-        thisExp.addData('blank1s.started', globalClock.getTime())
-        # keep track of which components have finished
-        blank1sComponents = [blank_screen]
-        for thisComponent in blank1sComponents:
-            thisComponent.tStart = None
-            thisComponent.tStop = None
-            thisComponent.tStartRefresh = None
-            thisComponent.tStopRefresh = None
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        # reset timers
-        t = 0
-        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        frameN = -1
-        
-        # --- Run Routine "blank1s" ---
-        routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 1.0:
-            # get current time
-            t = routineTimer.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-            # is it time to end the Routine? (based on local clock)
-            if tThisFlip > 1-frameTolerance:
-                continueRoutine = False
-            
-            # *blank_screen* updates
-            
-            # if blank_screen is starting this frame...
-            if blank_screen.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                blank_screen.frameNStart = frameN  # exact frame index
-                blank_screen.tStart = t  # local t and not account for scr refresh
-                blank_screen.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(blank_screen, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'blank_screen.started')
-                # update status
-                blank_screen.status = STARTED
-                blank_screen.setAutoDraw(True)
-            
-            # if blank_screen is active this frame...
-            if blank_screen.status == STARTED:
-                # update params
-                pass
-            
-            # if blank_screen is stopping this frame...
-            if blank_screen.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > blank_screen.tStartRefresh + 1.0-frameTolerance:
-                    # keep track of stop time/frame for later
-                    blank_screen.tStop = t  # not accounting for scr refresh
-                    blank_screen.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'blank_screen.stopped')
-                    # update status
-                    blank_screen.status = FINISHED
-                    blank_screen.setAutoDraw(False)
-            
-            # check for quit (typically the Esc key)
-            if defaultKeyboard.getKeys(keyList=["escape"]):
-                thisExp.status = FINISHED
-            if thisExp.status == FINISHED or endExpNow:
-                endExperiment(thisExp, inputs=inputs, win=win)
-                return
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                routineForceEnded = True
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in blank1sComponents:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
-            
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
-        
-        # --- Ending Routine "blank1s" ---
-        for thisComponent in blank1sComponents:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        thisExp.addData('blank1s.stopped', globalClock.getTime())
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if routineForceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-1.000000)
-        thisExp.nextEntry()
-        
-        if thisSession is not None:
-            # if running in a Session with a Liaison client, send data up to now
-            thisSession.sendExperimentData()
-    # completed 5.0 repeats of 'trials_2'
-    
-    
-    # set up handler to look after randomisation of conditions etc
-    trials = data.TrialHandler(nReps=1.0, method='sequential', 
-        extraInfo=expInfo, originPath=-1,
-        trialList=[None],
-        seed=None, name='trials')
-    thisExp.addLoop(trials)  # add the loop to the experiment
-    thisTrial = trials.trialList[0]  # so we can initialise stimuli with some values
-    # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
-    if thisTrial != None:
-        for paramName in thisTrial:
-            globals()[paramName] = thisTrial[paramName]
-    
-    for thisTrial in trials:
-        currentLoop = trials
-        thisExp.timestampOnFlip(win, 'thisRow.t')
-        # pause experiment here if requested
-        if thisExp.status == PAUSED:
-            pauseExperiment(
-                thisExp=thisExp, 
-                inputs=inputs, 
-                win=win, 
-                timers=[routineTimer], 
-                playbackComponents=[]
-        )
-        # abbreviate parameter names if possible (e.g. rgb = thisTrial.rgb)
-        if thisTrial != None:
-            for paramName in thisTrial:
-                globals()[paramName] = thisTrial[paramName]
-        
-        # --- Prepare to start Routine "test_2" ---
-        continueRoutine = True
-        # update component parameters for each repeat
-        thisExp.addData('test_2.started', globalClock.getTime())
-        # keep track of which components have finished
-        test_2Components = [obj1_t2, obj2_t2, obj3_t2]
-        for thisComponent in test_2Components:
-            thisComponent.tStart = None
-            thisComponent.tStop = None
-            thisComponent.tStartRefresh = None
-            thisComponent.tStopRefresh = None
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        # reset timers
-        t = 0
-        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        frameN = -1
-        
-        # --- Run Routine "test_2" ---
-        routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 5.0:
-            # get current time
-            t = routineTimer.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-            # update/draw components on each frame
-            # Frequencies for each object
-            freq_obj1 = 10  # 10Hz flicker
-            freq_obj2 = 5   # 5Hz flicker
-            freq_obj3 = 2   # 2Hz flicker
-
-            # Frames per cycle for each object (full cycle = one on and one off phase)
-            frames_per_cycle_obj1 = 60 // freq_obj1
-            frames_per_cycle_obj2 = 60 // freq_obj2
-            frames_per_cycle_obj3 = 60 // freq_obj3
-
-            # Update opacities based on current frame number for each stimulus
-            # Object 1
-            if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
-                obj1_t2.opacity = 1  # Opaque
-            else:
-                obj1_t2.opacity = 0  # Transparent
-
-            # Object 2
-            if (frameN % frames_per_cycle_obj2) < (frames_per_cycle_obj2 / 2):
-                obj2_t2.opacity = 1  # Opaque
-            else:
-                obj2_t2.opacity = 0  # Transparent
-
-            # Object 3
-            if (frameN % frames_per_cycle_obj3) < (frames_per_cycle_obj3 / 2):
-                obj3_t2.opacity = 1  # Opaque
-            else:
-                obj3_t2.opacity = 0  # Transparent
-
-            # *obj1_t2* updates
-            
-            # if obj1_t2 is starting this frame...
-            if obj1_t2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj1_t2.frameNStart = frameN  # exact frame index
-                obj1_t2.tStart = t  # local t and not account for scr refresh
-                obj1_t2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj1_t2, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj1_t2.started')
-                # update status
-                obj1_t2.status = STARTED
-                obj1_t2.setAutoDraw(True)
-            
-            # if obj1_t2 is active this frame...
-            if obj1_t2.status == STARTED:
-                # update params
-                pass
-            
-            # if obj1_t2 is stopping this frame...
-            if obj1_t2.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj1_t2.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj1_t2.tStop = t  # not accounting for scr refresh
-                    obj1_t2.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj1_t2.stopped')
-                    # update status
-                    obj1_t2.status = FINISHED
-                    obj1_t2.setAutoDraw(False)
-            
-            # *obj2_t2* updates
-            
-            # if obj2_t2 is starting this frame...
-            if obj2_t2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj2_t2.frameNStart = frameN  # exact frame index
-                obj2_t2.tStart = t  # local t and not account for scr refresh
-                obj2_t2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj2_t2, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj2_t2.started')
-                # update status
-                obj2_t2.status = STARTED
-                obj2_t2.setAutoDraw(True)
-            
-            # if obj2_t2 is active this frame...
-            if obj2_t2.status == STARTED:
-                # update params
-                pass
-            
-            # if obj2_t2 is stopping this frame...
-            if obj2_t2.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj2_t2.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj2_t2.tStop = t  # not accounting for scr refresh
-                    obj2_t2.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj2_t2.stopped')
-                    # update status
-                    obj2_t2.status = FINISHED
-                    obj2_t2.setAutoDraw(False)
-            
-            # *obj3_t2* updates
-            
-            # if obj3_t2 is starting this frame...
-            if obj3_t2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj3_t2.frameNStart = frameN  # exact frame index
-                obj3_t2.tStart = t  # local t and not account for scr refresh
-                obj3_t2.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj3_t2, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj3_t2.started')
-                # update status
-                obj3_t2.status = STARTED
-                obj3_t2.setAutoDraw(True)
-            
-            # if obj3_t2 is active this frame...
-            if obj3_t2.status == STARTED:
-                # update params
-                pass
-            
-            # if obj3_t2 is stopping this frame...
-            if obj3_t2.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj3_t2.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj3_t2.tStop = t  # not accounting for scr refresh
-                    obj3_t2.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj3_t2.stopped')
-                    # update status
-                    obj3_t2.status = FINISHED
-                    obj3_t2.setAutoDraw(False)
-            
-            # check for quit (typically the Esc key)
-            if defaultKeyboard.getKeys(keyList=["escape"]):
-                thisExp.status = FINISHED
-            if thisExp.status == FINISHED or endExpNow:
-                endExperiment(thisExp, inputs=inputs, win=win)
-                return
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                routineForceEnded = True
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
+            # --- Prepare to start Routine "test_2" ---
+            continueRoutine = True
+            # update component parameters for each repeat
+            thisExp.addData('test_2.started', globalClock.getTime())
+            # keep track of which components have finished
+            test_2Components = [obj1_t2, obj2_t2, obj3_t2, test_2_mess]
             for thisComponent in test_2Components:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
+                if hasattr(thisComponent, 'status'):
+                    thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            frameN = -1
             
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
+            # --- Run Routine "test_2" ---
+            routineForceEnded = not continueRoutine
+            while continueRoutine and routineTimer.getTime() < 5.0:
+                # get current time
+                t = routineTimer.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                # update/draw components on each frame
+                
+                 # Frequencies for each object
+                freq_obj1 = 10  # 10Hz flicker
+                freq_obj2 = 5   # 5Hz flicker
+                freq_obj3 = 2   # 2Hz flicker
+
+                # Frames per cycle for each object (full cycle = one on and one off phase)
+                frames_per_cycle_obj1 = 60 // freq_obj1
+                frames_per_cycle_obj2 = 60 // freq_obj2
+                frames_per_cycle_obj3 = 60 // freq_obj3
+
+                # Update opacities based on current frame number for each stimulus
+                # Object 1
+                if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
+                    obj1_t2.opacity = 1  # Opaque
+                else:
+                    obj1_t2.opacity = 0  # Transparent
+
+                # Object 2
+                if (frameN % frames_per_cycle_obj2) < (frames_per_cycle_obj2 / 2):
+                    obj2_t2.opacity = 1  # Opaque
+                else:
+                    obj2_t2.opacity = 0  # Transparent
+
+                # Object 3
+                if (frameN % frames_per_cycle_obj3) < (frames_per_cycle_obj3 / 2):
+                    obj3_t2.opacity = 1  # Opaque
+                else:
+                    obj3_t2.opacity = 0  # Transparent
+                    # *obj1_t2* updates
+                
+                # if obj1_t2 is starting this frame...
+                if obj1_t2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj1_t2.frameNStart = frameN  # exact frame index
+                    obj1_t2.tStart = t  # local t and not account for scr refresh
+                    obj1_t2.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj1_t2, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'obj1_t2.started')
+                    # update status
+                    obj1_t2.status = STARTED
+                    obj1_t2.setAutoDraw(True)
+                
+                # if obj1_t2 is active this frame...
+                if obj1_t2.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj1_t2 is stopping this frame...
+                if obj1_t2.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj1_t2.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj1_t2.tStop = t  # not accounting for scr refresh
+                        obj1_t2.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj1_t2.stopped')
+                        # update status
+                        obj1_t2.status = FINISHED
+                        obj1_t2.setAutoDraw(False)
+                
+                # *obj2_t2* updates
+                
+                # if obj2_t2 is starting this frame...
+                if obj2_t2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj2_t2.frameNStart = frameN  # exact frame index
+                    obj2_t2.tStart = t  # local t and not account for scr refresh
+                    obj2_t2.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj2_t2, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'obj2_t2.started')
+                    # update status
+                    obj2_t2.status = STARTED
+                    obj2_t2.setAutoDraw(True)
+                
+                # if obj2_t2 is active this frame...
+                if obj2_t2.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj2_t2 is stopping this frame...
+                if obj2_t2.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj2_t2.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj2_t2.tStop = t  # not accounting for scr refresh
+                        obj2_t2.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj2_t2.stopped')
+                        # update status
+                        obj2_t2.status = FINISHED
+                        obj2_t2.setAutoDraw(False)
+                
+                # *obj3_t2* updates
+                
+                # if obj3_t2 is starting this frame...
+                if obj3_t2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj3_t2.frameNStart = frameN  # exact frame index
+                    obj3_t2.tStart = t  # local t and not account for scr refresh
+                    obj3_t2.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj3_t2, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'obj3_t2.started')
+                    # update status
+                    obj3_t2.status = STARTED
+                    obj3_t2.setAutoDraw(True)
+                
+                # if obj3_t2 is active this frame...
+                if obj3_t2.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj3_t2 is stopping this frame...
+                if obj3_t2.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj3_t2.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj3_t2.tStop = t  # not accounting for scr refresh
+                        obj3_t2.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj3_t2.stopped')
+                        # update status
+                        obj3_t2.status = FINISHED
+                        obj3_t2.setAutoDraw(False)
+                
+                # *test_2_mess* updates
+                
+                # if test_2_mess is starting this frame...
+                if test_2_mess.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    test_2_mess.frameNStart = frameN  # exact frame index
+                    test_2_mess.tStart = t  # local t and not account for scr refresh
+                    test_2_mess.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(test_2_mess, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'test_2_mess.started')
+                    # update status
+                    test_2_mess.status = STARTED
+                    test_2_mess.setAutoDraw(True)
+                
+                # if test_2_mess is active this frame...
+                if test_2_mess.status == STARTED:
+                    # update params
+                    pass
+                
+                # if test_2_mess is stopping this frame...
+                if test_2_mess.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > test_2_mess.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        test_2_mess.tStop = t  # not accounting for scr refresh
+                        test_2_mess.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'test_2_mess.stopped')
+                        # update status
+                        test_2_mess.status = FINISHED
+                        test_2_mess.setAutoDraw(False)
+                
+                # check for quit (typically the Esc key)
+                if defaultKeyboard.getKeys(keyList=["escape"]):
+                    thisExp.status = FINISHED
+                if thisExp.status == FINISHED or endExpNow:
+                    endExperiment(thisExp, inputs=inputs, win=win)
+                    return
+                
+                # check if all components have finished
+                if not continueRoutine:  # a component has requested a forced-end of Routine
+                    routineForceEnded = True
+                    break
+                continueRoutine = False  # will revert to True if at least one component still running
+                for thisComponent in test_2Components:
+                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                        continueRoutine = True
+                        break  # at least one component has not yet finished
+                
+                # refresh the screen
+                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                    win.flip()
+            
+            # --- Ending Routine "test_2" ---
+            for thisComponent in test_2Components:
+                if hasattr(thisComponent, "setAutoDraw"):
+                    thisComponent.setAutoDraw(False)
+            thisExp.addData('test_2.stopped', globalClock.getTime())
+            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+            if routineForceEnded:
+                routineTimer.reset()
+            else:
+                routineTimer.addTime(-5.000000)
+            
+            # --- Prepare to start Routine "blank1s" ---
+            continueRoutine = True
+            # update component parameters for each repeat
+            thisExp.addData('blank1s.started', globalClock.getTime())
+            # keep track of which components have finished
+            blank1sComponents = [blank_screen]
+            for thisComponent in blank1sComponents:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
+                if hasattr(thisComponent, 'status'):
+                    thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            frameN = -1
+            
+            # --- Run Routine "blank1s" ---
+            routineForceEnded = not continueRoutine
+            while continueRoutine and routineTimer.getTime() < 1.0:
+                # get current time
+                t = routineTimer.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                # update/draw components on each frame
+                # is it time to end the Routine? (based on local clock)
+                if tThisFlip > 1-frameTolerance:
+                    continueRoutine = False
+                
+                # *blank_screen* updates
+                
+                # if blank_screen is starting this frame...
+                if blank_screen.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    blank_screen.frameNStart = frameN  # exact frame index
+                    blank_screen.tStart = t  # local t and not account for scr refresh
+                    blank_screen.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(blank_screen, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'blank_screen.started')
+                    # update status
+                    blank_screen.status = STARTED
+                    blank_screen.setAutoDraw(True)
+                
+                # if blank_screen is active this frame...
+                if blank_screen.status == STARTED:
+                    # update params
+                    pass
+                
+                # if blank_screen is stopping this frame...
+                if blank_screen.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > blank_screen.tStartRefresh + 1.0-frameTolerance:
+                        # keep track of stop time/frame for later
+                        blank_screen.tStop = t  # not accounting for scr refresh
+                        blank_screen.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'blank_screen.stopped')
+                        # update status
+                        blank_screen.status = FINISHED
+                        blank_screen.setAutoDraw(False)
+                
+                # check for quit (typically the Esc key)
+                if defaultKeyboard.getKeys(keyList=["escape"]):
+                    thisExp.status = FINISHED
+                if thisExp.status == FINISHED or endExpNow:
+                    endExperiment(thisExp, inputs=inputs, win=win)
+                    return
+                
+                # check if all components have finished
+                if not continueRoutine:  # a component has requested a forced-end of Routine
+                    routineForceEnded = True
+                    break
+                continueRoutine = False  # will revert to True if at least one component still running
+                for thisComponent in blank1sComponents:
+                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                        continueRoutine = True
+                        break  # at least one component has not yet finished
+                
+                # refresh the screen
+                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                    win.flip()
+            
+            # --- Ending Routine "blank1s" ---
+            for thisComponent in blank1sComponents:
+                if hasattr(thisComponent, "setAutoDraw"):
+                    thisComponent.setAutoDraw(False)
+            thisExp.addData('blank1s.stopped', globalClock.getTime())
+            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+            if routineForceEnded:
+                routineTimer.reset()
+            else:
+                routineTimer.addTime(-1.000000)
+            thisExp.nextEntry()
+            
+            if thisSession is not None:
+                # if running in a Session with a Liaison client, send data up to now
+                thisSession.sendExperimentData()
+        # completed 5.0 repeats of 'repetition_2'
         
-        # --- Ending Routine "test_2" ---
-        for thisComponent in test_2Components:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        thisExp.addData('test_2.stopped', globalClock.getTime())
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if routineForceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-5.000000)
         thisExp.nextEntry()
         
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 2.0 repeats of 'trials'
+    # completed 10.0 repeats of 'trials_2'
     
     
     # set up handler to look after randomisation of conditions etc
-    trials_3 = data.TrialHandler(nReps=1.0, method='random', 
+    trials_3 = data.TrialHandler(nReps=10.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_3')
@@ -1083,233 +1372,400 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             for paramName in thisTrial_3:
                 globals()[paramName] = thisTrial_3[paramName]
         
-        # --- Prepare to start Routine "Test_3" ---
-        continueRoutine = True
-        # update component parameters for each repeat
-        thisExp.addData('Test_3.started', globalClock.getTime())
-        # keep track of which components have finished
-        Test_3Components = [obj1_t3, obj2_t3, obj3_t3, obj4_t3]
-        for thisComponent in Test_3Components:
-            thisComponent.tStart = None
-            thisComponent.tStop = None
-            thisComponent.tStartRefresh = None
-            thisComponent.tStopRefresh = None
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        # reset timers
-        t = 0
-        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        frameN = -1
+        # set up handler to look after randomisation of conditions etc
+        repetition_3 = data.TrialHandler(nReps=5.0, method='random', 
+            extraInfo=expInfo, originPath=-1,
+            trialList=[None],
+            seed=None, name='repetition_3')
+        thisExp.addLoop(repetition_3)  # add the loop to the experiment
+        thisRepetition_3 = repetition_3.trialList[0]  # so we can initialise stimuli with some values
+        # abbreviate parameter names if possible (e.g. rgb = thisRepetition_3.rgb)
+        if thisRepetition_3 != None:
+            for paramName in thisRepetition_3:
+                globals()[paramName] = thisRepetition_3[paramName]
         
-        # --- Run Routine "Test_3" ---
-        routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 5.0:
-            # get current time
-            t = routineTimer.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-                        # update/draw components on each frame
-            # Frequencies for each object
-            freq_obj1 = 10  # 10Hz flicker
-            freq_obj2 = 5   # 5Hz flicker
-            freq_obj3 = 2   # 2Hz flicker
-            freq_obj4 = 15   # 15Hz flicker
+        for thisRepetition_3 in repetition_3:
+            currentLoop = repetition_3
+            thisExp.timestampOnFlip(win, 'thisRow.t')
+            # pause experiment here if requested
+            if thisExp.status == PAUSED:
+                pauseExperiment(
+                    thisExp=thisExp, 
+                    inputs=inputs, 
+                    win=win, 
+                    timers=[routineTimer], 
+                    playbackComponents=[]
+            )
+            # abbreviate parameter names if possible (e.g. rgb = thisRepetition_3.rgb)
+            if thisRepetition_3 != None:
+                for paramName in thisRepetition_3:
+                    globals()[paramName] = thisRepetition_3[paramName]
+            
+            # --- Prepare to start Routine "test_3" ---
+            continueRoutine = True
+            # update component parameters for each repeat
+            thisExp.addData('test_3.started', globalClock.getTime())
+            # keep track of which components have finished
+            test_3Components = [obj1_t3, obj2_t3, obj3_t3, obj4_t3, test_3_mess]
+            for thisComponent in test_3Components:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
+                if hasattr(thisComponent, 'status'):
+                    thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            frameN = -1
+            
+            # --- Run Routine "test_3" ---
+            routineForceEnded = not continueRoutine
+            while continueRoutine and routineTimer.getTime() < 5.0:
+                # get current time
+                t = routineTimer.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                # update/draw components on each frame
+                
+                # Frequencies for each object
+                freq_obj1 = 10  # 10Hz flicker
+                freq_obj2 = 5   # 5Hz flicker
+                freq_obj3 = 2   # 2Hz flicker
+                freq_obj4 = 15   # 15Hz flicker
 
-            # Frames per cycle for each object (full cycle = one on and one off phase)
-            frames_per_cycle_obj1 = 60 // freq_obj1
-            frames_per_cycle_obj2 = 60 // freq_obj2
-            frames_per_cycle_obj3 = 60 // freq_obj3
-            frames_per_cycle_obj4 = 60 // freq_obj4
+                # Frames per cycle for each object (full cycle = one on and one off phase)
+                frames_per_cycle_obj1 = 60 // freq_obj1
+                frames_per_cycle_obj2 = 60 // freq_obj2
+                frames_per_cycle_obj3 = 60 // freq_obj3
+                frames_per_cycle_obj4 = 60 // freq_obj4
 
-            # Update opacities based on current frame number for each stimulus
-            # Object 1
-            if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
-                obj1_t3.opacity = 1  # Opaque
-            else:
-                obj1_t3.opacity = 0  # Transparent
+                # Update opacities based on current frame number for each stimulus
+                # Object 1
+                if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
+                    obj1_t3.opacity = 1  # Opaque
+                else:
+                    obj1_t3.opacity = 0  # Transparent
 
-            # Object 2
-            if (frameN % frames_per_cycle_obj2) < (frames_per_cycle_obj2 / 2):
-                obj2_t3.opacity = 1  # Opaque
-            else:
-                obj2_t3.opacity = 0  # Transparent
+                # Object 2
+                if (frameN % frames_per_cycle_obj2) < (frames_per_cycle_obj2 / 2):
+                    obj2_t3.opacity = 1  # Opaque
+                else:
+                    obj2_t3.opacity = 0  # Transparent
 
-            # Object 3
-            if (frameN % frames_per_cycle_obj3) < (frames_per_cycle_obj3 / 2):
-                obj3_t3.opacity = 1  # Opaque
-            else:
-                obj3_t3.opacity = 0  # Transparent
+                # Object 3
+                if (frameN % frames_per_cycle_obj3) < (frames_per_cycle_obj3 / 2):
+                    obj3_t3.opacity = 1  # Opaque
+                else:
+                    obj3_t3.opacity = 0  # Transparent
 
-            # Object 4
-            if (frameN % frames_per_cycle_obj4) < (frames_per_cycle_obj4 / 2):
-                obj4_t3.opacity = 1  # Opaque
-            else:
-                obj4_t3.opacity = 0  # Transparent
+                # Object 4
+                if (frameN % frames_per_cycle_obj4) < (frames_per_cycle_obj4 / 2):
+                    obj4_t3.opacity = 1  # Opaque
+                else:
+                    obj4_t3.opacity = 0  # Transparent
+
             # *obj1_t3* updates
-            
-            # if obj1_t3 is starting this frame...
-            if obj1_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj1_t3.frameNStart = frameN  # exact frame index
-                obj1_t3.tStart = t  # local t and not account for scr refresh
-                obj1_t3.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj1_t3, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj1_t3.started')
-                # update status
-                obj1_t3.status = STARTED
-                obj1_t3.setAutoDraw(True)
-            
-            # if obj1_t3 is active this frame...
-            if obj1_t3.status == STARTED:
-                # update params
-                pass
-            
-            # if obj1_t3 is stopping this frame...
-            if obj1_t3.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj1_t3.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj1_t3.tStop = t  # not accounting for scr refresh
-                    obj1_t3.frameNStop = frameN  # exact frame index
+                # *obj1_t3* updates
+                
+                # if obj1_t3 is starting this frame...
+                if obj1_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj1_t3.frameNStart = frameN  # exact frame index
+                    obj1_t3.tStart = t  # local t and not account for scr refresh
+                    obj1_t3.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj1_t3, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj1_t3.stopped')
+                    thisExp.timestampOnFlip(win, 'obj1_t3.started')
                     # update status
-                    obj1_t3.status = FINISHED
-                    obj1_t3.setAutoDraw(False)
-            
-            # *obj2_t3* updates
-            
-            # if obj2_t3 is starting this frame...
-            if obj2_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj2_t3.frameNStart = frameN  # exact frame index
-                obj2_t3.tStart = t  # local t and not account for scr refresh
-                obj2_t3.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj2_t3, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj2_t3.started')
-                # update status
-                obj2_t3.status = STARTED
-                obj2_t3.setAutoDraw(True)
-            
-            # if obj2_t3 is active this frame...
-            if obj2_t3.status == STARTED:
-                # update params
-                pass
-            
-            # if obj2_t3 is stopping this frame...
-            if obj2_t3.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj2_t3.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj2_t3.tStop = t  # not accounting for scr refresh
-                    obj2_t3.frameNStop = frameN  # exact frame index
+                    obj1_t3.status = STARTED
+                    obj1_t3.setAutoDraw(True)
+                
+                # if obj1_t3 is active this frame...
+                if obj1_t3.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj1_t3 is stopping this frame...
+                if obj1_t3.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj1_t3.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj1_t3.tStop = t  # not accounting for scr refresh
+                        obj1_t3.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj1_t3.stopped')
+                        # update status
+                        obj1_t3.status = FINISHED
+                        obj1_t3.setAutoDraw(False)
+                
+                # *obj2_t3* updates
+                
+                # if obj2_t3 is starting this frame...
+                if obj2_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj2_t3.frameNStart = frameN  # exact frame index
+                    obj2_t3.tStart = t  # local t and not account for scr refresh
+                    obj2_t3.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj2_t3, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj2_t3.stopped')
+                    thisExp.timestampOnFlip(win, 'obj2_t3.started')
                     # update status
-                    obj2_t3.status = FINISHED
-                    obj2_t3.setAutoDraw(False)
-            
-            # *obj3_t3* updates
-            
-            # if obj3_t3 is starting this frame...
-            if obj3_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj3_t3.frameNStart = frameN  # exact frame index
-                obj3_t3.tStart = t  # local t and not account for scr refresh
-                obj3_t3.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj3_t3, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj3_t3.started')
-                # update status
-                obj3_t3.status = STARTED
-                obj3_t3.setAutoDraw(True)
-            
-            # if obj3_t3 is active this frame...
-            if obj3_t3.status == STARTED:
-                # update params
-                pass
-            
-            # if obj3_t3 is stopping this frame...
-            if obj3_t3.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj3_t3.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj3_t3.tStop = t  # not accounting for scr refresh
-                    obj3_t3.frameNStop = frameN  # exact frame index
+                    obj2_t3.status = STARTED
+                    obj2_t3.setAutoDraw(True)
+                
+                # if obj2_t3 is active this frame...
+                if obj2_t3.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj2_t3 is stopping this frame...
+                if obj2_t3.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj2_t3.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj2_t3.tStop = t  # not accounting for scr refresh
+                        obj2_t3.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj2_t3.stopped')
+                        # update status
+                        obj2_t3.status = FINISHED
+                        obj2_t3.setAutoDraw(False)
+                
+                # *obj3_t3* updates
+                
+                # if obj3_t3 is starting this frame...
+                if obj3_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj3_t3.frameNStart = frameN  # exact frame index
+                    obj3_t3.tStart = t  # local t and not account for scr refresh
+                    obj3_t3.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj3_t3, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj3_t3.stopped')
+                    thisExp.timestampOnFlip(win, 'obj3_t3.started')
                     # update status
-                    obj3_t3.status = FINISHED
-                    obj3_t3.setAutoDraw(False)
-            
-            # *obj4_t3* updates
-            
-            # if obj4_t3 is starting this frame...
-            if obj4_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj4_t3.frameNStart = frameN  # exact frame index
-                obj4_t3.tStart = t  # local t and not account for scr refresh
-                obj4_t3.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj4_t3, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj4_t3.started')
-                # update status
-                obj4_t3.status = STARTED
-                obj4_t3.setAutoDraw(True)
-            
-            # if obj4_t3 is active this frame...
-            if obj4_t3.status == STARTED:
-                # update params
-                pass
-            
-            # if obj4_t3 is stopping this frame...
-            if obj4_t3.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj4_t3.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj4_t3.tStop = t  # not accounting for scr refresh
-                    obj4_t3.frameNStop = frameN  # exact frame index
+                    obj3_t3.status = STARTED
+                    obj3_t3.setAutoDraw(True)
+                
+                # if obj3_t3 is active this frame...
+                if obj3_t3.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj3_t3 is stopping this frame...
+                if obj3_t3.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj3_t3.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj3_t3.tStop = t  # not accounting for scr refresh
+                        obj3_t3.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj3_t3.stopped')
+                        # update status
+                        obj3_t3.status = FINISHED
+                        obj3_t3.setAutoDraw(False)
+                
+                # *obj4_t3* updates
+                
+                # if obj4_t3 is starting this frame...
+                if obj4_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj4_t3.frameNStart = frameN  # exact frame index
+                    obj4_t3.tStart = t  # local t and not account for scr refresh
+                    obj4_t3.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj4_t3, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj4_t3.stopped')
+                    thisExp.timestampOnFlip(win, 'obj4_t3.started')
                     # update status
-                    obj4_t3.status = FINISHED
-                    obj4_t3.setAutoDraw(False)
+                    obj4_t3.status = STARTED
+                    obj4_t3.setAutoDraw(True)
+                
+                # if obj4_t3 is active this frame...
+                if obj4_t3.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj4_t3 is stopping this frame...
+                if obj4_t3.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj4_t3.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj4_t3.tStop = t  # not accounting for scr refresh
+                        obj4_t3.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj4_t3.stopped')
+                        # update status
+                        obj4_t3.status = FINISHED
+                        obj4_t3.setAutoDraw(False)
+                
+                # *test_3_mess* updates
+                
+                # if test_3_mess is starting this frame...
+                if test_3_mess.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    test_3_mess.frameNStart = frameN  # exact frame index
+                    test_3_mess.tStart = t  # local t and not account for scr refresh
+                    test_3_mess.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(test_3_mess, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'test_3_mess.started')
+                    # update status
+                    test_3_mess.status = STARTED
+                    test_3_mess.setAutoDraw(True)
+                
+                # if test_3_mess is active this frame...
+                if test_3_mess.status == STARTED:
+                    # update params
+                    pass
+                
+                # if test_3_mess is stopping this frame...
+                if test_3_mess.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > test_3_mess.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        test_3_mess.tStop = t  # not accounting for scr refresh
+                        test_3_mess.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'test_3_mess.stopped')
+                        # update status
+                        test_3_mess.status = FINISHED
+                        test_3_mess.setAutoDraw(False)
+                
+                # check for quit (typically the Esc key)
+                if defaultKeyboard.getKeys(keyList=["escape"]):
+                    thisExp.status = FINISHED
+                if thisExp.status == FINISHED or endExpNow:
+                    endExperiment(thisExp, inputs=inputs, win=win)
+                    return
+                
+                # check if all components have finished
+                if not continueRoutine:  # a component has requested a forced-end of Routine
+                    routineForceEnded = True
+                    break
+                continueRoutine = False  # will revert to True if at least one component still running
+                for thisComponent in test_3Components:
+                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                        continueRoutine = True
+                        break  # at least one component has not yet finished
+                
+                # refresh the screen
+                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                    win.flip()
             
-            # check for quit (typically the Esc key)
-            if defaultKeyboard.getKeys(keyList=["escape"]):
-                thisExp.status = FINISHED
-            if thisExp.status == FINISHED or endExpNow:
-                endExperiment(thisExp, inputs=inputs, win=win)
-                return
+            # --- Ending Routine "test_3" ---
+            for thisComponent in test_3Components:
+                if hasattr(thisComponent, "setAutoDraw"):
+                    thisComponent.setAutoDraw(False)
+            thisExp.addData('test_3.stopped', globalClock.getTime())
+            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+            if routineForceEnded:
+                routineTimer.reset()
+            else:
+                routineTimer.addTime(-5.000000)
             
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                routineForceEnded = True
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in Test_3Components:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
+            # --- Prepare to start Routine "blank1s" ---
+            continueRoutine = True
+            # update component parameters for each repeat
+            thisExp.addData('blank1s.started', globalClock.getTime())
+            # keep track of which components have finished
+            blank1sComponents = [blank_screen]
+            for thisComponent in blank1sComponents:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
+                if hasattr(thisComponent, 'status'):
+                    thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            frameN = -1
             
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
+            # --- Run Routine "blank1s" ---
+            routineForceEnded = not continueRoutine
+            while continueRoutine and routineTimer.getTime() < 1.0:
+                # get current time
+                t = routineTimer.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                # update/draw components on each frame
+                # is it time to end the Routine? (based on local clock)
+                if tThisFlip > 1-frameTolerance:
+                    continueRoutine = False
+                
+                # *blank_screen* updates
+                
+                # if blank_screen is starting this frame...
+                if blank_screen.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    blank_screen.frameNStart = frameN  # exact frame index
+                    blank_screen.tStart = t  # local t and not account for scr refresh
+                    blank_screen.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(blank_screen, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'blank_screen.started')
+                    # update status
+                    blank_screen.status = STARTED
+                    blank_screen.setAutoDraw(True)
+                
+                # if blank_screen is active this frame...
+                if blank_screen.status == STARTED:
+                    # update params
+                    pass
+                
+                # if blank_screen is stopping this frame...
+                if blank_screen.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > blank_screen.tStartRefresh + 1.0-frameTolerance:
+                        # keep track of stop time/frame for later
+                        blank_screen.tStop = t  # not accounting for scr refresh
+                        blank_screen.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'blank_screen.stopped')
+                        # update status
+                        blank_screen.status = FINISHED
+                        blank_screen.setAutoDraw(False)
+                
+                # check for quit (typically the Esc key)
+                if defaultKeyboard.getKeys(keyList=["escape"]):
+                    thisExp.status = FINISHED
+                if thisExp.status == FINISHED or endExpNow:
+                    endExperiment(thisExp, inputs=inputs, win=win)
+                    return
+                
+                # check if all components have finished
+                if not continueRoutine:  # a component has requested a forced-end of Routine
+                    routineForceEnded = True
+                    break
+                continueRoutine = False  # will revert to True if at least one component still running
+                for thisComponent in blank1sComponents:
+                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                        continueRoutine = True
+                        break  # at least one component has not yet finished
+                
+                # refresh the screen
+                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                    win.flip()
+            
+            # --- Ending Routine "blank1s" ---
+            for thisComponent in blank1sComponents:
+                if hasattr(thisComponent, "setAutoDraw"):
+                    thisComponent.setAutoDraw(False)
+            thisExp.addData('blank1s.stopped', globalClock.getTime())
+            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+            if routineForceEnded:
+                routineTimer.reset()
+            else:
+                routineTimer.addTime(-1.000000)
+            thisExp.nextEntry()
+            
+            if thisSession is not None:
+                # if running in a Session with a Liaison client, send data up to now
+                thisSession.sendExperimentData()
+        # completed 5.0 repeats of 'repetition_3'
         
-        # --- Ending Routine "Test_3" ---
-        for thisComponent in Test_3Components:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        thisExp.addData('Test_3.stopped', globalClock.getTime())
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if routineForceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-5.000000)
         thisExp.nextEntry()
         
         if thisSession is not None:
@@ -1319,7 +1775,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     
     # set up handler to look after randomisation of conditions etc
-    trials_4 = data.TrialHandler(nReps=1.0, method='random', 
+    trials_4 = data.TrialHandler(nReps=10.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_4')
@@ -1347,440 +1803,639 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             for paramName in thisTrial_4:
                 globals()[paramName] = thisTrial_4[paramName]
         
-        # --- Prepare to start Routine "Test_4" ---
-        continueRoutine = True
-        # update component parameters for each repeat
-        thisExp.addData('Test_4.started', globalClock.getTime())
-        # keep track of which components have finished
-        Test_4Components = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4, obj6_t4, obj7_t4, obj8_t4, obj9_t4]
-        for thisComponent in Test_4Components:
-            thisComponent.tStart = None
-            thisComponent.tStop = None
-            thisComponent.tStartRefresh = None
-            thisComponent.tStopRefresh = None
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        # reset timers
-        t = 0
-        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        frameN = -1
+        # set up handler to look after randomisation of conditions etc
+        repetition_4 = data.TrialHandler(nReps=5.0, method='sequential', 
+            extraInfo=expInfo, originPath=-1,
+            trialList=[None],
+            seed=None, name='repetition_4')
+        thisExp.addLoop(repetition_4)  # add the loop to the experiment
+        thisRepetition_4 = repetition_4.trialList[0]  # so we can initialise stimuli with some values
+        # abbreviate parameter names if possible (e.g. rgb = thisRepetition_4.rgb)
+        if thisRepetition_4 != None:
+            for paramName in thisRepetition_4:
+                globals()[paramName] = thisRepetition_4[paramName]
         
-        # --- Run Routine "Test_4" ---
-        routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 5.0:
-            # get current time
-            t = routineTimer.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-            #---------------------
-# Frequencies for each object
-            freq_obj1 = 10  # 10Hz flicker
-            freq_obj2 = 5   # 5Hz flicker
-            freq_obj3 = 2   # 2Hz flicker
-            freq_obj4 = 15   # 15Hz flicker
-            freq_obj5 = 8   # 8Hz flicker
-            freq_obj6 = 12   # 12Hz flicker
-            freq_obj7 = 20   # 20Hz flicker
-            freq_obj8 = 25   # 25Hz flicker
-            freq_obj9 = 25   # 25Hz flicker
-
-            # Frames per cycle for each object (full cycle = one on and one off phase)
-            frames_per_cycle_obj1 = 60 // freq_obj1
-            frames_per_cycle_obj2 = 60 // freq_obj2
-            frames_per_cycle_obj3 = 60 // freq_obj3
-            frames_per_cycle_obj4 = 60 // freq_obj4
-
-            frames_per_cycle_obj5 = 60 // freq_obj5
-            frames_per_cycle_obj6 = 60 // freq_obj6
-            frames_per_cycle_obj7 = 60 // freq_obj7
-            frames_per_cycle_obj8 = 60 // freq_obj8
-            frames_per_cycle_obj9 = 60 // freq_obj9
-            # Update opacities based on current frame number for each stimulus
-            # Object 1
-            if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
-                obj1_t4.opacity = 1  # Opaque
-            else:
-                obj1_t4.opacity = 0  # Transparent
-
-            # Object 2
-            if (frameN % frames_per_cycle_obj2) < (frames_per_cycle_obj2 / 2):
-                obj2_t4.opacity = 1  # Opaque
-            else:
-                obj2_t4.opacity = 0  # Transparent
-
-            # Object 3
-            if (frameN % frames_per_cycle_obj3) < (frames_per_cycle_obj3 / 2):
-                obj3_t4.opacity = 1  # Opaque
-            else:
-                obj3_t4.opacity = 0  # Transparent
-
-            # Object 4
-            if (frameN % frames_per_cycle_obj4) < (frames_per_cycle_obj4 / 2):
-                obj4_t4.opacity = 1  # Opaque
-            else:
-                obj4_t4.opacity = 0  # Transparent
-
-
-            # Object 5
-            if (frameN % frames_per_cycle_obj5) < (frames_per_cycle_obj5 / 2):
-                obj5_t4.opacity = 1  # Opaque
-            else:
-                obj5_t4.opacity = 0  # Transparent
-
-            # Object 6
-            if (frameN % frames_per_cycle_obj6) < (frames_per_cycle_obj6 / 2):
-                obj6_t4.opacity = 1  # Opaque
-            else:
-                obj6_t4.opacity = 0  # Transparent
-
-            # Object 7
-            if (frameN % frames_per_cycle_obj7) < (frames_per_cycle_obj7 / 2):
-                obj7_t4.opacity = 1  # Opaque
-            else:
-                obj7_t4.opacity = 0  # Transparent
-
-            # Object 8
-            if (frameN % frames_per_cycle_obj8) < (frames_per_cycle_obj8 / 2):
-                obj8_t4.opacity = 1  # Opaque
-            else:
-                obj8_t4.opacity = 0  # Transparent
+        for thisRepetition_4 in repetition_4:
+            currentLoop = repetition_4
+            thisExp.timestampOnFlip(win, 'thisRow.t')
+            # pause experiment here if requested
+            if thisExp.status == PAUSED:
+                pauseExperiment(
+                    thisExp=thisExp, 
+                    inputs=inputs, 
+                    win=win, 
+                    timers=[routineTimer], 
+                    playbackComponents=[]
+            )
+            # abbreviate parameter names if possible (e.g. rgb = thisRepetition_4.rgb)
+            if thisRepetition_4 != None:
+                for paramName in thisRepetition_4:
+                    globals()[paramName] = thisRepetition_4[paramName]
             
-            # Object 9
-            if (frameN % frames_per_cycle_obj9) < (frames_per_cycle_obj9 / 2):
-                obj9_t4.opacity = 1  # Opaque
-            else:
-                obj9_t4.opacity = 0  # Transparent
-            #---------------------
-            # *obj1_t4* updates
+            # --- Prepare to start Routine "test_4" ---
+            continueRoutine = True
+            # update component parameters for each repeat
+            thisExp.addData('test_4.started', globalClock.getTime())
+            sound_1.setSound('A', secs=1.0, hamming=True)
+            sound_1.setVolume(1.0, log=False)
+            sound_1.seek(0)
+            # keep track of which components have finished
+            test_4Components = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4, obj6_t4, obj7_t4, obj8_t4, obj9_t4, sound_1, test_4_mess]
+            for thisComponent in test_4Components:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
+                if hasattr(thisComponent, 'status'):
+                    thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            frameN = -1
             
-            # if obj1_t4 is starting this frame...
-            if obj1_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj1_t4.frameNStart = frameN  # exact frame index
-                obj1_t4.tStart = t  # local t and not account for scr refresh
-                obj1_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj1_t4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj1_t4.started')
-                # update status
-                obj1_t4.status = STARTED
-                obj1_t4.setAutoDraw(True)
-            
-            # if obj1_t4 is active this frame...
-            if obj1_t4.status == STARTED:
-                # update params
-                pass
-            
-            # if obj1_t4 is stopping this frame...
-            if obj1_t4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj1_t4.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj1_t4.tStop = t  # not accounting for scr refresh
-                    obj1_t4.frameNStop = frameN  # exact frame index
+            # --- Run Routine "test_4" ---
+            routineForceEnded = not continueRoutine
+            while continueRoutine and routineTimer.getTime() < 5.0:
+                # get current time
+                t = routineTimer.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                # update/draw components on each frame
+
+                # Frequencies for each object
+                freq_obj1 = 10  # 10Hz flicker
+                freq_obj2 = 5   # 5Hz flicker
+                freq_obj3 = 2   # 2Hz flicker
+                freq_obj4 = 15   # 15Hz flicker
+                freq_obj5 = 8   # 8Hz flicker
+                freq_obj6 = 12   # 12Hz flicker
+                freq_obj7 = 20   # 20Hz flicker
+                freq_obj8 = 25   # 25Hz flicker
+                freq_obj9 = 25   # 25Hz flicker
+
+                # Frames per cycle for each object (full cycle = one on and one off phase)
+                frames_per_cycle_obj1 = 60 // freq_obj1
+                frames_per_cycle_obj2 = 60 // freq_obj2
+                frames_per_cycle_obj3 = 60 // freq_obj3
+                frames_per_cycle_obj4 = 60 // freq_obj4
+
+                frames_per_cycle_obj5 = 60 // freq_obj5
+                frames_per_cycle_obj6 = 60 // freq_obj6
+                frames_per_cycle_obj7 = 60 // freq_obj7
+                frames_per_cycle_obj8 = 60 // freq_obj8
+                frames_per_cycle_obj9 = 60 // freq_obj9
+                # Update opacities based on current frame number for each stimulus
+                # Object 1
+                if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
+                    obj1_t4.opacity = 1  # Opaque
+                else:
+                    obj1_t4.opacity = 0  # Transparent
+
+                # Object 2
+                if (frameN % frames_per_cycle_obj2) < (frames_per_cycle_obj2 / 2):
+                    obj2_t4.opacity = 1  # Opaque
+                else:
+                    obj2_t4.opacity = 0  # Transparent
+
+                # Object 3
+                if (frameN % frames_per_cycle_obj3) < (frames_per_cycle_obj3 / 2):
+                    obj3_t4.opacity = 1  # Opaque
+                else:
+                    obj3_t4.opacity = 0  # Transparent
+
+                # Object 4
+                if (frameN % frames_per_cycle_obj4) < (frames_per_cycle_obj4 / 2):
+                    obj4_t4.opacity = 1  # Opaque
+                else:
+                    obj4_t4.opacity = 0  # Transparent
+
+
+                # Object 5
+                if (frameN % frames_per_cycle_obj5) < (frames_per_cycle_obj5 / 2):
+                    obj5_t4.opacity = 1  # Opaque
+                else:
+                    obj5_t4.opacity = 0  # Transparent
+
+                # Object 6
+                if (frameN % frames_per_cycle_obj6) < (frames_per_cycle_obj6 / 2):
+                    obj6_t4.opacity = 1  # Opaque
+                else:
+                    obj6_t4.opacity = 0  # Transparent
+
+                # Object 7
+                if (frameN % frames_per_cycle_obj7) < (frames_per_cycle_obj7 / 2):
+                    obj7_t4.opacity = 1  # Opaque
+                else:
+                    obj7_t4.opacity = 0  # Transparent
+
+                # Object 8
+                if (frameN % frames_per_cycle_obj8) < (frames_per_cycle_obj8 / 2):
+                    obj8_t4.opacity = 1  # Opaque
+                else:
+                    obj8_t4.opacity = 0  # Transparent
+                
+                # Object 9
+                if (frameN % frames_per_cycle_obj9) < (frames_per_cycle_obj9 / 2):
+                    obj9_t4.opacity = 1  # Opaque
+                else:
+                    obj9_t4.opacity = 0  # Transparent
+                
+                # *obj1_t4* updates
+                
+                # if obj1_t4 is starting this frame...
+                if obj1_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj1_t4.frameNStart = frameN  # exact frame index
+                    obj1_t4.tStart = t  # local t and not account for scr refresh
+                    obj1_t4.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj1_t4, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj1_t4.stopped')
+                    thisExp.timestampOnFlip(win, 'obj1_t4.started')
                     # update status
-                    obj1_t4.status = FINISHED
-                    obj1_t4.setAutoDraw(False)
-            
-            # *obj2_t4* updates
-            
-            # if obj2_t4 is starting this frame...
-            if obj2_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj2_t4.frameNStart = frameN  # exact frame index
-                obj2_t4.tStart = t  # local t and not account for scr refresh
-                obj2_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj2_t4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj2_t4.started')
-                # update status
-                obj2_t4.status = STARTED
-                obj2_t4.setAutoDraw(True)
-            
-            # if obj2_t4 is active this frame...
-            if obj2_t4.status == STARTED:
-                # update params
-                pass
-            
-            # if obj2_t4 is stopping this frame...
-            if obj2_t4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj2_t4.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj2_t4.tStop = t  # not accounting for scr refresh
-                    obj2_t4.frameNStop = frameN  # exact frame index
+                    obj1_t4.status = STARTED
+                    obj1_t4.setAutoDraw(True)
+                
+                # if obj1_t4 is active this frame...
+                if obj1_t4.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj1_t4 is stopping this frame...
+                if obj1_t4.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj1_t4.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj1_t4.tStop = t  # not accounting for scr refresh
+                        obj1_t4.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj1_t4.stopped')
+                        # update status
+                        obj1_t4.status = FINISHED
+                        obj1_t4.setAutoDraw(False)
+                
+                # *obj2_t4* updates
+                
+                # if obj2_t4 is starting this frame...
+                if obj2_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj2_t4.frameNStart = frameN  # exact frame index
+                    obj2_t4.tStart = t  # local t and not account for scr refresh
+                    obj2_t4.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj2_t4, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj2_t4.stopped')
+                    thisExp.timestampOnFlip(win, 'obj2_t4.started')
                     # update status
-                    obj2_t4.status = FINISHED
-                    obj2_t4.setAutoDraw(False)
-            
-            # *obj3_t4* updates
-            
-            # if obj3_t4 is starting this frame...
-            if obj3_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj3_t4.frameNStart = frameN  # exact frame index
-                obj3_t4.tStart = t  # local t and not account for scr refresh
-                obj3_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj3_t4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj3_t4.started')
-                # update status
-                obj3_t4.status = STARTED
-                obj3_t4.setAutoDraw(True)
-            
-            # if obj3_t4 is active this frame...
-            if obj3_t4.status == STARTED:
-                # update params
-                pass
-            
-            # if obj3_t4 is stopping this frame...
-            if obj3_t4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj3_t4.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj3_t4.tStop = t  # not accounting for scr refresh
-                    obj3_t4.frameNStop = frameN  # exact frame index
+                    obj2_t4.status = STARTED
+                    obj2_t4.setAutoDraw(True)
+                
+                # if obj2_t4 is active this frame...
+                if obj2_t4.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj2_t4 is stopping this frame...
+                if obj2_t4.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj2_t4.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj2_t4.tStop = t  # not accounting for scr refresh
+                        obj2_t4.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj2_t4.stopped')
+                        # update status
+                        obj2_t4.status = FINISHED
+                        obj2_t4.setAutoDraw(False)
+                
+                # *obj3_t4* updates
+                
+                # if obj3_t4 is starting this frame...
+                if obj3_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj3_t4.frameNStart = frameN  # exact frame index
+                    obj3_t4.tStart = t  # local t and not account for scr refresh
+                    obj3_t4.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj3_t4, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj3_t4.stopped')
+                    thisExp.timestampOnFlip(win, 'obj3_t4.started')
                     # update status
-                    obj3_t4.status = FINISHED
-                    obj3_t4.setAutoDraw(False)
-            
-            # *obj4_t4* updates
-            
-            # if obj4_t4 is starting this frame...
-            if obj4_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj4_t4.frameNStart = frameN  # exact frame index
-                obj4_t4.tStart = t  # local t and not account for scr refresh
-                obj4_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj4_t4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj4_t4.started')
-                # update status
-                obj4_t4.status = STARTED
-                obj4_t4.setAutoDraw(True)
-            
-            # if obj4_t4 is active this frame...
-            if obj4_t4.status == STARTED:
-                # update params
-                pass
-            
-            # if obj4_t4 is stopping this frame...
-            if obj4_t4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj4_t4.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj4_t4.tStop = t  # not accounting for scr refresh
-                    obj4_t4.frameNStop = frameN  # exact frame index
+                    obj3_t4.status = STARTED
+                    obj3_t4.setAutoDraw(True)
+                
+                # if obj3_t4 is active this frame...
+                if obj3_t4.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj3_t4 is stopping this frame...
+                if obj3_t4.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj3_t4.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj3_t4.tStop = t  # not accounting for scr refresh
+                        obj3_t4.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj3_t4.stopped')
+                        # update status
+                        obj3_t4.status = FINISHED
+                        obj3_t4.setAutoDraw(False)
+                
+                # *obj4_t4* updates
+                
+                # if obj4_t4 is starting this frame...
+                if obj4_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj4_t4.frameNStart = frameN  # exact frame index
+                    obj4_t4.tStart = t  # local t and not account for scr refresh
+                    obj4_t4.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj4_t4, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj4_t4.stopped')
+                    thisExp.timestampOnFlip(win, 'obj4_t4.started')
                     # update status
-                    obj4_t4.status = FINISHED
-                    obj4_t4.setAutoDraw(False)
-            
-            # *obj5_t4* updates
-            
-            # if obj5_t4 is starting this frame...
-            if obj5_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj5_t4.frameNStart = frameN  # exact frame index
-                obj5_t4.tStart = t  # local t and not account for scr refresh
-                obj5_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj5_t4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj5_t4.started')
-                # update status
-                obj5_t4.status = STARTED
-                obj5_t4.setAutoDraw(True)
-            
-            # if obj5_t4 is active this frame...
-            if obj5_t4.status == STARTED:
-                # update params
-                pass
-            
-            # if obj5_t4 is stopping this frame...
-            if obj5_t4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj5_t4.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj5_t4.tStop = t  # not accounting for scr refresh
-                    obj5_t4.frameNStop = frameN  # exact frame index
+                    obj4_t4.status = STARTED
+                    obj4_t4.setAutoDraw(True)
+                
+                # if obj4_t4 is active this frame...
+                if obj4_t4.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj4_t4 is stopping this frame...
+                if obj4_t4.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj4_t4.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj4_t4.tStop = t  # not accounting for scr refresh
+                        obj4_t4.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj4_t4.stopped')
+                        # update status
+                        obj4_t4.status = FINISHED
+                        obj4_t4.setAutoDraw(False)
+                
+                # *obj5_t4* updates
+                
+                # if obj5_t4 is starting this frame...
+                if obj5_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj5_t4.frameNStart = frameN  # exact frame index
+                    obj5_t4.tStart = t  # local t and not account for scr refresh
+                    obj5_t4.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj5_t4, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj5_t4.stopped')
+                    thisExp.timestampOnFlip(win, 'obj5_t4.started')
                     # update status
-                    obj5_t4.status = FINISHED
-                    obj5_t4.setAutoDraw(False)
-            
-            # *obj6_t4* updates
-            
-            # if obj6_t4 is starting this frame...
-            if obj6_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj6_t4.frameNStart = frameN  # exact frame index
-                obj6_t4.tStart = t  # local t and not account for scr refresh
-                obj6_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj6_t4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj6_t4.started')
-                # update status
-                obj6_t4.status = STARTED
-                obj6_t4.setAutoDraw(True)
-            
-            # if obj6_t4 is active this frame...
-            if obj6_t4.status == STARTED:
-                # update params
-                pass
-            
-            # if obj6_t4 is stopping this frame...
-            if obj6_t4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj6_t4.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj6_t4.tStop = t  # not accounting for scr refresh
-                    obj6_t4.frameNStop = frameN  # exact frame index
+                    obj5_t4.status = STARTED
+                    obj5_t4.setAutoDraw(True)
+                
+                # if obj5_t4 is active this frame...
+                if obj5_t4.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj5_t4 is stopping this frame...
+                if obj5_t4.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj5_t4.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj5_t4.tStop = t  # not accounting for scr refresh
+                        obj5_t4.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj5_t4.stopped')
+                        # update status
+                        obj5_t4.status = FINISHED
+                        obj5_t4.setAutoDraw(False)
+                
+                # *obj6_t4* updates
+                
+                # if obj6_t4 is starting this frame...
+                if obj6_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj6_t4.frameNStart = frameN  # exact frame index
+                    obj6_t4.tStart = t  # local t and not account for scr refresh
+                    obj6_t4.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj6_t4, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj6_t4.stopped')
+                    thisExp.timestampOnFlip(win, 'obj6_t4.started')
                     # update status
-                    obj6_t4.status = FINISHED
-                    obj6_t4.setAutoDraw(False)
-            
-            # *obj7_t4* updates
-            
-            # if obj7_t4 is starting this frame...
-            if obj7_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj7_t4.frameNStart = frameN  # exact frame index
-                obj7_t4.tStart = t  # local t and not account for scr refresh
-                obj7_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj7_t4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj7_t4.started')
-                # update status
-                obj7_t4.status = STARTED
-                obj7_t4.setAutoDraw(True)
-            
-            # if obj7_t4 is active this frame...
-            if obj7_t4.status == STARTED:
-                # update params
-                pass
-            
-            # if obj7_t4 is stopping this frame...
-            if obj7_t4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj7_t4.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj7_t4.tStop = t  # not accounting for scr refresh
-                    obj7_t4.frameNStop = frameN  # exact frame index
+                    obj6_t4.status = STARTED
+                    obj6_t4.setAutoDraw(True)
+                
+                # if obj6_t4 is active this frame...
+                if obj6_t4.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj6_t4 is stopping this frame...
+                if obj6_t4.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj6_t4.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj6_t4.tStop = t  # not accounting for scr refresh
+                        obj6_t4.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj6_t4.stopped')
+                        # update status
+                        obj6_t4.status = FINISHED
+                        obj6_t4.setAutoDraw(False)
+                
+                # *obj7_t4* updates
+                
+                # if obj7_t4 is starting this frame...
+                if obj7_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj7_t4.frameNStart = frameN  # exact frame index
+                    obj7_t4.tStart = t  # local t and not account for scr refresh
+                    obj7_t4.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj7_t4, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj7_t4.stopped')
+                    thisExp.timestampOnFlip(win, 'obj7_t4.started')
                     # update status
-                    obj7_t4.status = FINISHED
-                    obj7_t4.setAutoDraw(False)
-            
-            # *obj8_t4* updates
-            
-            # if obj8_t4 is starting this frame...
-            if obj8_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj8_t4.frameNStart = frameN  # exact frame index
-                obj8_t4.tStart = t  # local t and not account for scr refresh
-                obj8_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj8_t4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj8_t4.started')
-                # update status
-                obj8_t4.status = STARTED
-                obj8_t4.setAutoDraw(True)
-            
-            # if obj8_t4 is active this frame...
-            if obj8_t4.status == STARTED:
-                # update params
-                pass
-            
-            # if obj8_t4 is stopping this frame...
-            if obj8_t4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj8_t4.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj8_t4.tStop = t  # not accounting for scr refresh
-                    obj8_t4.frameNStop = frameN  # exact frame index
+                    obj7_t4.status = STARTED
+                    obj7_t4.setAutoDraw(True)
+                
+                # if obj7_t4 is active this frame...
+                if obj7_t4.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj7_t4 is stopping this frame...
+                if obj7_t4.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj7_t4.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj7_t4.tStop = t  # not accounting for scr refresh
+                        obj7_t4.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj7_t4.stopped')
+                        # update status
+                        obj7_t4.status = FINISHED
+                        obj7_t4.setAutoDraw(False)
+                
+                # *obj8_t4* updates
+                
+                # if obj8_t4 is starting this frame...
+                if obj8_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj8_t4.frameNStart = frameN  # exact frame index
+                    obj8_t4.tStart = t  # local t and not account for scr refresh
+                    obj8_t4.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj8_t4, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj8_t4.stopped')
+                    thisExp.timestampOnFlip(win, 'obj8_t4.started')
                     # update status
-                    obj8_t4.status = FINISHED
-                    obj8_t4.setAutoDraw(False)
-            
-            # *obj9_t4* updates
-            
-            # if obj9_t4 is starting this frame...
-            if obj9_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                obj9_t4.frameNStart = frameN  # exact frame index
-                obj9_t4.tStart = t  # local t and not account for scr refresh
-                obj9_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(obj9_t4, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'obj9_t4.started')
-                # update status
-                obj9_t4.status = STARTED
-                obj9_t4.setAutoDraw(True)
-            
-            # if obj9_t4 is active this frame...
-            if obj9_t4.status == STARTED:
-                # update params
-                pass
-            
-            # if obj9_t4 is stopping this frame...
-            if obj9_t4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > obj9_t4.tStartRefresh + 5-frameTolerance:
-                    # keep track of stop time/frame for later
-                    obj9_t4.tStop = t  # not accounting for scr refresh
-                    obj9_t4.frameNStop = frameN  # exact frame index
+                    obj8_t4.status = STARTED
+                    obj8_t4.setAutoDraw(True)
+                
+                # if obj8_t4 is active this frame...
+                if obj8_t4.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj8_t4 is stopping this frame...
+                if obj8_t4.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj8_t4.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj8_t4.tStop = t  # not accounting for scr refresh
+                        obj8_t4.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj8_t4.stopped')
+                        # update status
+                        obj8_t4.status = FINISHED
+                        obj8_t4.setAutoDraw(False)
+                
+                # *obj9_t4* updates
+                
+                # if obj9_t4 is starting this frame...
+                if obj9_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    obj9_t4.frameNStart = frameN  # exact frame index
+                    obj9_t4.tStart = t  # local t and not account for scr refresh
+                    obj9_t4.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(obj9_t4, 'tStartRefresh')  # time at next scr refresh
                     # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'obj9_t4.stopped')
+                    thisExp.timestampOnFlip(win, 'obj9_t4.started')
                     # update status
-                    obj9_t4.status = FINISHED
-                    obj9_t4.setAutoDraw(False)
+                    obj9_t4.status = STARTED
+                    obj9_t4.setAutoDraw(True)
+                
+                # if obj9_t4 is active this frame...
+                if obj9_t4.status == STARTED:
+                    # update params
+                    pass
+                
+                # if obj9_t4 is stopping this frame...
+                if obj9_t4.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > obj9_t4.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        obj9_t4.tStop = t  # not accounting for scr refresh
+                        obj9_t4.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'obj9_t4.stopped')
+                        # update status
+                        obj9_t4.status = FINISHED
+                        obj9_t4.setAutoDraw(False)
+                
+                # if sound_1 is starting this frame...
+                if sound_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    sound_1.frameNStart = frameN  # exact frame index
+                    sound_1.tStart = t  # local t and not account for scr refresh
+                    sound_1.tStartRefresh = tThisFlipGlobal  # on global time
+                    # add timestamp to datafile
+                    thisExp.addData('sound_1.started', tThisFlipGlobal)
+                    # update status
+                    sound_1.status = STARTED
+                    sound_1.play(when=win)  # sync with win flip
+                
+                # if sound_1 is stopping this frame...
+                if sound_1.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > sound_1.tStartRefresh + 1.0-frameTolerance:
+                        # keep track of stop time/frame for later
+                        sound_1.tStop = t  # not accounting for scr refresh
+                        sound_1.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'sound_1.stopped')
+                        # update status
+                        sound_1.status = FINISHED
+                        sound_1.stop()
+                # update sound_1 status according to whether it's playing
+                if sound_1.isPlaying:
+                    sound_1.status = STARTED
+                elif sound_1.isFinished:
+                    sound_1.status = FINISHED
+                
+                # *test_4_mess* updates
+                
+                # if test_4_mess is starting this frame...
+                if test_4_mess.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    test_4_mess.frameNStart = frameN  # exact frame index
+                    test_4_mess.tStart = t  # local t and not account for scr refresh
+                    test_4_mess.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(test_4_mess, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'test_4_mess.started')
+                    # update status
+                    test_4_mess.status = STARTED
+                    test_4_mess.setAutoDraw(True)
+                
+                # if test_4_mess is active this frame...
+                if test_4_mess.status == STARTED:
+                    # update params
+                    pass
+                
+                # if test_4_mess is stopping this frame...
+                if test_4_mess.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > test_4_mess.tStartRefresh + 5-frameTolerance:
+                        # keep track of stop time/frame for later
+                        test_4_mess.tStop = t  # not accounting for scr refresh
+                        test_4_mess.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'test_4_mess.stopped')
+                        # update status
+                        test_4_mess.status = FINISHED
+                        test_4_mess.setAutoDraw(False)
+                
+                # check for quit (typically the Esc key)
+                if defaultKeyboard.getKeys(keyList=["escape"]):
+                    thisExp.status = FINISHED
+                if thisExp.status == FINISHED or endExpNow:
+                    endExperiment(thisExp, inputs=inputs, win=win)
+                    return
+                
+                # check if all components have finished
+                if not continueRoutine:  # a component has requested a forced-end of Routine
+                    routineForceEnded = True
+                    break
+                continueRoutine = False  # will revert to True if at least one component still running
+                for thisComponent in test_4Components:
+                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                        continueRoutine = True
+                        break  # at least one component has not yet finished
+                
+                # refresh the screen
+                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                    win.flip()
             
-            # check for quit (typically the Esc key)
-            if defaultKeyboard.getKeys(keyList=["escape"]):
-                thisExp.status = FINISHED
-            if thisExp.status == FINISHED or endExpNow:
-                endExperiment(thisExp, inputs=inputs, win=win)
-                return
+            # --- Ending Routine "test_4" ---
+            for thisComponent in test_4Components:
+                if hasattr(thisComponent, "setAutoDraw"):
+                    thisComponent.setAutoDraw(False)
+            thisExp.addData('test_4.stopped', globalClock.getTime())
+            sound_1.pause()  # ensure sound has stopped at end of Routine
+            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+            if routineForceEnded:
+                routineTimer.reset()
+            else:
+                routineTimer.addTime(-5.000000)
             
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                routineForceEnded = True
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in Test_4Components:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
+            # --- Prepare to start Routine "blank1s" ---
+            continueRoutine = True
+            # update component parameters for each repeat
+            thisExp.addData('blank1s.started', globalClock.getTime())
+            # keep track of which components have finished
+            blank1sComponents = [blank_screen]
+            for thisComponent in blank1sComponents:
+                thisComponent.tStart = None
+                thisComponent.tStop = None
+                thisComponent.tStartRefresh = None
+                thisComponent.tStopRefresh = None
+                if hasattr(thisComponent, 'status'):
+                    thisComponent.status = NOT_STARTED
+            # reset timers
+            t = 0
+            _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+            frameN = -1
             
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
+            # --- Run Routine "blank1s" ---
+            routineForceEnded = not continueRoutine
+            while continueRoutine and routineTimer.getTime() < 1.0:
+                # get current time
+                t = routineTimer.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+                tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+                frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+                # update/draw components on each frame
+                # is it time to end the Routine? (based on local clock)
+                if tThisFlip > 1-frameTolerance:
+                    continueRoutine = False
+                
+                # *blank_screen* updates
+                
+                # if blank_screen is starting this frame...
+                if blank_screen.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # keep track of start time/frame for later
+                    blank_screen.frameNStart = frameN  # exact frame index
+                    blank_screen.tStart = t  # local t and not account for scr refresh
+                    blank_screen.tStartRefresh = tThisFlipGlobal  # on global time
+                    win.timeOnFlip(blank_screen, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'blank_screen.started')
+                    # update status
+                    blank_screen.status = STARTED
+                    blank_screen.setAutoDraw(True)
+                
+                # if blank_screen is active this frame...
+                if blank_screen.status == STARTED:
+                    # update params
+                    pass
+                
+                # if blank_screen is stopping this frame...
+                if blank_screen.status == STARTED:
+                    # is it time to stop? (based on global clock, using actual start)
+                    if tThisFlipGlobal > blank_screen.tStartRefresh + 1.0-frameTolerance:
+                        # keep track of stop time/frame for later
+                        blank_screen.tStop = t  # not accounting for scr refresh
+                        blank_screen.frameNStop = frameN  # exact frame index
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'blank_screen.stopped')
+                        # update status
+                        blank_screen.status = FINISHED
+                        blank_screen.setAutoDraw(False)
+                
+                # check for quit (typically the Esc key)
+                if defaultKeyboard.getKeys(keyList=["escape"]):
+                    thisExp.status = FINISHED
+                if thisExp.status == FINISHED or endExpNow:
+                    endExperiment(thisExp, inputs=inputs, win=win)
+                    return
+                
+                # check if all components have finished
+                if not continueRoutine:  # a component has requested a forced-end of Routine
+                    routineForceEnded = True
+                    break
+                continueRoutine = False  # will revert to True if at least one component still running
+                for thisComponent in blank1sComponents:
+                    if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                        continueRoutine = True
+                        break  # at least one component has not yet finished
+                
+                # refresh the screen
+                if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                    win.flip()
+            
+            # --- Ending Routine "blank1s" ---
+            for thisComponent in blank1sComponents:
+                if hasattr(thisComponent, "setAutoDraw"):
+                    thisComponent.setAutoDraw(False)
+            thisExp.addData('blank1s.stopped', globalClock.getTime())
+            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+            if routineForceEnded:
+                routineTimer.reset()
+            else:
+                routineTimer.addTime(-1.000000)
+            thisExp.nextEntry()
+            
+            if thisSession is not None:
+                # if running in a Session with a Liaison client, send data up to now
+                thisSession.sendExperimentData()
+        # completed 5.0 repeats of 'repetition_4'
         
-        # --- Ending Routine "Test_4" ---
-        for thisComponent in Test_4Components:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        thisExp.addData('Test_4.stopped', globalClock.getTime())
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if routineForceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-5.000000)
         thisExp.nextEntry()
         
         if thisSession is not None:
@@ -1788,6 +2443,63 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             thisSession.sendExperimentData()
     # completed 10.0 repeats of 'trials_4'
     
+    
+    # --- Prepare to start Routine "GoodBye" ---
+    continueRoutine = True
+    # update component parameters for each repeat
+    thisExp.addData('GoodBye.started', globalClock.getTime())
+    # keep track of which components have finished
+    GoodByeComponents = []
+    for thisComponent in GoodByeComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "GoodBye" ---
+    routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, inputs=inputs, win=win)
+            return
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in GoodByeComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "GoodBye" ---
+    for thisComponent in GoodByeComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    thisExp.addData('GoodBye.stopped', globalClock.getTime())
+    # the Routine "GoodBye" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # mark experiment as finished
     endExperiment(thisExp, win=win, inputs=inputs)
@@ -1866,7 +2578,7 @@ def quit(thisExp, win=None, inputs=None, thisSession=None):
     logging.flush()
     if thisSession is not None:
         thisSession.stop()
-    # terminate Python process\
+    # terminate Python process
     core.quit()
 
 
@@ -1885,5 +2597,4 @@ if __name__ == '__main__':
         inputs=inputs
     )
     saveData(thisExp=thisExp)
-    quit(thisExp=thisExp, win=win, inputs=inputs)
     quit(thisExp=thisExp, win=win, inputs=inputs)
