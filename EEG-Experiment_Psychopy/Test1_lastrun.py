@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on March 06, 2024, at 18:14
+    on March 06, 2024, at 22:39
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -488,16 +488,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         ori=0.0, pos=(0, -0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-8.0, interpolate=True)
-    sound_1 = sound.Sound('A', secs=1.0, stereo=True, hamming=True,
-        name='sound_1')
-    sound_1.setVolume(1.0)
     test_4_mess = visual.TextStim(win=win, name='test_4_mess',
         text='Focus on the black square',
         font='Open Sans',
         pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=-10.0);
+        depth=-9.0);
     
     # --- Initialize components for Routine "blank1s" ---
     blank_screen = visual.TextStim(win=win, name='blank_screen',
@@ -1756,11 +1753,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             continueRoutine = True
             # update component parameters for each repeat
             thisExp.addData('test_4.started', globalClock.getTime())
-            sound_1.setSound('A', secs=1.0, hamming=True)
-            sound_1.setVolume(1.0, log=False)
-            sound_1.seek(0)
             # keep track of which components have finished
-            test_4Components = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4, obj6_t4, obj7_t4, obj8_t4, obj9_t4, sound_1, test_4_mess]
+            test_4Components = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4, obj6_t4, obj7_t4, obj8_t4, obj9_t4, test_4_mess]
             for thisComponent in test_4Components:
                 thisComponent.tStart = None
                 thisComponent.tStop = None
@@ -2080,36 +2074,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         obj9_t4.status = FINISHED
                         obj9_t4.setAutoDraw(False)
                 
-                # if sound_1 is starting this frame...
-                if sound_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                    # keep track of start time/frame for later
-                    sound_1.frameNStart = frameN  # exact frame index
-                    sound_1.tStart = t  # local t and not account for scr refresh
-                    sound_1.tStartRefresh = tThisFlipGlobal  # on global time
-                    # add timestamp to datafile
-                    thisExp.addData('sound_1.started', tThisFlipGlobal)
-                    # update status
-                    sound_1.status = STARTED
-                    sound_1.play(when=win)  # sync with win flip
-                
-                # if sound_1 is stopping this frame...
-                if sound_1.status == STARTED:
-                    # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > sound_1.tStartRefresh + 1.0-frameTolerance:
-                        # keep track of stop time/frame for later
-                        sound_1.tStop = t  # not accounting for scr refresh
-                        sound_1.frameNStop = frameN  # exact frame index
-                        # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'sound_1.stopped')
-                        # update status
-                        sound_1.status = FINISHED
-                        sound_1.stop()
-                # update sound_1 status according to whether it's playing
-                if sound_1.isPlaying:
-                    sound_1.status = STARTED
-                elif sound_1.isFinished:
-                    sound_1.status = FINISHED
-                
                 # *test_4_mess* updates
                 
                 # if test_4_mess is starting this frame...
@@ -2169,7 +2133,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('test_4.stopped', globalClock.getTime())
-            sound_1.pause()  # ensure sound has stopped at end of Routine
             # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
             if routineForceEnded:
                 routineTimer.reset()
