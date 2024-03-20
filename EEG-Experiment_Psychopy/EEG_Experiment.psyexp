@@ -214,7 +214,7 @@
         <Param val="obj1_t2" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0.25, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(-0.25, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -241,7 +241,7 @@
         <Param val="obj2_t2" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(-0.25, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -268,7 +268,7 @@
         <Param val="obj3_t2" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0.25, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -312,9 +312,9 @@
         <Param val="trial_num = 0" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="# Frequencies for each object&amp;#10;freq_obj1 = 10  # 10Hz flicker&amp;#10;freq_obj2 = 5   # 5Hz flicker&amp;#10;freq_obj3 = 2   # 2Hz flicker&amp;#10;&amp;#10;# Frames per cycle for each object (full cycle = one on and one off phase)&amp;#10;frames_per_cycle_obj1 = 60 // freq_obj1&amp;#10;frames_per_cycle_obj2 = 60 // freq_obj2&amp;#10;frames_per_cycle_obj3 = 60 // freq_obj3&amp;#10;&amp;#10;if trial_num == 1:&amp;#10;    obj1_t2.color = 'white'&amp;#10;    obj2_t2.color = 'black'&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="# Frequencies for each object&amp;#10;freq_trial_1 = [10, 5, 2]&amp;#10;               &amp;#10;# Frequencies for each object&amp;#10;objects = [obj1_t2, obj2_t2, obj3_t2]&amp;#10;&amp;#10;if trial_num == 1:&amp;#10;    obj1_t2.color = 'white'&amp;#10;    obj2_t2.color = 'black'&amp;#10;    &amp;#10; &amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
-        <Param val="# Update opacities based on current frame number for each stimulus&amp;#10;# Object 1&amp;#10;if (frameN % frames_per_cycle_obj1) &lt; (frames_per_cycle_obj1 / 2):&amp;#10;    obj1_t2.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj1_t2.opacity = 0  # Transparent&amp;#10;&amp;#10;# Object 2&amp;#10;if (frameN % frames_per_cycle_obj2) &lt; (frames_per_cycle_obj2 / 2):&amp;#10;    obj2_t2.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj2_t2.opacity = 0  # Transparent&amp;#10;&amp;#10;# Object 3&amp;#10;if (frameN % frames_per_cycle_obj3) &lt; (frames_per_cycle_obj3 / 2):&amp;#10;    obj3_t2.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj3_t2.opacity = 0  # Transparent" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="# Update opacities based on current frame number for each stimulus&amp;#10;i = 0&amp;#10;for freq in freq_trial_1:&amp;#10;    frames_per_cycle = 60 // freq&amp;#10;    objects[i].opacity = ((frameN % frames_per_cycle) &lt; (frames_per_cycle / 2))&amp;#10;    i = i + 1" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
@@ -375,7 +375,7 @@
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
       <PolygonComponent name="obj1_t1" plugin="None">
-        <Param val="top-right" valType="str" updates="constant" name="anchor"/>
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
@@ -432,9 +432,9 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="# Frequencies for each object&amp;#10;freq_obj1 = 10  # 10Hz flicker&amp;#10;&amp;#10;# Frames per cycle for each object (full cycle = one on and one off phase)&amp;#10;frames_per_cycle_obj1 = 60 // freq_obj1&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="# Frequencies for each object&amp;#10;freq_obj1 = 15&amp;#10;&amp;#10;# Frames per cycle for each object (full cycle = one on and one off phase)&amp;#10;frames_per_cycle_obj1 = 60 // freq_obj1&amp;#10;" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
-        <Param val="# Update opacities based on current frame number for each stimulus&amp;#10;# Object 1&amp;#10;if (frameN % frames_per_cycle_obj1) &lt; (frames_per_cycle_obj1 / 2):&amp;#10;    obj1_t1.opacity = 1  # Opaque&amp;#10;else:&amp;#10; obj1_t1.opacity = 0  # Transparent" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="# Update opacities based on current frame number for each stimulus&amp;#10;# Object 1&amp;#10;obj1_t1.opacity = ((frameN % frames_per_cycle_obj1) &lt; (frames_per_cycle_obj1 / 2))&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
@@ -474,7 +474,7 @@
         <Param val="obj1_t3" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0.25, 0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="(-0.25, 0.25)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -501,7 +501,7 @@
         <Param val="obj2_t3" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(-0.25, 0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0.25, 0.25)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -528,7 +528,7 @@
         <Param val="obj3_t3" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0.25, -0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="(-0.25, -0.25)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -555,7 +555,7 @@
         <Param val="obj4_t3" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(-0.25, -0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0.25, -0.25)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -599,7 +599,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="# Frequencies for each object&amp;#10;freq_trial_1 = [10, 5,&amp;#10;               2, 15,]&amp;#10;               &amp;#10;# Frequencies for each object&amp;#10;objects = [obj1_t3, obj2_t3, obj3_t3, obj4_t3]&amp;#10;&amp;#10;if trial_num == 3:&amp;#10;    obj1_t3.color = 'white'&amp;#10;    obj2_t3.color = 'black'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="# Frequencies for each object&amp;#10;freq_trial_1 = [10, 5,&amp;#10;               2, 15]&amp;#10;               &amp;#10;# Frequencies for each object&amp;#10;objects = [obj1_t3, obj2_t3, obj3_t3, obj4_t3]&amp;#10;&amp;#10;if trial_num == 3:&amp;#10;    obj1_t3.color = 'white'&amp;#10;    obj2_t3.color = 'black'" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="i = 0&amp;#10;for freq in freq_trial_1:&amp;#10;    frames_per_cycle = 60 // freq&amp;#10;    objects[i].opacity = ((frameN % frames_per_cycle) &lt; (frames_per_cycle / 2))&amp;#10;    i = i + 1" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -641,7 +641,7 @@
         <Param val="obj1_t4" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(-0.25, 0.25)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -668,7 +668,7 @@
         <Param val="obj2_t4" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(-0.25, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0.25)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -695,7 +695,7 @@
         <Param val="obj3_t4" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0.25, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0.25, 0.25)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -722,7 +722,7 @@
         <Param val="obj4_t4" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(-0.25, 0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="(-0.25, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -749,7 +749,7 @@
         <Param val="obj5_t4" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0.25, 0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -776,7 +776,7 @@
         <Param val="obj6_t4" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0.25, 0)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -830,7 +830,7 @@
         <Param val="obj8_t4" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0.25, -0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0, -0.25)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -857,7 +857,7 @@
         <Param val="obj9_t4" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, -0.25)" valType="list" updates="constant" name="pos"/>
+        <Param val="(0.25, -0.25)" valType="list" updates="constant" name="pos"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
         <Param val="rectangle" valType="str" updates="None" name="shape"/>
         <Param val="(0.05, 0.05)" valType="list" updates="constant" name="size"/>
@@ -901,9 +901,9 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="# Frequencies for each object&amp;#10;freq_obj1 = 10  # 10Hz flicker&amp;#10;freq_obj2 = 5   # 5Hz flicker&amp;#10;freq_obj3 = 2   # 2Hz flicker&amp;#10;freq_obj4 = 15   # 15Hz flicker&amp;#10;freq_obj5 = 8   # 8Hz flicker&amp;#10;freq_obj6 = 12   # 12Hz flicker&amp;#10;freq_obj7 = 20   # 20Hz flicker&amp;#10;freq_obj8 = 25   # 25Hz flicker&amp;#10;freq_obj9 = 25   # 25Hz flicker&amp;#10;&amp;#10;# Frames per cycle for each object (full cycle = one on and one off phase)&amp;#10;frames_per_cycle_obj1 = 60 // freq_obj1&amp;#10;frames_per_cycle_obj2 = 60 // freq_obj2&amp;#10;frames_per_cycle_obj3 = 60 // freq_obj3&amp;#10;frames_per_cycle_obj4 = 60 // freq_obj4&amp;#10;&amp;#10;frames_per_cycle_obj5 = 60 // freq_obj5&amp;#10;frames_per_cycle_obj6 = 60 // freq_obj6&amp;#10;frames_per_cycle_obj7 = 60 // freq_obj7&amp;#10;frames_per_cycle_obj8 = 60 // freq_obj8&amp;#10;frames_per_cycle_obj9 = 60 // freq_obj9" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="# Frequencies for each object&amp;#10;freq_trial_1 = [10, 5, 2,&amp;#10;                15, 8, 12,&amp;#10;                20, 25, 30]&amp;#10;               &amp;#10;# Frequencies for each object&amp;#10;objects = [obj1_t4, obj2_t4, obj3_t4,&amp;#10;           obj4_t4, obj5_t4, obj6_t4,&amp;#10;           obj7_t4, obj8_t4, obj9_t4,]&amp;#10;&amp;#10;if trial_num == 3:&amp;#10;    obj1_t3.color = 'white'&amp;#10;    obj2_t3.color = 'black'" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
-        <Param val="# Update opacities based on current frame number for each stimulus&amp;#10;# Object 1&amp;#10;if (frameN % frames_per_cycle_obj1) &lt; (frames_per_cycle_obj1 / 2):&amp;#10;    obj1_t4.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj1_t4.opacity = 0  # Transparent&amp;#10;&amp;#10;# Object 2&amp;#10;if (frameN % frames_per_cycle_obj2) &lt; (frames_per_cycle_obj2 / 2):&amp;#10;    obj2_t4.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj2_t4.opacity = 0  # Transparent&amp;#10;&amp;#10;# Object 3&amp;#10;if (frameN % frames_per_cycle_obj3) &lt; (frames_per_cycle_obj3 / 2):&amp;#10;    obj3_t4.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj3_t4.opacity = 0  # Transparent&amp;#10;&amp;#10;# Object 4&amp;#10;if (frameN % frames_per_cycle_obj4) &lt; (frames_per_cycle_obj4 / 2):&amp;#10;    obj4_t4.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj4_t4.opacity = 0  # Transparent&amp;#10;&amp;#10;&amp;#10;# Object 5&amp;#10;if (frameN % frames_per_cycle_obj5) &lt; (frames_per_cycle_obj5 / 2):&amp;#10;    obj5_t4.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj5_t4.opacity = 0  # Transparent&amp;#10;&amp;#10;# Object 6&amp;#10;if (frameN % frames_per_cycle_obj6) &lt; (frames_per_cycle_obj6 / 2):&amp;#10;    obj6_t4.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj6_t4.opacity = 0  # Transparent&amp;#10;&amp;#10;# Object 7&amp;#10;if (frameN % frames_per_cycle_obj7) &lt; (frames_per_cycle_obj7 / 2):&amp;#10;    obj7_t4.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj7_t4.opacity = 0  # Transparent&amp;#10;&amp;#10;# Object 8&amp;#10;if (frameN % frames_per_cycle_obj8) &lt; (frames_per_cycle_obj8 / 2):&amp;#10;    obj8_t4.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj8_t4.opacity = 0  # Transparent&amp;#10;&amp;#10;# Object 9&amp;#10;if (frameN % frames_per_cycle_obj9) &lt; (frames_per_cycle_obj9 / 2):&amp;#10;    obj9_t4.opacity = 1  # Opaque&amp;#10;else:&amp;#10;    obj9_t4.opacity = 0  # Transparent" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="i = 0&amp;#10;for freq in freq_trial_1:&amp;#10;    frames_per_cycle = 60 // freq&amp;#10;    objects[i].opacity = ((frameN % frames_per_cycle) &lt; (frames_per_cycle / 2))&amp;#10;    i = i + 1" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
@@ -923,7 +923,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="nReps" updates="None" val="10" valType="num"/>
       <Param name="name" updates="None" val="trials_1" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -934,7 +934,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="2" valType="num"/>
+      <Param name="nReps" updates="None" val="10" valType="num"/>
       <Param name="name" updates="None" val="repetition_1" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -949,7 +949,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="nReps" updates="None" val="10" valType="num"/>
       <Param name="name" updates="None" val="trials_2" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -960,7 +960,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="2" valType="num"/>
+      <Param name="nReps" updates="None" val="10" valType="num"/>
       <Param name="name" updates="None" val="repetition_2" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -975,7 +975,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="nReps" updates="None" val="10" valType="num"/>
       <Param name="name" updates="None" val="trials_3" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -986,7 +986,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="random" valType="str"/>
-      <Param name="nReps" updates="None" val="2" valType="num"/>
+      <Param name="nReps" updates="None" val="10" valType="num"/>
       <Param name="name" updates="None" val="repetition_3" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -1001,7 +1001,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="1" valType="num"/>
+      <Param name="nReps" updates="None" val="10" valType="num"/>
       <Param name="name" updates="None" val="trials_4" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
@@ -1012,7 +1012,7 @@
       <Param name="endPoints" updates="None" val="[0, 1]" valType="num"/>
       <Param name="isTrials" updates="None" val="True" valType="bool"/>
       <Param name="loopType" updates="None" val="sequential" valType="str"/>
-      <Param name="nReps" updates="None" val="2" valType="num"/>
+      <Param name="nReps" updates="None" val="10" valType="num"/>
       <Param name="name" updates="None" val="repetition_4" valType="code"/>
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>

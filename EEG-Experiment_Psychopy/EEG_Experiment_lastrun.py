@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on March 20, 2024, at 10:57
+    on March 20, 2024, at 16:38
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -340,7 +340,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     obj1_t1 = visual.Rect(
         win=win, name='obj1_t1',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0,0), anchor='top-right',
+        ori=0.0, pos=(0,0), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=0.0, interpolate=True)
     test_1_mess = visual.TextStim(win=win, name='test_1_mess',
@@ -364,19 +364,19 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     obj1_t2 = visual.Rect(
         win=win, name='obj1_t2',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, 0), anchor='center',
+        ori=0.0, pos=(-0.25, 0), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor='black',
         opacity=None, depth=0.0, interpolate=True)
     obj2_t2 = visual.Rect(
         win=win, name='obj2_t2',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, 0), anchor='center',
+        ori=0.0, pos=(0, 0), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
     obj3_t2 = visual.Rect(
         win=win, name='obj3_t2',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0, 0), anchor='center',
+        ori=0.0, pos=(0.25, 0), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-2.0, interpolate=True)
     test_2_mess = visual.TextStim(win=win, name='test_2_mess',
@@ -402,25 +402,25 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     obj1_t3 = visual.Rect(
         win=win, name='obj1_t3',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, 0.25), anchor='center',
+        ori=0.0, pos=(-0.25, 0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=0.0, interpolate=True)
     obj2_t3 = visual.Rect(
         win=win, name='obj2_t3',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, 0.25), anchor='center',
+        ori=0.0, pos=(0.25, 0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
     obj3_t3 = visual.Rect(
         win=win, name='obj3_t3',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, -0.25), anchor='center',
+        ori=0.0, pos=(-0.25, -0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor='white',
         opacity=None, depth=-2.0, interpolate=True)
     obj4_t3 = visual.Rect(
         win=win, name='obj4_t3',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, -0.25), anchor='center',
+        ori=0.0, pos=(0.25, -0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor='white',
         opacity=None, depth=-3.0, interpolate=True)
     test_3_mess = visual.TextStim(win=win, name='test_3_mess',
@@ -444,37 +444,37 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     obj1_t4 = visual.Rect(
         win=win, name='obj1_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0, 0), anchor='center',
+        ori=0.0, pos=(-0.25, 0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor=[-1.0000, -1.0000, -1.0000],
         opacity=None, depth=0.0, interpolate=True)
     obj2_t4 = visual.Rect(
         win=win, name='obj2_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, 0), anchor='center',
+        ori=0.0, pos=(0, 0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-1.0, interpolate=True)
     obj3_t4 = visual.Rect(
         win=win, name='obj3_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, 0), anchor='center',
+        ori=0.0, pos=(0.25, 0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-2.0, interpolate=True)
     obj4_t4 = visual.Rect(
         win=win, name='obj4_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, 0.25), anchor='center',
+        ori=0.0, pos=(-0.25, 0), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-3.0, interpolate=True)
     obj5_t4 = visual.Rect(
         win=win, name='obj5_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, 0.25), anchor='center',
+        ori=0.0, pos=(0, 0), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-4.0, interpolate=True)
     obj6_t4 = visual.Rect(
         win=win, name='obj6_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0, 0.25), anchor='center',
+        ori=0.0, pos=(0.25, 0), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-5.0, interpolate=True)
     obj7_t4 = visual.Rect(
@@ -486,13 +486,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     obj8_t4 = visual.Rect(
         win=win, name='obj8_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, -0.25), anchor='center',
+        ori=0.0, pos=(0, -0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-7.0, interpolate=True)
     obj9_t4 = visual.Rect(
         win=win, name='obj9_t4',
         width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0, -0.25), anchor='center',
+        ori=0.0, pos=(0.25, -0.25), anchor='center',
         lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
         opacity=None, depth=-8.0, interpolate=True)
     test_4_mess = visual.TextStim(win=win, name='test_4_mess',
@@ -652,7 +652,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         routineTimer.addTime(-10.000000)
     
     # set up handler to look after randomisation of conditions etc
-    trials_1 = data.TrialHandler(nReps=1.0, method='sequential', 
+    trials_1 = data.TrialHandler(nReps=10.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_1')
@@ -681,7 +681,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_1[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_1 = data.TrialHandler(nReps=2.0, method='sequential', 
+        repetition_1 = data.TrialHandler(nReps=10.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_1')
@@ -715,7 +715,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             thisExp.addData('test_1.started', globalClock.getTime())
             # Run 'Begin Routine' code from test_1_code
             # Frequencies for each object
-            freq_obj1 = 10  # 10Hz flicker
+            freq_obj1 = 15
             
             # Frames per cycle for each object (full cycle = one on and one off phase)
             frames_per_cycle_obj1 = 60 // freq_obj1
@@ -812,10 +812,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # Run 'Each Frame' code from test_1_code
                 # Update opacities based on current frame number for each stimulus
                 # Object 1
-                if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
-                    obj1_t1.opacity = 1  # Opaque
-                else:
-                 obj1_t1.opacity = 0  # Transparent
+                obj1_t1.opacity = ((frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2))
+                
                 
                 # check for quit (typically the Esc key)
                 if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -949,18 +947,18 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 2.0 repeats of 'repetition_1'
+        # completed 10.0 repeats of 'repetition_1'
         
         thisExp.nextEntry()
         
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 1.0 repeats of 'trials_1'
+    # completed 10.0 repeats of 'trials_1'
     
     
     # set up handler to look after randomisation of conditions etc
-    trials_2 = data.TrialHandler(nReps=1.0, method='sequential', 
+    trials_2 = data.TrialHandler(nReps=10.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_2')
@@ -989,7 +987,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_2[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_2 = data.TrialHandler(nReps=2.0, method='sequential', 
+        repetition_2 = data.TrialHandler(nReps=10.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_2')
@@ -1023,18 +1021,16 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             thisExp.addData('test_2.started', globalClock.getTime())
             # Run 'Begin Routine' code from test_2_code
             # Frequencies for each object
-            freq_obj1 = 10  # 10Hz flicker
-            freq_obj2 = 5   # 5Hz flicker
-            freq_obj3 = 2   # 2Hz flicker
-            
-            # Frames per cycle for each object (full cycle = one on and one off phase)
-            frames_per_cycle_obj1 = 60 // freq_obj1
-            frames_per_cycle_obj2 = 60 // freq_obj2
-            frames_per_cycle_obj3 = 60 // freq_obj3
+            freq_trial_1 = [10, 5, 2]
+                           
+            # Frequencies for each object
+            objects = [obj1_t2, obj2_t2, obj3_t2]
             
             if trial_num == 1:
                 obj1_t2.color = 'white'
                 obj2_t2.color = 'black'
+                
+             
             
             # keep track of which components have finished
             test_2Components = [obj1_t2, obj2_t2, obj3_t2, test_2_mess]
@@ -1193,23 +1189,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         test_2_mess.setAutoDraw(False)
                 # Run 'Each Frame' code from test_2_code
                 # Update opacities based on current frame number for each stimulus
-                # Object 1
-                if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
-                    obj1_t2.opacity = 1  # Opaque
-                else:
-                    obj1_t2.opacity = 0  # Transparent
-                
-                # Object 2
-                if (frameN % frames_per_cycle_obj2) < (frames_per_cycle_obj2 / 2):
-                    obj2_t2.opacity = 1  # Opaque
-                else:
-                    obj2_t2.opacity = 0  # Transparent
-                
-                # Object 3
-                if (frameN % frames_per_cycle_obj3) < (frames_per_cycle_obj3 / 2):
-                    obj3_t2.opacity = 1  # Opaque
-                else:
-                    obj3_t2.opacity = 0  # Transparent
+                i = 0
+                for freq in freq_trial_1:
+                    frames_per_cycle = 60 // freq
+                    objects[i].opacity = ((frameN % frames_per_cycle) < (frames_per_cycle / 2))
+                    i = i + 1
                 
                 # check for quit (typically the Esc key)
                 if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1345,18 +1329,18 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 2.0 repeats of 'repetition_2'
+        # completed 10.0 repeats of 'repetition_2'
         
         thisExp.nextEntry()
         
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 1.0 repeats of 'trials_2'
+    # completed 10.0 repeats of 'trials_2'
     
     
     # set up handler to look after randomisation of conditions etc
-    trials_3 = data.TrialHandler(nReps=1.0, method='sequential', 
+    trials_3 = data.TrialHandler(nReps=10.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_3')
@@ -1385,7 +1369,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_3[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_3 = data.TrialHandler(nReps=2.0, method='random', 
+        repetition_3 = data.TrialHandler(nReps=10.0, method='random', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_3')
@@ -1420,7 +1404,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # Run 'Begin Routine' code from test_3_code
             # Frequencies for each object
             freq_trial_1 = [10, 5,
-                           2, 15,]
+                           2, 15]
                            
             # Frequencies for each object
             objects = [obj1_t3, obj2_t3, obj3_t3, obj4_t3]
@@ -1757,18 +1741,18 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 2.0 repeats of 'repetition_3'
+        # completed 10.0 repeats of 'repetition_3'
         
         thisExp.nextEntry()
         
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 1.0 repeats of 'trials_3'
+    # completed 10.0 repeats of 'trials_3'
     
     
     # set up handler to look after randomisation of conditions etc
-    trials_4 = data.TrialHandler(nReps=1.0, method='sequential', 
+    trials_4 = data.TrialHandler(nReps=10.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_4')
@@ -1797,7 +1781,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_4[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_4 = data.TrialHandler(nReps=2.0, method='sequential', 
+        repetition_4 = data.TrialHandler(nReps=10.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_4')
@@ -1831,27 +1815,18 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             thisExp.addData('test_4.started', globalClock.getTime())
             # Run 'Begin Routine' code from test_4_code
             # Frequencies for each object
-            freq_obj1 = 10  # 10Hz flicker
-            freq_obj2 = 5   # 5Hz flicker
-            freq_obj3 = 2   # 2Hz flicker
-            freq_obj4 = 15   # 15Hz flicker
-            freq_obj5 = 8   # 8Hz flicker
-            freq_obj6 = 12   # 12Hz flicker
-            freq_obj7 = 20   # 20Hz flicker
-            freq_obj8 = 25   # 25Hz flicker
-            freq_obj9 = 25   # 25Hz flicker
+            freq_trial_1 = [10, 5, 2,
+                            15, 8, 12,
+                            20, 25, 30]
+                           
+            # Frequencies for each object
+            objects = [obj1_t4, obj2_t4, obj3_t4,
+                       obj4_t4, obj5_t4, obj6_t4,
+                       obj7_t4, obj8_t4, obj9_t4,]
             
-            # Frames per cycle for each object (full cycle = one on and one off phase)
-            frames_per_cycle_obj1 = 60 // freq_obj1
-            frames_per_cycle_obj2 = 60 // freq_obj2
-            frames_per_cycle_obj3 = 60 // freq_obj3
-            frames_per_cycle_obj4 = 60 // freq_obj4
-            
-            frames_per_cycle_obj5 = 60 // freq_obj5
-            frames_per_cycle_obj6 = 60 // freq_obj6
-            frames_per_cycle_obj7 = 60 // freq_obj7
-            frames_per_cycle_obj8 = 60 // freq_obj8
-            frames_per_cycle_obj9 = 60 // freq_obj9
+            if trial_num == 3:
+                obj1_t3.color = 'white'
+                obj2_t3.color = 'black'
             # keep track of which components have finished
             test_4Components = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4, obj6_t4, obj7_t4, obj8_t4, obj9_t4, test_4_mess]
             for thisComponent in test_4Components:
@@ -2206,61 +2181,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         test_4_mess.status = FINISHED
                         test_4_mess.setAutoDraw(False)
                 # Run 'Each Frame' code from test_4_code
-                # Update opacities based on current frame number for each stimulus
-                # Object 1
-                if (frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2):
-                    obj1_t4.opacity = 1  # Opaque
-                else:
-                    obj1_t4.opacity = 0  # Transparent
-                
-                # Object 2
-                if (frameN % frames_per_cycle_obj2) < (frames_per_cycle_obj2 / 2):
-                    obj2_t4.opacity = 1  # Opaque
-                else:
-                    obj2_t4.opacity = 0  # Transparent
-                
-                # Object 3
-                if (frameN % frames_per_cycle_obj3) < (frames_per_cycle_obj3 / 2):
-                    obj3_t4.opacity = 1  # Opaque
-                else:
-                    obj3_t4.opacity = 0  # Transparent
-                
-                # Object 4
-                if (frameN % frames_per_cycle_obj4) < (frames_per_cycle_obj4 / 2):
-                    obj4_t4.opacity = 1  # Opaque
-                else:
-                    obj4_t4.opacity = 0  # Transparent
-                
-                
-                # Object 5
-                if (frameN % frames_per_cycle_obj5) < (frames_per_cycle_obj5 / 2):
-                    obj5_t4.opacity = 1  # Opaque
-                else:
-                    obj5_t4.opacity = 0  # Transparent
-                
-                # Object 6
-                if (frameN % frames_per_cycle_obj6) < (frames_per_cycle_obj6 / 2):
-                    obj6_t4.opacity = 1  # Opaque
-                else:
-                    obj6_t4.opacity = 0  # Transparent
-                
-                # Object 7
-                if (frameN % frames_per_cycle_obj7) < (frames_per_cycle_obj7 / 2):
-                    obj7_t4.opacity = 1  # Opaque
-                else:
-                    obj7_t4.opacity = 0  # Transparent
-                
-                # Object 8
-                if (frameN % frames_per_cycle_obj8) < (frames_per_cycle_obj8 / 2):
-                    obj8_t4.opacity = 1  # Opaque
-                else:
-                    obj8_t4.opacity = 0  # Transparent
-                
-                # Object 9
-                if (frameN % frames_per_cycle_obj9) < (frames_per_cycle_obj9 / 2):
-                    obj9_t4.opacity = 1  # Opaque
-                else:
-                    obj9_t4.opacity = 0  # Transparent
+                i = 0
+                for freq in freq_trial_1:
+                    frames_per_cycle = 60 // freq
+                    objects[i].opacity = ((frameN % frames_per_cycle) < (frames_per_cycle / 2))
+                    i = i + 1
                 
                 # check for quit (typically the Esc key)
                 if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2394,14 +2319,14 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 2.0 repeats of 'repetition_4'
+        # completed 10.0 repeats of 'repetition_4'
         
         thisExp.nextEntry()
         
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 1.0 repeats of 'trials_4'
+    # completed 10.0 repeats of 'trials_4'
     
     
     # --- Prepare to start Routine "GoodBye" ---
