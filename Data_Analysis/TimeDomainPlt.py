@@ -3,21 +3,21 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-# Load the data
-df = pd.read_csv('DataCH4/SignalData.csv')
+# Load the data 
+df = pd.read_csv('DataCH4/27_11_2023__16_44_39_newv.csv')
 
 # Convert EEG (V) to EEG (µV)
-df['EEG (µV)'] = df['EEG (V)'] * 1000000  # Convert from V to µV
+df['EEG (µV)'] = abs(df['EEG (V)'] * 1000000)  # Convert from V to µV
 
 # Select only rows 2 to 18 (note that iloc is zero-based and the end index is exclusive)
 df_selected_rows = df.iloc[1:16]
 
 # Filter the data for sequence numbers 0 to 15 within the selected rows
-filtered_df = df_selected_rows[(df_selected_rows['Sequence Number n'] >= 0) & (df_selected_rows['Sequence Number n'] <= 15)]
+filtered_df = df_selected_rows[(df_selected_rows['Sequence Number'] >= 0) & (df_selected_rows['Sequence Number'] <= 15)]
 
 # Plot the data in microvolts
 plt.figure(figsize=(10, 6))  # Set the figure size for better readability
-plt.plot(filtered_df['Sequence Number n'], filtered_df['EEG (µV)'], marker='o', linestyle='-')
+plt.plot(filtered_df['Sequence Number'], filtered_df['EEG (µV)'], marker='o', linestyle='-')
 plt.title('EEG (µV) vs. Sequence Number')
 plt.xlabel('Sequence Number n')
 plt.ylabel('EEG (µV)')
