@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on March 20, 2024, at 23:20
+    on March 21, 2024, at 00:01
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -498,6 +498,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         depth=0.0);
     
     # --- Initialize components for Routine "GoodBye" ---
+    text = visual.TextStim(win=win, name='text',
+        text='Thank you for participating',
+        font='Open Sans',
+        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
     
     # create some handy timers
     if globalClock is None:
@@ -597,7 +604,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_1[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_1 = data.TrialHandler(nReps=0.0, method='sequential', 
+        repetition_1 = data.TrialHandler(nReps=10.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_1')
@@ -630,11 +637,22 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # update component parameters for each repeat
             thisExp.addData('test_1.started', globalClock.getTime())
             # Run 'Begin Routine' code from test_1_code
-            # Frequencies for each object
-            freq_obj1 = 15
+            # Frequencies for each trial
+            freq_obj1 = [15, #Trial 1 frequency
+                        8,   #Trial 2 frequency
+                        15,  #Trial 3 frequency
+                        15,  #Trial 4 frequency
+                        15,  #Trial 5 frequency
+                        15,  #Trial 6 frequency
+                        15,  #Trial 7 frequency
+                        15,  #Trial 8 frequency
+                        15,  #Trial 9 frequency
+                        15]  #Trial 10 frequency
             
             # Frames per cycle for each object (full cycle = one on and one off phase)
-            frames_per_cycle_obj1 = 60 // freq_obj1
+            frames_per_cycle_obj1 = 60 // freq_obj1[trials_1.thisN]
+            
+            test_1_mess.text = 'Focus on the black square (Test 1, Trial ' + str(trials_1.thisN) + ')'
             
             # keep track of which components have finished
             test_1Components = [obj1_t1, test_1_mess]
@@ -863,7 +881,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 0.0 repeats of 'repetition_1'
+        # completed 10.0 repeats of 'repetition_1'
         
         thisExp.nextEntry()
         
@@ -903,7 +921,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_2[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_2 = data.TrialHandler(nReps=1.0, method='sequential', 
+        repetition_2 = data.TrialHandler(nReps=10.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_2')
@@ -960,6 +978,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             
             #Select target object for user to look at
             selectTarget(objects, targets[trials_2.thisN]) 
+            
+            test_2_mess.text = 'Focus on the black square (Test 2, Trial ' + str(trials_2.thisN) + ')'
             # keep track of which components have finished
             test_2Components = [obj1_t2, obj2_t2, obj3_t2, test_2_mess]
             for thisComponent in test_2Components:
@@ -1255,7 +1275,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 1.0 repeats of 'repetition_2'
+        # completed 10.0 repeats of 'repetition_2'
         
         thisExp.nextEntry()
         
@@ -1295,7 +1315,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_3[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_3 = data.TrialHandler(nReps=1.0, method='random', 
+        repetition_3 = data.TrialHandler(nReps=10.0, method='random', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_3')
@@ -1362,6 +1382,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             
             #Select target object for user to look at
             selectTarget(objects, targets[trials_3.thisN])
+            
+            test_3_mess.text = 'Focus on the black square (Test 3, Trial ' + str(trials_3.thisN) + ')'
             # keep track of which components have finished
             test_3Components = [obj1_t3, obj2_t3, obj3_t3, obj4_t3, test_3_mess]
             for thisComponent in test_3Components:
@@ -1689,7 +1711,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 1.0 repeats of 'repetition_3'
+        # completed 10.0 repeats of 'repetition_3'
         
         thisExp.nextEntry()
         
@@ -1729,7 +1751,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_4[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_4 = data.TrialHandler(nReps=1.0, method='sequential', 
+        repetition_4 = data.TrialHandler(nReps=10.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_4')
@@ -1808,6 +1830,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             
             #Select target object for user to look at
             selectTarget(objects, targets[trials_4.thisN])
+            
+            test_4_mess.text = 'Focus on the black square (Test 4, Trial ' + str(trials_4.thisN) + ')'
             # keep track of which components have finished
             test_4Components = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4, obj6_t4, obj7_t4, obj8_t4, obj9_t4, test_4_mess]
             for thisComponent in test_4Components:
@@ -2163,7 +2187,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         test_4_mess.setAutoDraw(False)
                 # Run 'Each Frame' code from test_4_code
                 i = 0
-                for freq in freq__curr_trial:
+                for freq in freq_curr_trial:
                     frames_per_cycle = 60 // freq
                     objects[i].opacity = ((frameN % frames_per_cycle) < (frames_per_cycle / 2))
                     i = i + 1
@@ -2300,7 +2324,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 1.0 repeats of 'repetition_4'
+        # completed 10.0 repeats of 'repetition_4'
         
         thisExp.nextEntry()
         
@@ -2315,7 +2339,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # update component parameters for each repeat
     thisExp.addData('GoodBye.started', globalClock.getTime())
     # keep track of which components have finished
-    GoodByeComponents = []
+    GoodByeComponents = [text]
     for thisComponent in GoodByeComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
@@ -2330,13 +2354,46 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # --- Run Routine "GoodBye" ---
     routineForceEnded = not continueRoutine
-    while continueRoutine:
+    while continueRoutine and routineTimer.getTime() < 4.0:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        
+        # *text* updates
+        
+        # if text is starting this frame...
+        if text.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            text.frameNStart = frameN  # exact frame index
+            text.tStart = t  # local t and not account for scr refresh
+            text.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(text, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'text.started')
+            # update status
+            text.status = STARTED
+            text.setAutoDraw(True)
+        
+        # if text is active this frame...
+        if text.status == STARTED:
+            # update params
+            pass
+        
+        # if text is stopping this frame...
+        if text.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > text.tStartRefresh + 4-frameTolerance:
+                # keep track of stop time/frame for later
+                text.tStop = t  # not accounting for scr refresh
+                text.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'text.stopped')
+                # update status
+                text.status = FINISHED
+                text.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2364,8 +2421,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
     thisExp.addData('GoodBye.stopped', globalClock.getTime())
-    # the Routine "GoodBye" was not non-slip safe, so reset the non-slip timer
-    routineTimer.reset()
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if routineForceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-4.000000)
     
     # mark experiment as finished
     endExperiment(thisExp, win=win, inputs=inputs)
