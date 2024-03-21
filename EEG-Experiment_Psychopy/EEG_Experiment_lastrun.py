@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on March 21, 2024, at 00:01
+    on March 21, 2024, at 12:46
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -323,6 +323,23 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "globalFuncs" ---
     
+    # --- Initialize components for Routine "WelcomeScreen" ---
+    welcome_message = visual.TextStim(win=win, name='welcome_message',
+        text='',
+        font='Open Sans',
+        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+        color=[1.0000, 1.0000, 1.0000], colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
+    caution_sign = visual.ImageStim(
+        win=win,
+        name='caution_sign', 
+        image='warning_sign.png', mask=None, anchor='center',
+        ori=0.0, pos=(0, 0.35), size=(0.3, 0.2),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-1.0)
+    
     # --- Initialize components for Routine "test_1" ---
     obj1_t1 = visual.Rect(
         win=win, name='obj1_t1',
@@ -573,6 +590,132 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     thisExp.addData('globalFuncs.stopped', globalClock.getTime())
     # the Routine "globalFuncs" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
+    
+    # --- Prepare to start Routine "WelcomeScreen" ---
+    continueRoutine = True
+    # update component parameters for each repeat
+    thisExp.addData('WelcomeScreen.started', globalClock.getTime())
+    # keep track of which components have finished
+    WelcomeScreenComponents = [welcome_message, caution_sign]
+    for thisComponent in WelcomeScreenComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "WelcomeScreen" ---
+    routineForceEnded = not continueRoutine
+    while continueRoutine and routineTimer.getTime() < 10.0:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *welcome_message* updates
+        
+        # if welcome_message is starting this frame...
+        if welcome_message.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            welcome_message.frameNStart = frameN  # exact frame index
+            welcome_message.tStart = t  # local t and not account for scr refresh
+            welcome_message.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(welcome_message, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'welcome_message.started')
+            # update status
+            welcome_message.status = STARTED
+            welcome_message.setAutoDraw(True)
+        
+        # if welcome_message is active this frame...
+        if welcome_message.status == STARTED:
+            # update params
+            welcome_message.setText("\n\nWelcome to the Experiment!! \n\nDisclaimer: This experiment involves viewing flickering objects. If you are prone to photosensitive epilepsy or have other visual sensitivities, please proceed with caution or consider not participating. Just so we're clear, we can't take responsibility for any discomfort or issues that arise.", log=False)
+        
+        # if welcome_message is stopping this frame...
+        if welcome_message.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > welcome_message.tStartRefresh + 10-frameTolerance:
+                # keep track of stop time/frame for later
+                welcome_message.tStop = t  # not accounting for scr refresh
+                welcome_message.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'welcome_message.stopped')
+                # update status
+                welcome_message.status = FINISHED
+                welcome_message.setAutoDraw(False)
+        
+        # *caution_sign* updates
+        
+        # if caution_sign is starting this frame...
+        if caution_sign.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            caution_sign.frameNStart = frameN  # exact frame index
+            caution_sign.tStart = t  # local t and not account for scr refresh
+            caution_sign.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(caution_sign, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'caution_sign.started')
+            # update status
+            caution_sign.status = STARTED
+            caution_sign.setAutoDraw(True)
+        
+        # if caution_sign is active this frame...
+        if caution_sign.status == STARTED:
+            # update params
+            pass
+        
+        # if caution_sign is stopping this frame...
+        if caution_sign.status == STARTED:
+            # is it time to stop? (based on global clock, using actual start)
+            if tThisFlipGlobal > caution_sign.tStartRefresh + 10-frameTolerance:
+                # keep track of stop time/frame for later
+                caution_sign.tStop = t  # not accounting for scr refresh
+                caution_sign.frameNStop = frameN  # exact frame index
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'caution_sign.stopped')
+                # update status
+                caution_sign.status = FINISHED
+                caution_sign.setAutoDraw(False)
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, inputs=inputs, win=win)
+            return
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in WelcomeScreenComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "WelcomeScreen" ---
+    for thisComponent in WelcomeScreenComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    thisExp.addData('WelcomeScreen.stopped', globalClock.getTime())
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if routineForceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-10.000000)
     
     # set up handler to look after randomisation of conditions etc
     trials_1 = data.TrialHandler(nReps=10.0, method='sequential', 
