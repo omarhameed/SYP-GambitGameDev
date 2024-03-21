@@ -2516,7 +2516,7 @@ def quit(thisExp, win=None, inputs=None, thisSession=None):
     # terminate Python process
     core.quit()
 
-
+# This is the only section removed if we were to call this file from main
 # if running this experiment as a script...
 if __name__ == '__main__':
     # call all functions in order
