@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on March 20, 2024, at 16:38
+    on March 20, 2024, at 23:20
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -33,11 +33,13 @@ import sys  # to get file system encoding
 import psychopy.iohub as io
 from psychopy.hardware import keyboard
 
-# Run 'Before Experiment' code from test_3_code
-
-
-                
-
+# Run 'Before Experiment' code from code
+def selectTarget(objects, target):
+    for obj in objects:
+        if obj == target:
+            obj.color = 'black'
+        else:
+            obj.color = 'white'
 # --- Setup global variables (available in all functions) ---
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
@@ -319,22 +321,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # Start Code - component code to be run after the window creation
     
-    # --- Initialize components for Routine "WelcomeScreen" ---
-    welcome_message = visual.TextStim(win=win, name='welcome_message',
-        text='',
-        font='Open Sans',
-        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-        color=[1.0000, 1.0000, 1.0000], colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=0.0);
-    caution_sign = visual.ImageStim(
-        win=win,
-        name='caution_sign', 
-        image='Floor_Sign_Yield_Caution_Sign_Creative_Safety_Supply__92002.jpg', mask=None, anchor='center',
-        ori=0.0, pos=(0.3, 0.3), size=(0.2, 0.2),
-        color=[1,1,1], colorSpace='rgb', opacity=None,
-        flipHoriz=False, flipVert=False,
-        texRes=128.0, interpolate=True, depth=-1.0)
+    # --- Initialize components for Routine "globalFuncs" ---
     
     # --- Initialize components for Routine "test_1" ---
     obj1_t1 = visual.Rect(
@@ -386,8 +373,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-3.0);
-    # Run 'Begin Experiment' code from test_2_code
-    trial_num = 0
     
     # --- Initialize components for Routine "blank1s" ---
     blank_screen = visual.TextStim(win=win, name='blank_screen',
@@ -525,13 +510,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # store the exact time the global clock started
     expInfo['expStart'] = data.getDateStr(format='%Y-%m-%d %Hh%M.%S.%f %z', fractionalSecondDigits=6)
     
-    # --- Prepare to start Routine "WelcomeScreen" ---
+    # --- Prepare to start Routine "globalFuncs" ---
     continueRoutine = True
     # update component parameters for each repeat
-    thisExp.addData('WelcomeScreen.started', globalClock.getTime())
+    thisExp.addData('globalFuncs.started', globalClock.getTime())
     # keep track of which components have finished
-    WelcomeScreenComponents = [welcome_message, caution_sign]
-    for thisComponent in WelcomeScreenComponents:
+    globalFuncsComponents = []
+    for thisComponent in globalFuncsComponents:
         thisComponent.tStart = None
         thisComponent.tStop = None
         thisComponent.tStartRefresh = None
@@ -543,81 +528,15 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
     frameN = -1
     
-    # --- Run Routine "WelcomeScreen" ---
+    # --- Run Routine "globalFuncs" ---
     routineForceEnded = not continueRoutine
-    while continueRoutine and routineTimer.getTime() < 10.0:
+    while continueRoutine:
         # get current time
         t = routineTimer.getTime()
         tThisFlip = win.getFutureFlipTime(clock=routineTimer)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
-        
-        # *welcome_message* updates
-        
-        # if welcome_message is starting this frame...
-        if welcome_message.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            welcome_message.frameNStart = frameN  # exact frame index
-            welcome_message.tStart = t  # local t and not account for scr refresh
-            welcome_message.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(welcome_message, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'welcome_message.started')
-            # update status
-            welcome_message.status = STARTED
-            welcome_message.setAutoDraw(True)
-        
-        # if welcome_message is active this frame...
-        if welcome_message.status == STARTED:
-            # update params
-            welcome_message.setText("\n\nWelcome to the Experiment!! \n\nDisclaimer: This experiment involves viewing flickering objects. If you are prone to photosensitive epilepsy or have other visual sensitivities, please proceed with caution or consider not participating. Just so we're clear, we can't take responsibility for any discomfort or issues that arise.", log=False)
-        
-        # if welcome_message is stopping this frame...
-        if welcome_message.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > welcome_message.tStartRefresh + 10-frameTolerance:
-                # keep track of stop time/frame for later
-                welcome_message.tStop = t  # not accounting for scr refresh
-                welcome_message.frameNStop = frameN  # exact frame index
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'welcome_message.stopped')
-                # update status
-                welcome_message.status = FINISHED
-                welcome_message.setAutoDraw(False)
-        
-        # *caution_sign* updates
-        
-        # if caution_sign is starting this frame...
-        if caution_sign.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            caution_sign.frameNStart = frameN  # exact frame index
-            caution_sign.tStart = t  # local t and not account for scr refresh
-            caution_sign.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(caution_sign, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'caution_sign.started')
-            # update status
-            caution_sign.status = STARTED
-            caution_sign.setAutoDraw(True)
-        
-        # if caution_sign is active this frame...
-        if caution_sign.status == STARTED:
-            # update params
-            pass
-        
-        # if caution_sign is stopping this frame...
-        if caution_sign.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > caution_sign.tStartRefresh + 10-frameTolerance:
-                # keep track of stop time/frame for later
-                caution_sign.tStop = t  # not accounting for scr refresh
-                caution_sign.frameNStop = frameN  # exact frame index
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'caution_sign.stopped')
-                # update status
-                caution_sign.status = FINISHED
-                caution_sign.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
         if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -631,7 +550,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in WelcomeScreenComponents:
+        for thisComponent in globalFuncsComponents:
             if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                 continueRoutine = True
                 break  # at least one component has not yet finished
@@ -640,16 +559,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # --- Ending Routine "WelcomeScreen" ---
-    for thisComponent in WelcomeScreenComponents:
+    # --- Ending Routine "globalFuncs" ---
+    for thisComponent in globalFuncsComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    thisExp.addData('WelcomeScreen.stopped', globalClock.getTime())
-    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-    if routineForceEnded:
-        routineTimer.reset()
-    else:
-        routineTimer.addTime(-10.000000)
+    thisExp.addData('globalFuncs.stopped', globalClock.getTime())
+    # the Routine "globalFuncs" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # set up handler to look after randomisation of conditions etc
     trials_1 = data.TrialHandler(nReps=10.0, method='sequential', 
@@ -681,7 +597,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_1[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_1 = data.TrialHandler(nReps=10.0, method='sequential', 
+        repetition_1 = data.TrialHandler(nReps=0.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_1')
@@ -947,7 +863,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 10.0 repeats of 'repetition_1'
+        # completed 0.0 repeats of 'repetition_1'
         
         thisExp.nextEntry()
         
@@ -987,7 +903,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_2[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_2 = data.TrialHandler(nReps=10.0, method='sequential', 
+        repetition_2 = data.TrialHandler(nReps=1.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_2')
@@ -1020,18 +936,30 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # update component parameters for each repeat
             thisExp.addData('test_2.started', globalClock.getTime())
             # Run 'Begin Routine' code from test_2_code
-            # Frequencies for each object
-            freq_trial_1 = [10, 5, 2]
-                           
-            # Frequencies for each object
+            #Target object for user to look at for each trial
+            targets = [obj1_t2, obj2_t2, obj3_t2, obj2_t2, obj1_t2,
+                       obj3_t2, obj3_t2, obj1_t2, obj3_t2, obj3_t2]
+            
+            # Frequencies for each object for every trial
+            freq_trials = [[10, 5 , 2 ], #Trial 1 frequencies
+                           [10 , 5 , 2 ], #Trial 2 frequencies
+                           [2 , 5 , 2 ], #Trial 3 frequencies
+                           [6 , 4 , 30], #Trial 4 frequencies
+                           [8 , 6 , 7 ], #Trial 5 frequencies
+                           [10, 20, 30], #Trial 6 frequencies
+                           [1 , 2 , 30], #Trial 7 frequencies
+                           [1 , 20, 3 ], #Trial 8 frequencies
+                           [10, 2 , 3 ], #Trial 9 frequencies
+                           [10 ,10 ,10 ]] #Trial 10 frequencies
+            
+            #Select frequencies for current trial
+            freq_curr_trial = freq_trials[trials_2.thisN]
+            
+            #All objects
             objects = [obj1_t2, obj2_t2, obj3_t2]
             
-            if trial_num == 1:
-                obj1_t2.color = 'white'
-                obj2_t2.color = 'black'
-                
-             
-            
+            #Select target object for user to look at
+            selectTarget(objects, targets[trials_2.thisN]) 
             # keep track of which components have finished
             test_2Components = [obj1_t2, obj2_t2, obj3_t2, test_2_mess]
             for thisComponent in test_2Components:
@@ -1190,7 +1118,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # Run 'Each Frame' code from test_2_code
                 # Update opacities based on current frame number for each stimulus
                 i = 0
-                for freq in freq_trial_1:
+                for freq in freq_curr_trial:
                     frames_per_cycle = 60 // freq
                     objects[i].opacity = ((frameN % frames_per_cycle) < (frames_per_cycle / 2))
                     i = i + 1
@@ -1221,8 +1149,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('test_2.stopped', globalClock.getTime())
-            # Run 'End Routine' code from test_2_code
-            trial_num = trial_num + 1
             # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
             if routineForceEnded:
                 routineTimer.reset()
@@ -1329,7 +1255,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 10.0 repeats of 'repetition_2'
+        # completed 1.0 repeats of 'repetition_2'
         
         thisExp.nextEntry()
         
@@ -1369,7 +1295,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_3[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_3 = data.TrialHandler(nReps=10.0, method='random', 
+        repetition_3 = data.TrialHandler(nReps=1.0, method='random', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_3')
@@ -1402,16 +1328,40 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # update component parameters for each repeat
             thisExp.addData('test_3.started', globalClock.getTime())
             # Run 'Begin Routine' code from test_3_code
-            # Frequencies for each object
-            freq_trial_1 = [10, 5,
-                           2, 15]
-                           
-            # Frequencies for each object
+            #Target object for user to look at for each trial
+            targets = [obj1_t3, obj4_t3, obj3_t3, obj2_t3, obj1_t3,
+                       obj3_t3, obj4_t3, obj1_t3, obj3_t3, obj3_t3]
+                       
+            # Frequencies for each object for every trial
+            freq_trials = [[10, 5,
+                            2, 15], #Trial 1 frequencies
+                           [10, 5,
+                            2, 15], #Trial 2 frequencies
+                           [10, 5,
+                            2, 15], #Trial 3 frequencies
+                           [10, 5,
+                            2, 15], #Trial 4 frequencies
+                           [10, 5,
+                            2, 15], #Trial 5 frequencies
+                           [10, 5,
+                           2, 15], #Trial 6 frequencies
+                           [10, 5,
+                            2, 15], #Trial 7 frequencies
+                           [10, 5,
+                            2, 15], #Trial 8 frequencies
+                           [10, 5,
+                            2, 15], #Trial 9 frequencies
+                           [10, 5,
+                            2, 15]] #Trial 10 frequencies
+            
+            #Select frequencies for current trial
+            freq_curr_trial = freq_trials[trials_3.thisN]
+            
+            #All objects
             objects = [obj1_t3, obj2_t3, obj3_t3, obj4_t3]
             
-            if trial_num == 3:
-                obj1_t3.color = 'white'
-                obj2_t3.color = 'black'
+            #Select target object for user to look at
+            selectTarget(objects, targets[trials_3.thisN])
             # keep track of which components have finished
             test_3Components = [obj1_t3, obj2_t3, obj3_t3, obj4_t3, test_3_mess]
             for thisComponent in test_3Components:
@@ -1602,7 +1552,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         test_3_mess.setAutoDraw(False)
                 # Run 'Each Frame' code from test_3_code
                 i = 0
-                for freq in freq_trial_1:
+                for freq in freq_curr_trial:
                     frames_per_cycle = 60 // freq
                     objects[i].opacity = ((frameN % frames_per_cycle) < (frames_per_cycle / 2))
                     i = i + 1
@@ -1633,8 +1583,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('test_3.stopped', globalClock.getTime())
-            # Run 'End Routine' code from test_3_code
-            trial_num = trial_num + 1
             # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
             if routineForceEnded:
                 routineTimer.reset()
@@ -1741,7 +1689,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 10.0 repeats of 'repetition_3'
+        # completed 1.0 repeats of 'repetition_3'
         
         thisExp.nextEntry()
         
@@ -1781,7 +1729,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_4[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_4 = data.TrialHandler(nReps=10.0, method='sequential', 
+        repetition_4 = data.TrialHandler(nReps=1.0, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_4')
@@ -1814,19 +1762,52 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # update component parameters for each repeat
             thisExp.addData('test_4.started', globalClock.getTime())
             # Run 'Begin Routine' code from test_4_code
+            #Target object for user to look at for each trial
+            targets = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4,
+                       obj6_t4, obj7_t4, obj8_t4, obj9_t4, obj5_t4]
+            
             # Frequencies for each object
-            freq_trial_1 = [10, 5, 2,
-                            15, 8, 12,
-                            20, 25, 30]
-                           
-            # Frequencies for each object
+            freq_trials = [[10, 5, 2,
+                            1, 8, 12,
+                            20, 25, 30], #Trial 1 frequencies
+                            [10, 5, 2,
+                            1, 8, 12,
+                            20, 25, 30], #Trial 2 frequencies
+                            [10, 5, 2,
+                            1, 8, 12,
+                            20, 25, 30], #Trial 3 frequencies
+                            [10, 5, 2,
+                            1, 8, 12,
+                            20, 25, 30], #Trial 4 frequencies
+                            [10, 5, 2,
+                            1, 8, 12,
+                            20, 25, 30], #Trial 5 frequencies
+                            [10, 5, 2,
+                            1, 8, 12,
+                            20, 25, 30], #Trial 6 frequencies
+                            [10, 5, 2,
+                            1, 8, 12,
+                            20, 25, 30], #Trial 7 frequencies
+                            [10, 5, 2,
+                            1, 8, 12,
+                            20, 25, 30], #Trial 8 frequencies
+                            [10, 5, 2,
+                            1, 8, 12,
+                            20, 25, 30], #Trial 9 frequencies
+                           [10, 5, 2,
+                            1, 8, 12,
+                            20, 25, 30]] #Trial 10 frequencies
+                            
+            #All objects
             objects = [obj1_t4, obj2_t4, obj3_t4,
                        obj4_t4, obj5_t4, obj6_t4,
                        obj7_t4, obj8_t4, obj9_t4,]
             
-            if trial_num == 3:
-                obj1_t3.color = 'white'
-                obj2_t3.color = 'black'
+            #Select frequencies for current trial
+            freq_curr_trial = freq_trials[trials_4.thisN]
+            
+            #Select target object for user to look at
+            selectTarget(objects, targets[trials_4.thisN])
             # keep track of which components have finished
             test_4Components = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4, obj6_t4, obj7_t4, obj8_t4, obj9_t4, test_4_mess]
             for thisComponent in test_4Components:
@@ -2182,7 +2163,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         test_4_mess.setAutoDraw(False)
                 # Run 'Each Frame' code from test_4_code
                 i = 0
-                for freq in freq_trial_1:
+                for freq in freq__curr_trial:
                     frames_per_cycle = 60 // freq
                     objects[i].opacity = ((frameN % frames_per_cycle) < (frames_per_cycle / 2))
                     i = i + 1
@@ -2319,7 +2300,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 10.0 repeats of 'repetition_4'
+        # completed 1.0 repeats of 'repetition_4'
         
         thisExp.nextEntry()
         
