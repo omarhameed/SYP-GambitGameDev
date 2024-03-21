@@ -1,0 +1,3703 @@
+8.6650 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+8.6654 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7febf5717520>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7febf57174c0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7febf5717340>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7febf8579b80>, multiSample=False, name='window1', numSamples=2, pos=(495, 300), screen=0, size=array([1800, 1200]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.6656 	EXP 	window1: mouseVisible = True
+8.6656 	EXP 	window1: backgroundImage = ''
+8.6656 	EXP 	window1: backgroundFit = 'none'
+8.6674 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+8.6674 	EXP 	window1: recordFrameIntervals = False
+8.7516 	EXP 	window1: recordFrameIntervals = True
+9.5827 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+9.5829 	EXP 	window1: mouseVisible = True
+9.6287 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+12.6822 	EXP 	Test1: status = STARTED
+12.6826 	EXP 	window1: mouseVisible = True
+12.6915 	EXP 	Created welcome_message = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='welcome_message', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+12.6916 	EXP 	window1: mouseVisible = True
+12.8518 	EXP 	Created caution_sign = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='caution_sign', opacity=1.0, ori=0.0, pos=array([0.3, 0.3]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+12.8523 	EXP 	window1: mouseVisible = True
+12.8525 	EXP 	window1: mouseVisible = True
+12.8531 	EXP 	window1: mouseVisible = True
+12.8538 	EXP 	window1: mouseVisible = True
+12.8705 	EXP 	window1: mouseVisible = True
+12.8706 	EXP 	window1: mouseVisible = True
+12.8712 	EXP 	window1: mouseVisible = True
+12.8718 	EXP 	window1: mouseVisible = True
+12.8831 	EXP 	window1: mouseVisible = True
+12.8834 	EXP 	window1: mouseVisible = True
+12.8835 	EXP 	window1: mouseVisible = True
+12.8842 	EXP 	window1: mouseVisible = True
+12.8847 	EXP 	window1: mouseVisible = True
+12.8923 	EXP 	window1: mouseVisible = True
+12.8925 	EXP 	window1: mouseVisible = True
+12.8930 	EXP 	window1: mouseVisible = True
+12.8935 	EXP 	window1: mouseVisible = True
+12.8995 	EXP 	window1: mouseVisible = True
+12.8997 	EXP 	window1: mouseVisible = True
+12.8999 	EXP 	window1: mouseVisible = True
+12.9004 	EXP 	window1: mouseVisible = True
+12.9009 	EXP 	window1: mouseVisible = True
+12.9084 	EXP 	window1: mouseVisible = True
+12.9085 	EXP 	window1: mouseVisible = True
+12.9091 	EXP 	window1: mouseVisible = True
+12.9096 	EXP 	window1: mouseVisible = True
+12.9150 	EXP 	window1: mouseVisible = True
+12.9152 	EXP 	window1: mouseVisible = True
+12.9154 	EXP 	window1: mouseVisible = True
+12.9159 	EXP 	window1: mouseVisible = True
+12.9164 	EXP 	window1: mouseVisible = True
+12.9249 	EXP 	window1: mouseVisible = True
+12.9252 	EXP 	window1: mouseVisible = True
+12.9257 	EXP 	window1: mouseVisible = True
+12.9263 	EXP 	window1: mouseVisible = True
+12.9319 	EXP 	window1: mouseVisible = True
+12.9320 	EXP 	window1: mouseVisible = True
+12.9726 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='Chose a test by clicking on one of the boxes', units='height', win=Window(...), wrapWidth=1)
+12.9728 	EXP 	window1: mouseVisible = True
+12.9741 	EXP 	Created obj1_t1 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj1_t1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+12.9743 	EXP 	window1: mouseVisible = True
+12.9798 	EXP 	Created test_1_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='test_1_mess', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='Focus on the black square', units='height', win=Window(...), wrapWidth=1)
+12.9799 	EXP 	window1: mouseVisible = True
+12.9855 	EXP 	Created blank_screen_t1_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blank_screen_t1_mess', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='END OF Trial \n', units='height', win=Window(...), wrapWidth=1)
+12.9856 	EXP 	window1: mouseVisible = True
+12.9869 	EXP 	Created obj1_t2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj1_t2', opacity=1.0, ori=0.0, pos=array([-0.25,  0.  ]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+12.9870 	EXP 	window1: mouseVisible = True
+12.9887 	EXP 	Created obj2_t2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj2_t2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+12.9888 	EXP 	window1: mouseVisible = True
+12.9905 	EXP 	Created obj3_t2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj3_t2', opacity=1.0, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+12.9906 	EXP 	window1: mouseVisible = True
+12.9938 	EXP 	Created test_2_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='test_2_mess', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='Focus on the black square', units='height', win=Window(...), wrapWidth=1)
+12.9939 	EXP 	window1: mouseVisible = True
+12.9950 	EXP 	Created blank_screen_t2_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blank_screen_t2_mess', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+12.9951 	EXP 	window1: mouseVisible = True
+12.9962 	EXP 	Created obj1_t3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj1_t3', opacity=1.0, ori=0.0, pos=array([-0.25,  0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+12.9963 	EXP 	window1: mouseVisible = True
+12.9974 	EXP 	Created obj2_t3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj2_t3', opacity=1.0, ori=0.0, pos=array([0.25, 0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+12.9975 	EXP 	window1: mouseVisible = True
+12.9988 	EXP 	Created obj3_t3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj3_t3', opacity=1.0, ori=0.0, pos=array([-0.25, -0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+12.9989 	EXP 	window1: mouseVisible = True
+13.0002 	EXP 	Created obj4_t3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj4_t3', opacity=1.0, ori=0.0, pos=array([ 0.25, -0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.0003 	EXP 	window1: mouseVisible = True
+13.0032 	EXP 	Created test_3_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='test_3_mess', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='Focus on the black square', units='height', win=Window(...), wrapWidth=1)
+13.0033 	EXP 	window1: mouseVisible = True
+13.0069 	EXP 	Created blank_screen_t3_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blank_screen_t3_mess', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Blank screen\n', units='height', win=Window(...), wrapWidth=1)
+13.0070 	EXP 	window1: mouseVisible = True
+13.0083 	EXP 	Created obj1_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj1_t4', opacity=1.0, ori=0.0, pos=array([-0.25,  0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.0084 	EXP 	window1: mouseVisible = True
+13.0102 	EXP 	Created obj2_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj2_t4', opacity=1.0, ori=0.0, pos=array([0.  , 0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.0103 	EXP 	window1: mouseVisible = True
+13.0119 	EXP 	Created obj3_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj3_t4', opacity=1.0, ori=0.0, pos=array([0.25, 0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.0120 	EXP 	window1: mouseVisible = True
+13.0137 	EXP 	Created obj4_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj4_t4', opacity=1.0, ori=0.0, pos=array([-0.25,  0.  ]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.0138 	EXP 	window1: mouseVisible = True
+13.0153 	EXP 	Created obj5_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj5_t4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.0154 	EXP 	window1: mouseVisible = True
+13.0170 	EXP 	Created obj6_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-5.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj6_t4', opacity=1.0, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.0171 	EXP 	window1: mouseVisible = True
+13.0189 	EXP 	Created obj7_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-6.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj7_t4', opacity=1.0, ori=0.0, pos=array([-0.25, -0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.0191 	EXP 	window1: mouseVisible = True
+13.0208 	EXP 	Created obj8_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-7.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj8_t4', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.0209 	EXP 	window1: mouseVisible = True
+13.0229 	EXP 	Created obj9_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-8.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj9_t4', opacity=1.0, ori=0.0, pos=array([ 0.25, -0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+13.0231 	EXP 	window1: mouseVisible = True
+13.0265 	EXP 	Created test_4_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='test_4_mess', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='Focus on the black square', units='height', win=Window(...), wrapWidth=1)
+13.0266 	EXP 	window1: mouseVisible = True
+13.0278 	EXP 	Created blank_screen_t4_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blank_screen_t4_mess', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+0.0541 	WARNING 	t of last frame was 40.75ms (=1/24)
+0.0541 	EXP 	welcome_message: autoDraw = True
+0.0541 	EXP 	caution_sign: autoDraw = True
+10.0020 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+10.0024 	EXP 	New trial (rep=0, index=0): None
+10.0446 	WARNING 	t of last frame was 43.71ms (=1/22)
+10.0446 	EXP 	welcome_message: autoDraw = False
+10.0446 	EXP 	caution_sign: autoDraw = False
+10.0446 	EXP 	text: autoDraw = True
+10.4189 	WARNING 	t of last frame was 28.38ms (=1/35)
+11.0855 	WARNING 	t of last frame was 28.95ms (=1/34)
+11.3855 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+14.2448 	DATA 	Mouse: Left button down, pos=(273,426)
+14.4273 	DATA 	Mouse:  Left button up, pos=(273,426)
+20.0147 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+20.0149 	EXP 	New trial (rep=0, index=0): None
+20.0151 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+20.0152 	EXP 	New trial (rep=0, index=0): None
+20.0155 	EXP 	New trial (rep=1, index=0): None
+20.0158 	EXP 	New trial (rep=2, index=0): None
+20.0161 	EXP 	New trial (rep=3, index=0): None
+20.0164 	EXP 	New trial (rep=4, index=0): None
+20.0166 	EXP 	New trial (rep=5, index=0): None
+20.0168 	EXP 	New trial (rep=6, index=0): None
+20.0171 	EXP 	New trial (rep=7, index=0): None
+20.0173 	EXP 	New trial (rep=8, index=0): None
+20.0175 	EXP 	New trial (rep=9, index=0): None
+20.0178 	EXP 	New trial (rep=1, index=0): None
+20.0182 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+20.0184 	EXP 	New trial (rep=0, index=0): None
+20.0186 	EXP 	New trial (rep=1, index=0): None
+20.0189 	EXP 	New trial (rep=2, index=0): None
+20.0191 	EXP 	New trial (rep=3, index=0): None
+20.0193 	EXP 	New trial (rep=4, index=0): None
+20.0196 	EXP 	New trial (rep=5, index=0): None
+20.0199 	EXP 	New trial (rep=6, index=0): None
+20.0201 	EXP 	New trial (rep=7, index=0): None
+20.0203 	EXP 	New trial (rep=8, index=0): None
+20.0205 	EXP 	New trial (rep=9, index=0): None
+20.0207 	EXP 	New trial (rep=2, index=0): None
+20.0209 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+20.0211 	EXP 	New trial (rep=0, index=0): None
+20.0213 	EXP 	New trial (rep=1, index=0): None
+20.0215 	EXP 	New trial (rep=2, index=0): None
+20.0217 	EXP 	New trial (rep=3, index=0): None
+20.0219 	EXP 	New trial (rep=4, index=0): None
+20.0221 	EXP 	New trial (rep=5, index=0): None
+20.0223 	EXP 	New trial (rep=6, index=0): None
+20.0225 	EXP 	New trial (rep=7, index=0): None
+20.0227 	EXP 	New trial (rep=8, index=0): None
+20.0229 	EXP 	New trial (rep=9, index=0): None
+20.0231 	EXP 	New trial (rep=3, index=0): None
+20.0233 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+20.0235 	EXP 	New trial (rep=0, index=0): None
+20.0237 	EXP 	New trial (rep=1, index=0): None
+20.0239 	EXP 	New trial (rep=2, index=0): None
+20.0241 	EXP 	New trial (rep=3, index=0): None
+20.0243 	EXP 	New trial (rep=4, index=0): None
+20.0245 	EXP 	New trial (rep=5, index=0): None
+20.0247 	EXP 	New trial (rep=6, index=0): None
+20.0249 	EXP 	New trial (rep=7, index=0): None
+20.0251 	EXP 	New trial (rep=8, index=0): None
+20.0253 	EXP 	New trial (rep=9, index=0): None
+20.0255 	EXP 	New trial (rep=4, index=0): None
+20.0257 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+20.0259 	EXP 	New trial (rep=0, index=0): None
+20.0261 	EXP 	New trial (rep=1, index=0): None
+20.0262 	EXP 	New trial (rep=2, index=0): None
+20.0264 	EXP 	New trial (rep=3, index=0): None
+20.0266 	EXP 	New trial (rep=4, index=0): None
+20.0268 	EXP 	New trial (rep=5, index=0): None
+20.0270 	EXP 	New trial (rep=6, index=0): None
+20.0272 	EXP 	New trial (rep=7, index=0): None
+20.0274 	EXP 	New trial (rep=8, index=0): None
+20.0275 	EXP 	New trial (rep=9, index=0): None
+20.0278 	EXP 	New trial (rep=5, index=0): None
+20.0279 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+20.0281 	EXP 	New trial (rep=0, index=0): None
+20.0283 	EXP 	New trial (rep=1, index=0): None
+20.0285 	EXP 	New trial (rep=2, index=0): None
+20.0286 	EXP 	New trial (rep=3, index=0): None
+20.0288 	EXP 	New trial (rep=4, index=0): None
+20.0290 	EXP 	New trial (rep=5, index=0): None
+20.0292 	EXP 	New trial (rep=6, index=0): None
+20.0294 	EXP 	New trial (rep=7, index=0): None
+20.0296 	EXP 	New trial (rep=8, index=0): None
+20.0297 	EXP 	New trial (rep=9, index=0): None
+20.0299 	EXP 	New trial (rep=6, index=0): None
+20.0301 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+20.0303 	EXP 	New trial (rep=0, index=0): None
+20.0305 	EXP 	New trial (rep=1, index=0): None
+20.0306 	EXP 	New trial (rep=2, index=0): None
+20.0308 	EXP 	New trial (rep=3, index=0): None
+20.0310 	EXP 	New trial (rep=4, index=0): None
+20.0312 	EXP 	New trial (rep=5, index=0): None
+20.0313 	EXP 	New trial (rep=6, index=0): None
+20.0315 	EXP 	New trial (rep=7, index=0): None
+20.0317 	EXP 	New trial (rep=8, index=0): None
+20.0319 	EXP 	New trial (rep=9, index=0): None
+20.0321 	EXP 	New trial (rep=7, index=0): None
+20.0323 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+20.0324 	EXP 	New trial (rep=0, index=0): None
+20.0328 	EXP 	New trial (rep=1, index=0): None
+20.0330 	EXP 	New trial (rep=2, index=0): None
+20.0332 	EXP 	New trial (rep=3, index=0): None
+20.0334 	EXP 	New trial (rep=4, index=0): None
+20.0336 	EXP 	New trial (rep=5, index=0): None
+20.0338 	EXP 	New trial (rep=6, index=0): None
+20.0339 	EXP 	New trial (rep=7, index=0): None
+20.0341 	EXP 	New trial (rep=8, index=0): None
+20.0343 	EXP 	New trial (rep=9, index=0): None
+20.0345 	EXP 	New trial (rep=8, index=0): None
+20.0347 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+20.0349 	EXP 	New trial (rep=0, index=0): None
+20.0351 	EXP 	New trial (rep=1, index=0): None
+20.0353 	EXP 	New trial (rep=2, index=0): None
+20.0354 	EXP 	New trial (rep=3, index=0): None
+20.0356 	EXP 	New trial (rep=4, index=0): None
+20.0358 	EXP 	New trial (rep=5, index=0): None
+20.0360 	EXP 	New trial (rep=6, index=0): None
+20.0362 	EXP 	New trial (rep=7, index=0): None
+20.0363 	EXP 	New trial (rep=8, index=0): None
+20.0365 	EXP 	New trial (rep=9, index=0): None
+20.0367 	EXP 	New trial (rep=9, index=0): None
+20.0369 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+20.0371 	EXP 	New trial (rep=0, index=0): None
+20.0372 	EXP 	New trial (rep=1, index=0): None
+20.0374 	EXP 	New trial (rep=2, index=0): None
+20.0376 	EXP 	New trial (rep=3, index=0): None
+20.0378 	EXP 	New trial (rep=4, index=0): None
+20.0380 	EXP 	New trial (rep=5, index=0): None
+20.0381 	EXP 	New trial (rep=6, index=0): None
+20.0383 	EXP 	New trial (rep=7, index=0): None
+20.0385 	EXP 	New trial (rep=8, index=0): None
+20.0387 	EXP 	New trial (rep=9, index=0): None
+20.0390 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+20.0391 	EXP 	New trial (rep=0, index=0): None
+20.0392 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+20.0393 	EXP 	New trial (rep=0, index=0): None
+20.0464 	EXP 	text: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t1: autoDraw = False
+20.0464 	EXP 	test_1_mess: autoDraw = False
+20.0464 	EXP 	blank_screen_t1_mess: autoDraw = False
+20.0464 	EXP 	obj1_t2: autoDraw = True
+20.0464 	EXP 	obj2_t2: autoDraw = True
+20.0464 	EXP 	obj3_t2: autoDraw = True
+20.0464 	EXP 	test_2_mess: autoDraw = True
+25.0437 	EXP 	obj1_t2: autoDraw = False
+25.0437 	EXP 	obj2_t2: autoDraw = False
+25.0437 	EXP 	obj3_t2: autoDraw = False
+25.0437 	EXP 	test_2_mess: autoDraw = False
+25.0437 	EXP 	obj1_t2: autoDraw = False
+25.0437 	EXP 	obj2_t2: autoDraw = False
+25.0437 	EXP 	obj3_t2: autoDraw = False
+25.0437 	EXP 	test_2_mess: autoDraw = False
+25.0437 	EXP 	blank_screen_t2_mess: height = 0.05
+25.0437 	EXP 	blank_screen_t2_mess: height = 0.05
+25.0437 	EXP 	blank_screen_t2_mess: height = 0.05
+25.0437 	EXP 	blank_screen_t2_mess: text = 'END OF Trial \n'
+25.0437 	EXP 	blank_screen_t2_mess: autoDraw = True
+26.0259 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+26.0263 	EXP 	New trial (rep=0, index=0): None
+26.0267 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+26.0270 	EXP 	New trial (rep=0, index=0): None
+26.0274 	EXP 	New trial (rep=1, index=0): None
+26.0281 	EXP 	New trial (rep=2, index=0): None
+26.0306 	EXP 	New trial (rep=3, index=0): None
+26.0309 	EXP 	New trial (rep=4, index=0): None
+26.0312 	EXP 	New trial (rep=5, index=0): None
+26.0315 	EXP 	New trial (rep=6, index=0): None
+26.0318 	EXP 	New trial (rep=7, index=0): None
+26.0321 	EXP 	New trial (rep=8, index=0): None
+26.0324 	EXP 	New trial (rep=9, index=0): None
+26.0329 	EXP 	New trial (rep=1, index=0): None
+26.0334 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+26.0336 	EXP 	New trial (rep=0, index=0): None
+26.0340 	EXP 	New trial (rep=1, index=0): None
+26.0343 	EXP 	New trial (rep=2, index=0): None
+26.0346 	EXP 	New trial (rep=3, index=0): None
+26.0348 	EXP 	New trial (rep=4, index=0): None
+26.0351 	EXP 	New trial (rep=5, index=0): None
+26.0353 	EXP 	New trial (rep=6, index=0): None
+26.0356 	EXP 	New trial (rep=7, index=0): None
+26.0358 	EXP 	New trial (rep=8, index=0): None
+26.0361 	EXP 	New trial (rep=9, index=0): None
+26.0364 	EXP 	New trial (rep=2, index=0): None
+26.0368 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+26.0370 	EXP 	New trial (rep=0, index=0): None
+26.0372 	EXP 	New trial (rep=1, index=0): None
+26.0375 	EXP 	New trial (rep=2, index=0): None
+26.0377 	EXP 	New trial (rep=3, index=0): None
+26.0380 	EXP 	New trial (rep=4, index=0): None
+26.0382 	EXP 	New trial (rep=5, index=0): None
+26.0385 	EXP 	New trial (rep=6, index=0): None
+26.0387 	EXP 	New trial (rep=7, index=0): None
+26.0390 	EXP 	New trial (rep=8, index=0): None
+26.0392 	EXP 	New trial (rep=9, index=0): None
+26.0395 	EXP 	New trial (rep=3, index=0): None
+26.0398 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+26.0400 	EXP 	New trial (rep=0, index=0): None
+26.0403 	EXP 	New trial (rep=1, index=0): None
+26.0405 	EXP 	New trial (rep=2, index=0): None
+26.0407 	EXP 	New trial (rep=3, index=0): None
+26.0409 	EXP 	New trial (rep=4, index=0): None
+26.0412 	EXP 	New trial (rep=5, index=0): None
+26.0414 	EXP 	New trial (rep=6, index=0): None
+26.0417 	EXP 	New trial (rep=7, index=0): None
+26.0419 	EXP 	New trial (rep=8, index=0): None
+26.0421 	EXP 	New trial (rep=9, index=0): None
+26.0424 	EXP 	New trial (rep=4, index=0): None
+26.0427 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+26.0429 	EXP 	New trial (rep=0, index=0): None
+26.0431 	EXP 	New trial (rep=1, index=0): None
+26.0433 	EXP 	New trial (rep=2, index=0): None
+26.0435 	EXP 	New trial (rep=3, index=0): None
+26.0437 	EXP 	New trial (rep=4, index=0): None
+26.0440 	EXP 	New trial (rep=5, index=0): None
+26.0442 	EXP 	New trial (rep=6, index=0): None
+26.0444 	EXP 	New trial (rep=7, index=0): None
+26.0446 	EXP 	New trial (rep=8, index=0): None
+26.0448 	EXP 	New trial (rep=9, index=0): None
+26.0451 	EXP 	New trial (rep=5, index=0): None
+26.0454 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+26.0455 	EXP 	New trial (rep=0, index=0): None
+26.0458 	EXP 	New trial (rep=1, index=0): None
+26.0460 	EXP 	New trial (rep=2, index=0): None
+26.0462 	EXP 	New trial (rep=3, index=0): None
+26.0464 	EXP 	New trial (rep=4, index=0): None
+26.0466 	EXP 	New trial (rep=5, index=0): None
+26.0468 	EXP 	New trial (rep=6, index=0): None
+26.0470 	EXP 	New trial (rep=7, index=0): None
+26.0472 	EXP 	New trial (rep=8, index=0): None
+26.0475 	EXP 	New trial (rep=9, index=0): None
+26.0477 	EXP 	New trial (rep=6, index=0): None
+26.0480 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+26.0481 	EXP 	New trial (rep=0, index=0): None
+26.0484 	EXP 	New trial (rep=1, index=0): None
+26.0486 	EXP 	New trial (rep=2, index=0): None
+26.0488 	EXP 	New trial (rep=3, index=0): None
+26.0490 	EXP 	New trial (rep=4, index=0): None
+26.0493 	EXP 	New trial (rep=5, index=0): None
+26.0496 	EXP 	New trial (rep=6, index=0): None
+26.0498 	EXP 	New trial (rep=7, index=0): None
+26.0500 	EXP 	New trial (rep=8, index=0): None
+26.0502 	EXP 	New trial (rep=9, index=0): None
+26.0505 	EXP 	New trial (rep=7, index=0): None
+26.0508 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+26.0509 	EXP 	New trial (rep=0, index=0): None
+26.0512 	EXP 	New trial (rep=1, index=0): None
+26.0514 	EXP 	New trial (rep=2, index=0): None
+26.0516 	EXP 	New trial (rep=3, index=0): None
+26.0518 	EXP 	New trial (rep=4, index=0): None
+26.0520 	EXP 	New trial (rep=5, index=0): None
+26.0522 	EXP 	New trial (rep=6, index=0): None
+26.0524 	EXP 	New trial (rep=7, index=0): None
+26.0526 	EXP 	New trial (rep=8, index=0): None
+26.0528 	EXP 	New trial (rep=9, index=0): None
+26.0530 	EXP 	New trial (rep=8, index=0): None
+26.0533 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+26.0535 	EXP 	New trial (rep=0, index=0): None
+26.0537 	EXP 	New trial (rep=1, index=0): None
+26.0539 	EXP 	New trial (rep=2, index=0): None
+26.0541 	EXP 	New trial (rep=3, index=0): None
+26.0543 	EXP 	New trial (rep=4, index=0): None
+26.0545 	EXP 	New trial (rep=5, index=0): None
+26.0547 	EXP 	New trial (rep=6, index=0): None
+26.0550 	EXP 	New trial (rep=7, index=0): None
+26.0552 	EXP 	New trial (rep=8, index=0): None
+26.0553 	EXP 	New trial (rep=9, index=0): None
+26.0556 	EXP 	New trial (rep=9, index=0): None
+26.0559 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+26.0560 	EXP 	New trial (rep=0, index=0): None
+26.0563 	EXP 	New trial (rep=1, index=0): None
+26.0565 	EXP 	New trial (rep=2, index=0): None
+26.0567 	EXP 	New trial (rep=3, index=0): None
+26.0569 	EXP 	New trial (rep=4, index=0): None
+26.0571 	EXP 	New trial (rep=5, index=0): None
+26.0573 	EXP 	New trial (rep=6, index=0): None
+26.0575 	EXP 	New trial (rep=7, index=0): None
+26.0577 	EXP 	New trial (rep=8, index=0): None
+26.0579 	EXP 	New trial (rep=9, index=0): None
+26.0583 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+26.0584 	EXP 	New trial (rep=0, index=0): None
+26.0586 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+26.0587 	EXP 	New trial (rep=0, index=0): None
+26.0616 	EXP 	New trial (rep=1, index=0): None
+26.0747 	EXP 	blank_screen_t2_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: foreColor = 'white'
+26.0747 	EXP 	obj1_t3: fillColor = 'white'
+26.0747 	EXP 	obj1_t3: borderColor = 'white'
+26.0747 	EXP 	obj1_t3: color = 'white'
+26.0747 	EXP 	obj2_t3: foreColor = 'black'
+26.0747 	EXP 	obj2_t3: fillColor = 'black'
+26.0747 	EXP 	obj2_t3: borderColor = 'black'
+26.0747 	EXP 	obj2_t3: color = 'black'
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t3: autoDraw = False
+26.0747 	EXP 	obj2_t3: autoDraw = False
+26.0747 	EXP 	obj3_t3: autoDraw = False
+26.0747 	EXP 	obj4_t3: autoDraw = False
+26.0747 	EXP 	test_3_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t3_mess: autoDraw = False
+26.0747 	EXP 	obj1_t4: autoDraw = False
+26.0747 	EXP 	obj2_t4: autoDraw = False
+26.0747 	EXP 	obj3_t4: autoDraw = False
+26.0747 	EXP 	obj4_t4: autoDraw = False
+26.0747 	EXP 	obj5_t4: autoDraw = False
+26.0747 	EXP 	obj6_t4: autoDraw = False
+26.0747 	EXP 	obj7_t4: autoDraw = False
+26.0747 	EXP 	obj8_t4: autoDraw = False
+26.0747 	EXP 	obj9_t4: autoDraw = False
+26.0747 	EXP 	test_4_mess: autoDraw = False
+26.0747 	EXP 	blank_screen_t4_mess: height = 0.05
+26.0747 	EXP 	blank_screen_t4_mess: height = 0.05
+26.0747 	EXP 	blank_screen_t4_mess: height = 0.05
+26.0747 	EXP 	blank_screen_t4_mess: text = 'END OF Trial \n'
+26.0747 	EXP 	blank_screen_t4_mess: autoDraw = False
+26.0747 	EXP 	text: autoDraw = True
+31.3449 	DATA 	Mouse: Left button down, pos=(292,162)
+31.5558 	DATA 	Mouse:  Left button up, pos=(292,162)
+36.0659 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0662 	EXP 	New trial (rep=0, index=0): None
+36.0664 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0666 	EXP 	New trial (rep=0, index=0): None
+36.0668 	EXP 	New trial (rep=1, index=0): None
+36.0671 	EXP 	New trial (rep=2, index=0): None
+36.0673 	EXP 	New trial (rep=3, index=0): None
+36.0675 	EXP 	New trial (rep=4, index=0): None
+36.0677 	EXP 	New trial (rep=5, index=0): None
+36.0679 	EXP 	New trial (rep=6, index=0): None
+36.0682 	EXP 	New trial (rep=7, index=0): None
+36.0684 	EXP 	New trial (rep=8, index=0): None
+36.0686 	EXP 	New trial (rep=9, index=0): None
+36.0689 	EXP 	New trial (rep=1, index=0): None
+36.0691 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0693 	EXP 	New trial (rep=0, index=0): None
+36.0695 	EXP 	New trial (rep=1, index=0): None
+36.0697 	EXP 	New trial (rep=2, index=0): None
+36.0700 	EXP 	New trial (rep=3, index=0): None
+36.0703 	EXP 	New trial (rep=4, index=0): None
+36.0705 	EXP 	New trial (rep=5, index=0): None
+36.0707 	EXP 	New trial (rep=6, index=0): None
+36.0709 	EXP 	New trial (rep=7, index=0): None
+36.0711 	EXP 	New trial (rep=8, index=0): None
+36.0714 	EXP 	New trial (rep=9, index=0): None
+36.0716 	EXP 	New trial (rep=2, index=0): None
+36.0719 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0720 	EXP 	New trial (rep=0, index=0): None
+36.0723 	EXP 	New trial (rep=1, index=0): None
+36.0725 	EXP 	New trial (rep=2, index=0): None
+36.0727 	EXP 	New trial (rep=3, index=0): None
+36.0729 	EXP 	New trial (rep=4, index=0): None
+36.0731 	EXP 	New trial (rep=5, index=0): None
+36.0733 	EXP 	New trial (rep=6, index=0): None
+36.0736 	EXP 	New trial (rep=7, index=0): None
+36.0739 	EXP 	New trial (rep=8, index=0): None
+36.0741 	EXP 	New trial (rep=9, index=0): None
+36.0743 	EXP 	New trial (rep=3, index=0): None
+36.0746 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0747 	EXP 	New trial (rep=0, index=0): None
+36.0749 	EXP 	New trial (rep=1, index=0): None
+36.0752 	EXP 	New trial (rep=2, index=0): None
+36.0754 	EXP 	New trial (rep=3, index=0): None
+36.0756 	EXP 	New trial (rep=4, index=0): None
+36.0758 	EXP 	New trial (rep=5, index=0): None
+36.0760 	EXP 	New trial (rep=6, index=0): None
+36.0762 	EXP 	New trial (rep=7, index=0): None
+36.0764 	EXP 	New trial (rep=8, index=0): None
+36.0766 	EXP 	New trial (rep=9, index=0): None
+36.0769 	EXP 	New trial (rep=4, index=0): None
+36.0771 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0773 	EXP 	New trial (rep=0, index=0): None
+36.0775 	EXP 	New trial (rep=1, index=0): None
+36.0777 	EXP 	New trial (rep=2, index=0): None
+36.0779 	EXP 	New trial (rep=3, index=0): None
+36.0781 	EXP 	New trial (rep=4, index=0): None
+36.0783 	EXP 	New trial (rep=5, index=0): None
+36.0786 	EXP 	New trial (rep=6, index=0): None
+36.0788 	EXP 	New trial (rep=7, index=0): None
+36.0790 	EXP 	New trial (rep=8, index=0): None
+36.0792 	EXP 	New trial (rep=9, index=0): None
+36.0795 	EXP 	New trial (rep=5, index=0): None
+36.0797 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0799 	EXP 	New trial (rep=0, index=0): None
+36.0801 	EXP 	New trial (rep=1, index=0): None
+36.0803 	EXP 	New trial (rep=2, index=0): None
+36.0805 	EXP 	New trial (rep=3, index=0): None
+36.0807 	EXP 	New trial (rep=4, index=0): None
+36.0809 	EXP 	New trial (rep=5, index=0): None
+36.0811 	EXP 	New trial (rep=6, index=0): None
+36.0813 	EXP 	New trial (rep=7, index=0): None
+36.0815 	EXP 	New trial (rep=8, index=0): None
+36.0817 	EXP 	New trial (rep=9, index=0): None
+36.0820 	EXP 	New trial (rep=6, index=0): None
+36.0822 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0825 	EXP 	New trial (rep=0, index=0): None
+36.0828 	EXP 	New trial (rep=1, index=0): None
+36.0830 	EXP 	New trial (rep=2, index=0): None
+36.0832 	EXP 	New trial (rep=3, index=0): None
+36.0834 	EXP 	New trial (rep=4, index=0): None
+36.0837 	EXP 	New trial (rep=5, index=0): None
+36.0839 	EXP 	New trial (rep=6, index=0): None
+36.0841 	EXP 	New trial (rep=7, index=0): None
+36.0843 	EXP 	New trial (rep=8, index=0): None
+36.0846 	EXP 	New trial (rep=9, index=0): None
+36.0848 	EXP 	New trial (rep=7, index=0): None
+36.0851 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0852 	EXP 	New trial (rep=0, index=0): None
+36.0854 	EXP 	New trial (rep=1, index=0): None
+36.0857 	EXP 	New trial (rep=2, index=0): None
+36.0859 	EXP 	New trial (rep=3, index=0): None
+36.0861 	EXP 	New trial (rep=4, index=0): None
+36.0863 	EXP 	New trial (rep=5, index=0): None
+36.0865 	EXP 	New trial (rep=6, index=0): None
+36.0867 	EXP 	New trial (rep=7, index=0): None
+36.0869 	EXP 	New trial (rep=8, index=0): None
+36.0871 	EXP 	New trial (rep=9, index=0): None
+36.0873 	EXP 	New trial (rep=8, index=0): None
+36.0875 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0877 	EXP 	New trial (rep=0, index=0): None
+36.0879 	EXP 	New trial (rep=1, index=0): None
+36.0881 	EXP 	New trial (rep=2, index=0): None
+36.0883 	EXP 	New trial (rep=3, index=0): None
+36.0885 	EXP 	New trial (rep=4, index=0): None
+36.0887 	EXP 	New trial (rep=5, index=0): None
+36.0889 	EXP 	New trial (rep=6, index=0): None
+36.0891 	EXP 	New trial (rep=7, index=0): None
+36.0893 	EXP 	New trial (rep=8, index=0): None
+36.0895 	EXP 	New trial (rep=9, index=0): None
+36.0897 	EXP 	New trial (rep=9, index=0): None
+36.0900 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0901 	EXP 	New trial (rep=0, index=0): None
+36.0903 	EXP 	New trial (rep=1, index=0): None
+36.0905 	EXP 	New trial (rep=2, index=0): None
+36.0907 	EXP 	New trial (rep=3, index=0): None
+36.0909 	EXP 	New trial (rep=4, index=0): None
+36.0911 	EXP 	New trial (rep=5, index=0): None
+36.0913 	EXP 	New trial (rep=6, index=0): None
+36.0915 	EXP 	New trial (rep=7, index=0): None
+36.0918 	EXP 	New trial (rep=8, index=0): None
+36.0919 	EXP 	New trial (rep=9, index=0): None
+36.0923 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+36.0924 	EXP 	New trial (rep=0, index=0): None
+36.0926 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+36.0927 	EXP 	New trial (rep=0, index=0): None
+36.0931 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+36.0932 	EXP 	New trial (rep=0, index=0): None
+36.0935 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+36.0936 	EXP 	New trial (rep=0, index=0): None
+36.0939 	EXP 	New trial (rep=1, index=0): None
+36.0941 	EXP 	New trial (rep=2, index=0): None
+36.0943 	EXP 	New trial (rep=3, index=0): None
+36.0945 	EXP 	New trial (rep=4, index=0): None
+36.0947 	EXP 	New trial (rep=5, index=0): None
+36.0949 	EXP 	New trial (rep=6, index=0): None
+36.0951 	EXP 	New trial (rep=7, index=0): None
+36.0953 	EXP 	New trial (rep=8, index=0): None
+36.0955 	EXP 	New trial (rep=9, index=0): None
+36.0958 	EXP 	New trial (rep=1, index=0): None
+36.0960 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+36.0962 	EXP 	New trial (rep=0, index=0): None
+36.0964 	EXP 	New trial (rep=1, index=0): None
+36.0966 	EXP 	New trial (rep=2, index=0): None
+36.0968 	EXP 	New trial (rep=3, index=0): None
+36.0970 	EXP 	New trial (rep=4, index=0): None
+36.0972 	EXP 	New trial (rep=5, index=0): None
+36.0974 	EXP 	New trial (rep=6, index=0): None
+36.0976 	EXP 	New trial (rep=7, index=0): None
+36.0978 	EXP 	New trial (rep=8, index=0): None
+36.0980 	EXP 	New trial (rep=9, index=0): None
+36.0982 	EXP 	New trial (rep=2, index=0): None
+36.0985 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+36.0986 	EXP 	New trial (rep=0, index=0): None
+36.0988 	EXP 	New trial (rep=1, index=0): None
+36.0991 	EXP 	New trial (rep=2, index=0): None
+36.0993 	EXP 	New trial (rep=3, index=0): None
+36.0995 	EXP 	New trial (rep=4, index=0): None
+36.0997 	EXP 	New trial (rep=5, index=0): None
+36.0999 	EXP 	New trial (rep=6, index=0): None
+36.1001 	EXP 	New trial (rep=7, index=0): None
+36.1003 	EXP 	New trial (rep=8, index=0): None
+36.1005 	EXP 	New trial (rep=9, index=0): None
+36.1007 	EXP 	New trial (rep=3, index=0): None
+36.1010 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+36.1011 	EXP 	New trial (rep=0, index=0): None
+36.1013 	EXP 	New trial (rep=1, index=0): None
+36.1015 	EXP 	New trial (rep=2, index=0): None
+36.1017 	EXP 	New trial (rep=3, index=0): None
+36.1019 	EXP 	New trial (rep=4, index=0): None
+36.1021 	EXP 	New trial (rep=5, index=0): None
+36.1023 	EXP 	New trial (rep=6, index=0): None
+36.1025 	EXP 	New trial (rep=7, index=0): None
+36.1027 	EXP 	New trial (rep=8, index=0): None
+36.1029 	EXP 	New trial (rep=9, index=0): None
+36.1031 	EXP 	New trial (rep=4, index=0): None
+36.1033 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+36.1035 	EXP 	New trial (rep=0, index=0): None
+36.1037 	EXP 	New trial (rep=1, index=0): None
+36.1039 	EXP 	New trial (rep=2, index=0): None
+36.1041 	EXP 	New trial (rep=3, index=0): None
+36.1043 	EXP 	New trial (rep=4, index=0): None
+36.1045 	EXP 	New trial (rep=5, index=0): None
+36.1047 	EXP 	New trial (rep=6, index=0): None
+36.1049 	EXP 	New trial (rep=7, index=0): None
+36.1051 	EXP 	New trial (rep=8, index=0): None
+36.1053 	EXP 	New trial (rep=9, index=0): None
+36.1055 	EXP 	New trial (rep=5, index=0): None
+36.1057 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+36.1059 	EXP 	New trial (rep=0, index=0): None
+36.1061 	EXP 	New trial (rep=1, index=0): None
+36.1063 	EXP 	New trial (rep=2, index=0): None
+36.1065 	EXP 	New trial (rep=3, index=0): None
+36.1067 	EXP 	New trial (rep=4, index=0): None
+36.1069 	EXP 	New trial (rep=5, index=0): None
+36.1071 	EXP 	New trial (rep=6, index=0): None
+36.1073 	EXP 	New trial (rep=7, index=0): None
+36.1075 	EXP 	New trial (rep=8, index=0): None
+36.1077 	EXP 	New trial (rep=9, index=0): None
+36.1079 	EXP 	New trial (rep=6, index=0): None
+36.1081 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+36.1083 	EXP 	New trial (rep=0, index=0): None
+36.1085 	EXP 	New trial (rep=1, index=0): None
+36.1087 	EXP 	New trial (rep=2, index=0): None
+36.1089 	EXP 	New trial (rep=3, index=0): None
+36.1091 	EXP 	New trial (rep=4, index=0): None
+36.1093 	EXP 	New trial (rep=5, index=0): None
+36.1095 	EXP 	New trial (rep=6, index=0): None
+36.1097 	EXP 	New trial (rep=7, index=0): None
+36.1099 	EXP 	New trial (rep=8, index=0): None
+36.1101 	EXP 	New trial (rep=9, index=0): None
+36.1103 	EXP 	New trial (rep=7, index=0): None
+36.1106 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+36.1107 	EXP 	New trial (rep=0, index=0): None
+36.1109 	EXP 	New trial (rep=1, index=0): None
+36.1111 	EXP 	New trial (rep=2, index=0): None
+36.1113 	EXP 	New trial (rep=3, index=0): None
+36.1115 	EXP 	New trial (rep=4, index=0): None
+36.1117 	EXP 	New trial (rep=5, index=0): None
+36.1118 	EXP 	New trial (rep=6, index=0): None
+36.1120 	EXP 	New trial (rep=7, index=0): None
+36.1122 	EXP 	New trial (rep=8, index=0): None
+36.1124 	EXP 	New trial (rep=9, index=0): None
+36.1127 	EXP 	New trial (rep=8, index=0): None
+36.1129 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+36.1130 	EXP 	New trial (rep=0, index=0): None
+36.1132 	EXP 	New trial (rep=1, index=0): None
+36.1134 	EXP 	New trial (rep=2, index=0): None
+36.1137 	EXP 	New trial (rep=3, index=0): None
+36.1139 	EXP 	New trial (rep=4, index=0): None
+36.1140 	EXP 	New trial (rep=5, index=0): None
+36.1142 	EXP 	New trial (rep=6, index=0): None
+36.1144 	EXP 	New trial (rep=7, index=0): None
+36.1146 	EXP 	New trial (rep=8, index=0): None
+36.1148 	EXP 	New trial (rep=9, index=0): None
+36.1150 	EXP 	New trial (rep=9, index=0): None
+36.1153 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+36.1154 	EXP 	New trial (rep=0, index=0): None
+36.1156 	EXP 	New trial (rep=1, index=0): None
+36.1159 	EXP 	New trial (rep=2, index=0): None
+36.1163 	EXP 	New trial (rep=3, index=0): None
+36.1166 	EXP 	New trial (rep=4, index=0): None
+36.1168 	EXP 	New trial (rep=5, index=0): None
+36.1170 	EXP 	New trial (rep=6, index=0): None
+36.1172 	EXP 	New trial (rep=7, index=0): None
+36.1174 	EXP 	New trial (rep=8, index=0): None
+36.1176 	EXP 	New trial (rep=9, index=0): None
+36.1179 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+36.1181 	EXP 	New trial (rep=0, index=0): None
+36.1182 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+36.1183 	EXP 	New trial (rep=0, index=0): None
+36.1316 	EXP 	text: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t1: autoDraw = False
+36.1316 	EXP 	test_1_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t1_mess: autoDraw = False
+36.1316 	EXP 	obj1_t2: autoDraw = False
+36.1316 	EXP 	obj2_t2: autoDraw = False
+36.1316 	EXP 	obj3_t2: autoDraw = False
+36.1316 	EXP 	test_2_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t2_mess: text = 'END OF Trial \n'
+36.1316 	EXP 	blank_screen_t2_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t3: autoDraw = False
+36.1316 	EXP 	obj2_t3: autoDraw = False
+36.1316 	EXP 	obj3_t3: autoDraw = False
+36.1316 	EXP 	obj4_t3: autoDraw = False
+36.1316 	EXP 	test_3_mess: autoDraw = False
+36.1316 	EXP 	blank_screen_t3_mess: autoDraw = False
+36.1316 	EXP 	obj1_t4: autoDraw = True
+36.1316 	EXP 	obj2_t4: autoDraw = True
+36.1316 	EXP 	obj3_t4: autoDraw = True
+36.1316 	EXP 	obj4_t4: autoDraw = True
+36.1316 	EXP 	obj5_t4: autoDraw = True
+36.1316 	EXP 	obj6_t4: autoDraw = True
+36.1316 	EXP 	obj7_t4: autoDraw = True
+36.1316 	EXP 	obj8_t4: autoDraw = True
+36.1316 	EXP 	obj9_t4: autoDraw = True
+36.1316 	EXP 	test_4_mess: autoDraw = True
+41.1246 	EXP 	obj1_t4: autoDraw = False
+41.1246 	EXP 	obj2_t4: autoDraw = False
+41.1246 	EXP 	obj3_t4: autoDraw = False
+41.1246 	EXP 	obj4_t4: autoDraw = False
+41.1246 	EXP 	obj5_t4: autoDraw = False
+41.1246 	EXP 	obj6_t4: autoDraw = False
+41.1246 	EXP 	obj7_t4: autoDraw = False
+41.1246 	EXP 	obj8_t4: autoDraw = False
+41.1246 	EXP 	obj9_t4: autoDraw = False
+41.1246 	EXP 	test_4_mess: autoDraw = False
+41.1246 	EXP 	blank_screen_t4_mess: text = 'END OF Trial \n'
+41.1246 	EXP 	blank_screen_t4_mess: autoDraw = True
+42.1092 	EXP 	New trial (rep=2, index=0): None
+42.1263 	EXP 	blank_screen_t4_mess: autoDraw = False
+42.1263 	EXP 	blank_screen_t4_mess: autoDraw = False
+42.1263 	EXP 	text: autoDraw = True
+48.4565 	DATA 	Mouse: Left button down, pos=(327,195)
+48.5712 	DATA 	Mouse:  Left button up, pos=(327,195)
+52.1170 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1172 	EXP 	New trial (rep=0, index=0): None
+52.1174 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1175 	EXP 	New trial (rep=0, index=0): None
+52.1178 	EXP 	New trial (rep=1, index=0): None
+52.1180 	EXP 	New trial (rep=2, index=0): None
+52.1182 	EXP 	New trial (rep=3, index=0): None
+52.1184 	EXP 	New trial (rep=4, index=0): None
+52.1186 	EXP 	New trial (rep=5, index=0): None
+52.1188 	EXP 	New trial (rep=6, index=0): None
+52.1190 	EXP 	New trial (rep=7, index=0): None
+52.1192 	EXP 	New trial (rep=8, index=0): None
+52.1194 	EXP 	New trial (rep=9, index=0): None
+52.1197 	EXP 	New trial (rep=1, index=0): None
+52.1199 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1201 	EXP 	New trial (rep=0, index=0): None
+52.1203 	EXP 	New trial (rep=1, index=0): None
+52.1205 	EXP 	New trial (rep=2, index=0): None
+52.1206 	EXP 	New trial (rep=3, index=0): None
+52.1208 	EXP 	New trial (rep=4, index=0): None
+52.1210 	EXP 	New trial (rep=5, index=0): None
+52.1212 	EXP 	New trial (rep=6, index=0): None
+52.1214 	EXP 	New trial (rep=7, index=0): None
+52.1216 	EXP 	New trial (rep=8, index=0): None
+52.1218 	EXP 	New trial (rep=9, index=0): None
+52.1220 	EXP 	New trial (rep=2, index=0): None
+52.1222 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1223 	EXP 	New trial (rep=0, index=0): None
+52.1225 	EXP 	New trial (rep=1, index=0): None
+52.1227 	EXP 	New trial (rep=2, index=0): None
+52.1229 	EXP 	New trial (rep=3, index=0): None
+52.1231 	EXP 	New trial (rep=4, index=0): None
+52.1233 	EXP 	New trial (rep=5, index=0): None
+52.1235 	EXP 	New trial (rep=6, index=0): None
+52.1237 	EXP 	New trial (rep=7, index=0): None
+52.1239 	EXP 	New trial (rep=8, index=0): None
+52.1240 	EXP 	New trial (rep=9, index=0): None
+52.1243 	EXP 	New trial (rep=3, index=0): None
+52.1244 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1246 	EXP 	New trial (rep=0, index=0): None
+52.1248 	EXP 	New trial (rep=1, index=0): None
+52.1249 	EXP 	New trial (rep=2, index=0): None
+52.1251 	EXP 	New trial (rep=3, index=0): None
+52.1253 	EXP 	New trial (rep=4, index=0): None
+52.1255 	EXP 	New trial (rep=5, index=0): None
+52.1257 	EXP 	New trial (rep=6, index=0): None
+52.1258 	EXP 	New trial (rep=7, index=0): None
+52.1260 	EXP 	New trial (rep=8, index=0): None
+52.1262 	EXP 	New trial (rep=9, index=0): None
+52.1264 	EXP 	New trial (rep=4, index=0): None
+52.1266 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1267 	EXP 	New trial (rep=0, index=0): None
+52.1269 	EXP 	New trial (rep=1, index=0): None
+52.1271 	EXP 	New trial (rep=2, index=0): None
+52.1273 	EXP 	New trial (rep=3, index=0): None
+52.1275 	EXP 	New trial (rep=4, index=0): None
+52.1276 	EXP 	New trial (rep=5, index=0): None
+52.1278 	EXP 	New trial (rep=6, index=0): None
+52.1280 	EXP 	New trial (rep=7, index=0): None
+52.1282 	EXP 	New trial (rep=8, index=0): None
+52.1283 	EXP 	New trial (rep=9, index=0): None
+52.1286 	EXP 	New trial (rep=5, index=0): None
+52.1287 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1289 	EXP 	New trial (rep=0, index=0): None
+52.1291 	EXP 	New trial (rep=1, index=0): None
+52.1293 	EXP 	New trial (rep=2, index=0): None
+52.1294 	EXP 	New trial (rep=3, index=0): None
+52.1296 	EXP 	New trial (rep=4, index=0): None
+52.1298 	EXP 	New trial (rep=5, index=0): None
+52.1299 	EXP 	New trial (rep=6, index=0): None
+52.1301 	EXP 	New trial (rep=7, index=0): None
+52.1303 	EXP 	New trial (rep=8, index=0): None
+52.1305 	EXP 	New trial (rep=9, index=0): None
+52.1307 	EXP 	New trial (rep=6, index=0): None
+52.1308 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1310 	EXP 	New trial (rep=0, index=0): None
+52.1311 	EXP 	New trial (rep=1, index=0): None
+52.1313 	EXP 	New trial (rep=2, index=0): None
+52.1315 	EXP 	New trial (rep=3, index=0): None
+52.1317 	EXP 	New trial (rep=4, index=0): None
+52.1319 	EXP 	New trial (rep=5, index=0): None
+52.1321 	EXP 	New trial (rep=6, index=0): None
+52.1324 	EXP 	New trial (rep=7, index=0): None
+52.1326 	EXP 	New trial (rep=8, index=0): None
+52.1328 	EXP 	New trial (rep=9, index=0): None
+52.1330 	EXP 	New trial (rep=7, index=0): None
+52.1332 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1334 	EXP 	New trial (rep=0, index=0): None
+52.1336 	EXP 	New trial (rep=1, index=0): None
+52.1337 	EXP 	New trial (rep=2, index=0): None
+52.1339 	EXP 	New trial (rep=3, index=0): None
+52.1341 	EXP 	New trial (rep=4, index=0): None
+52.1343 	EXP 	New trial (rep=5, index=0): None
+52.1344 	EXP 	New trial (rep=6, index=0): None
+52.1346 	EXP 	New trial (rep=7, index=0): None
+52.1348 	EXP 	New trial (rep=8, index=0): None
+52.1350 	EXP 	New trial (rep=9, index=0): None
+52.1352 	EXP 	New trial (rep=8, index=0): None
+52.1354 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1355 	EXP 	New trial (rep=0, index=0): None
+52.1357 	EXP 	New trial (rep=1, index=0): None
+52.1359 	EXP 	New trial (rep=2, index=0): None
+52.1361 	EXP 	New trial (rep=3, index=0): None
+52.1362 	EXP 	New trial (rep=4, index=0): None
+52.1364 	EXP 	New trial (rep=5, index=0): None
+52.1366 	EXP 	New trial (rep=6, index=0): None
+52.1368 	EXP 	New trial (rep=7, index=0): None
+52.1369 	EXP 	New trial (rep=8, index=0): None
+52.1371 	EXP 	New trial (rep=9, index=0): None
+52.1373 	EXP 	New trial (rep=9, index=0): None
+52.1375 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1376 	EXP 	New trial (rep=0, index=0): None
+52.1378 	EXP 	New trial (rep=1, index=0): None
+52.1380 	EXP 	New trial (rep=2, index=0): None
+52.1382 	EXP 	New trial (rep=3, index=0): None
+52.1383 	EXP 	New trial (rep=4, index=0): None
+52.1386 	EXP 	New trial (rep=5, index=0): None
+52.1387 	EXP 	New trial (rep=6, index=0): None
+52.1389 	EXP 	New trial (rep=7, index=0): None
+52.1391 	EXP 	New trial (rep=8, index=0): None
+52.1393 	EXP 	New trial (rep=9, index=0): None
+52.1396 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+52.1397 	EXP 	New trial (rep=0, index=0): None
+52.1399 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+52.1400 	EXP 	New trial (rep=0, index=0): None
+52.1403 	EXP 	Created sequence: sequential, trialTypes=1, nReps=10, seed=None
+52.1404 	EXP 	New trial (rep=0, index=0): None
+52.1407 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+52.1408 	EXP 	New trial (rep=0, index=0): None
+52.1410 	EXP 	New trial (rep=1, index=0): None
+52.1412 	EXP 	New trial (rep=2, index=0): None
+52.1414 	EXP 	New trial (rep=3, index=0): None
+52.1416 	EXP 	New trial (rep=4, index=0): None
+52.1417 	EXP 	New trial (rep=5, index=0): None
+52.1419 	EXP 	New trial (rep=6, index=0): None
+52.1421 	EXP 	New trial (rep=7, index=0): None
+52.1423 	EXP 	New trial (rep=8, index=0): None
+52.1425 	EXP 	New trial (rep=9, index=0): None
+52.1427 	EXP 	New trial (rep=1, index=0): None
+52.1430 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+52.1431 	EXP 	New trial (rep=0, index=0): None
+52.1433 	EXP 	New trial (rep=1, index=0): None
+52.1435 	EXP 	New trial (rep=2, index=0): None
+52.1437 	EXP 	New trial (rep=3, index=0): None
+52.1439 	EXP 	New trial (rep=4, index=0): None
+52.1441 	EXP 	New trial (rep=5, index=0): None
+52.1443 	EXP 	New trial (rep=6, index=0): None
+52.1444 	EXP 	New trial (rep=7, index=0): None
+52.1446 	EXP 	New trial (rep=8, index=0): None
+52.1448 	EXP 	New trial (rep=9, index=0): None
+52.1450 	EXP 	New trial (rep=2, index=0): None
+52.1453 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+52.1454 	EXP 	New trial (rep=0, index=0): None
+52.1456 	EXP 	New trial (rep=1, index=0): None
+52.1458 	EXP 	New trial (rep=2, index=0): None
+52.1460 	EXP 	New trial (rep=3, index=0): None
+52.1462 	EXP 	New trial (rep=4, index=0): None
+52.1464 	EXP 	New trial (rep=5, index=0): None
+52.1466 	EXP 	New trial (rep=6, index=0): None
+52.1468 	EXP 	New trial (rep=7, index=0): None
+52.1470 	EXP 	New trial (rep=8, index=0): None
+52.1472 	EXP 	New trial (rep=9, index=0): None
+52.1474 	EXP 	New trial (rep=3, index=0): None
+52.1476 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+52.1478 	EXP 	New trial (rep=0, index=0): None
+52.1480 	EXP 	New trial (rep=1, index=0): None
+52.1481 	EXP 	New trial (rep=2, index=0): None
+52.1483 	EXP 	New trial (rep=3, index=0): None
+52.1485 	EXP 	New trial (rep=4, index=0): None
+52.1487 	EXP 	New trial (rep=5, index=0): None
+52.1490 	EXP 	New trial (rep=6, index=0): None
+52.1492 	EXP 	New trial (rep=7, index=0): None
+52.1494 	EXP 	New trial (rep=8, index=0): None
+52.1496 	EXP 	New trial (rep=9, index=0): None
+52.1498 	EXP 	New trial (rep=4, index=0): None
+52.1500 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+52.1502 	EXP 	New trial (rep=0, index=0): None
+52.1504 	EXP 	New trial (rep=1, index=0): None
+52.1506 	EXP 	New trial (rep=2, index=0): None
+52.1507 	EXP 	New trial (rep=3, index=0): None
+52.1509 	EXP 	New trial (rep=4, index=0): None
+52.1511 	EXP 	New trial (rep=5, index=0): None
+52.1513 	EXP 	New trial (rep=6, index=0): None
+52.1515 	EXP 	New trial (rep=7, index=0): None
+52.1517 	EXP 	New trial (rep=8, index=0): None
+52.1519 	EXP 	New trial (rep=9, index=0): None
+52.1521 	EXP 	New trial (rep=5, index=0): None
+52.1523 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+52.1525 	EXP 	New trial (rep=0, index=0): None
+52.1527 	EXP 	New trial (rep=1, index=0): None
+52.1529 	EXP 	New trial (rep=2, index=0): None
+52.1530 	EXP 	New trial (rep=3, index=0): None
+52.1533 	EXP 	New trial (rep=4, index=0): None
+52.1535 	EXP 	New trial (rep=5, index=0): None
+52.1537 	EXP 	New trial (rep=6, index=0): None
+52.1539 	EXP 	New trial (rep=7, index=0): None
+52.1541 	EXP 	New trial (rep=8, index=0): None
+52.1543 	EXP 	New trial (rep=9, index=0): None
+52.1545 	EXP 	New trial (rep=6, index=0): None
+52.1547 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+52.1549 	EXP 	New trial (rep=0, index=0): None
+52.1551 	EXP 	New trial (rep=1, index=0): None
+52.1553 	EXP 	New trial (rep=2, index=0): None
+52.1554 	EXP 	New trial (rep=3, index=0): None
+52.1556 	EXP 	New trial (rep=4, index=0): None
+52.1558 	EXP 	New trial (rep=5, index=0): None
+52.1560 	EXP 	New trial (rep=6, index=0): None
+52.1562 	EXP 	New trial (rep=7, index=0): None
+52.1564 	EXP 	New trial (rep=8, index=0): None
+52.1566 	EXP 	New trial (rep=9, index=0): None
+52.1568 	EXP 	New trial (rep=7, index=0): None
+52.1570 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+52.1572 	EXP 	New trial (rep=0, index=0): None
+52.1573 	EXP 	New trial (rep=1, index=0): None
+52.1576 	EXP 	New trial (rep=2, index=0): None
+52.1577 	EXP 	New trial (rep=3, index=0): None
+52.1579 	EXP 	New trial (rep=4, index=0): None
+52.1581 	EXP 	New trial (rep=5, index=0): None
+52.1583 	EXP 	New trial (rep=6, index=0): None
+52.1585 	EXP 	New trial (rep=7, index=0): None
+52.1587 	EXP 	New trial (rep=8, index=0): None
+52.1589 	EXP 	New trial (rep=9, index=0): None
+52.1591 	EXP 	New trial (rep=8, index=0): None
+52.1594 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+52.1595 	EXP 	New trial (rep=0, index=0): None
+52.1597 	EXP 	New trial (rep=1, index=0): None
+52.1599 	EXP 	New trial (rep=2, index=0): None
+52.1601 	EXP 	New trial (rep=3, index=0): None
+52.1603 	EXP 	New trial (rep=4, index=0): None
+52.1605 	EXP 	New trial (rep=5, index=0): None
+52.1607 	EXP 	New trial (rep=6, index=0): None
+52.1609 	EXP 	New trial (rep=7, index=0): None
+52.1610 	EXP 	New trial (rep=8, index=0): None
+52.1612 	EXP 	New trial (rep=9, index=0): None
+52.1614 	EXP 	New trial (rep=9, index=0): None
+52.1617 	EXP 	Created sequence: random, trialTypes=1, nReps=10, seed=None
+52.1618 	EXP 	New trial (rep=0, index=0): None
+52.1620 	EXP 	New trial (rep=1, index=0): None
+52.1622 	EXP 	New trial (rep=2, index=0): None
+52.1624 	EXP 	New trial (rep=3, index=0): None
+52.1626 	EXP 	New trial (rep=4, index=0): None
+52.1628 	EXP 	New trial (rep=5, index=0): None
+52.1630 	EXP 	New trial (rep=6, index=0): None
+52.1632 	EXP 	New trial (rep=7, index=0): None
+52.1634 	EXP 	New trial (rep=8, index=0): None
+52.1635 	EXP 	New trial (rep=9, index=0): None
+52.1638 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+52.1639 	EXP 	New trial (rep=0, index=0): None
+52.1641 	EXP 	Created sequence: sequential, trialTypes=1, nReps=1, seed=None
+52.1642 	EXP 	New trial (rep=0, index=0): None
+52.1740 	EXP 	text: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t1: autoDraw = False
+52.1740 	EXP 	test_1_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t1_mess: autoDraw = False
+52.1740 	EXP 	obj1_t2: autoDraw = False
+52.1740 	EXP 	obj2_t2: autoDraw = False
+52.1740 	EXP 	obj3_t2: autoDraw = False
+52.1740 	EXP 	test_2_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t2_mess: text = 'END OF Trial \n'
+52.1740 	EXP 	blank_screen_t2_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t3: autoDraw = False
+52.1740 	EXP 	obj2_t3: autoDraw = False
+52.1740 	EXP 	obj3_t3: autoDraw = False
+52.1740 	EXP 	obj4_t3: autoDraw = False
+52.1740 	EXP 	test_3_mess: autoDraw = False
+52.1740 	EXP 	blank_screen_t3_mess: autoDraw = False
+52.1740 	EXP 	obj1_t4: autoDraw = True
+52.1740 	EXP 	obj2_t4: autoDraw = True
+52.1740 	EXP 	obj3_t4: autoDraw = True
+52.1740 	EXP 	obj4_t4: autoDraw = True
+52.1740 	EXP 	obj5_t4: autoDraw = True
+52.1740 	EXP 	obj6_t4: autoDraw = True
+52.1740 	EXP 	obj7_t4: autoDraw = True
+52.1740 	EXP 	obj8_t4: autoDraw = True
+52.1740 	EXP 	obj9_t4: autoDraw = True
+52.1740 	EXP 	test_4_mess: autoDraw = True
+57.1679 	EXP 	obj1_t4: autoDraw = False
+57.1679 	EXP 	obj2_t4: autoDraw = False
+57.1679 	EXP 	obj3_t4: autoDraw = False
+57.1679 	EXP 	obj4_t4: autoDraw = False
+57.1679 	EXP 	obj5_t4: autoDraw = False
+57.1679 	EXP 	obj6_t4: autoDraw = False
+57.1679 	EXP 	obj7_t4: autoDraw = False
+57.1679 	EXP 	obj8_t4: autoDraw = False
+57.1679 	EXP 	obj9_t4: autoDraw = False
+57.1679 	EXP 	test_4_mess: autoDraw = False
+57.1679 	EXP 	obj1_t4: autoDraw = False
+57.1679 	EXP 	obj2_t4: autoDraw = False
+57.1679 	EXP 	obj3_t4: autoDraw = False
+57.1679 	EXP 	obj4_t4: autoDraw = False
+57.1679 	EXP 	obj5_t4: autoDraw = False
+57.1679 	EXP 	obj6_t4: autoDraw = False
+57.1679 	EXP 	obj7_t4: autoDraw = False
+57.1679 	EXP 	obj8_t4: autoDraw = False
+57.1679 	EXP 	obj9_t4: autoDraw = False
+57.1679 	EXP 	test_4_mess: autoDraw = False
+57.1679 	EXP 	blank_screen_t4_mess: text = 'END OF Trial \n'
+57.1679 	EXP 	blank_screen_t4_mess: autoDraw = True
+58.1530 	EXP 	New trial (rep=3, index=0): None
+58.1685 	EXP 	blank_screen_t4_mess: autoDraw = False
+58.1685 	EXP 	blank_screen_t4_mess: autoDraw = False
+58.1685 	EXP 	text: autoDraw = True
+63.2741 	DATA 	Keypress: escape
+63.3250 	EXP 	Test1: status = STOPPED
+63.3345 	EXP 	text: autoDraw = False
+63.3345 	EXP 	Test1: status = STOPPED
+63.4731 	EXP 	window1: mouseVisible = True

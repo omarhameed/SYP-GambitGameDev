@@ -1,0 +1,118 @@
+12.0030 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+12.0035 	EXP 	Created window1 = Window(allowGUI=True, allowStencil=False, autoLog=True, backendConf=UNKNOWN, backgroundFit=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fedc07a0640>, backgroundImage=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fedc07a05e0>, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fedc07a0460>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fedbf212c70>, multiSample=False, name='window1', numSamples=2, pos=(495, 300), screen=0, size=array([1800, 1200]), stencilBits=0, stereo=False, title='PsychoPy', units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+12.0037 	EXP 	window1: mouseVisible = True
+12.0038 	EXP 	window1: backgroundImage = ''
+12.0038 	EXP 	window1: backgroundFit = 'none'
+12.0069 	EXP 	window1: Attempting to measure frame rate of screen (0) ...
+12.0070 	EXP 	window1: recordFrameIntervals = False
+12.0960 	EXP 	window1: recordFrameIntervals = True
+12.9362 	WARNING 	Couldn't measure a consistent frame rate!
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+12.9364 	EXP 	window1: mouseVisible = True
+12.9739 	WARNING 	launchHubServer: If using the iohub mouse or eyetracker devices, fullScr should be True.
+15.8462 	EXP 	Test1: status = STARTED
+15.8467 	EXP 	window1: mouseVisible = True
+15.8567 	EXP 	Created welcome_message = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='welcome_message', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+15.8569 	EXP 	window1: mouseVisible = True
+16.0291 	EXP 	Created caution_sign = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, anchor=('center', 'center'), autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, image=str(...), interpolate=True, mask=None, maskParams=None, name='caution_sign', opacity=1.0, ori=0.0, pos=array([0.3, 0.3]), size=array([0.2, 0.2]), texRes=128.0, units='height', win=Window(...))
+16.0296 	EXP 	window1: mouseVisible = True
+16.0298 	EXP 	window1: mouseVisible = True
+16.0306 	EXP 	window1: mouseVisible = True
+16.0313 	EXP 	window1: mouseVisible = True
+16.0495 	EXP 	window1: mouseVisible = True
+16.0497 	EXP 	window1: mouseVisible = True
+16.0504 	EXP 	window1: mouseVisible = True
+16.0510 	EXP 	window1: mouseVisible = True
+16.0638 	EXP 	window1: mouseVisible = True
+16.0641 	EXP 	window1: mouseVisible = True
+16.0643 	EXP 	window1: mouseVisible = True
+16.0649 	EXP 	window1: mouseVisible = True
+16.0654 	EXP 	window1: mouseVisible = True
+16.0734 	EXP 	window1: mouseVisible = True
+16.0736 	EXP 	window1: mouseVisible = True
+16.0741 	EXP 	window1: mouseVisible = True
+16.0746 	EXP 	window1: mouseVisible = True
+16.0801 	EXP 	window1: mouseVisible = True
+16.0805 	EXP 	window1: mouseVisible = True
+16.0807 	EXP 	window1: mouseVisible = True
+16.0812 	EXP 	window1: mouseVisible = True
+16.0817 	EXP 	window1: mouseVisible = True
+16.0896 	EXP 	window1: mouseVisible = True
+16.0898 	EXP 	window1: mouseVisible = True
+16.0903 	EXP 	window1: mouseVisible = True
+16.0909 	EXP 	window1: mouseVisible = True
+16.0963 	EXP 	window1: mouseVisible = True
+16.0966 	EXP 	window1: mouseVisible = True
+16.0967 	EXP 	window1: mouseVisible = True
+16.0973 	EXP 	window1: mouseVisible = True
+16.0978 	EXP 	window1: mouseVisible = True
+16.1067 	EXP 	window1: mouseVisible = True
+16.1069 	EXP 	window1: mouseVisible = True
+16.1074 	EXP 	window1: mouseVisible = True
+16.1080 	EXP 	window1: mouseVisible = True
+16.1138 	EXP 	window1: mouseVisible = True
+16.1139 	EXP 	window1: mouseVisible = True
+16.1689 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='text', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='Chose a test by clicking on one of the boxes', units='height', win=Window(...), wrapWidth=1)
+16.1691 	EXP 	window1: mouseVisible = True
+16.1705 	EXP 	Created obj1_t1 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj1_t1', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.1707 	EXP 	window1: mouseVisible = True
+16.1767 	EXP 	Created test_1_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='test_1_mess', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='Focus on the black square', units='height', win=Window(...), wrapWidth=1)
+16.1769 	EXP 	window1: mouseVisible = True
+16.1826 	EXP 	Created blank_screen_t1_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blank_screen_t1_mess', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='END OF Trial \n', units='height', win=Window(...), wrapWidth=1)
+16.1827 	EXP 	window1: mouseVisible = True
+16.1841 	EXP 	Created obj1_t2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj1_t2', opacity=1.0, ori=0.0, pos=array([-0.25,  0.  ]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.1842 	EXP 	window1: mouseVisible = True
+16.1858 	EXP 	Created obj2_t2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj2_t2', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.1859 	EXP 	window1: mouseVisible = True
+16.1877 	EXP 	Created obj3_t2 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj3_t2', opacity=1.0, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.1878 	EXP 	window1: mouseVisible = True
+16.1909 	EXP 	Created test_2_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='test_2_mess', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='Focus on the black square', units='height', win=Window(...), wrapWidth=1)
+16.1910 	EXP 	window1: mouseVisible = True
+16.1921 	EXP 	Created blank_screen_t2_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blank_screen_t2_mess', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+16.1922 	EXP 	window1: mouseVisible = True
+16.1934 	EXP 	Created obj1_t3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj1_t3', opacity=1.0, ori=0.0, pos=array([-0.25,  0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.1935 	EXP 	window1: mouseVisible = True
+16.1946 	EXP 	Created obj2_t3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj2_t3', opacity=1.0, ori=0.0, pos=array([0.25, 0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.1947 	EXP 	window1: mouseVisible = True
+16.1959 	EXP 	Created obj3_t3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj3_t3', opacity=1.0, ori=0.0, pos=array([-0.25, -0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.1960 	EXP 	window1: mouseVisible = True
+16.1971 	EXP 	Created obj4_t3 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj4_t3', opacity=1.0, ori=0.0, pos=array([ 0.25, -0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.1972 	EXP 	window1: mouseVisible = True
+16.2002 	EXP 	Created test_3_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='test_3_mess', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='Focus on the black square', units='height', win=Window(...), wrapWidth=1)
+16.2003 	EXP 	window1: mouseVisible = True
+16.2044 	EXP 	Created blank_screen_t3_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blank_screen_t3_mess', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Blank screen\n', units='height', win=Window(...), wrapWidth=1)
+16.2045 	EXP 	window1: mouseVisible = True
+16.2059 	EXP 	Created obj1_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, draggable=False, fillColor=array([-1., -1., -1.]), fillColorSpace='rgb', fillRGB=array([-1., -1., -1.]), interpolate=True, lineColor=array([0., 0., 0.]), lineColorSpace='rgb', lineRGB=array([0., 0., 0.]), lineWidth=1.0, name='obj1_t4', opacity=1.0, ori=0.0, pos=array([-0.25,  0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.2060 	EXP 	window1: mouseVisible = True
+16.2076 	EXP 	Created obj2_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj2_t4', opacity=1.0, ori=0.0, pos=array([0.  , 0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.2077 	EXP 	window1: mouseVisible = True
+16.2093 	EXP 	Created obj3_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj3_t4', opacity=1.0, ori=0.0, pos=array([0.25, 0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.2094 	EXP 	window1: mouseVisible = True
+16.2111 	EXP 	Created obj4_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj4_t4', opacity=1.0, ori=0.0, pos=array([-0.25,  0.  ]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.2112 	EXP 	window1: mouseVisible = True
+16.2128 	EXP 	Created obj5_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-4.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj5_t4', opacity=1.0, ori=0.0, pos=array([0., 0.]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.2128 	EXP 	window1: mouseVisible = True
+16.2144 	EXP 	Created obj6_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-5.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj6_t4', opacity=1.0, ori=0.0, pos=array([0.25, 0.  ]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.2145 	EXP 	window1: mouseVisible = True
+16.2162 	EXP 	Created obj7_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-6.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj7_t4', opacity=1.0, ori=0.0, pos=array([-0.25, -0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.2163 	EXP 	window1: mouseVisible = True
+16.2179 	EXP 	Created obj8_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-7.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj8_t4', opacity=1.0, ori=0.0, pos=array([ 0.  , -0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.2180 	EXP 	window1: mouseVisible = True
+16.2196 	EXP 	Created obj9_t4 = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, anchor=('center', 'center'), autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-8.0, draggable=False, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='obj9_t4', opacity=1.0, ori=0.0, pos=array([ 0.25, -0.25]), size=array([0.05, 0.05]), units='height', vertices=ndarray(...), win=Window(...))
+16.2197 	EXP 	window1: mouseVisible = True
+16.2230 	EXP 	Created test_4_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-9.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='test_4_mess', opacity=1.0, ori=0.0, pos=array([0. , 0.4]), rgb=UNKNOWN, text='Focus on the black square', units='height', win=Window(...), wrapWidth=1)
+16.2232 	EXP 	window1: mouseVisible = True
+16.2245 	EXP 	Created blank_screen_t4_mess = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoDraw=False, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, draggable=False, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.05, italic=False, languageStyle='LTR', name='blank_screen_t4_mess', opacity=1.0, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+0.0672 	WARNING 	t of last frame was 42.08ms (=1/23)
+0.0672 	EXP 	welcome_message: autoDraw = True
+0.0672 	EXP 	caution_sign: autoDraw = True
+10.0079 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+10.0082 	EXP 	New trial (rep=0, index=0): None
+10.0087 	EXP 	Created sequence: random, trialTypes=1, nReps=5, seed=None
+10.0089 	EXP 	New trial (rep=0, index=0): None
+10.0207 	EXP 	window1: mouseVisible = True
