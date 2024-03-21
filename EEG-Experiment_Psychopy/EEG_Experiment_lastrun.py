@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on March 21, 2024, at 12:46
+    on March 21, 2024, at 13:22
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -34,6 +34,27 @@ import psychopy.iohub as io
 from psychopy.hardware import keyboard
 
 # Run 'Before Experiment' code from code
+#Set number of repetitions  for each test
+global_rep_num = 1
+rep_num1 = global_rep_num
+rep_num2 = global_rep_num
+rep_num3 = global_rep_num
+rep_num4 = global_rep_num
+
+#Set number of trials for each test
+global_trial_num = 1
+trial_num1 = global_trial_num
+trial_num2 = global_trial_num
+trial_num3 = global_trial_num
+trial_num4 = global_trial_num
+
+#Set duration of repetitions for each test
+global_dur_test = 2
+dur_test1 = global_dur_test
+dur_test2 = global_dur_test
+dur_test3 = global_dur_test
+dur_test4 = global_dur_test
+
 def selectTarget(objects, target):
     for obj in objects:
         if obj == target:
@@ -323,23 +344,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     
     # --- Initialize components for Routine "globalFuncs" ---
     
-    # --- Initialize components for Routine "WelcomeScreen" ---
-    welcome_message = visual.TextStim(win=win, name='welcome_message',
-        text='',
-        font='Open Sans',
-        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
-        color=[1.0000, 1.0000, 1.0000], colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=0.0);
-    caution_sign = visual.ImageStim(
-        win=win,
-        name='caution_sign', 
-        image='warning_sign.png', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0.35), size=(0.3, 0.2),
-        color=[1,1,1], colorSpace='rgb', opacity=None,
-        flipHoriz=False, flipVert=False,
-        texRes=128.0, interpolate=True, depth=-1.0)
-    
     # --- Initialize components for Routine "test_1" ---
     obj1_t1 = visual.Rect(
         win=win, name='obj1_t1',
@@ -591,134 +595,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # the Routine "globalFuncs" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
-    # --- Prepare to start Routine "WelcomeScreen" ---
-    continueRoutine = True
-    # update component parameters for each repeat
-    thisExp.addData('WelcomeScreen.started', globalClock.getTime())
-    # keep track of which components have finished
-    WelcomeScreenComponents = [welcome_message, caution_sign]
-    for thisComponent in WelcomeScreenComponents:
-        thisComponent.tStart = None
-        thisComponent.tStop = None
-        thisComponent.tStartRefresh = None
-        thisComponent.tStopRefresh = None
-        if hasattr(thisComponent, 'status'):
-            thisComponent.status = NOT_STARTED
-    # reset timers
-    t = 0
-    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    frameN = -1
-    
-    # --- Run Routine "WelcomeScreen" ---
-    routineForceEnded = not continueRoutine
-    while continueRoutine and routineTimer.getTime() < 10.0:
-        # get current time
-        t = routineTimer.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-        # update/draw components on each frame
-        
-        # *welcome_message* updates
-        
-        # if welcome_message is starting this frame...
-        if welcome_message.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            welcome_message.frameNStart = frameN  # exact frame index
-            welcome_message.tStart = t  # local t and not account for scr refresh
-            welcome_message.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(welcome_message, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'welcome_message.started')
-            # update status
-            welcome_message.status = STARTED
-            welcome_message.setAutoDraw(True)
-        
-        # if welcome_message is active this frame...
-        if welcome_message.status == STARTED:
-            # update params
-            welcome_message.setText("\n\nWelcome to the Experiment!! \n\nDisclaimer: This experiment involves viewing flickering objects. If you are prone to photosensitive epilepsy or have other visual sensitivities, please proceed with caution or consider not participating. Just so we're clear, we can't take responsibility for any discomfort or issues that arise.", log=False)
-        
-        # if welcome_message is stopping this frame...
-        if welcome_message.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > welcome_message.tStartRefresh + 10-frameTolerance:
-                # keep track of stop time/frame for later
-                welcome_message.tStop = t  # not accounting for scr refresh
-                welcome_message.frameNStop = frameN  # exact frame index
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'welcome_message.stopped')
-                # update status
-                welcome_message.status = FINISHED
-                welcome_message.setAutoDraw(False)
-        
-        # *caution_sign* updates
-        
-        # if caution_sign is starting this frame...
-        if caution_sign.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-            # keep track of start time/frame for later
-            caution_sign.frameNStart = frameN  # exact frame index
-            caution_sign.tStart = t  # local t and not account for scr refresh
-            caution_sign.tStartRefresh = tThisFlipGlobal  # on global time
-            win.timeOnFlip(caution_sign, 'tStartRefresh')  # time at next scr refresh
-            # add timestamp to datafile
-            thisExp.timestampOnFlip(win, 'caution_sign.started')
-            # update status
-            caution_sign.status = STARTED
-            caution_sign.setAutoDraw(True)
-        
-        # if caution_sign is active this frame...
-        if caution_sign.status == STARTED:
-            # update params
-            pass
-        
-        # if caution_sign is stopping this frame...
-        if caution_sign.status == STARTED:
-            # is it time to stop? (based on global clock, using actual start)
-            if tThisFlipGlobal > caution_sign.tStartRefresh + 10-frameTolerance:
-                # keep track of stop time/frame for later
-                caution_sign.tStop = t  # not accounting for scr refresh
-                caution_sign.frameNStop = frameN  # exact frame index
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'caution_sign.stopped')
-                # update status
-                caution_sign.status = FINISHED
-                caution_sign.setAutoDraw(False)
-        
-        # check for quit (typically the Esc key)
-        if defaultKeyboard.getKeys(keyList=["escape"]):
-            thisExp.status = FINISHED
-        if thisExp.status == FINISHED or endExpNow:
-            endExperiment(thisExp, inputs=inputs, win=win)
-            return
-        
-        # check if all components have finished
-        if not continueRoutine:  # a component has requested a forced-end of Routine
-            routineForceEnded = True
-            break
-        continueRoutine = False  # will revert to True if at least one component still running
-        for thisComponent in WelcomeScreenComponents:
-            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                continueRoutine = True
-                break  # at least one component has not yet finished
-        
-        # refresh the screen
-        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-            win.flip()
-    
-    # --- Ending Routine "WelcomeScreen" ---
-    for thisComponent in WelcomeScreenComponents:
-        if hasattr(thisComponent, "setAutoDraw"):
-            thisComponent.setAutoDraw(False)
-    thisExp.addData('WelcomeScreen.stopped', globalClock.getTime())
-    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-    if routineForceEnded:
-        routineTimer.reset()
-    else:
-        routineTimer.addTime(-10.000000)
-    
     # set up handler to look after randomisation of conditions etc
-    trials_1 = data.TrialHandler(nReps=10.0, method='sequential', 
+    trials_1 = data.TrialHandler(nReps=trial_num1, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_1')
@@ -747,7 +625,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_1[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_1 = data.TrialHandler(nReps=10.0, method='sequential', 
+        repetition_1 = data.TrialHandler(nReps=rep_num1, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_1')
@@ -795,7 +673,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             # Frames per cycle for each object (full cycle = one on and one off phase)
             frames_per_cycle_obj1 = 60 // freq_obj1[trials_1.thisN]
             
-            test_1_mess.text = 'Focus on the black square (Test 1, Trial ' + str(trials_1.thisN) + ')'
+            test_1_mess.text = 'Focus on the black square (Test 1, Trial ' + str(trials_1.thisN + 1) + ')'
             
             # keep track of which components have finished
             test_1Components = [obj1_t1, test_1_mess]
@@ -813,7 +691,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             
             # --- Run Routine "test_1" ---
             routineForceEnded = not continueRoutine
-            while continueRoutine and routineTimer.getTime() < 5.0:
+            while continueRoutine:
                 # get current time
                 t = routineTimer.getTime()
                 tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -844,7 +722,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj1_t1 is stopping this frame...
                 if obj1_t1.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj1_t1.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj1_t1.tStartRefresh + dur_test1-frameTolerance:
                         # keep track of stop time/frame for later
                         obj1_t1.tStop = t  # not accounting for scr refresh
                         obj1_t1.frameNStop = frameN  # exact frame index
@@ -877,7 +755,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if test_1_mess is stopping this frame...
                 if test_1_mess.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > test_1_mess.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > test_1_mess.tStartRefresh + dur_test1-frameTolerance:
                         # keep track of stop time/frame for later
                         test_1_mess.tStop = t  # not accounting for scr refresh
                         test_1_mess.frameNStop = frameN  # exact frame index
@@ -918,11 +796,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('test_1.stopped', globalClock.getTime())
-            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-            if routineForceEnded:
-                routineTimer.reset()
-            else:
-                routineTimer.addTime(-5.000000)
+            # the Routine "test_1" was not non-slip safe, so reset the non-slip timer
+            routineTimer.reset()
             
             # --- Prepare to start Routine "blank1s" ---
             continueRoutine = True
@@ -1024,18 +899,18 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 10.0 repeats of 'repetition_1'
+        # completed rep_num1 repeats of 'repetition_1'
         
         thisExp.nextEntry()
         
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 10.0 repeats of 'trials_1'
+    # completed trial_num1 repeats of 'trials_1'
     
     
     # set up handler to look after randomisation of conditions etc
-    trials_2 = data.TrialHandler(nReps=10.0, method='sequential', 
+    trials_2 = data.TrialHandler(nReps=trial_num2, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_2')
@@ -1064,7 +939,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_2[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_2 = data.TrialHandler(nReps=10.0, method='sequential', 
+        repetition_2 = data.TrialHandler(nReps=rep_num2, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_2')
@@ -1122,7 +997,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             #Select target object for user to look at
             selectTarget(objects, targets[trials_2.thisN]) 
             
-            test_2_mess.text = 'Focus on the black square (Test 2, Trial ' + str(trials_2.thisN) + ')'
+            test_2_mess.text = 'Focus on the black square (Test 2, Trial ' + str(trials_2.thisN + 1) + ')'
             # keep track of which components have finished
             test_2Components = [obj1_t2, obj2_t2, obj3_t2, test_2_mess]
             for thisComponent in test_2Components:
@@ -1139,7 +1014,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             
             # --- Run Routine "test_2" ---
             routineForceEnded = not continueRoutine
-            while continueRoutine and routineTimer.getTime() < 5.0:
+            while continueRoutine:
                 # get current time
                 t = routineTimer.getTime()
                 tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1170,7 +1045,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj1_t2 is stopping this frame...
                 if obj1_t2.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj1_t2.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj1_t2.tStartRefresh + dur_test2-frameTolerance:
                         # keep track of stop time/frame for later
                         obj1_t2.tStop = t  # not accounting for scr refresh
                         obj1_t2.frameNStop = frameN  # exact frame index
@@ -1203,7 +1078,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj2_t2 is stopping this frame...
                 if obj2_t2.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj2_t2.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj2_t2.tStartRefresh + dur_test2-frameTolerance:
                         # keep track of stop time/frame for later
                         obj2_t2.tStop = t  # not accounting for scr refresh
                         obj2_t2.frameNStop = frameN  # exact frame index
@@ -1236,7 +1111,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj3_t2 is stopping this frame...
                 if obj3_t2.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj3_t2.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj3_t2.tStartRefresh + dur_test2-frameTolerance:
                         # keep track of stop time/frame for later
                         obj3_t2.tStop = t  # not accounting for scr refresh
                         obj3_t2.frameNStop = frameN  # exact frame index
@@ -1269,7 +1144,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if test_2_mess is stopping this frame...
                 if test_2_mess.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > test_2_mess.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > test_2_mess.tStartRefresh + dur_test2-frameTolerance:
                         # keep track of stop time/frame for later
                         test_2_mess.tStop = t  # not accounting for scr refresh
                         test_2_mess.frameNStop = frameN  # exact frame index
@@ -1312,11 +1187,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('test_2.stopped', globalClock.getTime())
-            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-            if routineForceEnded:
-                routineTimer.reset()
-            else:
-                routineTimer.addTime(-5.000000)
+            # the Routine "test_2" was not non-slip safe, so reset the non-slip timer
+            routineTimer.reset()
             
             # --- Prepare to start Routine "blank1s" ---
             continueRoutine = True
@@ -1418,18 +1290,18 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 10.0 repeats of 'repetition_2'
+        # completed rep_num2 repeats of 'repetition_2'
         
         thisExp.nextEntry()
         
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 10.0 repeats of 'trials_2'
+    # completed trial_num2 repeats of 'trials_2'
     
     
     # set up handler to look after randomisation of conditions etc
-    trials_3 = data.TrialHandler(nReps=10.0, method='sequential', 
+    trials_3 = data.TrialHandler(nReps=trial_num3, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_3')
@@ -1458,7 +1330,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_3[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_3 = data.TrialHandler(nReps=10.0, method='random', 
+        repetition_3 = data.TrialHandler(nReps=rep_num3, method='random', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_3')
@@ -1543,7 +1415,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             
             # --- Run Routine "test_3" ---
             routineForceEnded = not continueRoutine
-            while continueRoutine and routineTimer.getTime() < 5.0:
+            while continueRoutine:
                 # get current time
                 t = routineTimer.getTime()
                 tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -1574,7 +1446,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj1_t3 is stopping this frame...
                 if obj1_t3.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj1_t3.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj1_t3.tStartRefresh + dur_test3-frameTolerance:
                         # keep track of stop time/frame for later
                         obj1_t3.tStop = t  # not accounting for scr refresh
                         obj1_t3.frameNStop = frameN  # exact frame index
@@ -1607,7 +1479,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj2_t3 is stopping this frame...
                 if obj2_t3.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj2_t3.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj2_t3.tStartRefresh + dur_test3-frameTolerance:
                         # keep track of stop time/frame for later
                         obj2_t3.tStop = t  # not accounting for scr refresh
                         obj2_t3.frameNStop = frameN  # exact frame index
@@ -1640,7 +1512,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj3_t3 is stopping this frame...
                 if obj3_t3.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj3_t3.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj3_t3.tStartRefresh + dur_test3-frameTolerance:
                         # keep track of stop time/frame for later
                         obj3_t3.tStop = t  # not accounting for scr refresh
                         obj3_t3.frameNStop = frameN  # exact frame index
@@ -1673,7 +1545,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj4_t3 is stopping this frame...
                 if obj4_t3.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj4_t3.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj4_t3.tStartRefresh + dur_test3-frameTolerance:
                         # keep track of stop time/frame for later
                         obj4_t3.tStop = t  # not accounting for scr refresh
                         obj4_t3.frameNStop = frameN  # exact frame index
@@ -1706,7 +1578,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if test_3_mess is stopping this frame...
                 if test_3_mess.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > test_3_mess.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > test_3_mess.tStartRefresh + dur_test3-frameTolerance:
                         # keep track of stop time/frame for later
                         test_3_mess.tStop = t  # not accounting for scr refresh
                         test_3_mess.frameNStop = frameN  # exact frame index
@@ -1748,11 +1620,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('test_3.stopped', globalClock.getTime())
-            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-            if routineForceEnded:
-                routineTimer.reset()
-            else:
-                routineTimer.addTime(-5.000000)
+            # the Routine "test_3" was not non-slip safe, so reset the non-slip timer
+            routineTimer.reset()
             
             # --- Prepare to start Routine "blank1s" ---
             continueRoutine = True
@@ -1854,18 +1723,18 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 10.0 repeats of 'repetition_3'
+        # completed rep_num3 repeats of 'repetition_3'
         
         thisExp.nextEntry()
         
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 10.0 repeats of 'trials_3'
+    # completed trial_num3 repeats of 'trials_3'
     
     
     # set up handler to look after randomisation of conditions etc
-    trials_4 = data.TrialHandler(nReps=10.0, method='sequential', 
+    trials_4 = data.TrialHandler(nReps=trial_num4, method='sequential', 
         extraInfo=expInfo, originPath=-1,
         trialList=[None],
         seed=None, name='trials_4')
@@ -1894,7 +1763,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 globals()[paramName] = thisTrial_4[paramName]
         
         # set up handler to look after randomisation of conditions etc
-        repetition_4 = data.TrialHandler(nReps=10.0, method='sequential', 
+        repetition_4 = data.TrialHandler(nReps=rep_num4, method='sequential', 
             extraInfo=expInfo, originPath=-1,
             trialList=[None],
             seed=None, name='repetition_4')
@@ -1974,7 +1843,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             #Select target object for user to look at
             selectTarget(objects, targets[trials_4.thisN])
             
-            test_4_mess.text = 'Focus on the black square (Test 4, Trial ' + str(trials_4.thisN) + ')'
+            test_4_mess.text = 'Focus on the black square (Test 4, Trial ' + str(trials_4.thisN + 1) + ')'
             # keep track of which components have finished
             test_4Components = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4, obj6_t4, obj7_t4, obj8_t4, obj9_t4, test_4_mess]
             for thisComponent in test_4Components:
@@ -1991,7 +1860,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             
             # --- Run Routine "test_4" ---
             routineForceEnded = not continueRoutine
-            while continueRoutine and routineTimer.getTime() < 5.0:
+            while continueRoutine:
                 # get current time
                 t = routineTimer.getTime()
                 tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -2022,7 +1891,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj1_t4 is stopping this frame...
                 if obj1_t4.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj1_t4.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj1_t4.tStartRefresh + dur_test4-frameTolerance:
                         # keep track of stop time/frame for later
                         obj1_t4.tStop = t  # not accounting for scr refresh
                         obj1_t4.frameNStop = frameN  # exact frame index
@@ -2055,7 +1924,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj2_t4 is stopping this frame...
                 if obj2_t4.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj2_t4.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj2_t4.tStartRefresh + dur_test4-frameTolerance:
                         # keep track of stop time/frame for later
                         obj2_t4.tStop = t  # not accounting for scr refresh
                         obj2_t4.frameNStop = frameN  # exact frame index
@@ -2088,7 +1957,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj3_t4 is stopping this frame...
                 if obj3_t4.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj3_t4.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj3_t4.tStartRefresh + dur_test4-frameTolerance:
                         # keep track of stop time/frame for later
                         obj3_t4.tStop = t  # not accounting for scr refresh
                         obj3_t4.frameNStop = frameN  # exact frame index
@@ -2121,7 +1990,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj4_t4 is stopping this frame...
                 if obj4_t4.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj4_t4.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj4_t4.tStartRefresh + dur_test4-frameTolerance:
                         # keep track of stop time/frame for later
                         obj4_t4.tStop = t  # not accounting for scr refresh
                         obj4_t4.frameNStop = frameN  # exact frame index
@@ -2154,7 +2023,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj5_t4 is stopping this frame...
                 if obj5_t4.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj5_t4.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj5_t4.tStartRefresh + dur_test4-frameTolerance:
                         # keep track of stop time/frame for later
                         obj5_t4.tStop = t  # not accounting for scr refresh
                         obj5_t4.frameNStop = frameN  # exact frame index
@@ -2187,7 +2056,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj6_t4 is stopping this frame...
                 if obj6_t4.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj6_t4.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj6_t4.tStartRefresh + dur_test4-frameTolerance:
                         # keep track of stop time/frame for later
                         obj6_t4.tStop = t  # not accounting for scr refresh
                         obj6_t4.frameNStop = frameN  # exact frame index
@@ -2220,7 +2089,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj7_t4 is stopping this frame...
                 if obj7_t4.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj7_t4.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj7_t4.tStartRefresh + dur_test4-frameTolerance:
                         # keep track of stop time/frame for later
                         obj7_t4.tStop = t  # not accounting for scr refresh
                         obj7_t4.frameNStop = frameN  # exact frame index
@@ -2253,7 +2122,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj8_t4 is stopping this frame...
                 if obj8_t4.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj8_t4.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj8_t4.tStartRefresh + dur_test4-frameTolerance:
                         # keep track of stop time/frame for later
                         obj8_t4.tStop = t  # not accounting for scr refresh
                         obj8_t4.frameNStop = frameN  # exact frame index
@@ -2286,7 +2155,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if obj9_t4 is stopping this frame...
                 if obj9_t4.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > obj9_t4.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > obj9_t4.tStartRefresh + dur_test4-frameTolerance:
                         # keep track of stop time/frame for later
                         obj9_t4.tStop = t  # not accounting for scr refresh
                         obj9_t4.frameNStop = frameN  # exact frame index
@@ -2319,7 +2188,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # if test_4_mess is stopping this frame...
                 if test_4_mess.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
-                    if tThisFlipGlobal > test_4_mess.tStartRefresh + 5-frameTolerance:
+                    if tThisFlipGlobal > test_4_mess.tStartRefresh + dur_test4-frameTolerance:
                         # keep track of stop time/frame for later
                         test_4_mess.tStop = t  # not accounting for scr refresh
                         test_4_mess.frameNStop = frameN  # exact frame index
@@ -2361,11 +2230,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
             thisExp.addData('test_4.stopped', globalClock.getTime())
-            # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-            if routineForceEnded:
-                routineTimer.reset()
-            else:
-                routineTimer.addTime(-5.000000)
+            # the Routine "test_4" was not non-slip safe, so reset the non-slip timer
+            routineTimer.reset()
             
             # --- Prepare to start Routine "blank1s" ---
             continueRoutine = True
@@ -2467,14 +2333,14 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if thisSession is not None:
                 # if running in a Session with a Liaison client, send data up to now
                 thisSession.sendExperimentData()
-        # completed 10.0 repeats of 'repetition_4'
+        # completed rep_num4 repeats of 'repetition_4'
         
         thisExp.nextEntry()
         
         if thisSession is not None:
             # if running in a Session with a Liaison client, send data up to now
             thisSession.sendExperimentData()
-    # completed 10.0 repeats of 'trials_4'
+    # completed trial_num4 repeats of 'trials_4'
     
     
     # --- Prepare to start Routine "GoodBye" ---
