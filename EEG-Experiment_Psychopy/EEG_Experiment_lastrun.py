@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on March 21, 2024, at 22:26
+    on March 22, 2024, at 15:41
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -49,7 +49,7 @@ trial_num3 = global_trial_num
 trial_num4 = global_trial_num
 
 #Set duration of repetitions for each test
-global_dur_test = 2
+global_dur_test = 5
 dur_test1 = global_dur_test
 dur_test2 = global_dur_test
 dur_test3 = global_dur_test
@@ -149,7 +149,7 @@ def setupData(expInfo, dataDir=None):
     thisExp = data.ExperimentHandler(
         name=expName, version='',
         extraInfo=expInfo, runtimeInfo=None,
-        originPath='C:\\Users\\evanl\\Desktop\\SYP-GambitGameDev-main\\EEG-Experiment_Psychopy\\EEG-Experiment_Psychopy\\EEG_Experiment_lastrun.py',
+        originPath='C:\\Users\\evanl\\Desktop\\SYP-GambitGameDev-main\\EEG-Experiment_Psychopy\\EEG_Experiment_lastrun.py',
         savePickle=True, saveWideText=True,
         dataFileName=dataDir + os.sep + filename, sortColumns='time'
     )
@@ -890,7 +890,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         
         # --- Run Routine "PickTest" ---
         routineForceEnded = not continueRoutine
-        while continueRoutine and routineTimer.getTime() < 10.0:
+        while continueRoutine:
             # get current time
             t = routineTimer.getTime()
             tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -926,25 +926,15 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         # if click is continuing from last frame, update time of clicked until
                         button_t1.timesOff[-1] = button_t1.buttonClock.getTime()
                     if not button_t1.wasClicked:
+                        # end routine when button_t1 is clicked
+                        continueRoutine = False
+                    if not button_t1.wasClicked:
                         # run callback code when button_t1 is clicked
                         x = 1
                         global button1 
                         button1 = True
             # take note of whether button_t1 was clicked, so that next frame we know if clicks are new
             button_t1.wasClicked = button_t1.isClicked and button_t1.status == STARTED
-            
-            # if button_t1 is stopping this frame...
-            if button_t1.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > button_t1.tStartRefresh + 10-frameTolerance:
-                    # keep track of stop time/frame for later
-                    button_t1.tStop = t  # not accounting for scr refresh
-                    button_t1.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'button_t1.stopped')
-                    # update status
-                    button_t1.status = FINISHED
-                    button_t1.setAutoDraw(False)
             # *button_t2* updates
             
             # if button_t2 is starting this frame...
@@ -974,25 +964,15 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         # if click is continuing from last frame, update time of clicked until
                         button_t2.timesOff[-1] = button_t2.buttonClock.getTime()
                     if not button_t2.wasClicked:
+                        # end routine when button_t2 is clicked
+                        continueRoutine = False
+                    if not button_t2.wasClicked:
                         # run callback code when button_t2 is clicked
                         x = 2
                         global button2
                         button2 = True
             # take note of whether button_t2 was clicked, so that next frame we know if clicks are new
             button_t2.wasClicked = button_t2.isClicked and button_t2.status == STARTED
-            
-            # if button_t2 is stopping this frame...
-            if button_t2.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > button_t2.tStartRefresh + 10-frameTolerance:
-                    # keep track of stop time/frame for later
-                    button_t2.tStop = t  # not accounting for scr refresh
-                    button_t2.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'button_t2.stopped')
-                    # update status
-                    button_t2.status = FINISHED
-                    button_t2.setAutoDraw(False)
             # *button_t3* updates
             
             # if button_t3 is starting this frame...
@@ -1022,25 +1002,15 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         # if click is continuing from last frame, update time of clicked until
                         button_t3.timesOff[-1] = button_t3.buttonClock.getTime()
                     if not button_t3.wasClicked:
+                        # end routine when button_t3 is clicked
+                        continueRoutine = False
+                    if not button_t3.wasClicked:
                         # run callback code when button_t3 is clicked
                         x = 3
                         global button3
                         button3 = True
             # take note of whether button_t3 was clicked, so that next frame we know if clicks are new
             button_t3.wasClicked = button_t3.isClicked and button_t3.status == STARTED
-            
-            # if button_t3 is stopping this frame...
-            if button_t3.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > button_t3.tStartRefresh + 10-frameTolerance:
-                    # keep track of stop time/frame for later
-                    button_t3.tStop = t  # not accounting for scr refresh
-                    button_t3.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'button_t3.stopped')
-                    # update status
-                    button_t3.status = FINISHED
-                    button_t3.setAutoDraw(False)
             # *button_t4* updates
             
             # if button_t4 is starting this frame...
@@ -1070,25 +1040,15 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         # if click is continuing from last frame, update time of clicked until
                         button_t4.timesOff[-1] = button_t4.buttonClock.getTime()
                     if not button_t4.wasClicked:
+                        # end routine when button_t4 is clicked
+                        continueRoutine = False
+                    if not button_t4.wasClicked:
                         # run callback code when button_t4 is clicked
                         x = 4
                         global button4
                         button4= True
             # take note of whether button_t4 was clicked, so that next frame we know if clicks are new
             button_t4.wasClicked = button_t4.isClicked and button_t4.status == STARTED
-            
-            # if button_t4 is stopping this frame...
-            if button_t4.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > button_t4.tStartRefresh + 10-frameTolerance:
-                    # keep track of stop time/frame for later
-                    button_t4.tStop = t  # not accounting for scr refresh
-                    button_t4.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'button_t4.stopped')
-                    # update status
-                    button_t4.status = FINISHED
-                    button_t4.setAutoDraw(False)
             # *button_all* updates
             
             # if button_all is starting this frame...
@@ -1118,25 +1078,16 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         # if click is continuing from last frame, update time of clicked until
                         button_all.timesOff[-1] = button_all.buttonClock.getTime()
                     if not button_all.wasClicked:
+                        # end routine when button_all is clicked
+                        continueRoutine = False
+                    if not button_all.wasClicked:
                         # run callback code when button_all is clicked
-                        x = 5
-                        global button5
-                        button5 = True
+                        button1 = True
+                        button2= True
+                        button3= True
+                        button4= True
             # take note of whether button_all was clicked, so that next frame we know if clicks are new
             button_all.wasClicked = button_all.isClicked and button_all.status == STARTED
-            
-            # if button_all is stopping this frame...
-            if button_all.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > button_all.tStartRefresh + 10-frameTolerance:
-                    # keep track of stop time/frame for later
-                    button_all.tStop = t  # not accounting for scr refresh
-                    button_all.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'button_all.stopped')
-                    # update status
-                    button_all.status = FINISHED
-                    button_all.setAutoDraw(False)
             
             # *text* updates
             
@@ -1157,19 +1108,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
             if text.status == STARTED:
                 # update params
                 pass
-            
-            # if text is stopping this frame...
-            if text.status == STARTED:
-                # is it time to stop? (based on global clock, using actual start)
-                if tThisFlipGlobal > text.tStartRefresh + 10-frameTolerance:
-                    # keep track of stop time/frame for later
-                    text.tStop = t  # not accounting for scr refresh
-                    text.frameNStop = frameN  # exact frame index
-                    # add timestamp to datafile
-                    thisExp.timestampOnFlip(win, 'text.stopped')
-                    # update status
-                    text.status = FINISHED
-                    text.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
             if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -1232,11 +1170,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         else:
            return_to_homepage.addData('button_all.timesOn', "")
            return_to_homepage.addData('button_all.timesOff', "")
-        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-        if routineForceEnded:
-            routineTimer.reset()
-        else:
-            routineTimer.addTime(-10.000000)
+        # the Routine "PickTest" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
         
         # set up handler to look after randomisation of conditions etc
         trials_1 = data.TrialHandler(nReps=trial_num1, method='sequential', 
