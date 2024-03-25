@@ -40,12 +40,18 @@ class MainWindow(QtWidgets.QMainWindow):
     def updateBar(self, value):
         if (value > 100):
             percent = 100
+            freq = 30
         elif (value < 0):
             percent = 0
-            
-        percent = value
+            freq = 0
+        else:
+            percent = value
+            freq = value
+
         self.progressBar1.setValue(percent)
         self.progressBar2.setValue(percent)
+        self.freqDisp1.display(freq)
+        self.freqDisp2.display(freq)
         
 """
         if (percent == MAX_PER):
