@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on March 28, 2024, at 12:24
+    on March 28, 2024, at 15:00
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -45,14 +45,14 @@ button4 = False
 button5 = False
 
 #Set number of repetitions  for each test
-global_rep_num = 2
+global_rep_num = 1
 rep_num1 = global_rep_num
 rep_num2 = global_rep_num
 rep_num3 = global_rep_num
 rep_num4 = global_rep_num
 
 #Set number of trials for each test
-global_trial_num = 2
+global_trial_num = 1
 trial_num1 = global_trial_num
 trial_num2 = global_trial_num
 trial_num3 = global_trial_num
@@ -65,6 +65,9 @@ dur_test2 = global_dur_test
 dur_test3 = global_dur_test
 dur_test4 = global_dur_test
 
+dur_blank = 1
+
+dur_end = 5
 #Update display to show target object
 def selectTarget(objects, target):
     for obj in objects:
@@ -72,7 +75,6 @@ def selectTarget(objects, target):
             obj.lineColor = 'red'
         else:
             obj.lineColor = 'white'
-
 
 # Update opacities based on current frame number for each stimulus
 def flickerObjects(objects, freqs, frameN):
@@ -389,7 +391,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     )
     about_button.buttonClock = core.Clock()
     start_button = visual.ButtonStim(win, 
-        text='Click here to start experiment', font='Arvo',
+        text='Click here to start game', font='Arvo',
         pos=(0.5, -0.4),
         letterHeight=0.03,
         size=(0.5, 0.08), borderWidth=0.0,
@@ -451,98 +453,6 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     )
     back_button.buttonClock = core.Clock()
     
-    # --- Initialize components for Routine "PickTest" ---
-    brain_animation = visual.MovieStim(
-        win, name='brain_animation',
-        filename='brain_animation.mp4', movieLib='ffpyplayer',
-        loop=False, volume=1.0, noAudio=False,
-        pos=(0, 0), size=(1.5, 1), units=win.units,
-        ori=0.0, anchor='center',opacity=None, contrast=1.0,
-        depth=0
-    )
-    button_t1 = visual.ButtonStim(win, 
-        text='Test 1', font='Arvo',
-        pos=(-0.25, 0.25),
-        letterHeight=0.04,
-        size=(0.2, 0.2), borderWidth=2.0,
-        fillColor=[-0.1686, -0.2941, 0.6078], borderColor=[0.0902, -1.0000, 0.0902],
-        color='black', colorSpace='rgb',
-        opacity=None,
-        bold=True, italic=False,
-        padding=None,
-        anchor='center',
-        name='button_t1',
-        depth=-1
-    )
-    button_t1.buttonClock = core.Clock()
-    button_t2 = visual.ButtonStim(win, 
-        text='Test 2', font='Arvo',
-        pos=(0.25, 0.25),
-        letterHeight=0.04,
-        size=(0.2, 0.2), borderWidth=2.0,
-        fillColor=[-0.1686, -0.2941, 0.6078], borderColor=[0.0902, -1.0000, 0.0902],
-        color='black', colorSpace='rgb',
-        opacity=None,
-        bold=True, italic=False,
-        padding=None,
-        anchor='center',
-        name='button_t2',
-        depth=-2
-    )
-    button_t2.buttonClock = core.Clock()
-    button_t3 = visual.ButtonStim(win, 
-        text='Test 3', font='Arvo',
-        pos=(-0.25, -0.25),
-        letterHeight=0.04,
-        size=(0.2, 0.2), borderWidth=2.0,
-        fillColor=[-0.1686, -0.2941, 0.6078], borderColor=[0.0902, -1.0000, 0.0902],
-        color='black', colorSpace='rgb',
-        opacity=None,
-        bold=True, italic=False,
-        padding=None,
-        anchor='center',
-        name='button_t3',
-        depth=-3
-    )
-    button_t3.buttonClock = core.Clock()
-    button_t4 = visual.ButtonStim(win, 
-        text='Test 4', font='Arvo',
-        pos=(0.25, -0.25),
-        letterHeight=0.04,
-        size=(0.2, 0.2), borderWidth=2.0,
-        fillColor=[-0.1686, -0.2941, 0.6078], borderColor=[0.0902, -1.0000, 0.0902],
-        color='black', colorSpace='rgb',
-        opacity=None,
-        bold=True, italic=False,
-        padding=None,
-        anchor='center',
-        name='button_t4',
-        depth=-4
-    )
-    button_t4.buttonClock = core.Clock()
-    button_all = visual.ButtonStim(win, 
-        text='All Tests', font='Arvo',
-        pos=(0, 0),
-        letterHeight=0.038,
-        size=(0.2, 0.2), borderWidth=0.0,
-        fillColor=[0.7255, -0.8431, -0.5294], borderColor=[0.0902, -1.0000, -1.0000],
-        color='black', colorSpace='rgb',
-        opacity=None,
-        bold=True, italic=False,
-        padding=None,
-        anchor='center',
-        name='button_all',
-        depth=-5
-    )
-    button_all.buttonClock = core.Clock()
-    text = visual.TextStim(win=win, name='text',
-        text='Welcome: Chose a test by clicking on one of the boxes',
-        font='Open Sans',
-        pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
-        color='white', colorSpace='rgb', opacity=None, 
-        languageStyle='LTR',
-        depth=-6.0);
-    
     # --- Initialize components for Routine "WarningScreen" ---
     white_background = visual.ImageStim(
         win=win,
@@ -590,6 +500,98 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         languageStyle='LTR',
         depth=-4.0);
     
+    # --- Initialize components for Routine "PickTest" ---
+    brain_animation = visual.MovieStim(
+        win, name='brain_animation',
+        filename='brain_animation.mp4', movieLib='ffpyplayer',
+        loop=False, volume=1.0, noAudio=False,
+        pos=(0, 0), size=(1.5, 1), units=win.units,
+        ori=0.0, anchor='center',opacity=None, contrast=1.0,
+        depth=0
+    )
+    button_t1 = visual.ButtonStim(win, 
+        text='Level 1', font='Arvo',
+        pos=(-0.25, 0.25),
+        letterHeight=0.04,
+        size=(0.2, 0.2), borderWidth=2.0,
+        fillColor=[-0.1686, -0.2941, 0.6078], borderColor=[0.0902, -1.0000, 0.0902],
+        color='black', colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='button_t1',
+        depth=-1
+    )
+    button_t1.buttonClock = core.Clock()
+    button_t2 = visual.ButtonStim(win, 
+        text='Level 2', font='Arvo',
+        pos=(0.25, 0.25),
+        letterHeight=0.04,
+        size=(0.2, 0.2), borderWidth=2.0,
+        fillColor=[-0.1686, -0.2941, 0.6078], borderColor=[0.0902, -1.0000, 0.0902],
+        color='black', colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='button_t2',
+        depth=-2
+    )
+    button_t2.buttonClock = core.Clock()
+    button_t3 = visual.ButtonStim(win, 
+        text='Level 3', font='Arvo',
+        pos=(-0.25, -0.25),
+        letterHeight=0.04,
+        size=(0.2, 0.2), borderWidth=2.0,
+        fillColor=[-0.1686, -0.2941, 0.6078], borderColor=[0.0902, -1.0000, 0.0902],
+        color='black', colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='button_t3',
+        depth=-3
+    )
+    button_t3.buttonClock = core.Clock()
+    button_t4 = visual.ButtonStim(win, 
+        text='Level 4', font='Arvo',
+        pos=(0.25, -0.25),
+        letterHeight=0.04,
+        size=(0.2, 0.2), borderWidth=2.0,
+        fillColor=[-0.1686, -0.2941, 0.6078], borderColor=[0.0902, -1.0000, 0.0902],
+        color='black', colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='button_t4',
+        depth=-4
+    )
+    button_t4.buttonClock = core.Clock()
+    button_all = visual.ButtonStim(win, 
+        text='All', font='Arvo',
+        pos=(0, 0),
+        letterHeight=0.038,
+        size=(0.2, 0.2), borderWidth=2.0,
+        fillColor=[0.0902, -1.0000, 0.0902], borderColor=[-0.1686, -0.2941, 0.6078],
+        color='black', colorSpace='rgb',
+        opacity=None,
+        bold=True, italic=False,
+        padding=None,
+        anchor='center',
+        name='button_all',
+        depth=-5
+    )
+    button_all.buttonClock = core.Clock()
+    text = visual.TextStim(win=win, name='text',
+        text='Welcome: Chose a test by clicking on one of the boxes',
+        font='Open Sans',
+        pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-6.0);
+    
     # --- Initialize components for Routine "test_1" ---
     earth1 = visual.ImageStim(
         win=win,
@@ -613,22 +615,37 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-2.0)
-    test_1_mess = visual.TextStim(win=win, name='test_1_mess',
-        text='Focus on the black square',
+    Attack_message = visual.TextStim(win=win, name='Attack_message',
+        text='Focus on the attacking RED alien ship to stop it!!!',
         font='Open Sans',
-        pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
+        pos=(0, 0.45), height=0.045, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-3.0);
-    
-    # --- Initialize components for Routine "blank1s_t1" ---
-    blank_screen_t1_mess = visual.TextStim(win=win, name='blank_screen_t1_mess',
-        text='\n',
+    test_1_mess = visual.TextStim(win=win, name='test_1_mess',
+        text=None,
         font='Open Sans',
-        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+        pos=(0, 0.4), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=0.0);
+        depth=-4.0);
+    
+    # --- Initialize components for Routine "earth_pause_1" ---
+    earth_blank_4 = visual.ImageStim(
+        win=win,
+        name='earth_blank_4', 
+        image='earth.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(-0.10, 0), size=(1.75, 1),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=0.0)
+    continue_playing_message_4 = visual.TextStim(win=win, name='continue_playing_message_4',
+        text='Aliens are still attacking!!!',
+        font='Open Sans',
+        pos=(0, 0.45), height=0.045, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-1.0);
     
     # --- Initialize components for Routine "test_2" ---
     earth2 = visual.ImageStim(
@@ -681,22 +698,37 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-6.0)
-    test_2_mess = visual.TextStim(win=win, name='test_2_mess',
-        text='Focus on the black square',
+    Attack_message2 = visual.TextStim(win=win, name='Attack_message2',
+        text='Focus on the attacking RED alien ship to stop it!!!',
         font='Open Sans',
-        pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
+        pos=(0, 0.45), height=0.045, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-7.0);
-    
-    # --- Initialize components for Routine "blank1s_t2" ---
-    blank_screen_t2_mess = visual.TextStim(win=win, name='blank_screen_t2_mess',
+    test_2_mess = visual.TextStim(win=win, name='test_2_mess',
         text=None,
         font='Open Sans',
-        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+        pos=(0, 0.4), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=0.0);
+        depth=-8.0);
+    
+    # --- Initialize components for Routine "earth_pause_2" ---
+    earth_blank_3 = visual.ImageStim(
+        win=win,
+        name='earth_blank_3', 
+        image='earth.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(-0.10, 0), size=(1.75, 1),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=0.0)
+    continue_playing_message_3 = visual.TextStim(win=win, name='continue_playing_message_3',
+        text='Aliens are still attacking!!!',
+        font='Open Sans',
+        pos=(0, 0.45), height=0.045, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-1.0);
     
     # --- Initialize components for Routine "test_3" ---
     earth3 = visual.ImageStim(
@@ -763,22 +795,37 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-8.0)
-    test_3_mess = visual.TextStim(win=win, name='test_3_mess',
-        text='Focus on the black square',
+    Attack_message3 = visual.TextStim(win=win, name='Attack_message3',
+        text='Focus on the attacking RED alien ship to stop it!!!',
         font='Open Sans',
-        pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
+        pos=(0, 0.45), height=0.045, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-9.0);
-    
-    # --- Initialize components for Routine "blank1s_t3" ---
-    blank_screen_t3_mess = visual.TextStim(win=win, name='blank_screen_t3_mess',
+    test_3_mess = visual.TextStim(win=win, name='test_3_mess',
         text=None,
         font='Open Sans',
-        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+        pos=(0, 0.4), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=0.0);
+        depth=-10.0);
+    
+    # --- Initialize components for Routine "earth_pause_3" ---
+    earth_blank_2 = visual.ImageStim(
+        win=win,
+        name='earth_blank_2', 
+        image='earth.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(-0.10, 0), size=(1.75, 1),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=0.0)
+    continue_playing_message_2 = visual.TextStim(win=win, name='continue_playing_message_2',
+        text='Aliens are still attacking!!!',
+        font='Open Sans',
+        pos=(0, 0.45), height=0.045, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-1.0);
     
     # --- Initialize components for Routine "test_4" ---
     earth4 = visual.ImageStim(
@@ -915,22 +962,71 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=-18.0)
-    test_4_mess = visual.TextStim(win=win, name='test_4_mess',
-        text='Focus on the black square',
+    Attack_message4 = visual.TextStim(win=win, name='Attack_message4',
+        text='Focus on the attacking RED alien ship to stop it!!!',
         font='Open Sans',
-        pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
+        pos=(0, 0.45), height=0.045, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
         depth=-19.0);
-    
-    # --- Initialize components for Routine "blank1s_t4" ---
-    blank_screen_t4_mess = visual.TextStim(win=win, name='blank_screen_t4_mess',
+    test_4_mess = visual.TextStim(win=win, name='test_4_mess',
         text=None,
         font='Open Sans',
-        pos=(0, 0), height=0.05, wrapWidth=None, ori=0.0, 
+        pos=(0, 0.4), height=0.035, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=0.0);
+        depth=-20.0);
+    
+    # --- Initialize components for Routine "earth_pause_4" ---
+    earth_blank = visual.ImageStim(
+        win=win,
+        name='earth_blank', 
+        image='earth.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(-0.10, 0), size=(1.75, 1),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=0.0)
+    continue_playing_message = visual.TextStim(win=win, name='continue_playing_message',
+        text='Aliens are still attacking!!!',
+        font='Open Sans',
+        pos=(0, 0.45), height=0.045, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-1.0);
+    
+    # --- Initialize components for Routine "earth_win" ---
+    earth_win_2 = visual.ImageStim(
+        win=win,
+        name='earth_win_2', 
+        image='earth.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(-0.10, 0), size=(1.75, 1),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=0.0)
+    win_message = visual.TextStim(win=win, name='win_message',
+        text='YOU WIN!!! You saved Earth from aliens!!!',
+        font='Open Sans',
+        pos=(0, 0.45), height=0.045, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-1.0);
+    
+    # --- Initialize components for Routine "earth_lose" ---
+    earth_lose_2 = visual.ImageStim(
+        win=win,
+        name='earth_lose_2', 
+        image='earth_lost.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(-0.10, 0), size=(1.75, 1),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=0.0)
+    lose_message = visual.TextStim(win=win, name='lose_message',
+        text='YOU LOSE!!! Aliens took over Earth!!!\nYou did not focus on the correct spaceship',
+        font='Open Sans',
+        pos=(0, 0.45), height=0.045, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=-1.0);
     
     # --- Initialize components for Routine "reset_buttons" ---
     
@@ -1481,6 +1577,190 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
     # completed 9999.0 repeats of 'instructions_controller'
     
     
+    # --- Prepare to start Routine "WarningScreen" ---
+    continueRoutine = True
+    # update component parameters for each repeat
+    thisExp.addData('WarningScreen.started', globalClock.getTime())
+    # skip this Routine if its 'Skip if' condition is True
+    continueRoutine = continueRoutine and not (start_exp_button == False)
+    # reset button to account for continued clicks & clear times on/off
+    button.reset()
+    # keep track of which components have finished
+    WarningScreenComponents = [white_background, welcome_message, caution_sign, button, warning_heading]
+    for thisComponent in WarningScreenComponents:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "WarningScreen" ---
+    routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *white_background* updates
+        
+        # if white_background is starting this frame...
+        if white_background.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            white_background.frameNStart = frameN  # exact frame index
+            white_background.tStart = t  # local t and not account for scr refresh
+            white_background.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(white_background, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'white_background.started')
+            # update status
+            white_background.status = STARTED
+            white_background.setAutoDraw(True)
+        
+        # if white_background is active this frame...
+        if white_background.status == STARTED:
+            # update params
+            pass
+        
+        # *welcome_message* updates
+        
+        # if welcome_message is starting this frame...
+        if welcome_message.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            welcome_message.frameNStart = frameN  # exact frame index
+            welcome_message.tStart = t  # local t and not account for scr refresh
+            welcome_message.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(welcome_message, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'welcome_message.started')
+            # update status
+            welcome_message.status = STARTED
+            welcome_message.setAutoDraw(True)
+        
+        # if welcome_message is active this frame...
+        if welcome_message.status == STARTED:
+            # update params
+            welcome_message.setText('\n\nThis experiment entails the observation of flickering objects. Individuals with a predisposition to photosensitive epilepsy or those possessing other visual sensitivities are advised to exercise utmost caution or to abstain from participation. It is imperative to acknowledge that we cannot assume liability for any discomfort or complications that may ensue.\n\n\n', log=False)
+        
+        # *caution_sign* updates
+        
+        # if caution_sign is starting this frame...
+        if caution_sign.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            caution_sign.frameNStart = frameN  # exact frame index
+            caution_sign.tStart = t  # local t and not account for scr refresh
+            caution_sign.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(caution_sign, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'caution_sign.started')
+            # update status
+            caution_sign.status = STARTED
+            caution_sign.setAutoDraw(True)
+        
+        # if caution_sign is active this frame...
+        if caution_sign.status == STARTED:
+            # update params
+            pass
+        # *button* updates
+        
+        # if button is starting this frame...
+        if button.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            button.frameNStart = frameN  # exact frame index
+            button.tStart = t  # local t and not account for scr refresh
+            button.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(button, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'button.started')
+            # update status
+            button.status = STARTED
+            button.setAutoDraw(True)
+        
+        # if button is active this frame...
+        if button.status == STARTED:
+            # update params
+            pass
+            # check whether button has been pressed
+            if button.isClicked:
+                if not button.wasClicked:
+                    # if this is a new click, store time of first click and clicked until
+                    button.timesOn.append(button.buttonClock.getTime())
+                    button.timesOff.append(button.buttonClock.getTime())
+                elif len(button.timesOff):
+                    # if click is continuing from last frame, update time of clicked until
+                    button.timesOff[-1] = button.buttonClock.getTime()
+                if not button.wasClicked:
+                    # end routine when button is clicked
+                    continueRoutine = False
+                if not button.wasClicked:
+                    # run callback code when button is clicked
+                    pass
+        # take note of whether button was clicked, so that next frame we know if clicks are new
+        button.wasClicked = button.isClicked and button.status == STARTED
+        
+        # *warning_heading* updates
+        
+        # if warning_heading is starting this frame...
+        if warning_heading.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+            # keep track of start time/frame for later
+            warning_heading.frameNStart = frameN  # exact frame index
+            warning_heading.tStart = t  # local t and not account for scr refresh
+            warning_heading.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(warning_heading, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'warning_heading.started')
+            # update status
+            warning_heading.status = STARTED
+            warning_heading.setAutoDraw(True)
+        
+        # if warning_heading is active this frame...
+        if warning_heading.status == STARTED:
+            # update params
+            pass
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, inputs=inputs, win=win)
+            return
+        
+        # check if all components have finished
+        if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
+            break
+        continueRoutine = False  # will revert to True if at least one component still running
+        for thisComponent in WarningScreenComponents:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "WarningScreen" ---
+    for thisComponent in WarningScreenComponents:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    thisExp.addData('WarningScreen.stopped', globalClock.getTime())
+    thisExp.addData('button.numClicks', button.numClicks)
+    if button.numClicks:
+       thisExp.addData('button.timesOn', button.timesOn)
+       thisExp.addData('button.timesOff', button.timesOff)
+    else:
+       thisExp.addData('button.timesOn', "")
+       thisExp.addData('button.timesOff', "")
+    # the Routine "WarningScreen" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
+    
     # set up handler to look after randomisation of conditions etc
     return_to_homepage = data.TrialHandler(nReps=10.0, method='sequential', 
         extraInfo=expInfo, originPath=-1,
@@ -1837,191 +2117,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         else:
            return_to_homepage.addData('button_all.timesOn', "")
            return_to_homepage.addData('button_all.timesOff', "")
+        # Run 'End Routine' code from code_5
+        lost = False
         # the Routine "PickTest" was not non-slip safe, so reset the non-slip timer
-        routineTimer.reset()
-        
-        # --- Prepare to start Routine "WarningScreen" ---
-        continueRoutine = True
-        # update component parameters for each repeat
-        thisExp.addData('WarningScreen.started', globalClock.getTime())
-        # skip this Routine if its 'Skip if' condition is True
-        continueRoutine = continueRoutine and not (start_exp_button == False)
-        # reset button to account for continued clicks & clear times on/off
-        button.reset()
-        # keep track of which components have finished
-        WarningScreenComponents = [white_background, welcome_message, caution_sign, button, warning_heading]
-        for thisComponent in WarningScreenComponents:
-            thisComponent.tStart = None
-            thisComponent.tStop = None
-            thisComponent.tStartRefresh = None
-            thisComponent.tStopRefresh = None
-            if hasattr(thisComponent, 'status'):
-                thisComponent.status = NOT_STARTED
-        # reset timers
-        t = 0
-        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        frameN = -1
-        
-        # --- Run Routine "WarningScreen" ---
-        routineForceEnded = not continueRoutine
-        while continueRoutine:
-            # get current time
-            t = routineTimer.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
-            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-            # update/draw components on each frame
-            
-            # *white_background* updates
-            
-            # if white_background is starting this frame...
-            if white_background.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                white_background.frameNStart = frameN  # exact frame index
-                white_background.tStart = t  # local t and not account for scr refresh
-                white_background.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(white_background, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'white_background.started')
-                # update status
-                white_background.status = STARTED
-                white_background.setAutoDraw(True)
-            
-            # if white_background is active this frame...
-            if white_background.status == STARTED:
-                # update params
-                pass
-            
-            # *welcome_message* updates
-            
-            # if welcome_message is starting this frame...
-            if welcome_message.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                welcome_message.frameNStart = frameN  # exact frame index
-                welcome_message.tStart = t  # local t and not account for scr refresh
-                welcome_message.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(welcome_message, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'welcome_message.started')
-                # update status
-                welcome_message.status = STARTED
-                welcome_message.setAutoDraw(True)
-            
-            # if welcome_message is active this frame...
-            if welcome_message.status == STARTED:
-                # update params
-                welcome_message.setText('\n\nThis experiment entails the observation of flickering objects. Individuals with a predisposition to photosensitive epilepsy or those possessing other visual sensitivities are advised to exercise utmost caution or to abstain from participation. It is imperative to acknowledge that we cannot assume liability for any discomfort or complications that may ensue.\n\n\n', log=False)
-            
-            # *caution_sign* updates
-            
-            # if caution_sign is starting this frame...
-            if caution_sign.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                caution_sign.frameNStart = frameN  # exact frame index
-                caution_sign.tStart = t  # local t and not account for scr refresh
-                caution_sign.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(caution_sign, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'caution_sign.started')
-                # update status
-                caution_sign.status = STARTED
-                caution_sign.setAutoDraw(True)
-            
-            # if caution_sign is active this frame...
-            if caution_sign.status == STARTED:
-                # update params
-                pass
-            # *button* updates
-            
-            # if button is starting this frame...
-            if button.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
-                # keep track of start time/frame for later
-                button.frameNStart = frameN  # exact frame index
-                button.tStart = t  # local t and not account for scr refresh
-                button.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(button, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'button.started')
-                # update status
-                button.status = STARTED
-                button.setAutoDraw(True)
-            
-            # if button is active this frame...
-            if button.status == STARTED:
-                # update params
-                pass
-                # check whether button has been pressed
-                if button.isClicked:
-                    if not button.wasClicked:
-                        # if this is a new click, store time of first click and clicked until
-                        button.timesOn.append(button.buttonClock.getTime())
-                        button.timesOff.append(button.buttonClock.getTime())
-                    elif len(button.timesOff):
-                        # if click is continuing from last frame, update time of clicked until
-                        button.timesOff[-1] = button.buttonClock.getTime()
-                    if not button.wasClicked:
-                        # end routine when button is clicked
-                        continueRoutine = False
-                    if not button.wasClicked:
-                        # run callback code when button is clicked
-                        pass
-            # take note of whether button was clicked, so that next frame we know if clicks are new
-            button.wasClicked = button.isClicked and button.status == STARTED
-            
-            # *warning_heading* updates
-            
-            # if warning_heading is starting this frame...
-            if warning_heading.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-                # keep track of start time/frame for later
-                warning_heading.frameNStart = frameN  # exact frame index
-                warning_heading.tStart = t  # local t and not account for scr refresh
-                warning_heading.tStartRefresh = tThisFlipGlobal  # on global time
-                win.timeOnFlip(warning_heading, 'tStartRefresh')  # time at next scr refresh
-                # add timestamp to datafile
-                thisExp.timestampOnFlip(win, 'warning_heading.started')
-                # update status
-                warning_heading.status = STARTED
-                warning_heading.setAutoDraw(True)
-            
-            # if warning_heading is active this frame...
-            if warning_heading.status == STARTED:
-                # update params
-                pass
-            
-            # check for quit (typically the Esc key)
-            if defaultKeyboard.getKeys(keyList=["escape"]):
-                thisExp.status = FINISHED
-            if thisExp.status == FINISHED or endExpNow:
-                endExperiment(thisExp, inputs=inputs, win=win)
-                return
-            
-            # check if all components have finished
-            if not continueRoutine:  # a component has requested a forced-end of Routine
-                routineForceEnded = True
-                break
-            continueRoutine = False  # will revert to True if at least one component still running
-            for thisComponent in WarningScreenComponents:
-                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-                    continueRoutine = True
-                    break  # at least one component has not yet finished
-            
-            # refresh the screen
-            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-                win.flip()
-        
-        # --- Ending Routine "WarningScreen" ---
-        for thisComponent in WarningScreenComponents:
-            if hasattr(thisComponent, "setAutoDraw"):
-                thisComponent.setAutoDraw(False)
-        thisExp.addData('WarningScreen.stopped', globalClock.getTime())
-        return_to_homepage.addData('button.numClicks', button.numClicks)
-        if button.numClicks:
-           return_to_homepage.addData('button.timesOn', button.timesOn)
-           return_to_homepage.addData('button.timesOff', button.timesOff)
-        else:
-           return_to_homepage.addData('button.timesOn', "")
-           return_to_homepage.addData('button.timesOff', "")
-        # the Routine "WarningScreen" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
         # set up handler to look after randomisation of conditions etc
@@ -2087,7 +2185,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # update component parameters for each repeat
                 thisExp.addData('test_1.started', globalClock.getTime())
                 # skip this Routine if its 'Skip if' condition is True
-                continueRoutine = continueRoutine and not (button1 == False)
+                continueRoutine = continueRoutine and not ((button1 == False) or (lost == True))
                 # Run 'Begin Routine' code from test_1_code
                 home_button = False
                 # Frequencies for each trial
@@ -2115,9 +2213,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 #Select target object for user to look at
                 selectTarget(objects, targets[trials_1.thisN]) 
                 
-                test_1_mess.text = 'Focus on the black square (Test 1, Trial ' + str(trials_1.thisN + 1) + ')'
+                test_1_mess.text = 'Level 1, Round ' + str(trials_1.thisN + 1)
                 # keep track of which components have finished
-                test_1Components = [earth1, boxL1_1, shipL1_1, test_1_mess]
+                test_1Components = [earth1, boxL1_1, shipL1_1, Attack_message, test_1_mess]
                 for thisComponent in test_1Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
@@ -2239,6 +2337,39 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                             shipL1_1.status = FINISHED
                             shipL1_1.setAutoDraw(False)
                     
+                    # *Attack_message* updates
+                    
+                    # if Attack_message is starting this frame...
+                    if Attack_message.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        Attack_message.frameNStart = frameN  # exact frame index
+                        Attack_message.tStart = t  # local t and not account for scr refresh
+                        Attack_message.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(Attack_message, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'Attack_message.started')
+                        # update status
+                        Attack_message.status = STARTED
+                        Attack_message.setAutoDraw(True)
+                    
+                    # if Attack_message is active this frame...
+                    if Attack_message.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if Attack_message is stopping this frame...
+                    if Attack_message.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > Attack_message.tStartRefresh + dur_test1-frameTolerance:
+                            # keep track of stop time/frame for later
+                            Attack_message.tStop = t  # not accounting for scr refresh
+                            Attack_message.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'Attack_message.stopped')
+                            # update status
+                            Attack_message.status = FINISHED
+                            Attack_message.setAutoDraw(False)
+                    
                     # *test_1_mess* updates
                     
                     # if test_1_mess is starting this frame...
@@ -2305,15 +2436,15 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # the Routine "test_1" was not non-slip safe, so reset the non-slip timer
                 routineTimer.reset()
                 
-                # --- Prepare to start Routine "blank1s_t1" ---
+                # --- Prepare to start Routine "earth_pause_1" ---
                 continueRoutine = True
                 # update component parameters for each repeat
-                thisExp.addData('blank1s_t1.started', globalClock.getTime())
+                thisExp.addData('earth_pause_1.started', globalClock.getTime())
                 # skip this Routine if its 'Skip if' condition is True
-                continueRoutine = continueRoutine and not (button1 == False)
+                continueRoutine = continueRoutine and not ((button1 == False) or (lost == True))
                 # keep track of which components have finished
-                blank1s_t1Components = [blank_screen_t1_mess]
-                for thisComponent in blank1s_t1Components:
+                earth_pause_1Components = [earth_blank_4, continue_playing_message_4]
+                for thisComponent in earth_pause_1Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
                     thisComponent.tStartRefresh = None
@@ -2325,9 +2456,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
                 frameN = -1
                 
-                # --- Run Routine "blank1s_t1" ---
+                # --- Run Routine "earth_pause_1" ---
                 routineForceEnded = not continueRoutine
-                while continueRoutine and routineTimer.getTime() < 1.0:
+                while continueRoutine:
                     # get current time
                     t = routineTimer.getTime()
                     tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -2335,38 +2466,71 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                     # update/draw components on each frame
                     
-                    # *blank_screen_t1_mess* updates
+                    # *earth_blank_4* updates
                     
-                    # if blank_screen_t1_mess is starting this frame...
-                    if blank_screen_t1_mess.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if earth_blank_4 is starting this frame...
+                    if earth_blank_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        blank_screen_t1_mess.frameNStart = frameN  # exact frame index
-                        blank_screen_t1_mess.tStart = t  # local t and not account for scr refresh
-                        blank_screen_t1_mess.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(blank_screen_t1_mess, 'tStartRefresh')  # time at next scr refresh
+                        earth_blank_4.frameNStart = frameN  # exact frame index
+                        earth_blank_4.tStart = t  # local t and not account for scr refresh
+                        earth_blank_4.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(earth_blank_4, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'blank_screen_t1_mess.started')
+                        thisExp.timestampOnFlip(win, 'earth_blank_4.started')
                         # update status
-                        blank_screen_t1_mess.status = STARTED
-                        blank_screen_t1_mess.setAutoDraw(True)
+                        earth_blank_4.status = STARTED
+                        earth_blank_4.setAutoDraw(True)
                     
-                    # if blank_screen_t1_mess is active this frame...
-                    if blank_screen_t1_mess.status == STARTED:
+                    # if earth_blank_4 is active this frame...
+                    if earth_blank_4.status == STARTED:
                         # update params
                         pass
                     
-                    # if blank_screen_t1_mess is stopping this frame...
-                    if blank_screen_t1_mess.status == STARTED:
+                    # if earth_blank_4 is stopping this frame...
+                    if earth_blank_4.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > blank_screen_t1_mess.tStartRefresh + 1-frameTolerance:
+                        if tThisFlipGlobal > earth_blank_4.tStartRefresh + dur_blank-frameTolerance:
                             # keep track of stop time/frame for later
-                            blank_screen_t1_mess.tStop = t  # not accounting for scr refresh
-                            blank_screen_t1_mess.frameNStop = frameN  # exact frame index
+                            earth_blank_4.tStop = t  # not accounting for scr refresh
+                            earth_blank_4.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'blank_screen_t1_mess.stopped')
+                            thisExp.timestampOnFlip(win, 'earth_blank_4.stopped')
                             # update status
-                            blank_screen_t1_mess.status = FINISHED
-                            blank_screen_t1_mess.setAutoDraw(False)
+                            earth_blank_4.status = FINISHED
+                            earth_blank_4.setAutoDraw(False)
+                    
+                    # *continue_playing_message_4* updates
+                    
+                    # if continue_playing_message_4 is starting this frame...
+                    if continue_playing_message_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        continue_playing_message_4.frameNStart = frameN  # exact frame index
+                        continue_playing_message_4.tStart = t  # local t and not account for scr refresh
+                        continue_playing_message_4.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(continue_playing_message_4, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'continue_playing_message_4.started')
+                        # update status
+                        continue_playing_message_4.status = STARTED
+                        continue_playing_message_4.setAutoDraw(True)
+                    
+                    # if continue_playing_message_4 is active this frame...
+                    if continue_playing_message_4.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if continue_playing_message_4 is stopping this frame...
+                    if continue_playing_message_4.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > continue_playing_message_4.tStartRefresh + dur_blank-frameTolerance:
+                            # keep track of stop time/frame for later
+                            continue_playing_message_4.tStop = t  # not accounting for scr refresh
+                            continue_playing_message_4.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'continue_playing_message_4.stopped')
+                            # update status
+                            continue_playing_message_4.status = FINISHED
+                            continue_playing_message_4.setAutoDraw(False)
                     
                     # check for quit (typically the Esc key)
                     if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2380,7 +2544,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         routineForceEnded = True
                         break
                     continueRoutine = False  # will revert to True if at least one component still running
-                    for thisComponent in blank1s_t1Components:
+                    for thisComponent in earth_pause_1Components:
                         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                             continueRoutine = True
                             break  # at least one component has not yet finished
@@ -2389,16 +2553,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                         win.flip()
                 
-                # --- Ending Routine "blank1s_t1" ---
-                for thisComponent in blank1s_t1Components:
+                # --- Ending Routine "earth_pause_1" ---
+                for thisComponent in earth_pause_1Components:
                     if hasattr(thisComponent, "setAutoDraw"):
                         thisComponent.setAutoDraw(False)
-                thisExp.addData('blank1s_t1.stopped', globalClock.getTime())
-                # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-                if routineForceEnded:
-                    routineTimer.reset()
-                else:
-                    routineTimer.addTime(-1.000000)
+                thisExp.addData('earth_pause_1.stopped', globalClock.getTime())
+                # the Routine "earth_pause_1" was not non-slip safe, so reset the non-slip timer
+                routineTimer.reset()
                 thisExp.nextEntry()
                 
                 if thisSession is not None:
@@ -2477,7 +2638,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # update component parameters for each repeat
                 thisExp.addData('test_2.started', globalClock.getTime())
                 # skip this Routine if its 'Skip if' condition is True
-                continueRoutine = continueRoutine and not (button2 == False)
+                continueRoutine = continueRoutine and not ((button2 == False) or (lost == True))
                 # Run 'Begin Routine' code from test_2_code
                 #Target object for user to look at for each trial
                 targets = [boxL2_1, boxL2_2, boxL2_3, boxL2_1, boxL2_3,
@@ -2504,9 +2665,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 #Select target object for user to look at
                 selectTarget(objects, targets[trials_2.thisN]) 
                 
-                test_2_mess.text = 'Focus on the black square (Test 2, Trial ' + str(trials_2.thisN + 1) + ')'
+                test_2_mess.text = 'Level 2, Round ' + str(trials_2.thisN + 1)
                 # keep track of which components have finished
-                test_2Components = [earth2, boxL2_1, shipL2_1, boxL2_2, shipL2_2, boxL2_3, shipL2_3, test_2_mess]
+                test_2Components = [earth2, boxL2_1, shipL2_1, boxL2_2, shipL2_2, boxL2_3, shipL2_3, Attack_message2, test_2_mess]
                 for thisComponent in test_2Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
@@ -2760,6 +2921,39 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                             shipL2_3.status = FINISHED
                             shipL2_3.setAutoDraw(False)
                     
+                    # *Attack_message2* updates
+                    
+                    # if Attack_message2 is starting this frame...
+                    if Attack_message2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        Attack_message2.frameNStart = frameN  # exact frame index
+                        Attack_message2.tStart = t  # local t and not account for scr refresh
+                        Attack_message2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(Attack_message2, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'Attack_message2.started')
+                        # update status
+                        Attack_message2.status = STARTED
+                        Attack_message2.setAutoDraw(True)
+                    
+                    # if Attack_message2 is active this frame...
+                    if Attack_message2.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if Attack_message2 is stopping this frame...
+                    if Attack_message2.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > Attack_message2.tStartRefresh + dur_test1-frameTolerance:
+                            # keep track of stop time/frame for later
+                            Attack_message2.tStop = t  # not accounting for scr refresh
+                            Attack_message2.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'Attack_message2.stopped')
+                            # update status
+                            Attack_message2.status = FINISHED
+                            Attack_message2.setAutoDraw(False)
+                    
                     # *test_2_mess* updates
                     
                     # if test_2_mess is starting this frame...
@@ -2825,16 +3019,15 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # the Routine "test_2" was not non-slip safe, so reset the non-slip timer
                 routineTimer.reset()
                 
-                # --- Prepare to start Routine "blank1s_t2" ---
+                # --- Prepare to start Routine "earth_pause_2" ---
                 continueRoutine = True
                 # update component parameters for each repeat
-                thisExp.addData('blank1s_t2.started', globalClock.getTime())
+                thisExp.addData('earth_pause_2.started', globalClock.getTime())
                 # skip this Routine if its 'Skip if' condition is True
-                continueRoutine = continueRoutine and not (button2 == False)
-                blank_screen_t2_mess.setText('')
+                continueRoutine = continueRoutine and not ((button2 == False) or (lost == True))
                 # keep track of which components have finished
-                blank1s_t2Components = [blank_screen_t2_mess]
-                for thisComponent in blank1s_t2Components:
+                earth_pause_2Components = [earth_blank_3, continue_playing_message_3]
+                for thisComponent in earth_pause_2Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
                     thisComponent.tStartRefresh = None
@@ -2846,51 +3039,81 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
                 frameN = -1
                 
-                # --- Run Routine "blank1s_t2" ---
+                # --- Run Routine "earth_pause_2" ---
                 routineForceEnded = not continueRoutine
-                while continueRoutine and routineTimer.getTime() < 1.0:
+                while continueRoutine:
                     # get current time
                     t = routineTimer.getTime()
                     tThisFlip = win.getFutureFlipTime(clock=routineTimer)
                     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                     # update/draw components on each frame
-                    # is it time to end the Routine? (based on local clock)
-                    if tThisFlip > 1-frameTolerance:
-                        continueRoutine = False
                     
-                    # *blank_screen_t2_mess* updates
+                    # *earth_blank_3* updates
                     
-                    # if blank_screen_t2_mess is starting this frame...
-                    if blank_screen_t2_mess.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if earth_blank_3 is starting this frame...
+                    if earth_blank_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        blank_screen_t2_mess.frameNStart = frameN  # exact frame index
-                        blank_screen_t2_mess.tStart = t  # local t and not account for scr refresh
-                        blank_screen_t2_mess.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(blank_screen_t2_mess, 'tStartRefresh')  # time at next scr refresh
+                        earth_blank_3.frameNStart = frameN  # exact frame index
+                        earth_blank_3.tStart = t  # local t and not account for scr refresh
+                        earth_blank_3.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(earth_blank_3, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'blank_screen_t2_mess.started')
+                        thisExp.timestampOnFlip(win, 'earth_blank_3.started')
                         # update status
-                        blank_screen_t2_mess.status = STARTED
-                        blank_screen_t2_mess.setAutoDraw(True)
+                        earth_blank_3.status = STARTED
+                        earth_blank_3.setAutoDraw(True)
                     
-                    # if blank_screen_t2_mess is active this frame...
-                    if blank_screen_t2_mess.status == STARTED:
+                    # if earth_blank_3 is active this frame...
+                    if earth_blank_3.status == STARTED:
                         # update params
                         pass
                     
-                    # if blank_screen_t2_mess is stopping this frame...
-                    if blank_screen_t2_mess.status == STARTED:
+                    # if earth_blank_3 is stopping this frame...
+                    if earth_blank_3.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > blank_screen_t2_mess.tStartRefresh + 1-frameTolerance:
+                        if tThisFlipGlobal > earth_blank_3.tStartRefresh + dur_blank-frameTolerance:
                             # keep track of stop time/frame for later
-                            blank_screen_t2_mess.tStop = t  # not accounting for scr refresh
-                            blank_screen_t2_mess.frameNStop = frameN  # exact frame index
+                            earth_blank_3.tStop = t  # not accounting for scr refresh
+                            earth_blank_3.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'blank_screen_t2_mess.stopped')
+                            thisExp.timestampOnFlip(win, 'earth_blank_3.stopped')
                             # update status
-                            blank_screen_t2_mess.status = FINISHED
-                            blank_screen_t2_mess.setAutoDraw(False)
+                            earth_blank_3.status = FINISHED
+                            earth_blank_3.setAutoDraw(False)
+                    
+                    # *continue_playing_message_3* updates
+                    
+                    # if continue_playing_message_3 is starting this frame...
+                    if continue_playing_message_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        continue_playing_message_3.frameNStart = frameN  # exact frame index
+                        continue_playing_message_3.tStart = t  # local t and not account for scr refresh
+                        continue_playing_message_3.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(continue_playing_message_3, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'continue_playing_message_3.started')
+                        # update status
+                        continue_playing_message_3.status = STARTED
+                        continue_playing_message_3.setAutoDraw(True)
+                    
+                    # if continue_playing_message_3 is active this frame...
+                    if continue_playing_message_3.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if continue_playing_message_3 is stopping this frame...
+                    if continue_playing_message_3.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > continue_playing_message_3.tStartRefresh + dur_blank-frameTolerance:
+                            # keep track of stop time/frame for later
+                            continue_playing_message_3.tStop = t  # not accounting for scr refresh
+                            continue_playing_message_3.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'continue_playing_message_3.stopped')
+                            # update status
+                            continue_playing_message_3.status = FINISHED
+                            continue_playing_message_3.setAutoDraw(False)
                     
                     # check for quit (typically the Esc key)
                     if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -2904,7 +3127,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         routineForceEnded = True
                         break
                     continueRoutine = False  # will revert to True if at least one component still running
-                    for thisComponent in blank1s_t2Components:
+                    for thisComponent in earth_pause_2Components:
                         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                             continueRoutine = True
                             break  # at least one component has not yet finished
@@ -2913,16 +3136,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                         win.flip()
                 
-                # --- Ending Routine "blank1s_t2" ---
-                for thisComponent in blank1s_t2Components:
+                # --- Ending Routine "earth_pause_2" ---
+                for thisComponent in earth_pause_2Components:
                     if hasattr(thisComponent, "setAutoDraw"):
                         thisComponent.setAutoDraw(False)
-                thisExp.addData('blank1s_t2.stopped', globalClock.getTime())
-                # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-                if routineForceEnded:
-                    routineTimer.reset()
-                else:
-                    routineTimer.addTime(-1.000000)
+                thisExp.addData('earth_pause_2.stopped', globalClock.getTime())
+                # the Routine "earth_pause_2" was not non-slip safe, so reset the non-slip timer
+                routineTimer.reset()
                 thisExp.nextEntry()
                 
                 if thisSession is not None:
@@ -3001,7 +3221,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # update component parameters for each repeat
                 thisExp.addData('test_3.started', globalClock.getTime())
                 # skip this Routine if its 'Skip if' condition is True
-                continueRoutine = continueRoutine and not (button3 ==  False)
+                continueRoutine = continueRoutine and not ((button3 == False) or (lost == True))
                 # Run 'Begin Routine' code from test_3_code
                 #Target object for user to look at for each trial
                 targets = [boxL3_1, boxL3_2, boxL3_3, boxL3_4, boxL3_1,
@@ -3038,9 +3258,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 #Select target object for user to look at
                 selectTarget(objects, targets[trials_3.thisN])
                 
-                test_3_mess.text = 'Focus on the black square (Test 3, Trial ' + str(trials_3.thisN + 1) + ')'
+                test_3_mess.text = 'Level 3, Round ' + str(trials_3.thisN + 1)
                 # keep track of which components have finished
-                test_3Components = [earth3, boxL3_1, shipL3_1, boxL3_2, shipL3_2, boxL3_3, shipL3_3, boxL3_4, shipL3_4, test_3_mess]
+                test_3Components = [earth3, boxL3_1, shipL3_1, boxL3_2, shipL3_2, boxL3_3, shipL3_3, boxL3_4, shipL3_4, Attack_message3, test_3_mess]
                 for thisComponent in test_3Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
@@ -3360,6 +3580,39 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                             shipL3_4.status = FINISHED
                             shipL3_4.setAutoDraw(False)
                     
+                    # *Attack_message3* updates
+                    
+                    # if Attack_message3 is starting this frame...
+                    if Attack_message3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        Attack_message3.frameNStart = frameN  # exact frame index
+                        Attack_message3.tStart = t  # local t and not account for scr refresh
+                        Attack_message3.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(Attack_message3, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'Attack_message3.started')
+                        # update status
+                        Attack_message3.status = STARTED
+                        Attack_message3.setAutoDraw(True)
+                    
+                    # if Attack_message3 is active this frame...
+                    if Attack_message3.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if Attack_message3 is stopping this frame...
+                    if Attack_message3.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > Attack_message3.tStartRefresh + dur_test1-frameTolerance:
+                            # keep track of stop time/frame for later
+                            Attack_message3.tStop = t  # not accounting for scr refresh
+                            Attack_message3.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'Attack_message3.stopped')
+                            # update status
+                            Attack_message3.status = FINISHED
+                            Attack_message3.setAutoDraw(False)
+                    
                     # *test_3_mess* updates
                     
                     # if test_3_mess is starting this frame...
@@ -3425,15 +3678,15 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # the Routine "test_3" was not non-slip safe, so reset the non-slip timer
                 routineTimer.reset()
                 
-                # --- Prepare to start Routine "blank1s_t3" ---
+                # --- Prepare to start Routine "earth_pause_3" ---
                 continueRoutine = True
                 # update component parameters for each repeat
-                thisExp.addData('blank1s_t3.started', globalClock.getTime())
+                thisExp.addData('earth_pause_3.started', globalClock.getTime())
                 # skip this Routine if its 'Skip if' condition is True
-                continueRoutine = continueRoutine and not (button3 ==  False)
+                continueRoutine = continueRoutine and not ((button3 == False) or (lost == True))
                 # keep track of which components have finished
-                blank1s_t3Components = [blank_screen_t3_mess]
-                for thisComponent in blank1s_t3Components:
+                earth_pause_3Components = [earth_blank_2, continue_playing_message_2]
+                for thisComponent in earth_pause_3Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
                     thisComponent.tStartRefresh = None
@@ -3445,9 +3698,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
                 frameN = -1
                 
-                # --- Run Routine "blank1s_t3" ---
+                # --- Run Routine "earth_pause_3" ---
                 routineForceEnded = not continueRoutine
-                while continueRoutine and routineTimer.getTime() < 1.0:
+                while continueRoutine:
                     # get current time
                     t = routineTimer.getTime()
                     tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -3455,38 +3708,71 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                     # update/draw components on each frame
                     
-                    # *blank_screen_t3_mess* updates
+                    # *earth_blank_2* updates
                     
-                    # if blank_screen_t3_mess is starting this frame...
-                    if blank_screen_t3_mess.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if earth_blank_2 is starting this frame...
+                    if earth_blank_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        blank_screen_t3_mess.frameNStart = frameN  # exact frame index
-                        blank_screen_t3_mess.tStart = t  # local t and not account for scr refresh
-                        blank_screen_t3_mess.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(blank_screen_t3_mess, 'tStartRefresh')  # time at next scr refresh
+                        earth_blank_2.frameNStart = frameN  # exact frame index
+                        earth_blank_2.tStart = t  # local t and not account for scr refresh
+                        earth_blank_2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(earth_blank_2, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'blank_screen_t3_mess.started')
+                        thisExp.timestampOnFlip(win, 'earth_blank_2.started')
                         # update status
-                        blank_screen_t3_mess.status = STARTED
-                        blank_screen_t3_mess.setAutoDraw(True)
+                        earth_blank_2.status = STARTED
+                        earth_blank_2.setAutoDraw(True)
                     
-                    # if blank_screen_t3_mess is active this frame...
-                    if blank_screen_t3_mess.status == STARTED:
+                    # if earth_blank_2 is active this frame...
+                    if earth_blank_2.status == STARTED:
                         # update params
                         pass
                     
-                    # if blank_screen_t3_mess is stopping this frame...
-                    if blank_screen_t3_mess.status == STARTED:
+                    # if earth_blank_2 is stopping this frame...
+                    if earth_blank_2.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > blank_screen_t3_mess.tStartRefresh + 1.0-frameTolerance:
+                        if tThisFlipGlobal > earth_blank_2.tStartRefresh + dur_blank-frameTolerance:
                             # keep track of stop time/frame for later
-                            blank_screen_t3_mess.tStop = t  # not accounting for scr refresh
-                            blank_screen_t3_mess.frameNStop = frameN  # exact frame index
+                            earth_blank_2.tStop = t  # not accounting for scr refresh
+                            earth_blank_2.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'blank_screen_t3_mess.stopped')
+                            thisExp.timestampOnFlip(win, 'earth_blank_2.stopped')
                             # update status
-                            blank_screen_t3_mess.status = FINISHED
-                            blank_screen_t3_mess.setAutoDraw(False)
+                            earth_blank_2.status = FINISHED
+                            earth_blank_2.setAutoDraw(False)
+                    
+                    # *continue_playing_message_2* updates
+                    
+                    # if continue_playing_message_2 is starting this frame...
+                    if continue_playing_message_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        continue_playing_message_2.frameNStart = frameN  # exact frame index
+                        continue_playing_message_2.tStart = t  # local t and not account for scr refresh
+                        continue_playing_message_2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(continue_playing_message_2, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'continue_playing_message_2.started')
+                        # update status
+                        continue_playing_message_2.status = STARTED
+                        continue_playing_message_2.setAutoDraw(True)
+                    
+                    # if continue_playing_message_2 is active this frame...
+                    if continue_playing_message_2.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if continue_playing_message_2 is stopping this frame...
+                    if continue_playing_message_2.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > continue_playing_message_2.tStartRefresh + dur_blank-frameTolerance:
+                            # keep track of stop time/frame for later
+                            continue_playing_message_2.tStop = t  # not accounting for scr refresh
+                            continue_playing_message_2.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'continue_playing_message_2.stopped')
+                            # update status
+                            continue_playing_message_2.status = FINISHED
+                            continue_playing_message_2.setAutoDraw(False)
                     
                     # check for quit (typically the Esc key)
                     if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -3500,7 +3786,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         routineForceEnded = True
                         break
                     continueRoutine = False  # will revert to True if at least one component still running
-                    for thisComponent in blank1s_t3Components:
+                    for thisComponent in earth_pause_3Components:
                         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                             continueRoutine = True
                             break  # at least one component has not yet finished
@@ -3509,16 +3795,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                         win.flip()
                 
-                # --- Ending Routine "blank1s_t3" ---
-                for thisComponent in blank1s_t3Components:
+                # --- Ending Routine "earth_pause_3" ---
+                for thisComponent in earth_pause_3Components:
                     if hasattr(thisComponent, "setAutoDraw"):
                         thisComponent.setAutoDraw(False)
-                thisExp.addData('blank1s_t3.stopped', globalClock.getTime())
-                # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-                if routineForceEnded:
-                    routineTimer.reset()
-                else:
-                    routineTimer.addTime(-1.000000)
+                thisExp.addData('earth_pause_3.stopped', globalClock.getTime())
+                # the Routine "earth_pause_3" was not non-slip safe, so reset the non-slip timer
+                routineTimer.reset()
                 thisExp.nextEntry()
                 
                 if thisSession is not None:
@@ -3597,7 +3880,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # update component parameters for each repeat
                 thisExp.addData('test_4.started', globalClock.getTime())
                 # skip this Routine if its 'Skip if' condition is True
-                continueRoutine = continueRoutine and not (button4 ==  False)
+                continueRoutine = continueRoutine and not ((button4 == False) or (lost == True))
                 # Run 'Begin Routine' code from test_4_code
                 #Target object for user to look at for each trial
                 targets = [boxL4_1, boxL4_2, boxL4_3, boxL4_4, boxL4_5,
@@ -3646,9 +3929,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 #Select target object for user to look at
                 selectTarget(objects, targets[trials_4.thisN])
                 
-                test_4_mess.text = 'Focus on the black square (Test 4, Trial ' + str(trials_4.thisN + 1) + ')'
+                test_4_mess.text = 'Level 4, Round ' + str(trials_4.thisN + 1)
                 # keep track of which components have finished
-                test_4Components = [earth4, boxL4_1, shipL4_1, boxL4_2, shipL4_2, boxL4_3, shipL4_3, boxL4_4, shipL4_4, boxL4_5, shipL4_5, boxL4_6, shipL4_6, boxL4_7, shipL4_7, boxL4_8, shipL4_8, boxL4_9, shipL4_9, test_4_mess]
+                test_4Components = [earth4, boxL4_1, shipL4_1, boxL4_2, shipL4_2, boxL4_3, shipL4_3, boxL4_4, shipL4_4, boxL4_5, shipL4_5, boxL4_6, shipL4_6, boxL4_7, shipL4_7, boxL4_8, shipL4_8, boxL4_9, shipL4_9, Attack_message4, test_4_mess]
                 for thisComponent in test_4Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
@@ -4298,6 +4581,39 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                             shipL4_9.status = FINISHED
                             shipL4_9.setAutoDraw(False)
                     
+                    # *Attack_message4* updates
+                    
+                    # if Attack_message4 is starting this frame...
+                    if Attack_message4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        Attack_message4.frameNStart = frameN  # exact frame index
+                        Attack_message4.tStart = t  # local t and not account for scr refresh
+                        Attack_message4.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(Attack_message4, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'Attack_message4.started')
+                        # update status
+                        Attack_message4.status = STARTED
+                        Attack_message4.setAutoDraw(True)
+                    
+                    # if Attack_message4 is active this frame...
+                    if Attack_message4.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if Attack_message4 is stopping this frame...
+                    if Attack_message4.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > Attack_message4.tStartRefresh + dur_test1-frameTolerance:
+                            # keep track of stop time/frame for later
+                            Attack_message4.tStop = t  # not accounting for scr refresh
+                            Attack_message4.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'Attack_message4.stopped')
+                            # update status
+                            Attack_message4.status = FINISHED
+                            Attack_message4.setAutoDraw(False)
+                    
                     # *test_4_mess* updates
                     
                     # if test_4_mess is starting this frame...
@@ -4360,19 +4676,21 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     if hasattr(thisComponent, "setAutoDraw"):
                         thisComponent.setAutoDraw(False)
                 thisExp.addData('test_4.stopped', globalClock.getTime())
+                # Run 'End Routine' code from test_4_code
+                if button4 == True:
+                    lost = True
                 # the Routine "test_4" was not non-slip safe, so reset the non-slip timer
                 routineTimer.reset()
                 
-                # --- Prepare to start Routine "blank1s_t4" ---
+                # --- Prepare to start Routine "earth_pause_4" ---
                 continueRoutine = True
                 # update component parameters for each repeat
-                thisExp.addData('blank1s_t4.started', globalClock.getTime())
+                thisExp.addData('earth_pause_4.started', globalClock.getTime())
                 # skip this Routine if its 'Skip if' condition is True
-                continueRoutine = continueRoutine and not (button4 ==  False)
-                blank_screen_t4_mess.setText('')
+                continueRoutine = continueRoutine and not ((button4 == False) or (lost == True))
                 # keep track of which components have finished
-                blank1s_t4Components = [blank_screen_t4_mess]
-                for thisComponent in blank1s_t4Components:
+                earth_pause_4Components = [earth_blank, continue_playing_message]
+                for thisComponent in earth_pause_4Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
                     thisComponent.tStartRefresh = None
@@ -4384,9 +4702,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
                 frameN = -1
                 
-                # --- Run Routine "blank1s_t4" ---
+                # --- Run Routine "earth_pause_4" ---
                 routineForceEnded = not continueRoutine
-                while continueRoutine and routineTimer.getTime() < 1.0:
+                while continueRoutine:
                     # get current time
                     t = routineTimer.getTime()
                     tThisFlip = win.getFutureFlipTime(clock=routineTimer)
@@ -4394,38 +4712,71 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                     # update/draw components on each frame
                     
-                    # *blank_screen_t4_mess* updates
+                    # *earth_blank* updates
                     
-                    # if blank_screen_t4_mess is starting this frame...
-                    if blank_screen_t4_mess.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if earth_blank is starting this frame...
+                    if earth_blank.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        blank_screen_t4_mess.frameNStart = frameN  # exact frame index
-                        blank_screen_t4_mess.tStart = t  # local t and not account for scr refresh
-                        blank_screen_t4_mess.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(blank_screen_t4_mess, 'tStartRefresh')  # time at next scr refresh
+                        earth_blank.frameNStart = frameN  # exact frame index
+                        earth_blank.tStart = t  # local t and not account for scr refresh
+                        earth_blank.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(earth_blank, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'blank_screen_t4_mess.started')
+                        thisExp.timestampOnFlip(win, 'earth_blank.started')
                         # update status
-                        blank_screen_t4_mess.status = STARTED
-                        blank_screen_t4_mess.setAutoDraw(True)
+                        earth_blank.status = STARTED
+                        earth_blank.setAutoDraw(True)
                     
-                    # if blank_screen_t4_mess is active this frame...
-                    if blank_screen_t4_mess.status == STARTED:
+                    # if earth_blank is active this frame...
+                    if earth_blank.status == STARTED:
                         # update params
                         pass
                     
-                    # if blank_screen_t4_mess is stopping this frame...
-                    if blank_screen_t4_mess.status == STARTED:
+                    # if earth_blank is stopping this frame...
+                    if earth_blank.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > blank_screen_t4_mess.tStartRefresh + 1-frameTolerance:
+                        if tThisFlipGlobal > earth_blank.tStartRefresh + dur_blank-frameTolerance:
                             # keep track of stop time/frame for later
-                            blank_screen_t4_mess.tStop = t  # not accounting for scr refresh
-                            blank_screen_t4_mess.frameNStop = frameN  # exact frame index
+                            earth_blank.tStop = t  # not accounting for scr refresh
+                            earth_blank.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'blank_screen_t4_mess.stopped')
+                            thisExp.timestampOnFlip(win, 'earth_blank.stopped')
                             # update status
-                            blank_screen_t4_mess.status = FINISHED
-                            blank_screen_t4_mess.setAutoDraw(False)
+                            earth_blank.status = FINISHED
+                            earth_blank.setAutoDraw(False)
+                    
+                    # *continue_playing_message* updates
+                    
+                    # if continue_playing_message is starting this frame...
+                    if continue_playing_message.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        continue_playing_message.frameNStart = frameN  # exact frame index
+                        continue_playing_message.tStart = t  # local t and not account for scr refresh
+                        continue_playing_message.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(continue_playing_message, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'continue_playing_message.started')
+                        # update status
+                        continue_playing_message.status = STARTED
+                        continue_playing_message.setAutoDraw(True)
+                    
+                    # if continue_playing_message is active this frame...
+                    if continue_playing_message.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if continue_playing_message is stopping this frame...
+                    if continue_playing_message.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > continue_playing_message.tStartRefresh + dur_blank-frameTolerance:
+                            # keep track of stop time/frame for later
+                            continue_playing_message.tStop = t  # not accounting for scr refresh
+                            continue_playing_message.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'continue_playing_message.stopped')
+                            # update status
+                            continue_playing_message.status = FINISHED
+                            continue_playing_message.setAutoDraw(False)
                     
                     # check for quit (typically the Esc key)
                     if defaultKeyboard.getKeys(keyList=["escape"]):
@@ -4439,7 +4790,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                         routineForceEnded = True
                         break
                     continueRoutine = False  # will revert to True if at least one component still running
-                    for thisComponent in blank1s_t4Components:
+                    for thisComponent in earth_pause_4Components:
                         if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
                             continueRoutine = True
                             break  # at least one component has not yet finished
@@ -4448,16 +4799,13 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                         win.flip()
                 
-                # --- Ending Routine "blank1s_t4" ---
-                for thisComponent in blank1s_t4Components:
+                # --- Ending Routine "earth_pause_4" ---
+                for thisComponent in earth_pause_4Components:
                     if hasattr(thisComponent, "setAutoDraw"):
                         thisComponent.setAutoDraw(False)
-                thisExp.addData('blank1s_t4.stopped', globalClock.getTime())
-                # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
-                if routineForceEnded:
-                    routineTimer.reset()
-                else:
-                    routineTimer.addTime(-1.000000)
+                thisExp.addData('earth_pause_4.stopped', globalClock.getTime())
+                # the Routine "earth_pause_4" was not non-slip safe, so reset the non-slip timer
+                routineTimer.reset()
                 thisExp.nextEntry()
                 
                 if thisSession is not None:
@@ -4473,6 +4821,256 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         # completed trial_num4 repeats of 'trials_4'
         
         
+        # --- Prepare to start Routine "earth_win" ---
+        continueRoutine = True
+        # update component parameters for each repeat
+        thisExp.addData('earth_win.started', globalClock.getTime())
+        # skip this Routine if its 'Skip if' condition is True
+        continueRoutine = continueRoutine and not (lost == True)
+        # keep track of which components have finished
+        earth_winComponents = [earth_win_2, win_message]
+        for thisComponent in earth_winComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        frameN = -1
+        
+        # --- Run Routine "earth_win" ---
+        routineForceEnded = not continueRoutine
+        while continueRoutine:
+            # get current time
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *earth_win_2* updates
+            
+            # if earth_win_2 is starting this frame...
+            if earth_win_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                earth_win_2.frameNStart = frameN  # exact frame index
+                earth_win_2.tStart = t  # local t and not account for scr refresh
+                earth_win_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(earth_win_2, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'earth_win_2.started')
+                # update status
+                earth_win_2.status = STARTED
+                earth_win_2.setAutoDraw(True)
+            
+            # if earth_win_2 is active this frame...
+            if earth_win_2.status == STARTED:
+                # update params
+                pass
+            
+            # if earth_win_2 is stopping this frame...
+            if earth_win_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > earth_win_2.tStartRefresh + dur_end-frameTolerance:
+                    # keep track of stop time/frame for later
+                    earth_win_2.tStop = t  # not accounting for scr refresh
+                    earth_win_2.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'earth_win_2.stopped')
+                    # update status
+                    earth_win_2.status = FINISHED
+                    earth_win_2.setAutoDraw(False)
+            
+            # *win_message* updates
+            
+            # if win_message is starting this frame...
+            if win_message.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                win_message.frameNStart = frameN  # exact frame index
+                win_message.tStart = t  # local t and not account for scr refresh
+                win_message.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(win_message, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'win_message.started')
+                # update status
+                win_message.status = STARTED
+                win_message.setAutoDraw(True)
+            
+            # if win_message is active this frame...
+            if win_message.status == STARTED:
+                # update params
+                pass
+            
+            # if win_message is stopping this frame...
+            if win_message.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > win_message.tStartRefresh + dur_end-frameTolerance:
+                    # keep track of stop time/frame for later
+                    win_message.tStop = t  # not accounting for scr refresh
+                    win_message.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'win_message.stopped')
+                    # update status
+                    win_message.status = FINISHED
+                    win_message.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if defaultKeyboard.getKeys(keyList=["escape"]):
+                thisExp.status = FINISHED
+            if thisExp.status == FINISHED or endExpNow:
+                endExperiment(thisExp, inputs=inputs, win=win)
+                return
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                routineForceEnded = True
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in earth_winComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # --- Ending Routine "earth_win" ---
+        for thisComponent in earth_winComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        thisExp.addData('earth_win.stopped', globalClock.getTime())
+        # the Routine "earth_win" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        
+        # --- Prepare to start Routine "earth_lose" ---
+        continueRoutine = True
+        # update component parameters for each repeat
+        thisExp.addData('earth_lose.started', globalClock.getTime())
+        # skip this Routine if its 'Skip if' condition is True
+        continueRoutine = continueRoutine and not (lost == False)
+        # keep track of which components have finished
+        earth_loseComponents = [earth_lose_2, lose_message]
+        for thisComponent in earth_loseComponents:
+            thisComponent.tStart = None
+            thisComponent.tStop = None
+            thisComponent.tStartRefresh = None
+            thisComponent.tStopRefresh = None
+            if hasattr(thisComponent, 'status'):
+                thisComponent.status = NOT_STARTED
+        # reset timers
+        t = 0
+        _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+        frameN = -1
+        
+        # --- Run Routine "earth_lose" ---
+        routineForceEnded = not continueRoutine
+        while continueRoutine:
+            # get current time
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+            tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+            frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+            # update/draw components on each frame
+            
+            # *earth_lose_2* updates
+            
+            # if earth_lose_2 is starting this frame...
+            if earth_lose_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                earth_lose_2.frameNStart = frameN  # exact frame index
+                earth_lose_2.tStart = t  # local t and not account for scr refresh
+                earth_lose_2.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(earth_lose_2, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'earth_lose_2.started')
+                # update status
+                earth_lose_2.status = STARTED
+                earth_lose_2.setAutoDraw(True)
+            
+            # if earth_lose_2 is active this frame...
+            if earth_lose_2.status == STARTED:
+                # update params
+                pass
+            
+            # if earth_lose_2 is stopping this frame...
+            if earth_lose_2.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > earth_lose_2.tStartRefresh + dur_end-frameTolerance:
+                    # keep track of stop time/frame for later
+                    earth_lose_2.tStop = t  # not accounting for scr refresh
+                    earth_lose_2.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'earth_lose_2.stopped')
+                    # update status
+                    earth_lose_2.status = FINISHED
+                    earth_lose_2.setAutoDraw(False)
+            
+            # *lose_message* updates
+            
+            # if lose_message is starting this frame...
+            if lose_message.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                # keep track of start time/frame for later
+                lose_message.frameNStart = frameN  # exact frame index
+                lose_message.tStart = t  # local t and not account for scr refresh
+                lose_message.tStartRefresh = tThisFlipGlobal  # on global time
+                win.timeOnFlip(lose_message, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'lose_message.started')
+                # update status
+                lose_message.status = STARTED
+                lose_message.setAutoDraw(True)
+            
+            # if lose_message is active this frame...
+            if lose_message.status == STARTED:
+                # update params
+                pass
+            
+            # if lose_message is stopping this frame...
+            if lose_message.status == STARTED:
+                # is it time to stop? (based on global clock, using actual start)
+                if tThisFlipGlobal > lose_message.tStartRefresh + dur_end-frameTolerance:
+                    # keep track of stop time/frame for later
+                    lose_message.tStop = t  # not accounting for scr refresh
+                    lose_message.frameNStop = frameN  # exact frame index
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'lose_message.stopped')
+                    # update status
+                    lose_message.status = FINISHED
+                    lose_message.setAutoDraw(False)
+            
+            # check for quit (typically the Esc key)
+            if defaultKeyboard.getKeys(keyList=["escape"]):
+                thisExp.status = FINISHED
+            if thisExp.status == FINISHED or endExpNow:
+                endExperiment(thisExp, inputs=inputs, win=win)
+                return
+            
+            # check if all components have finished
+            if not continueRoutine:  # a component has requested a forced-end of Routine
+                routineForceEnded = True
+                break
+            continueRoutine = False  # will revert to True if at least one component still running
+            for thisComponent in earth_loseComponents:
+                if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                    continueRoutine = True
+                    break  # at least one component has not yet finished
+            
+            # refresh the screen
+            if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+                win.flip()
+        
+        # --- Ending Routine "earth_lose" ---
+        for thisComponent in earth_loseComponents:
+            if hasattr(thisComponent, "setAutoDraw"):
+                thisComponent.setAutoDraw(False)
+        thisExp.addData('earth_lose.stopped', globalClock.getTime())
+        # the Routine "earth_lose" was not non-slip safe, so reset the non-slip timer
+        routineTimer.reset()
+        
         # --- Prepare to start Routine "reset_buttons" ---
         continueRoutine = True
         # update component parameters for each repeat
@@ -4485,6 +5083,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         button4 = False
         button5 = False
         start_exp_button = False
+        lost = False
         # keep track of which components have finished
         reset_buttonsComponents = []
         for thisComponent in reset_buttonsComponents:

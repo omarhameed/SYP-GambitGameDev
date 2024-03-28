@@ -84,7 +84,7 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="test_2" valType="code" updates="None" name="name"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="button2 == False" valType="code" updates="constant" name="skipIf"/>
+        <Param val="(button2 == False) or (lost == True)" valType="code" updates="constant" name="skipIf"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
@@ -278,6 +278,31 @@
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
+      <TextComponent name="Attack_message2" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.045" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="Attack_message2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_test1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Focus on the attacking RED alien ship to stop it!!!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <TextComponent name="test_2_mess" plugin="None">
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -287,7 +312,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Open Sans" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.035" valType="num" updates="constant" name="letterHeight"/>
         <Param val="test_2_mess" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -299,7 +324,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="dur_test2" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Focus on the black square" valType="str" updates="constant" name="text"/>
+        <Param val="" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -309,7 +334,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="#Target object for user to look at for each trial&amp;#10;targets = [boxL2_1, boxL2_2, boxL2_3, boxL2_1, boxL2_3,&amp;#10;           boxL2_1, boxL2_1, boxL2_2, boxL2_3, boxL2_1]&amp;#10;&amp;#10;# Frequencies for each object for every trial&amp;#10;freq_trials = [[5, 10 , 15 ], #Trial 1 frequencies&amp;#10;               [10 , 5 , 2 ], #Trial 2 frequencies&amp;#10;               [2 , 5 , 2 ], #Trial 3 frequencies&amp;#10;               [6 , 4 , 30], #Trial 4 frequencies&amp;#10;               [8 , 6 , 7 ], #Trial 5 frequencies&amp;#10;               [10, 20, 30], #Trial 6 frequencies&amp;#10;               [1 , 2 , 30], #Trial 7 frequencies&amp;#10;               [1 , 20, 3 ], #Trial 8 frequencies&amp;#10;               [10, 2 , 3 ], #Trial 9 frequencies&amp;#10;               [10 ,10 ,10 ]] #Trial 10 frequencies&amp;#10;&amp;#10;#Select frequencies for current trial&amp;#10;freq_curr_trial = freq_trials[trials_2.thisN]&amp;#10;&amp;#10;#All objects&amp;#10;objects = [boxL2_1, boxL2_2, boxL2_3]&amp;#10;&amp;#10;#Select target object for user to look at&amp;#10;selectTarget(objects, targets[trials_2.thisN]) &amp;#10;&amp;#10;test_2_mess.text = 'Focus on the black square (Test 2, Trial ' + str(trials_2.thisN + 1) + ')'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="#Target object for user to look at for each trial&amp;#10;targets = [boxL2_1, boxL2_2, boxL2_3, boxL2_1, boxL2_3,&amp;#10;           boxL2_1, boxL2_1, boxL2_2, boxL2_3, boxL2_1]&amp;#10;&amp;#10;# Frequencies for each object for every trial&amp;#10;freq_trials = [[5, 10 , 15 ], #Trial 1 frequencies&amp;#10;               [10 , 5 , 2 ], #Trial 2 frequencies&amp;#10;               [2 , 5 , 2 ], #Trial 3 frequencies&amp;#10;               [6 , 4 , 30], #Trial 4 frequencies&amp;#10;               [8 , 6 , 7 ], #Trial 5 frequencies&amp;#10;               [10, 20, 30], #Trial 6 frequencies&amp;#10;               [1 , 2 , 30], #Trial 7 frequencies&amp;#10;               [1 , 20, 3 ], #Trial 8 frequencies&amp;#10;               [10, 2 , 3 ], #Trial 9 frequencies&amp;#10;               [10 ,10 ,10 ]] #Trial 10 frequencies&amp;#10;&amp;#10;#Select frequencies for current trial&amp;#10;freq_curr_trial = freq_trials[trials_2.thisN]&amp;#10;&amp;#10;#All objects&amp;#10;objects = [boxL2_1, boxL2_2, boxL2_3]&amp;#10;&amp;#10;#Select target object for user to look at&amp;#10;selectTarget(objects, targets[trials_2.thisN]) &amp;#10;&amp;#10;test_2_mess.text = 'Level 2, Round ' + str(trials_2.thisN + 1)" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="#Flicker objects are set frequencies&amp;#10;flickerObjects(objects, freq_curr_trial, frameN)" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -366,7 +391,7 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="test_1" valType="code" updates="None" name="name"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="button1 == False" valType="code" updates="constant" name="skipIf"/>
+        <Param val="(button1 == False) or (lost == True)" valType="code" updates="constant" name="skipIf"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
@@ -452,6 +477,31 @@
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
+      <TextComponent name="Attack_message" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.045" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="Attack_message" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_test1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Focus on the attacking RED alien ship to stop it!!!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <TextComponent name="test_1_mess" plugin="None">
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -461,7 +511,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Open Sans" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.035" valType="num" updates="constant" name="letterHeight"/>
         <Param val="test_1_mess" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -473,7 +523,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="dur_test1" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Focus on the black square" valType="str" updates="constant" name="text"/>
+        <Param val="" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -483,7 +533,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="home_button = False&amp;#10;# Frequencies for each trial&amp;#10;freq_trials = [[1], #Trial 1 frequency&amp;#10;            [2],   #Trial 2 frequency&amp;#10;            [15],  #Trial 3 frequency&amp;#10;            [15],  #Trial 4 frequency&amp;#10;            [15],  #Trial 5 frequency&amp;#10;            [15],  #Trial 6 frequency&amp;#10;            [15],  #Trial 7 frequency&amp;#10;            [15],  #Trial 8 frequency&amp;#10;            [15],  #Trial 9 frequency&amp;#10;            [15]]  #Trial 10 frequency&amp;#10;&amp;#10;#Select frequencies for current trial&amp;#10;freq_curr_trial = freq_trials[trials_1.thisN]&amp;#10;&amp;#10;#Target object for user to look at for each trial&amp;#10;targets = [boxL1_1, boxL1_1, boxL1_1, boxL1_1, boxL1_1,&amp;#10;           boxL1_1, boxL1_1, boxL1_1, boxL1_1, boxL1_1]&amp;#10;           &amp;#10;#All objects&amp;#10;objects = [boxL1_1]&amp;#10;&amp;#10;#Select target object for user to look at&amp;#10;selectTarget(objects, targets[trials_1.thisN]) &amp;#10;&amp;#10;test_1_mess.text = 'Focus on the black square (Test 1, Trial ' + str(trials_1.thisN + 1) + ')'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="home_button = False&amp;#10;# Frequencies for each trial&amp;#10;freq_trials = [[1], #Trial 1 frequency&amp;#10;            [2],   #Trial 2 frequency&amp;#10;            [15],  #Trial 3 frequency&amp;#10;            [15],  #Trial 4 frequency&amp;#10;            [15],  #Trial 5 frequency&amp;#10;            [15],  #Trial 6 frequency&amp;#10;            [15],  #Trial 7 frequency&amp;#10;            [15],  #Trial 8 frequency&amp;#10;            [15],  #Trial 9 frequency&amp;#10;            [15]]  #Trial 10 frequency&amp;#10;&amp;#10;#Select frequencies for current trial&amp;#10;freq_curr_trial = freq_trials[trials_1.thisN]&amp;#10;&amp;#10;#Target object for user to look at for each trial&amp;#10;targets = [boxL1_1, boxL1_1, boxL1_1, boxL1_1, boxL1_1,&amp;#10;           boxL1_1, boxL1_1, boxL1_1, boxL1_1, boxL1_1]&amp;#10;           &amp;#10;#All objects&amp;#10;objects = [boxL1_1]&amp;#10;&amp;#10;#Select target object for user to look at&amp;#10;selectTarget(objects, targets[trials_1.thisN]) &amp;#10;&amp;#10;test_1_mess.text = 'Level 1, Round ' + str(trials_1.thisN + 1)" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="#Flicker objects are set frequencies&amp;#10;flickerObjects(objects, freq_curr_trial, frameN)&amp;#10;" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -506,7 +556,7 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="test_3" valType="code" updates="None" name="name"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="button3 ==  False" valType="code" updates="constant" name="skipIf"/>
+        <Param val="(button3 == False) or (lost == True)" valType="code" updates="constant" name="skipIf"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
@@ -754,6 +804,31 @@
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
+      <TextComponent name="Attack_message3" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.045" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="Attack_message3" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_test1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Focus on the attacking RED alien ship to stop it!!!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <TextComponent name="test_3_mess" plugin="None">
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -763,7 +838,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Open Sans" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.035" valType="num" updates="constant" name="letterHeight"/>
         <Param val="test_3_mess" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -775,7 +850,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="dur_test3" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Focus on the black square" valType="str" updates="constant" name="text"/>
+        <Param val="" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -785,7 +860,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="#Target object for user to look at for each trial&amp;#10;targets = [boxL3_1, boxL3_2, boxL3_3, boxL3_4, boxL3_1,&amp;#10;           boxL3_1, boxL3_2, boxL3_4, boxL3_2, boxL3_1]&amp;#10;           &amp;#10;# Frequencies for each object for every trial&amp;#10;freq_trials = [[10, 5,&amp;#10;                2, 15], #Trial 1 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 2 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 3 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 4 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 5 frequencies&amp;#10;               [10, 5,&amp;#10;               2, 15], #Trial 6 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 7 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 8 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 9 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15]] #Trial 10 frequencies&amp;#10;&amp;#10;#Select frequencies for current trial&amp;#10;freq_curr_trial = freq_trials[trials_3.thisN]&amp;#10;&amp;#10;#All objects&amp;#10;objects = [boxL3_1, boxL3_2, boxL3_3, boxL3_4]&amp;#10;&amp;#10;#Select target object for user to look at&amp;#10;selectTarget(objects, targets[trials_3.thisN])&amp;#10;&amp;#10;test_3_mess.text = 'Focus on the black square (Test 3, Trial ' + str(trials_3.thisN + 1) + ')'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="#Target object for user to look at for each trial&amp;#10;targets = [boxL3_1, boxL3_2, boxL3_3, boxL3_4, boxL3_1,&amp;#10;           boxL3_1, boxL3_2, boxL3_4, boxL3_2, boxL3_1]&amp;#10;           &amp;#10;# Frequencies for each object for every trial&amp;#10;freq_trials = [[10, 5,&amp;#10;                2, 15], #Trial 1 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 2 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 3 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 4 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 5 frequencies&amp;#10;               [10, 5,&amp;#10;               2, 15], #Trial 6 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 7 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 8 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15], #Trial 9 frequencies&amp;#10;               [10, 5,&amp;#10;                2, 15]] #Trial 10 frequencies&amp;#10;&amp;#10;#Select frequencies for current trial&amp;#10;freq_curr_trial = freq_trials[trials_3.thisN]&amp;#10;&amp;#10;#All objects&amp;#10;objects = [boxL3_1, boxL3_2, boxL3_3, boxL3_4]&amp;#10;&amp;#10;#Select target object for user to look at&amp;#10;selectTarget(objects, targets[trials_3.thisN])&amp;#10;&amp;#10;test_3_mess.text = 'Level 3, Round ' + str(trials_3.thisN + 1)" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="#Flicker objects are set frequencies&amp;#10;flickerObjects(objects, freq_curr_trial, frameN)" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -808,7 +883,7 @@
         <Param val="" valType="code" updates="None" name="durationEstim"/>
         <Param val="test_4" valType="code" updates="None" name="name"/>
         <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="button4 ==  False" valType="code" updates="constant" name="skipIf"/>
+        <Param val="(button4 == False) or (lost == True)" valType="code" updates="constant" name="skipIf"/>
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
@@ -1326,6 +1401,31 @@
         <Param val="128" valType="num" updates="constant" name="texture resolution"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ImageComponent>
+      <TextComponent name="Attack_message4" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.045" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="Attack_message4" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_test1" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Focus on the attacking RED alien ship to stop it!!!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
       <TextComponent name="test_4_mess" plugin="None">
         <Param val="white" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
@@ -1335,7 +1435,7 @@
         <Param val="None" valType="str" updates="constant" name="flip"/>
         <Param val="Open Sans" valType="str" updates="constant" name="font"/>
         <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="0.035" valType="num" updates="constant" name="letterHeight"/>
         <Param val="test_4_mess" valType="code" updates="None" name="name"/>
         <Param val="" valType="num" updates="constant" name="opacity"/>
         <Param val="0" valType="num" updates="constant" name="ori"/>
@@ -1347,7 +1447,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="dur_test4" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Focus on the black square" valType="str" updates="constant" name="text"/>
+        <Param val="" valType="str" updates="constant" name="text"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
@@ -1357,14 +1457,14 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="#Target object for user to look at for each trial&amp;#10;targets = [boxL4_1, boxL4_2, boxL4_3, boxL4_4, boxL4_5,&amp;#10;           boxL4_6, boxL4_7, boxL4_8, boxL4_9, boxL4_5]&amp;#10;&amp;#10;# Frequencies for each object&amp;#10;freq_trials = [[10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 1 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 2 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 3 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 4 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 5 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 6 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 7 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 8 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 9 frequencies&amp;#10;               [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30]] #Trial 10 frequencies&amp;#10;                &amp;#10;#All objects&amp;#10;objects = [boxL4_1, boxL4_2, boxL4_3,&amp;#10;           boxL4_4, boxL4_5, boxL4_6,&amp;#10;           boxL4_7, boxL4_8, boxL4_9]&amp;#10;&amp;#10;#Select frequencies for current trial&amp;#10;freq_curr_trial = freq_trials[trials_4.thisN]&amp;#10;&amp;#10;#Select target object for user to look at&amp;#10;selectTarget(objects, targets[trials_4.thisN])&amp;#10;&amp;#10;test_4_mess.text = 'Focus on the black square (Test 4, Trial ' + str(trials_4.thisN + 1) + ')'" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="#Target object for user to look at for each trial&amp;#10;targets = [boxL4_1, boxL4_2, boxL4_3, boxL4_4, boxL4_5,&amp;#10;           boxL4_6, boxL4_7, boxL4_8, boxL4_9, boxL4_5]&amp;#10;&amp;#10;# Frequencies for each object&amp;#10;freq_trials = [[10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 1 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 2 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 3 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 4 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 5 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 6 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 7 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 8 frequencies&amp;#10;                [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30], #Trial 9 frequencies&amp;#10;               [10, 5, 2,&amp;#10;                1, 8, 12,&amp;#10;                20, 25, 30]] #Trial 10 frequencies&amp;#10;                &amp;#10;#All objects&amp;#10;objects = [boxL4_1, boxL4_2, boxL4_3,&amp;#10;           boxL4_4, boxL4_5, boxL4_6,&amp;#10;           boxL4_7, boxL4_8, boxL4_9]&amp;#10;&amp;#10;#Select frequencies for current trial&amp;#10;freq_curr_trial = freq_trials[trials_4.thisN]&amp;#10;&amp;#10;#Select target object for user to look at&amp;#10;selectTarget(objects, targets[trials_4.thisN])&amp;#10;&amp;#10;test_4_mess.text = 'Level 4, Round ' + str(trials_4.thisN + 1)" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="#Flicker objects are set frequencies&amp;#10;flickerObjects(objects, freq_curr_trial, frameN)" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
-        <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
+        <Param val="if button4 == True:&amp;#10;    lost = True" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="test_4_code" valType="code" updates="None" name="name"/>
       </CodeComponent>
@@ -1442,7 +1542,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Test 1" valType="str" updates="constant" name="text"/>
+        <Param val="Level 1" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ButtonComponent>
@@ -1477,7 +1577,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Test 2" valType="str" updates="constant" name="text"/>
+        <Param val="Level 2" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ButtonComponent>
@@ -1512,7 +1612,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Test 3" valType="str" updates="constant" name="text"/>
+        <Param val="Level 3" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ButtonComponent>
@@ -1547,22 +1647,22 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Test 4" valType="str" updates="constant" name="text"/>
+        <Param val="Level 4" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ButtonComponent>
       <ButtonComponent name="button_all" plugin="None">
         <Param val="center" valType="str" updates="constant" name="anchor"/>
         <Param val="True" valType="bool" updates="constant" name="bold"/>
-        <Param val="0.0902, -1.0000, -1.0000" valType="color" updates="constant" name="borderColor"/>
-        <Param val="0" valType="num" updates="constant" name="borderWidth"/>
+        <Param val="-0.1686, -0.2941, 0.6078" valType="color" updates="constant" name="borderColor"/>
+        <Param val="2" valType="num" updates="constant" name="borderWidth"/>
         <Param val="button1 = True&amp;#10;button2= True&amp;#10;button3= True&amp;#10;button4= True" valType="extendedCode" updates="constant" name="callback"/>
         <Param val="black" valType="color" updates="constant" name="color"/>
         <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
         <Param val="1" valType="num" updates="constant" name="contrast"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
         <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="0.7255, -0.8431, -0.5294" valType="color" updates="constant" name="fillColor"/>
+        <Param val="0.0902, -1.0000, 0.0902" valType="color" updates="constant" name="fillColor"/>
         <Param val="Arvo" valType="str" updates="constant" name="font"/>
         <Param val="True" valType="bool" updates="constant" name="forceEndRoutine"/>
         <Param val="False" valType="bool" updates="constant" name="italic"/>
@@ -1582,7 +1682,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="All Tests" valType="str" updates="constant" name="text"/>
+        <Param val="All" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ButtonComponent>
@@ -1611,48 +1711,23 @@
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
         <Param val="" valType="num" updates="constant" name="wrapWidth"/>
       </TextComponent>
-    </Routine>
-    <Routine name="blank1s_t1">
-      <RoutineSettingsComponent name="blank1s_t1" plugin="None">
-        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
-        <Param val="" valType="str" updates="None" name="backgroundImg"/>
-        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
-        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
-        <Param val="" valType="str" updates="constant" name="desc"/>
+      <CodeComponent name="code_5" plugin="None">
+        <Param val="" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="Auto-&gt;JS" valType="str" updates="None" name="Code Type"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End Experiment"/>
+        <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
+        <Param val="lost = false;&amp;#10;" valType="extendedCode" updates="constant" name="End JS Routine"/>
+        <Param val="lost = False" valType="extendedCode" updates="constant" name="End Routine"/>
         <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="blank1s_t1" valType="code" updates="None" name="name"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="button1 == False" valType="code" updates="constant" name="skipIf"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="" valType="code" updates="constant" name="stopVal"/>
-        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
-      </RoutineSettingsComponent>
-      <TextComponent name="blank_screen_t1_mess" plugin="None">
-        <Param val="white" valType="color" updates="constant" name="color"/>
-        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
-        <Param val="1" valType="num" updates="constant" name="contrast"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
-        <Param val="" valType="code" updates="None" name="durationEstim"/>
-        <Param val="None" valType="str" updates="constant" name="flip"/>
-        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
-        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
-        <Param val="0.05" valType="num" updates="constant" name="letterHeight"/>
-        <Param val="blank_screen_t1_mess" valType="code" updates="None" name="name"/>
-        <Param val="" valType="num" updates="constant" name="opacity"/>
-        <Param val="0" valType="num" updates="constant" name="ori"/>
-        <Param val="(0, 0)" valType="list" updates="constant" name="pos"/>
-        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
-        <Param val="" valType="code" updates="None" name="startEstim"/>
-        <Param val="time (s)" valType="str" updates="None" name="startType"/>
-        <Param val="0.0" valType="code" updates="None" name="startVal"/>
-        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
-        <Param val="1" valType="code" updates="constant" name="stopVal"/>
-        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="&amp;#10;" valType="str" updates="constant" name="text"/>
-        <Param val="from exp settings" valType="str" updates="None" name="units"/>
-        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
-      </TextComponent>
+        <Param val="code_5" valType="code" updates="None" name="name"/>
+      </CodeComponent>
     </Routine>
     <Routine name="blank1s_t2">
       <RoutineSettingsComponent name="blank1s_t2" plugin="None">
@@ -1870,7 +1945,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
         <Param val="button1 = false;&amp;#10;button2 = false;&amp;#10;button3 = false;&amp;#10;button4 = false;&amp;#10;" valType="extendedCode" updates="constant" name="Begin JS Routine"/>
-        <Param val="#duck&amp;#10;button1 = False&amp;#10;button2 = False&amp;#10;button3 = False&amp;#10;button4 = False&amp;#10;button5 = False&amp;#10;start_exp_button = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
+        <Param val="#duck&amp;#10;button1 = False&amp;#10;button2 = False&amp;#10;button3 = False&amp;#10;button4 = False&amp;#10;button5 = False&amp;#10;start_exp_button = False&amp;#10;lost = False" valType="extendedCode" updates="constant" name="Begin Routine"/>
         <Param val="Py" valType="str" updates="None" name="Code Type"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each Frame"/>
         <Param val="" valType="extendedCode" updates="constant" name="Each JS Frame"/>
@@ -1899,7 +1974,7 @@
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
       <CodeComponent name="code" plugin="None">
-        <Param val="#Intialize all buttons to False&amp;#10;return_home = True&amp;#10;about_exp_button = False&amp;#10;start_exp_button = False&amp;#10;button1 = False&amp;#10;button2 = False&amp;#10;button3 = False&amp;#10;button4 = False&amp;#10;button5 = False&amp;#10;&amp;#10;#Set number of repetitions  for each test&amp;#10;global_rep_num = 2&amp;#10;rep_num1 = global_rep_num&amp;#10;rep_num2 = global_rep_num&amp;#10;rep_num3 = global_rep_num&amp;#10;rep_num4 = global_rep_num&amp;#10;&amp;#10;#Set number of trials for each test&amp;#10;global_trial_num = 2&amp;#10;trial_num1 = global_trial_num&amp;#10;trial_num2 = global_trial_num&amp;#10;trial_num3 = global_trial_num&amp;#10;trial_num4 = global_trial_num&amp;#10;&amp;#10;#Set duration of repetitions for each test&amp;#10;global_dur_test = 5&amp;#10;dur_test1 = global_dur_test&amp;#10;dur_test2 = global_dur_test&amp;#10;dur_test3 = global_dur_test&amp;#10;dur_test4 = global_dur_test&amp;#10;&amp;#10;#Update display to show target object&amp;#10;def selectTarget(objects, target):&amp;#10;    for obj in objects:&amp;#10;        if obj == target:&amp;#10;            obj.lineColor = 'red'&amp;#10;        else:&amp;#10;            obj.lineColor = 'white'&amp;#10;&amp;#10;&amp;#10;# Update opacities based on current frame number for each stimulus&amp;#10;def flickerObjects(objects, freqs, frameN):&amp;#10;    for i in range(len(objects)): #loop through all objects&amp;#10;        frames_per_cycle = 60 // freqs[i]&amp;#10;        objects[i].opacity = (((frameN) % frames_per_cycle) &lt; (frames_per_cycle / 2))&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Before Experiment"/>
+        <Param val="#Intialize all buttons to False&amp;#10;return_home = True&amp;#10;about_exp_button = False&amp;#10;start_exp_button = False&amp;#10;button1 = False&amp;#10;button2 = False&amp;#10;button3 = False&amp;#10;button4 = False&amp;#10;button5 = False&amp;#10;&amp;#10;#Set number of repetitions  for each test&amp;#10;global_rep_num = 1&amp;#10;rep_num1 = global_rep_num&amp;#10;rep_num2 = global_rep_num&amp;#10;rep_num3 = global_rep_num&amp;#10;rep_num4 = global_rep_num&amp;#10;&amp;#10;#Set number of trials for each test&amp;#10;global_trial_num = 1&amp;#10;trial_num1 = global_trial_num&amp;#10;trial_num2 = global_trial_num&amp;#10;trial_num3 = global_trial_num&amp;#10;trial_num4 = global_trial_num&amp;#10;&amp;#10;#Set duration of repetitions for each test&amp;#10;global_dur_test = 5&amp;#10;dur_test1 = global_dur_test&amp;#10;dur_test2 = global_dur_test&amp;#10;dur_test3 = global_dur_test&amp;#10;dur_test4 = global_dur_test&amp;#10;&amp;#10;dur_blank = 1&amp;#10;&amp;#10;dur_end = 5&amp;#10;#Update display to show target object&amp;#10;def selectTarget(objects, target):&amp;#10;    for obj in objects:&amp;#10;        if obj == target:&amp;#10;            obj.lineColor = 'red'&amp;#10;        else:&amp;#10;            obj.lineColor = 'white'&amp;#10;&amp;#10;# Update opacities based on current frame number for each stimulus&amp;#10;def flickerObjects(objects, freqs, frameN):&amp;#10;    for i in range(len(objects)): #loop through all objects&amp;#10;        frames_per_cycle = 60 // freqs[i]&amp;#10;        objects[i].opacity = (((frameN) % frames_per_cycle) &lt; (frames_per_cycle / 2))&amp;#10;&amp;#10;" valType="extendedCode" updates="constant" name="Before Experiment"/>
         <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="Before JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="Begin JS Experiment"/>
@@ -2181,7 +2256,7 @@
         <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
         <Param val="" valType="code" updates="constant" name="stopVal"/>
         <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
-        <Param val="Click here to start experiment" valType="str" updates="constant" name="text"/>
+        <Param val="Click here to start game" valType="str" updates="constant" name="text"/>
         <Param val="button onset" valType="str" updates="constant" name="timeRelativeTo"/>
         <Param val="from exp settings" valType="str" updates="None" name="units"/>
       </ButtonComponent>
@@ -2351,6 +2426,420 @@
         <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
       </RoutineSettingsComponent>
     </Routine>
+    <Routine name="earth_win">
+      <RoutineSettingsComponent name="earth_win" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="earth_win" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="lost == True" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <ImageComponent name="earth_win_2" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="earth.jpeg" valType="file" updates="constant" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="earth_win_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.10, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.75, 1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_end" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <TextComponent name="win_message" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.045" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="win_message" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_end" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="YOU WIN!!! You saved Earth from aliens!!!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="earth_lose">
+      <RoutineSettingsComponent name="earth_lose" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="earth_lose" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="lost == False" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <ImageComponent name="earth_lose_2" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="earth_lost.jpeg" valType="file" updates="constant" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="earth_lose_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.10, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.75, 1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_end" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <TextComponent name="lose_message" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.045" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="lose_message" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_end" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="YOU LOSE!!! Aliens took over Earth!!!&amp;#10;You did not focus on the correct spaceship" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="earth_pause_4">
+      <ImageComponent name="earth_blank" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="earth.jpeg" valType="file" updates="constant" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="earth_blank" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.10, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.75, 1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_blank" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <RoutineSettingsComponent name="earth_pause_4" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="earth_pause_4" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(button4 == False) or (lost == True)" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="continue_playing_message" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.045" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="continue_playing_message" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_blank" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Aliens are still attacking!!!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="earth_pause_3">
+      <ImageComponent name="earth_blank_2" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="earth.jpeg" valType="file" updates="constant" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="earth_blank_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.10, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.75, 1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_blank" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <RoutineSettingsComponent name="earth_pause_3" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="earth_pause_3" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(button3 == False) or (lost == True)" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="continue_playing_message_2" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.045" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="continue_playing_message_2" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_blank" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Aliens are still attacking!!!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="earth_pause_2">
+      <ImageComponent name="earth_blank_3" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="earth.jpeg" valType="file" updates="constant" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="earth_blank_3" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.10, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.75, 1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_blank" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <RoutineSettingsComponent name="earth_pause_2" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="earth_pause_2" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(button2 == False) or (lost == True)" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="continue_playing_message_3" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.045" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="continue_playing_message_3" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_blank" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Aliens are still attacking!!!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
+    <Routine name="earth_pause_1">
+      <ImageComponent name="earth_blank_4" plugin="None">
+        <Param val="center" valType="str" updates="constant" name="anchor"/>
+        <Param val="$[1,1,1]" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="False" valType="bool" updates="constant" name="flipHoriz"/>
+        <Param val="False" valType="bool" updates="constant" name="flipVert"/>
+        <Param val="earth.jpeg" valType="file" updates="constant" name="image"/>
+        <Param val="linear" valType="str" updates="constant" name="interpolate"/>
+        <Param val="" valType="str" updates="constant" name="mask"/>
+        <Param val="earth_blank_4" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(-0.10, 0)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(1.75, 1)" valType="list" updates="constant" name="size"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_blank" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="128" valType="num" updates="constant" name="texture resolution"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+      </ImageComponent>
+      <RoutineSettingsComponent name="earth_pause_1" plugin="None">
+        <Param val="none" valType="str" updates="None" name="backgroundFit"/>
+        <Param val="" valType="str" updates="None" name="backgroundImg"/>
+        <Param val="$[0,0,0]" valType="color" updates="None" name="color"/>
+        <Param val="rgb" valType="str" updates="None" name="colorSpace"/>
+        <Param val="" valType="str" updates="constant" name="desc"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="earth_pause_1" valType="code" updates="None" name="name"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="(button1 == False) or (lost == True)" valType="code" updates="constant" name="skipIf"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="" valType="code" updates="constant" name="stopVal"/>
+        <Param val="False" valType="bool" updates="None" name="useWindowParams"/>
+      </RoutineSettingsComponent>
+      <TextComponent name="continue_playing_message_4" plugin="None">
+        <Param val="white" valType="color" updates="constant" name="color"/>
+        <Param val="rgb" valType="str" updates="constant" name="colorSpace"/>
+        <Param val="1" valType="num" updates="constant" name="contrast"/>
+        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="" valType="code" updates="None" name="durationEstim"/>
+        <Param val="None" valType="str" updates="constant" name="flip"/>
+        <Param val="Open Sans" valType="str" updates="constant" name="font"/>
+        <Param val="LTR" valType="str" updates="None" name="languageStyle"/>
+        <Param val="0.045" valType="num" updates="constant" name="letterHeight"/>
+        <Param val="continue_playing_message_4" valType="code" updates="None" name="name"/>
+        <Param val="" valType="num" updates="constant" name="opacity"/>
+        <Param val="0" valType="num" updates="constant" name="ori"/>
+        <Param val="(0, 0.45)" valType="list" updates="constant" name="pos"/>
+        <Param val="True" valType="bool" updates="None" name="saveStartStop"/>
+        <Param val="" valType="code" updates="None" name="startEstim"/>
+        <Param val="time (s)" valType="str" updates="None" name="startType"/>
+        <Param val="0.0" valType="code" updates="None" name="startVal"/>
+        <Param val="duration (s)" valType="str" updates="None" name="stopType"/>
+        <Param val="dur_blank" valType="code" updates="constant" name="stopVal"/>
+        <Param val="True" valType="bool" updates="None" name="syncScreenRefresh"/>
+        <Param val="Aliens are still attacking!!!" valType="str" updates="constant" name="text"/>
+        <Param val="from exp settings" valType="str" updates="None" name="units"/>
+        <Param val="" valType="num" updates="constant" name="wrapWidth"/>
+      </TextComponent>
+    </Routine>
   </Routines>
   <Flow>
     <Routine name="GlobalFunctions"/>
@@ -2381,6 +2870,7 @@
     <Routine name="AboutExpScreen"/>
     <LoopTerminator name="about_slide_loop"/>
     <LoopTerminator name="instructions_controller"/>
+    <Routine name="WarningScreen"/>
     <LoopInitiator loopType="TrialHandler" name="return_to_homepage">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
@@ -2393,7 +2883,6 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="PickTest"/>
-    <Routine name="WarningScreen"/>
     <LoopInitiator loopType="TrialHandler" name="trials_1">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
@@ -2417,7 +2906,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="test_1"/>
-    <Routine name="blank1s_t1"/>
+    <Routine name="earth_pause_1"/>
     <LoopTerminator name="repetition_1"/>
     <LoopTerminator name="trials_1"/>
     <LoopInitiator loopType="TrialHandler" name="trials_2">
@@ -2443,7 +2932,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="test_2"/>
-    <Routine name="blank1s_t2"/>
+    <Routine name="earth_pause_2"/>
     <LoopTerminator name="repetition_2"/>
     <LoopTerminator name="trials_2"/>
     <LoopInitiator loopType="TrialHandler" name="trials_3">
@@ -2469,7 +2958,7 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="test_3"/>
-    <Routine name="blank1s_t3"/>
+    <Routine name="earth_pause_3"/>
     <LoopTerminator name="repetition_3"/>
     <LoopTerminator name="trials_3"/>
     <LoopInitiator loopType="TrialHandler" name="trials_4">
@@ -2495,9 +2984,11 @@
       <Param name="random seed" updates="None" val="" valType="code"/>
     </LoopInitiator>
     <Routine name="test_4"/>
-    <Routine name="blank1s_t4"/>
+    <Routine name="earth_pause_4"/>
     <LoopTerminator name="repetition_4"/>
     <LoopTerminator name="trials_4"/>
+    <Routine name="earth_win"/>
+    <Routine name="earth_lose"/>
     <Routine name="reset_buttons"/>
     <LoopTerminator name="return_to_homepage"/>
     <Routine name="GoodBye"/>
