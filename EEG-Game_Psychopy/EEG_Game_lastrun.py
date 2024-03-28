@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2023.2.3),
-    on March 27, 2024, at 23:53
+    on March 28, 2024, at 12:24
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -69,15 +69,18 @@ dur_test4 = global_dur_test
 def selectTarget(objects, target):
     for obj in objects:
         if obj == target:
-            obj.color = 'black'
+            obj.lineColor = 'red'
         else:
-            obj.color = 'white'
+            obj.lineColor = 'white'
+
 
 # Update opacities based on current frame number for each stimulus
 def flickerObjects(objects, freqs, frameN):
     for i in range(len(objects)): #loop through all objects
         frames_per_cycle = 60 // freqs[i]
-        objects[i].opacity = ((frameN % frames_per_cycle) < (frames_per_cycle / 2)) 
+        objects[i].opacity = (((frameN) % frames_per_cycle) < (frames_per_cycle / 2))
+
+
 # --- Setup global variables (available in all functions) ---
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
@@ -592,25 +595,31 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         win=win,
         name='earth1', 
         image='earth.jpeg', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), size=(1.5, 1),
+        ori=0.0, pos=(-0.10, 0), size=(1.75, 1),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=0.0)
-    spaceshipL1_1 = visual.ImageStim(
+    boxL1_1 = visual.Rect(
+        win=win, name='boxL1_1',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.35, 0), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
+        opacity=None, depth=-1.0, interpolate=True)
+    shipL1_1 = visual.ImageStim(
         win=win,
-        name='spaceshipL1_1', 
+        name='shipL1_1', 
         image='spaceship.jpeg', mask=None, anchor='center',
-        ori=0.0, pos=(0.4, 0), size=(0.15, 0.15),
+        ori=0.0, pos=(0.35, 0), size=(0.15, 0.15),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
-        texRes=128.0, interpolate=True, depth=-1.0)
+        texRes=128.0, interpolate=True, depth=-2.0)
     test_1_mess = visual.TextStim(win=win, name='test_1_mess',
         text='Focus on the black square',
         font='Open Sans',
         pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=-2.0);
+        depth=-3.0);
     
     # --- Initialize components for Routine "blank1s_t1" ---
     blank_screen_t1_mess = visual.TextStim(win=win, name='blank_screen_t1_mess',
@@ -626,35 +635,59 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         win=win,
         name='earth2', 
         image='earth.jpeg', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), size=(1.5, 1),
+        ori=0.0, pos=(-0.10, 0), size=(1.75, 1),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=0.0)
-    obj1_t2 = visual.Rect(
-        win=win, name='obj1_t2',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor='black',
+    boxL2_1 = visual.Rect(
+        win=win, name='boxL2_1',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.1, 0), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
         opacity=None, depth=-1.0, interpolate=True)
-    obj2_t2 = visual.Rect(
-        win=win, name='obj2_t2',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
-        opacity=None, depth=-2.0, interpolate=True)
-    obj3_t2 = visual.Rect(
-        win=win, name='obj3_t2',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+    shipL2_1 = visual.ImageStim(
+        win=win,
+        name='shipL2_1', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.1, 0), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-2.0)
+    boxL2_2 = visual.Rect(
+        win=win, name='boxL2_2',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.35, 0), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
         opacity=None, depth=-3.0, interpolate=True)
+    shipL2_2 = visual.ImageStim(
+        win=win,
+        name='shipL2_2', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.35, 0), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-4.0)
+    boxL2_3 = visual.Rect(
+        win=win, name='boxL2_3',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.6, 0), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
+        opacity=None, depth=-5.0, interpolate=True)
+    shipL2_3 = visual.ImageStim(
+        win=win,
+        name='shipL2_3', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.6, 0), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-6.0)
     test_2_mess = visual.TextStim(win=win, name='test_2_mess',
         text='Focus on the black square',
         font='Open Sans',
         pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=-4.0);
+        depth=-7.0);
     
     # --- Initialize components for Routine "blank1s_t2" ---
     blank_screen_t2_mess = visual.TextStim(win=win, name='blank_screen_t2_mess',
@@ -670,41 +703,73 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         win=win,
         name='earth3', 
         image='earth.jpeg', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), size=(1.5, 1),
+        ori=0.0, pos=(-0.10, 0), size=(1.75, 1),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=0.0)
-    obj1_t3 = visual.Rect(
-        win=win, name='obj1_t3',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, 0.25), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+    boxL3_1 = visual.Rect(
+        win=win, name='boxL3_1',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.1, 0.25), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
         opacity=None, depth=-1.0, interpolate=True)
-    obj2_t3 = visual.Rect(
-        win=win, name='obj2_t3',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, 0.25), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor='white',
-        opacity=None, depth=-2.0, interpolate=True)
-    obj3_t3 = visual.Rect(
-        win=win, name='obj3_t3',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, -0.25), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor='white',
+    shipL3_1 = visual.ImageStim(
+        win=win,
+        name='shipL3_1', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.1, 0.25), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-2.0)
+    boxL3_2 = visual.Rect(
+        win=win, name='boxL3_2',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.6, 0.25), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
         opacity=None, depth=-3.0, interpolate=True)
-    obj4_t3 = visual.Rect(
-        win=win, name='obj4_t3',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, -0.25), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor='white',
-        opacity=None, depth=-4.0, interpolate=True)
+    shipL3_2 = visual.ImageStim(
+        win=win,
+        name='shipL3_2', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.6, 0.25), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-4.0)
+    boxL3_3 = visual.Rect(
+        win=win, name='boxL3_3',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.1, -0.25), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
+        opacity=None, depth=-5.0, interpolate=True)
+    shipL3_3 = visual.ImageStim(
+        win=win,
+        name='shipL3_3', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.1, -0.25), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-6.0)
+    boxL3_4 = visual.Rect(
+        win=win, name='boxL3_4',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.6, -0.25), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
+        opacity=None, depth=-7.0, interpolate=True)
+    shipL3_4 = visual.ImageStim(
+        win=win,
+        name='shipL3_4', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.6, -0.25), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-8.0)
     test_3_mess = visual.TextStim(win=win, name='test_3_mess',
         text='Focus on the black square',
         font='Open Sans',
         pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=-5.0);
+        depth=-9.0);
     
     # --- Initialize components for Routine "blank1s_t3" ---
     blank_screen_t3_mess = visual.TextStim(win=win, name='blank_screen_t3_mess',
@@ -720,71 +785,143 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
         win=win,
         name='earth4', 
         image='earth.jpeg', mask=None, anchor='center',
-        ori=0.0, pos=(0, 0), size=(1.5, 1),
+        ori=0.0, pos=(-0.10, 0), size=(1.75, 1),
         color=[1,1,1], colorSpace='rgb', opacity=None,
         flipHoriz=False, flipVert=False,
         texRes=128.0, interpolate=True, depth=0.0)
-    obj1_t4 = visual.Rect(
-        win=win, name='obj1_t4',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, 0.25), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor=[0.0000, 0.0000, 0.0000], fillColor=[-1.0000, -1.0000, -1.0000],
+    boxL4_1 = visual.Rect(
+        win=win, name='boxL4_1',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.1, 0.25), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
         opacity=None, depth=-1.0, interpolate=True)
-    obj2_t4 = visual.Rect(
-        win=win, name='obj2_t4',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0, 0.25), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
-        opacity=None, depth=-2.0, interpolate=True)
-    obj3_t4 = visual.Rect(
-        win=win, name='obj3_t4',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, 0.25), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+    shipL4_1 = visual.ImageStim(
+        win=win,
+        name='shipL4_1', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.1, 0.25), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-2.0)
+    boxL4_2 = visual.Rect(
+        win=win, name='boxL4_2',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.35, 0.25), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
         opacity=None, depth=-3.0, interpolate=True)
-    obj4_t4 = visual.Rect(
-        win=win, name='obj4_t4',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
-        opacity=None, depth=-4.0, interpolate=True)
-    obj5_t4 = visual.Rect(
-        win=win, name='obj5_t4',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+    shipL4_2 = visual.ImageStim(
+        win=win,
+        name='shipL4_2', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.35, 0.25), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-4.0)
+    boxL4_3 = visual.Rect(
+        win=win, name='boxL4_3',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.6, 0.25), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
         opacity=None, depth=-5.0, interpolate=True)
-    obj6_t4 = visual.Rect(
-        win=win, name='obj6_t4',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, 0), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
-        opacity=None, depth=-6.0, interpolate=True)
-    obj7_t4 = visual.Rect(
-        win=win, name='obj7_t4',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(-0.25, -0.25), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+    shipL4_3 = visual.ImageStim(
+        win=win,
+        name='shipL4_3', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.6, 0.25), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-6.0)
+    boxL4_4 = visual.Rect(
+        win=win, name='boxL4_4',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.1, 0), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
         opacity=None, depth=-7.0, interpolate=True)
-    obj8_t4 = visual.Rect(
-        win=win, name='obj8_t4',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0, -0.25), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
-        opacity=None, depth=-8.0, interpolate=True)
-    obj9_t4 = visual.Rect(
-        win=win, name='obj9_t4',
-        width=(0.05, 0.05)[0], height=(0.05, 0.05)[1],
-        ori=0.0, pos=(0.25, -0.25), anchor='center',
-        lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+    shipL4_4 = visual.ImageStim(
+        win=win,
+        name='shipL4_4', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.1, 0), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-8.0)
+    boxL4_5 = visual.Rect(
+        win=win, name='boxL4_5',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.35, 0), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
         opacity=None, depth=-9.0, interpolate=True)
+    shipL4_5 = visual.ImageStim(
+        win=win,
+        name='shipL4_5', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.35, 0), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-10.0)
+    boxL4_6 = visual.Rect(
+        win=win, name='boxL4_6',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.6, 0), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
+        opacity=None, depth=-11.0, interpolate=True)
+    shipL4_6 = visual.ImageStim(
+        win=win,
+        name='shipL4_6', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.6, 0), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-12.0)
+    boxL4_7 = visual.Rect(
+        win=win, name='boxL4_7',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.1, -0.25), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
+        opacity=None, depth=-13.0, interpolate=True)
+    shipL4_7 = visual.ImageStim(
+        win=win,
+        name='shipL4_7', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.1, -0.25), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-14.0)
+    boxL4_8 = visual.Rect(
+        win=win, name='boxL4_8',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.35, -0.25), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
+        opacity=None, depth=-15.0, interpolate=True)
+    shipL4_8 = visual.ImageStim(
+        win=win,
+        name='shipL4_8', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.35, -0.25), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-16.0)
+    boxL4_9 = visual.Rect(
+        win=win, name='boxL4_9',
+        width=(0.15, 0.075)[0], height=(0.15, 0.075)[1],
+        ori=0.0, pos=(0.6, -0.25), anchor='center',
+        lineWidth=5.0,     colorSpace='rgb',  lineColor=[1.0000, -1.0000, -1.0000], fillColor=None,
+        opacity=None, depth=-17.0, interpolate=True)
+    shipL4_9 = visual.ImageStim(
+        win=win,
+        name='shipL4_9', 
+        image='spaceship.jpeg', mask=None, anchor='center',
+        ori=0.0, pos=(0.6, -0.25), size=(0.15, 0.15),
+        color=[1,1,1], colorSpace='rgb', opacity=None,
+        flipHoriz=False, flipVert=False,
+        texRes=128.0, interpolate=True, depth=-18.0)
     test_4_mess = visual.TextStim(win=win, name='test_4_mess',
         text='Focus on the black square',
         font='Open Sans',
         pos=(0, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
         color='white', colorSpace='rgb', opacity=None, 
         languageStyle='LTR',
-        depth=-10.0);
+        depth=-19.0);
     
     # --- Initialize components for Routine "blank1s_t4" ---
     blank_screen_t4_mess = visual.TextStim(win=win, name='blank_screen_t4_mess',
@@ -1954,24 +2091,33 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 # Run 'Begin Routine' code from test_1_code
                 home_button = False
                 # Frequencies for each trial
-                freq_obj1 = [15, #Trial 1 frequency
-                            8,   #Trial 2 frequency
-                            15,  #Trial 3 frequency
-                            15,  #Trial 4 frequency
-                            15,  #Trial 5 frequency
-                            15,  #Trial 6 frequency
-                            15,  #Trial 7 frequency
-                            15,  #Trial 8 frequency
-                            15,  #Trial 9 frequency
-                            15]  #Trial 10 frequency
+                freq_trials = [[1], #Trial 1 frequency
+                            [2],   #Trial 2 frequency
+                            [15],  #Trial 3 frequency
+                            [15],  #Trial 4 frequency
+                            [15],  #Trial 5 frequency
+                            [15],  #Trial 6 frequency
+                            [15],  #Trial 7 frequency
+                            [15],  #Trial 8 frequency
+                            [15],  #Trial 9 frequency
+                            [15]]  #Trial 10 frequency
                 
-                # Frames per cycle for each object (full cycle = one on and one off phase)
-                frames_per_cycle_obj1 = 60 // freq_obj1[trials_1.thisN]
+                #Select frequencies for current trial
+                freq_curr_trial = freq_trials[trials_1.thisN]
+                
+                #Target object for user to look at for each trial
+                targets = [boxL1_1, boxL1_1, boxL1_1, boxL1_1, boxL1_1,
+                           boxL1_1, boxL1_1, boxL1_1, boxL1_1, boxL1_1]
+                           
+                #All objects
+                objects = [boxL1_1]
+                
+                #Select target object for user to look at
+                selectTarget(objects, targets[trials_1.thisN]) 
                 
                 test_1_mess.text = 'Focus on the black square (Test 1, Trial ' + str(trials_1.thisN + 1) + ')'
-                
                 # keep track of which components have finished
-                test_1Components = [earth1, spaceshipL1_1, test_1_mess]
+                test_1Components = [earth1, boxL1_1, shipL1_1, test_1_mess]
                 for thisComponent in test_1Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
@@ -2027,38 +2173,71 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                             earth1.status = FINISHED
                             earth1.setAutoDraw(False)
                     
-                    # *spaceshipL1_1* updates
+                    # *boxL1_1* updates
                     
-                    # if spaceshipL1_1 is starting this frame...
-                    if spaceshipL1_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if boxL1_1 is starting this frame...
+                    if boxL1_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        spaceshipL1_1.frameNStart = frameN  # exact frame index
-                        spaceshipL1_1.tStart = t  # local t and not account for scr refresh
-                        spaceshipL1_1.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(spaceshipL1_1, 'tStartRefresh')  # time at next scr refresh
+                        boxL1_1.frameNStart = frameN  # exact frame index
+                        boxL1_1.tStart = t  # local t and not account for scr refresh
+                        boxL1_1.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL1_1, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'spaceshipL1_1.started')
+                        thisExp.timestampOnFlip(win, 'boxL1_1.started')
                         # update status
-                        spaceshipL1_1.status = STARTED
-                        spaceshipL1_1.setAutoDraw(True)
+                        boxL1_1.status = STARTED
+                        boxL1_1.setAutoDraw(True)
                     
-                    # if spaceshipL1_1 is active this frame...
-                    if spaceshipL1_1.status == STARTED:
+                    # if boxL1_1 is active this frame...
+                    if boxL1_1.status == STARTED:
                         # update params
                         pass
                     
-                    # if spaceshipL1_1 is stopping this frame...
-                    if spaceshipL1_1.status == STARTED:
+                    # if boxL1_1 is stopping this frame...
+                    if boxL1_1.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > spaceshipL1_1.tStartRefresh + dur_test1-frameTolerance:
+                        if tThisFlipGlobal > boxL1_1.tStartRefresh + dur_test1-frameTolerance:
                             # keep track of stop time/frame for later
-                            spaceshipL1_1.tStop = t  # not accounting for scr refresh
-                            spaceshipL1_1.frameNStop = frameN  # exact frame index
+                            boxL1_1.tStop = t  # not accounting for scr refresh
+                            boxL1_1.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'spaceshipL1_1.stopped')
+                            thisExp.timestampOnFlip(win, 'boxL1_1.stopped')
                             # update status
-                            spaceshipL1_1.status = FINISHED
-                            spaceshipL1_1.setAutoDraw(False)
+                            boxL1_1.status = FINISHED
+                            boxL1_1.setAutoDraw(False)
+                    
+                    # *shipL1_1* updates
+                    
+                    # if shipL1_1 is starting this frame...
+                    if shipL1_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        shipL1_1.frameNStart = frameN  # exact frame index
+                        shipL1_1.tStart = t  # local t and not account for scr refresh
+                        shipL1_1.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL1_1, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'shipL1_1.started')
+                        # update status
+                        shipL1_1.status = STARTED
+                        shipL1_1.setAutoDraw(True)
+                    
+                    # if shipL1_1 is active this frame...
+                    if shipL1_1.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if shipL1_1 is stopping this frame...
+                    if shipL1_1.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > shipL1_1.tStartRefresh + dur_test1-frameTolerance:
+                            # keep track of stop time/frame for later
+                            shipL1_1.tStop = t  # not accounting for scr refresh
+                            shipL1_1.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'shipL1_1.stopped')
+                            # update status
+                            shipL1_1.status = FINISHED
+                            shipL1_1.setAutoDraw(False)
                     
                     # *test_1_mess* updates
                     
@@ -2093,9 +2272,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                             test_1_mess.status = FINISHED
                             test_1_mess.setAutoDraw(False)
                     # Run 'Each Frame' code from test_1_code
-                    # Update opacities based on current frame number for each stimulus
-                    # Object 1
-                    spaceshipL1_1.opacity = ((frameN % frames_per_cycle_obj1) < (frames_per_cycle_obj1 / 2))
+                    #Flicker objects are set frequencies
+                    flickerObjects(objects, freq_curr_trial, frameN)
                     
                     
                     # check for quit (typically the Esc key)
@@ -2302,11 +2480,11 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 continueRoutine = continueRoutine and not (button2 == False)
                 # Run 'Begin Routine' code from test_2_code
                 #Target object for user to look at for each trial
-                targets = [obj1_t2, obj2_t2, obj3_t2, obj2_t2, obj1_t2,
-                           obj3_t2, obj3_t2, obj1_t2, obj3_t2, obj3_t2]
+                targets = [boxL2_1, boxL2_2, boxL2_3, boxL2_1, boxL2_3,
+                           boxL2_1, boxL2_1, boxL2_2, boxL2_3, boxL2_1]
                 
                 # Frequencies for each object for every trial
-                freq_trials = [[10, 5 , 2 ], #Trial 1 frequencies
+                freq_trials = [[5, 10 , 15 ], #Trial 1 frequencies
                                [10 , 5 , 2 ], #Trial 2 frequencies
                                [2 , 5 , 2 ], #Trial 3 frequencies
                                [6 , 4 , 30], #Trial 4 frequencies
@@ -2321,14 +2499,14 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 freq_curr_trial = freq_trials[trials_2.thisN]
                 
                 #All objects
-                objects = [obj1_t2, obj2_t2, obj3_t2]
+                objects = [boxL2_1, boxL2_2, boxL2_3]
                 
                 #Select target object for user to look at
                 selectTarget(objects, targets[trials_2.thisN]) 
                 
                 test_2_mess.text = 'Focus on the black square (Test 2, Trial ' + str(trials_2.thisN + 1) + ')'
                 # keep track of which components have finished
-                test_2Components = [earth2, obj1_t2, obj2_t2, obj3_t2, test_2_mess]
+                test_2Components = [earth2, boxL2_1, shipL2_1, boxL2_2, shipL2_2, boxL2_3, shipL2_3, test_2_mess]
                 for thisComponent in test_2Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
@@ -2374,7 +2552,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                     # if earth2 is stopping this frame...
                     if earth2.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > earth2.tStartRefresh + dur_test2-frameTolerance:
+                        if tThisFlipGlobal > earth2.tStartRefresh + dur_test1-frameTolerance:
                             # keep track of stop time/frame for later
                             earth2.tStop = t  # not accounting for scr refresh
                             earth2.frameNStop = frameN  # exact frame index
@@ -2384,104 +2562,203 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                             earth2.status = FINISHED
                             earth2.setAutoDraw(False)
                     
-                    # *obj1_t2* updates
+                    # *boxL2_1* updates
                     
-                    # if obj1_t2 is starting this frame...
-                    if obj1_t2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if boxL2_1 is starting this frame...
+                    if boxL2_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj1_t2.frameNStart = frameN  # exact frame index
-                        obj1_t2.tStart = t  # local t and not account for scr refresh
-                        obj1_t2.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj1_t2, 'tStartRefresh')  # time at next scr refresh
+                        boxL2_1.frameNStart = frameN  # exact frame index
+                        boxL2_1.tStart = t  # local t and not account for scr refresh
+                        boxL2_1.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL2_1, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj1_t2.started')
+                        thisExp.timestampOnFlip(win, 'boxL2_1.started')
                         # update status
-                        obj1_t2.status = STARTED
-                        obj1_t2.setAutoDraw(True)
+                        boxL2_1.status = STARTED
+                        boxL2_1.setAutoDraw(True)
                     
-                    # if obj1_t2 is active this frame...
-                    if obj1_t2.status == STARTED:
+                    # if boxL2_1 is active this frame...
+                    if boxL2_1.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj1_t2 is stopping this frame...
-                    if obj1_t2.status == STARTED:
+                    # if boxL2_1 is stopping this frame...
+                    if boxL2_1.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj1_t2.tStartRefresh + dur_test2-frameTolerance:
+                        if tThisFlipGlobal > boxL2_1.tStartRefresh + dur_test2-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj1_t2.tStop = t  # not accounting for scr refresh
-                            obj1_t2.frameNStop = frameN  # exact frame index
+                            boxL2_1.tStop = t  # not accounting for scr refresh
+                            boxL2_1.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj1_t2.stopped')
+                            thisExp.timestampOnFlip(win, 'boxL2_1.stopped')
                             # update status
-                            obj1_t2.status = FINISHED
-                            obj1_t2.setAutoDraw(False)
+                            boxL2_1.status = FINISHED
+                            boxL2_1.setAutoDraw(False)
                     
-                    # *obj2_t2* updates
+                    # *shipL2_1* updates
                     
-                    # if obj2_t2 is starting this frame...
-                    if obj2_t2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if shipL2_1 is starting this frame...
+                    if shipL2_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj2_t2.frameNStart = frameN  # exact frame index
-                        obj2_t2.tStart = t  # local t and not account for scr refresh
-                        obj2_t2.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj2_t2, 'tStartRefresh')  # time at next scr refresh
+                        shipL2_1.frameNStart = frameN  # exact frame index
+                        shipL2_1.tStart = t  # local t and not account for scr refresh
+                        shipL2_1.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL2_1, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj2_t2.started')
+                        thisExp.timestampOnFlip(win, 'shipL2_1.started')
                         # update status
-                        obj2_t2.status = STARTED
-                        obj2_t2.setAutoDraw(True)
+                        shipL2_1.status = STARTED
+                        shipL2_1.setAutoDraw(True)
                     
-                    # if obj2_t2 is active this frame...
-                    if obj2_t2.status == STARTED:
+                    # if shipL2_1 is active this frame...
+                    if shipL2_1.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj2_t2 is stopping this frame...
-                    if obj2_t2.status == STARTED:
+                    # if shipL2_1 is stopping this frame...
+                    if shipL2_1.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj2_t2.tStartRefresh + dur_test2-frameTolerance:
+                        if tThisFlipGlobal > shipL2_1.tStartRefresh + dur_test2-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj2_t2.tStop = t  # not accounting for scr refresh
-                            obj2_t2.frameNStop = frameN  # exact frame index
+                            shipL2_1.tStop = t  # not accounting for scr refresh
+                            shipL2_1.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj2_t2.stopped')
+                            thisExp.timestampOnFlip(win, 'shipL2_1.stopped')
                             # update status
-                            obj2_t2.status = FINISHED
-                            obj2_t2.setAutoDraw(False)
+                            shipL2_1.status = FINISHED
+                            shipL2_1.setAutoDraw(False)
                     
-                    # *obj3_t2* updates
+                    # *boxL2_2* updates
                     
-                    # if obj3_t2 is starting this frame...
-                    if obj3_t2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if boxL2_2 is starting this frame...
+                    if boxL2_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj3_t2.frameNStart = frameN  # exact frame index
-                        obj3_t2.tStart = t  # local t and not account for scr refresh
-                        obj3_t2.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj3_t2, 'tStartRefresh')  # time at next scr refresh
+                        boxL2_2.frameNStart = frameN  # exact frame index
+                        boxL2_2.tStart = t  # local t and not account for scr refresh
+                        boxL2_2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL2_2, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj3_t2.started')
+                        thisExp.timestampOnFlip(win, 'boxL2_2.started')
                         # update status
-                        obj3_t2.status = STARTED
-                        obj3_t2.setAutoDraw(True)
+                        boxL2_2.status = STARTED
+                        boxL2_2.setAutoDraw(True)
                     
-                    # if obj3_t2 is active this frame...
-                    if obj3_t2.status == STARTED:
+                    # if boxL2_2 is active this frame...
+                    if boxL2_2.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj3_t2 is stopping this frame...
-                    if obj3_t2.status == STARTED:
+                    # if boxL2_2 is stopping this frame...
+                    if boxL2_2.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj3_t2.tStartRefresh + dur_test2-frameTolerance:
+                        if tThisFlipGlobal > boxL2_2.tStartRefresh + dur_test2-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj3_t2.tStop = t  # not accounting for scr refresh
-                            obj3_t2.frameNStop = frameN  # exact frame index
+                            boxL2_2.tStop = t  # not accounting for scr refresh
+                            boxL2_2.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj3_t2.stopped')
+                            thisExp.timestampOnFlip(win, 'boxL2_2.stopped')
                             # update status
-                            obj3_t2.status = FINISHED
-                            obj3_t2.setAutoDraw(False)
+                            boxL2_2.status = FINISHED
+                            boxL2_2.setAutoDraw(False)
+                    
+                    # *shipL2_2* updates
+                    
+                    # if shipL2_2 is starting this frame...
+                    if shipL2_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        shipL2_2.frameNStart = frameN  # exact frame index
+                        shipL2_2.tStart = t  # local t and not account for scr refresh
+                        shipL2_2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL2_2, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'shipL2_2.started')
+                        # update status
+                        shipL2_2.status = STARTED
+                        shipL2_2.setAutoDraw(True)
+                    
+                    # if shipL2_2 is active this frame...
+                    if shipL2_2.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if shipL2_2 is stopping this frame...
+                    if shipL2_2.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > shipL2_2.tStartRefresh + dur_test2-frameTolerance:
+                            # keep track of stop time/frame for later
+                            shipL2_2.tStop = t  # not accounting for scr refresh
+                            shipL2_2.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'shipL2_2.stopped')
+                            # update status
+                            shipL2_2.status = FINISHED
+                            shipL2_2.setAutoDraw(False)
+                    
+                    # *boxL2_3* updates
+                    
+                    # if boxL2_3 is starting this frame...
+                    if boxL2_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        boxL2_3.frameNStart = frameN  # exact frame index
+                        boxL2_3.tStart = t  # local t and not account for scr refresh
+                        boxL2_3.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL2_3, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'boxL2_3.started')
+                        # update status
+                        boxL2_3.status = STARTED
+                        boxL2_3.setAutoDraw(True)
+                    
+                    # if boxL2_3 is active this frame...
+                    if boxL2_3.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if boxL2_3 is stopping this frame...
+                    if boxL2_3.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > boxL2_3.tStartRefresh + dur_test2-frameTolerance:
+                            # keep track of stop time/frame for later
+                            boxL2_3.tStop = t  # not accounting for scr refresh
+                            boxL2_3.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'boxL2_3.stopped')
+                            # update status
+                            boxL2_3.status = FINISHED
+                            boxL2_3.setAutoDraw(False)
+                    
+                    # *shipL2_3* updates
+                    
+                    # if shipL2_3 is starting this frame...
+                    if shipL2_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        shipL2_3.frameNStart = frameN  # exact frame index
+                        shipL2_3.tStart = t  # local t and not account for scr refresh
+                        shipL2_3.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL2_3, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'shipL2_3.started')
+                        # update status
+                        shipL2_3.status = STARTED
+                        shipL2_3.setAutoDraw(True)
+                    
+                    # if shipL2_3 is active this frame...
+                    if shipL2_3.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if shipL2_3 is stopping this frame...
+                    if shipL2_3.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > shipL2_3.tStartRefresh + dur_test2-frameTolerance:
+                            # keep track of stop time/frame for later
+                            shipL2_3.tStop = t  # not accounting for scr refresh
+                            shipL2_3.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'shipL2_3.stopped')
+                            # update status
+                            shipL2_3.status = FINISHED
+                            shipL2_3.setAutoDraw(False)
                     
                     # *test_2_mess* updates
                     
@@ -2727,8 +3004,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 continueRoutine = continueRoutine and not (button3 ==  False)
                 # Run 'Begin Routine' code from test_3_code
                 #Target object for user to look at for each trial
-                targets = [obj1_t3, obj4_t3, obj3_t3, obj2_t3, obj1_t3,
-                           obj3_t3, obj4_t3, obj1_t3, obj3_t3, obj3_t3]
+                targets = [boxL3_1, boxL3_2, boxL3_3, boxL3_4, boxL3_1,
+                           boxL3_1, boxL3_2, boxL3_4, boxL3_2, boxL3_1]
                            
                 # Frequencies for each object for every trial
                 freq_trials = [[10, 5,
@@ -2756,14 +3033,14 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 freq_curr_trial = freq_trials[trials_3.thisN]
                 
                 #All objects
-                objects = [obj1_t3, obj2_t3, obj3_t3, obj4_t3]
+                objects = [boxL3_1, boxL3_2, boxL3_3, boxL3_4]
                 
                 #Select target object for user to look at
                 selectTarget(objects, targets[trials_3.thisN])
                 
                 test_3_mess.text = 'Focus on the black square (Test 3, Trial ' + str(trials_3.thisN + 1) + ')'
                 # keep track of which components have finished
-                test_3Components = [earth3, obj1_t3, obj2_t3, obj3_t3, obj4_t3, test_3_mess]
+                test_3Components = [earth3, boxL3_1, shipL3_1, boxL3_2, shipL3_2, boxL3_3, shipL3_3, boxL3_4, shipL3_4, test_3_mess]
                 for thisComponent in test_3Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
@@ -2819,137 +3096,269 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                             earth3.status = FINISHED
                             earth3.setAutoDraw(False)
                     
-                    # *obj1_t3* updates
+                    # *boxL3_1* updates
                     
-                    # if obj1_t3 is starting this frame...
-                    if obj1_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if boxL3_1 is starting this frame...
+                    if boxL3_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj1_t3.frameNStart = frameN  # exact frame index
-                        obj1_t3.tStart = t  # local t and not account for scr refresh
-                        obj1_t3.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj1_t3, 'tStartRefresh')  # time at next scr refresh
+                        boxL3_1.frameNStart = frameN  # exact frame index
+                        boxL3_1.tStart = t  # local t and not account for scr refresh
+                        boxL3_1.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL3_1, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj1_t3.started')
+                        thisExp.timestampOnFlip(win, 'boxL3_1.started')
                         # update status
-                        obj1_t3.status = STARTED
-                        obj1_t3.setAutoDraw(True)
+                        boxL3_1.status = STARTED
+                        boxL3_1.setAutoDraw(True)
                     
-                    # if obj1_t3 is active this frame...
-                    if obj1_t3.status == STARTED:
+                    # if boxL3_1 is active this frame...
+                    if boxL3_1.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj1_t3 is stopping this frame...
-                    if obj1_t3.status == STARTED:
+                    # if boxL3_1 is stopping this frame...
+                    if boxL3_1.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj1_t3.tStartRefresh + dur_test3-frameTolerance:
+                        if tThisFlipGlobal > boxL3_1.tStartRefresh + dur_test3-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj1_t3.tStop = t  # not accounting for scr refresh
-                            obj1_t3.frameNStop = frameN  # exact frame index
+                            boxL3_1.tStop = t  # not accounting for scr refresh
+                            boxL3_1.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj1_t3.stopped')
+                            thisExp.timestampOnFlip(win, 'boxL3_1.stopped')
                             # update status
-                            obj1_t3.status = FINISHED
-                            obj1_t3.setAutoDraw(False)
+                            boxL3_1.status = FINISHED
+                            boxL3_1.setAutoDraw(False)
                     
-                    # *obj2_t3* updates
+                    # *shipL3_1* updates
                     
-                    # if obj2_t3 is starting this frame...
-                    if obj2_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if shipL3_1 is starting this frame...
+                    if shipL3_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj2_t3.frameNStart = frameN  # exact frame index
-                        obj2_t3.tStart = t  # local t and not account for scr refresh
-                        obj2_t3.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj2_t3, 'tStartRefresh')  # time at next scr refresh
+                        shipL3_1.frameNStart = frameN  # exact frame index
+                        shipL3_1.tStart = t  # local t and not account for scr refresh
+                        shipL3_1.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL3_1, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj2_t3.started')
+                        thisExp.timestampOnFlip(win, 'shipL3_1.started')
                         # update status
-                        obj2_t3.status = STARTED
-                        obj2_t3.setAutoDraw(True)
+                        shipL3_1.status = STARTED
+                        shipL3_1.setAutoDraw(True)
                     
-                    # if obj2_t3 is active this frame...
-                    if obj2_t3.status == STARTED:
+                    # if shipL3_1 is active this frame...
+                    if shipL3_1.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj2_t3 is stopping this frame...
-                    if obj2_t3.status == STARTED:
+                    # if shipL3_1 is stopping this frame...
+                    if shipL3_1.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj2_t3.tStartRefresh + dur_test3-frameTolerance:
+                        if tThisFlipGlobal > shipL3_1.tStartRefresh + dur_test3-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj2_t3.tStop = t  # not accounting for scr refresh
-                            obj2_t3.frameNStop = frameN  # exact frame index
+                            shipL3_1.tStop = t  # not accounting for scr refresh
+                            shipL3_1.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj2_t3.stopped')
+                            thisExp.timestampOnFlip(win, 'shipL3_1.stopped')
                             # update status
-                            obj2_t3.status = FINISHED
-                            obj2_t3.setAutoDraw(False)
+                            shipL3_1.status = FINISHED
+                            shipL3_1.setAutoDraw(False)
                     
-                    # *obj3_t3* updates
+                    # *boxL3_2* updates
                     
-                    # if obj3_t3 is starting this frame...
-                    if obj3_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if boxL3_2 is starting this frame...
+                    if boxL3_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj3_t3.frameNStart = frameN  # exact frame index
-                        obj3_t3.tStart = t  # local t and not account for scr refresh
-                        obj3_t3.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj3_t3, 'tStartRefresh')  # time at next scr refresh
+                        boxL3_2.frameNStart = frameN  # exact frame index
+                        boxL3_2.tStart = t  # local t and not account for scr refresh
+                        boxL3_2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL3_2, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj3_t3.started')
+                        thisExp.timestampOnFlip(win, 'boxL3_2.started')
                         # update status
-                        obj3_t3.status = STARTED
-                        obj3_t3.setAutoDraw(True)
+                        boxL3_2.status = STARTED
+                        boxL3_2.setAutoDraw(True)
                     
-                    # if obj3_t3 is active this frame...
-                    if obj3_t3.status == STARTED:
+                    # if boxL3_2 is active this frame...
+                    if boxL3_2.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj3_t3 is stopping this frame...
-                    if obj3_t3.status == STARTED:
+                    # if boxL3_2 is stopping this frame...
+                    if boxL3_2.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj3_t3.tStartRefresh + dur_test3-frameTolerance:
+                        if tThisFlipGlobal > boxL3_2.tStartRefresh + dur_test3-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj3_t3.tStop = t  # not accounting for scr refresh
-                            obj3_t3.frameNStop = frameN  # exact frame index
+                            boxL3_2.tStop = t  # not accounting for scr refresh
+                            boxL3_2.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj3_t3.stopped')
+                            thisExp.timestampOnFlip(win, 'boxL3_2.stopped')
                             # update status
-                            obj3_t3.status = FINISHED
-                            obj3_t3.setAutoDraw(False)
+                            boxL3_2.status = FINISHED
+                            boxL3_2.setAutoDraw(False)
                     
-                    # *obj4_t3* updates
+                    # *shipL3_2* updates
                     
-                    # if obj4_t3 is starting this frame...
-                    if obj4_t3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if shipL3_2 is starting this frame...
+                    if shipL3_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj4_t3.frameNStart = frameN  # exact frame index
-                        obj4_t3.tStart = t  # local t and not account for scr refresh
-                        obj4_t3.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj4_t3, 'tStartRefresh')  # time at next scr refresh
+                        shipL3_2.frameNStart = frameN  # exact frame index
+                        shipL3_2.tStart = t  # local t and not account for scr refresh
+                        shipL3_2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL3_2, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj4_t3.started')
+                        thisExp.timestampOnFlip(win, 'shipL3_2.started')
                         # update status
-                        obj4_t3.status = STARTED
-                        obj4_t3.setAutoDraw(True)
+                        shipL3_2.status = STARTED
+                        shipL3_2.setAutoDraw(True)
                     
-                    # if obj4_t3 is active this frame...
-                    if obj4_t3.status == STARTED:
+                    # if shipL3_2 is active this frame...
+                    if shipL3_2.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj4_t3 is stopping this frame...
-                    if obj4_t3.status == STARTED:
+                    # if shipL3_2 is stopping this frame...
+                    if shipL3_2.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj4_t3.tStartRefresh + dur_test3-frameTolerance:
+                        if tThisFlipGlobal > shipL3_2.tStartRefresh + dur_test3-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj4_t3.tStop = t  # not accounting for scr refresh
-                            obj4_t3.frameNStop = frameN  # exact frame index
+                            shipL3_2.tStop = t  # not accounting for scr refresh
+                            shipL3_2.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj4_t3.stopped')
+                            thisExp.timestampOnFlip(win, 'shipL3_2.stopped')
                             # update status
-                            obj4_t3.status = FINISHED
-                            obj4_t3.setAutoDraw(False)
+                            shipL3_2.status = FINISHED
+                            shipL3_2.setAutoDraw(False)
+                    
+                    # *boxL3_3* updates
+                    
+                    # if boxL3_3 is starting this frame...
+                    if boxL3_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        boxL3_3.frameNStart = frameN  # exact frame index
+                        boxL3_3.tStart = t  # local t and not account for scr refresh
+                        boxL3_3.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL3_3, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'boxL3_3.started')
+                        # update status
+                        boxL3_3.status = STARTED
+                        boxL3_3.setAutoDraw(True)
+                    
+                    # if boxL3_3 is active this frame...
+                    if boxL3_3.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if boxL3_3 is stopping this frame...
+                    if boxL3_3.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > boxL3_3.tStartRefresh + dur_test3-frameTolerance:
+                            # keep track of stop time/frame for later
+                            boxL3_3.tStop = t  # not accounting for scr refresh
+                            boxL3_3.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'boxL3_3.stopped')
+                            # update status
+                            boxL3_3.status = FINISHED
+                            boxL3_3.setAutoDraw(False)
+                    
+                    # *shipL3_3* updates
+                    
+                    # if shipL3_3 is starting this frame...
+                    if shipL3_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        shipL3_3.frameNStart = frameN  # exact frame index
+                        shipL3_3.tStart = t  # local t and not account for scr refresh
+                        shipL3_3.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL3_3, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'shipL3_3.started')
+                        # update status
+                        shipL3_3.status = STARTED
+                        shipL3_3.setAutoDraw(True)
+                    
+                    # if shipL3_3 is active this frame...
+                    if shipL3_3.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if shipL3_3 is stopping this frame...
+                    if shipL3_3.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > shipL3_3.tStartRefresh + dur_test3-frameTolerance:
+                            # keep track of stop time/frame for later
+                            shipL3_3.tStop = t  # not accounting for scr refresh
+                            shipL3_3.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'shipL3_3.stopped')
+                            # update status
+                            shipL3_3.status = FINISHED
+                            shipL3_3.setAutoDraw(False)
+                    
+                    # *boxL3_4* updates
+                    
+                    # if boxL3_4 is starting this frame...
+                    if boxL3_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        boxL3_4.frameNStart = frameN  # exact frame index
+                        boxL3_4.tStart = t  # local t and not account for scr refresh
+                        boxL3_4.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL3_4, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'boxL3_4.started')
+                        # update status
+                        boxL3_4.status = STARTED
+                        boxL3_4.setAutoDraw(True)
+                    
+                    # if boxL3_4 is active this frame...
+                    if boxL3_4.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if boxL3_4 is stopping this frame...
+                    if boxL3_4.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > boxL3_4.tStartRefresh + dur_test3-frameTolerance:
+                            # keep track of stop time/frame for later
+                            boxL3_4.tStop = t  # not accounting for scr refresh
+                            boxL3_4.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'boxL3_4.stopped')
+                            # update status
+                            boxL3_4.status = FINISHED
+                            boxL3_4.setAutoDraw(False)
+                    
+                    # *shipL3_4* updates
+                    
+                    # if shipL3_4 is starting this frame...
+                    if shipL3_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        shipL3_4.frameNStart = frameN  # exact frame index
+                        shipL3_4.tStart = t  # local t and not account for scr refresh
+                        shipL3_4.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL3_4, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'shipL3_4.started')
+                        # update status
+                        shipL3_4.status = STARTED
+                        shipL3_4.setAutoDraw(True)
+                    
+                    # if shipL3_4 is active this frame...
+                    if shipL3_4.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if shipL3_4 is stopping this frame...
+                    if shipL3_4.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > shipL3_4.tStartRefresh + dur_test3-frameTolerance:
+                            # keep track of stop time/frame for later
+                            shipL3_4.tStop = t  # not accounting for scr refresh
+                            shipL3_4.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'shipL3_4.stopped')
+                            # update status
+                            shipL3_4.status = FINISHED
+                            shipL3_4.setAutoDraw(False)
                     
                     # *test_3_mess* updates
                     
@@ -3191,8 +3600,8 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 continueRoutine = continueRoutine and not (button4 ==  False)
                 # Run 'Begin Routine' code from test_4_code
                 #Target object for user to look at for each trial
-                targets = [obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4,
-                           obj6_t4, obj7_t4, obj8_t4, obj9_t4, obj5_t4]
+                targets = [boxL4_1, boxL4_2, boxL4_3, boxL4_4, boxL4_5,
+                           boxL4_6, boxL4_7, boxL4_8, boxL4_9, boxL4_5]
                 
                 # Frequencies for each object
                 freq_trials = [[10, 5, 2,
@@ -3227,9 +3636,9 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                                 20, 25, 30]] #Trial 10 frequencies
                                 
                 #All objects
-                objects = [obj1_t4, obj2_t4, obj3_t4,
-                           obj4_t4, obj5_t4, obj6_t4,
-                           obj7_t4, obj8_t4, obj9_t4,]
+                objects = [boxL4_1, boxL4_2, boxL4_3,
+                           boxL4_4, boxL4_5, boxL4_6,
+                           boxL4_7, boxL4_8, boxL4_9]
                 
                 #Select frequencies for current trial
                 freq_curr_trial = freq_trials[trials_4.thisN]
@@ -3239,7 +3648,7 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                 
                 test_4_mess.text = 'Focus on the black square (Test 4, Trial ' + str(trials_4.thisN + 1) + ')'
                 # keep track of which components have finished
-                test_4Components = [earth4, obj1_t4, obj2_t4, obj3_t4, obj4_t4, obj5_t4, obj6_t4, obj7_t4, obj8_t4, obj9_t4, test_4_mess]
+                test_4Components = [earth4, boxL4_1, shipL4_1, boxL4_2, shipL4_2, boxL4_3, shipL4_3, boxL4_4, shipL4_4, boxL4_5, shipL4_5, boxL4_6, shipL4_6, boxL4_7, shipL4_7, boxL4_8, shipL4_8, boxL4_9, shipL4_9, test_4_mess]
                 for thisComponent in test_4Components:
                     thisComponent.tStart = None
                     thisComponent.tStop = None
@@ -3295,302 +3704,599 @@ def run(expInfo, thisExp, win, inputs, globalClock=None, thisSession=None):
                             earth4.status = FINISHED
                             earth4.setAutoDraw(False)
                     
-                    # *obj1_t4* updates
+                    # *boxL4_1* updates
                     
-                    # if obj1_t4 is starting this frame...
-                    if obj1_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if boxL4_1 is starting this frame...
+                    if boxL4_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj1_t4.frameNStart = frameN  # exact frame index
-                        obj1_t4.tStart = t  # local t and not account for scr refresh
-                        obj1_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj1_t4, 'tStartRefresh')  # time at next scr refresh
+                        boxL4_1.frameNStart = frameN  # exact frame index
+                        boxL4_1.tStart = t  # local t and not account for scr refresh
+                        boxL4_1.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL4_1, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj1_t4.started')
+                        thisExp.timestampOnFlip(win, 'boxL4_1.started')
                         # update status
-                        obj1_t4.status = STARTED
-                        obj1_t4.setAutoDraw(True)
+                        boxL4_1.status = STARTED
+                        boxL4_1.setAutoDraw(True)
                     
-                    # if obj1_t4 is active this frame...
-                    if obj1_t4.status == STARTED:
+                    # if boxL4_1 is active this frame...
+                    if boxL4_1.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj1_t4 is stopping this frame...
-                    if obj1_t4.status == STARTED:
+                    # if boxL4_1 is stopping this frame...
+                    if boxL4_1.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj1_t4.tStartRefresh + dur_test4-frameTolerance:
+                        if tThisFlipGlobal > boxL4_1.tStartRefresh + dur_test4-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj1_t4.tStop = t  # not accounting for scr refresh
-                            obj1_t4.frameNStop = frameN  # exact frame index
+                            boxL4_1.tStop = t  # not accounting for scr refresh
+                            boxL4_1.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj1_t4.stopped')
+                            thisExp.timestampOnFlip(win, 'boxL4_1.stopped')
                             # update status
-                            obj1_t4.status = FINISHED
-                            obj1_t4.setAutoDraw(False)
+                            boxL4_1.status = FINISHED
+                            boxL4_1.setAutoDraw(False)
                     
-                    # *obj2_t4* updates
+                    # *shipL4_1* updates
                     
-                    # if obj2_t4 is starting this frame...
-                    if obj2_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if shipL4_1 is starting this frame...
+                    if shipL4_1.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj2_t4.frameNStart = frameN  # exact frame index
-                        obj2_t4.tStart = t  # local t and not account for scr refresh
-                        obj2_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj2_t4, 'tStartRefresh')  # time at next scr refresh
+                        shipL4_1.frameNStart = frameN  # exact frame index
+                        shipL4_1.tStart = t  # local t and not account for scr refresh
+                        shipL4_1.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL4_1, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj2_t4.started')
+                        thisExp.timestampOnFlip(win, 'shipL4_1.started')
                         # update status
-                        obj2_t4.status = STARTED
-                        obj2_t4.setAutoDraw(True)
+                        shipL4_1.status = STARTED
+                        shipL4_1.setAutoDraw(True)
                     
-                    # if obj2_t4 is active this frame...
-                    if obj2_t4.status == STARTED:
+                    # if shipL4_1 is active this frame...
+                    if shipL4_1.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj2_t4 is stopping this frame...
-                    if obj2_t4.status == STARTED:
+                    # if shipL4_1 is stopping this frame...
+                    if shipL4_1.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj2_t4.tStartRefresh + dur_test4-frameTolerance:
+                        if tThisFlipGlobal > shipL4_1.tStartRefresh + dur_test4-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj2_t4.tStop = t  # not accounting for scr refresh
-                            obj2_t4.frameNStop = frameN  # exact frame index
+                            shipL4_1.tStop = t  # not accounting for scr refresh
+                            shipL4_1.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj2_t4.stopped')
+                            thisExp.timestampOnFlip(win, 'shipL4_1.stopped')
                             # update status
-                            obj2_t4.status = FINISHED
-                            obj2_t4.setAutoDraw(False)
+                            shipL4_1.status = FINISHED
+                            shipL4_1.setAutoDraw(False)
                     
-                    # *obj3_t4* updates
+                    # *boxL4_2* updates
                     
-                    # if obj3_t4 is starting this frame...
-                    if obj3_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if boxL4_2 is starting this frame...
+                    if boxL4_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj3_t4.frameNStart = frameN  # exact frame index
-                        obj3_t4.tStart = t  # local t and not account for scr refresh
-                        obj3_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj3_t4, 'tStartRefresh')  # time at next scr refresh
+                        boxL4_2.frameNStart = frameN  # exact frame index
+                        boxL4_2.tStart = t  # local t and not account for scr refresh
+                        boxL4_2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL4_2, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj3_t4.started')
+                        thisExp.timestampOnFlip(win, 'boxL4_2.started')
                         # update status
-                        obj3_t4.status = STARTED
-                        obj3_t4.setAutoDraw(True)
+                        boxL4_2.status = STARTED
+                        boxL4_2.setAutoDraw(True)
                     
-                    # if obj3_t4 is active this frame...
-                    if obj3_t4.status == STARTED:
+                    # if boxL4_2 is active this frame...
+                    if boxL4_2.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj3_t4 is stopping this frame...
-                    if obj3_t4.status == STARTED:
+                    # if boxL4_2 is stopping this frame...
+                    if boxL4_2.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj3_t4.tStartRefresh + dur_test4-frameTolerance:
+                        if tThisFlipGlobal > boxL4_2.tStartRefresh + dur_test4-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj3_t4.tStop = t  # not accounting for scr refresh
-                            obj3_t4.frameNStop = frameN  # exact frame index
+                            boxL4_2.tStop = t  # not accounting for scr refresh
+                            boxL4_2.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj3_t4.stopped')
+                            thisExp.timestampOnFlip(win, 'boxL4_2.stopped')
                             # update status
-                            obj3_t4.status = FINISHED
-                            obj3_t4.setAutoDraw(False)
+                            boxL4_2.status = FINISHED
+                            boxL4_2.setAutoDraw(False)
                     
-                    # *obj4_t4* updates
+                    # *shipL4_2* updates
                     
-                    # if obj4_t4 is starting this frame...
-                    if obj4_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if shipL4_2 is starting this frame...
+                    if shipL4_2.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj4_t4.frameNStart = frameN  # exact frame index
-                        obj4_t4.tStart = t  # local t and not account for scr refresh
-                        obj4_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj4_t4, 'tStartRefresh')  # time at next scr refresh
+                        shipL4_2.frameNStart = frameN  # exact frame index
+                        shipL4_2.tStart = t  # local t and not account for scr refresh
+                        shipL4_2.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL4_2, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj4_t4.started')
+                        thisExp.timestampOnFlip(win, 'shipL4_2.started')
                         # update status
-                        obj4_t4.status = STARTED
-                        obj4_t4.setAutoDraw(True)
+                        shipL4_2.status = STARTED
+                        shipL4_2.setAutoDraw(True)
                     
-                    # if obj4_t4 is active this frame...
-                    if obj4_t4.status == STARTED:
+                    # if shipL4_2 is active this frame...
+                    if shipL4_2.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj4_t4 is stopping this frame...
-                    if obj4_t4.status == STARTED:
+                    # if shipL4_2 is stopping this frame...
+                    if shipL4_2.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj4_t4.tStartRefresh + dur_test4-frameTolerance:
+                        if tThisFlipGlobal > shipL4_2.tStartRefresh + dur_test4-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj4_t4.tStop = t  # not accounting for scr refresh
-                            obj4_t4.frameNStop = frameN  # exact frame index
+                            shipL4_2.tStop = t  # not accounting for scr refresh
+                            shipL4_2.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj4_t4.stopped')
+                            thisExp.timestampOnFlip(win, 'shipL4_2.stopped')
                             # update status
-                            obj4_t4.status = FINISHED
-                            obj4_t4.setAutoDraw(False)
+                            shipL4_2.status = FINISHED
+                            shipL4_2.setAutoDraw(False)
                     
-                    # *obj5_t4* updates
+                    # *boxL4_3* updates
                     
-                    # if obj5_t4 is starting this frame...
-                    if obj5_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if boxL4_3 is starting this frame...
+                    if boxL4_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj5_t4.frameNStart = frameN  # exact frame index
-                        obj5_t4.tStart = t  # local t and not account for scr refresh
-                        obj5_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj5_t4, 'tStartRefresh')  # time at next scr refresh
+                        boxL4_3.frameNStart = frameN  # exact frame index
+                        boxL4_3.tStart = t  # local t and not account for scr refresh
+                        boxL4_3.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL4_3, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj5_t4.started')
+                        thisExp.timestampOnFlip(win, 'boxL4_3.started')
                         # update status
-                        obj5_t4.status = STARTED
-                        obj5_t4.setAutoDraw(True)
+                        boxL4_3.status = STARTED
+                        boxL4_3.setAutoDraw(True)
                     
-                    # if obj5_t4 is active this frame...
-                    if obj5_t4.status == STARTED:
+                    # if boxL4_3 is active this frame...
+                    if boxL4_3.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj5_t4 is stopping this frame...
-                    if obj5_t4.status == STARTED:
+                    # if boxL4_3 is stopping this frame...
+                    if boxL4_3.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj5_t4.tStartRefresh + dur_test4-frameTolerance:
+                        if tThisFlipGlobal > boxL4_3.tStartRefresh + dur_test4-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj5_t4.tStop = t  # not accounting for scr refresh
-                            obj5_t4.frameNStop = frameN  # exact frame index
+                            boxL4_3.tStop = t  # not accounting for scr refresh
+                            boxL4_3.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj5_t4.stopped')
+                            thisExp.timestampOnFlip(win, 'boxL4_3.stopped')
                             # update status
-                            obj5_t4.status = FINISHED
-                            obj5_t4.setAutoDraw(False)
+                            boxL4_3.status = FINISHED
+                            boxL4_3.setAutoDraw(False)
                     
-                    # *obj6_t4* updates
+                    # *shipL4_3* updates
                     
-                    # if obj6_t4 is starting this frame...
-                    if obj6_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if shipL4_3 is starting this frame...
+                    if shipL4_3.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj6_t4.frameNStart = frameN  # exact frame index
-                        obj6_t4.tStart = t  # local t and not account for scr refresh
-                        obj6_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj6_t4, 'tStartRefresh')  # time at next scr refresh
+                        shipL4_3.frameNStart = frameN  # exact frame index
+                        shipL4_3.tStart = t  # local t and not account for scr refresh
+                        shipL4_3.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL4_3, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj6_t4.started')
+                        thisExp.timestampOnFlip(win, 'shipL4_3.started')
                         # update status
-                        obj6_t4.status = STARTED
-                        obj6_t4.setAutoDraw(True)
+                        shipL4_3.status = STARTED
+                        shipL4_3.setAutoDraw(True)
                     
-                    # if obj6_t4 is active this frame...
-                    if obj6_t4.status == STARTED:
+                    # if shipL4_3 is active this frame...
+                    if shipL4_3.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj6_t4 is stopping this frame...
-                    if obj6_t4.status == STARTED:
+                    # if shipL4_3 is stopping this frame...
+                    if shipL4_3.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj6_t4.tStartRefresh + dur_test4-frameTolerance:
+                        if tThisFlipGlobal > shipL4_3.tStartRefresh + dur_test4-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj6_t4.tStop = t  # not accounting for scr refresh
-                            obj6_t4.frameNStop = frameN  # exact frame index
+                            shipL4_3.tStop = t  # not accounting for scr refresh
+                            shipL4_3.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj6_t4.stopped')
+                            thisExp.timestampOnFlip(win, 'shipL4_3.stopped')
                             # update status
-                            obj6_t4.status = FINISHED
-                            obj6_t4.setAutoDraw(False)
+                            shipL4_3.status = FINISHED
+                            shipL4_3.setAutoDraw(False)
                     
-                    # *obj7_t4* updates
+                    # *boxL4_4* updates
                     
-                    # if obj7_t4 is starting this frame...
-                    if obj7_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if boxL4_4 is starting this frame...
+                    if boxL4_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj7_t4.frameNStart = frameN  # exact frame index
-                        obj7_t4.tStart = t  # local t and not account for scr refresh
-                        obj7_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj7_t4, 'tStartRefresh')  # time at next scr refresh
+                        boxL4_4.frameNStart = frameN  # exact frame index
+                        boxL4_4.tStart = t  # local t and not account for scr refresh
+                        boxL4_4.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL4_4, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj7_t4.started')
+                        thisExp.timestampOnFlip(win, 'boxL4_4.started')
                         # update status
-                        obj7_t4.status = STARTED
-                        obj7_t4.setAutoDraw(True)
+                        boxL4_4.status = STARTED
+                        boxL4_4.setAutoDraw(True)
                     
-                    # if obj7_t4 is active this frame...
-                    if obj7_t4.status == STARTED:
+                    # if boxL4_4 is active this frame...
+                    if boxL4_4.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj7_t4 is stopping this frame...
-                    if obj7_t4.status == STARTED:
+                    # if boxL4_4 is stopping this frame...
+                    if boxL4_4.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj7_t4.tStartRefresh + dur_test4-frameTolerance:
+                        if tThisFlipGlobal > boxL4_4.tStartRefresh + dur_test4-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj7_t4.tStop = t  # not accounting for scr refresh
-                            obj7_t4.frameNStop = frameN  # exact frame index
+                            boxL4_4.tStop = t  # not accounting for scr refresh
+                            boxL4_4.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj7_t4.stopped')
+                            thisExp.timestampOnFlip(win, 'boxL4_4.stopped')
                             # update status
-                            obj7_t4.status = FINISHED
-                            obj7_t4.setAutoDraw(False)
+                            boxL4_4.status = FINISHED
+                            boxL4_4.setAutoDraw(False)
                     
-                    # *obj8_t4* updates
+                    # *shipL4_4* updates
                     
-                    # if obj8_t4 is starting this frame...
-                    if obj8_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if shipL4_4 is starting this frame...
+                    if shipL4_4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj8_t4.frameNStart = frameN  # exact frame index
-                        obj8_t4.tStart = t  # local t and not account for scr refresh
-                        obj8_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj8_t4, 'tStartRefresh')  # time at next scr refresh
+                        shipL4_4.frameNStart = frameN  # exact frame index
+                        shipL4_4.tStart = t  # local t and not account for scr refresh
+                        shipL4_4.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL4_4, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj8_t4.started')
+                        thisExp.timestampOnFlip(win, 'shipL4_4.started')
                         # update status
-                        obj8_t4.status = STARTED
-                        obj8_t4.setAutoDraw(True)
+                        shipL4_4.status = STARTED
+                        shipL4_4.setAutoDraw(True)
                     
-                    # if obj8_t4 is active this frame...
-                    if obj8_t4.status == STARTED:
+                    # if shipL4_4 is active this frame...
+                    if shipL4_4.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj8_t4 is stopping this frame...
-                    if obj8_t4.status == STARTED:
+                    # if shipL4_4 is stopping this frame...
+                    if shipL4_4.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj8_t4.tStartRefresh + dur_test4-frameTolerance:
+                        if tThisFlipGlobal > shipL4_4.tStartRefresh + dur_test4-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj8_t4.tStop = t  # not accounting for scr refresh
-                            obj8_t4.frameNStop = frameN  # exact frame index
+                            shipL4_4.tStop = t  # not accounting for scr refresh
+                            shipL4_4.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj8_t4.stopped')
+                            thisExp.timestampOnFlip(win, 'shipL4_4.stopped')
                             # update status
-                            obj8_t4.status = FINISHED
-                            obj8_t4.setAutoDraw(False)
+                            shipL4_4.status = FINISHED
+                            shipL4_4.setAutoDraw(False)
                     
-                    # *obj9_t4* updates
+                    # *boxL4_5* updates
                     
-                    # if obj9_t4 is starting this frame...
-                    if obj9_t4.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                    # if boxL4_5 is starting this frame...
+                    if boxL4_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
                         # keep track of start time/frame for later
-                        obj9_t4.frameNStart = frameN  # exact frame index
-                        obj9_t4.tStart = t  # local t and not account for scr refresh
-                        obj9_t4.tStartRefresh = tThisFlipGlobal  # on global time
-                        win.timeOnFlip(obj9_t4, 'tStartRefresh')  # time at next scr refresh
+                        boxL4_5.frameNStart = frameN  # exact frame index
+                        boxL4_5.tStart = t  # local t and not account for scr refresh
+                        boxL4_5.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL4_5, 'tStartRefresh')  # time at next scr refresh
                         # add timestamp to datafile
-                        thisExp.timestampOnFlip(win, 'obj9_t4.started')
+                        thisExp.timestampOnFlip(win, 'boxL4_5.started')
                         # update status
-                        obj9_t4.status = STARTED
-                        obj9_t4.setAutoDraw(True)
+                        boxL4_5.status = STARTED
+                        boxL4_5.setAutoDraw(True)
                     
-                    # if obj9_t4 is active this frame...
-                    if obj9_t4.status == STARTED:
+                    # if boxL4_5 is active this frame...
+                    if boxL4_5.status == STARTED:
                         # update params
                         pass
                     
-                    # if obj9_t4 is stopping this frame...
-                    if obj9_t4.status == STARTED:
+                    # if boxL4_5 is stopping this frame...
+                    if boxL4_5.status == STARTED:
                         # is it time to stop? (based on global clock, using actual start)
-                        if tThisFlipGlobal > obj9_t4.tStartRefresh + dur_test4-frameTolerance:
+                        if tThisFlipGlobal > boxL4_5.tStartRefresh + dur_test4-frameTolerance:
                             # keep track of stop time/frame for later
-                            obj9_t4.tStop = t  # not accounting for scr refresh
-                            obj9_t4.frameNStop = frameN  # exact frame index
+                            boxL4_5.tStop = t  # not accounting for scr refresh
+                            boxL4_5.frameNStop = frameN  # exact frame index
                             # add timestamp to datafile
-                            thisExp.timestampOnFlip(win, 'obj9_t4.stopped')
+                            thisExp.timestampOnFlip(win, 'boxL4_5.stopped')
                             # update status
-                            obj9_t4.status = FINISHED
-                            obj9_t4.setAutoDraw(False)
+                            boxL4_5.status = FINISHED
+                            boxL4_5.setAutoDraw(False)
+                    
+                    # *shipL4_5* updates
+                    
+                    # if shipL4_5 is starting this frame...
+                    if shipL4_5.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        shipL4_5.frameNStart = frameN  # exact frame index
+                        shipL4_5.tStart = t  # local t and not account for scr refresh
+                        shipL4_5.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL4_5, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'shipL4_5.started')
+                        # update status
+                        shipL4_5.status = STARTED
+                        shipL4_5.setAutoDraw(True)
+                    
+                    # if shipL4_5 is active this frame...
+                    if shipL4_5.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if shipL4_5 is stopping this frame...
+                    if shipL4_5.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > shipL4_5.tStartRefresh + dur_test4-frameTolerance:
+                            # keep track of stop time/frame for later
+                            shipL4_5.tStop = t  # not accounting for scr refresh
+                            shipL4_5.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'shipL4_5.stopped')
+                            # update status
+                            shipL4_5.status = FINISHED
+                            shipL4_5.setAutoDraw(False)
+                    
+                    # *boxL4_6* updates
+                    
+                    # if boxL4_6 is starting this frame...
+                    if boxL4_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        boxL4_6.frameNStart = frameN  # exact frame index
+                        boxL4_6.tStart = t  # local t and not account for scr refresh
+                        boxL4_6.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL4_6, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'boxL4_6.started')
+                        # update status
+                        boxL4_6.status = STARTED
+                        boxL4_6.setAutoDraw(True)
+                    
+                    # if boxL4_6 is active this frame...
+                    if boxL4_6.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if boxL4_6 is stopping this frame...
+                    if boxL4_6.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > boxL4_6.tStartRefresh + dur_test4-frameTolerance:
+                            # keep track of stop time/frame for later
+                            boxL4_6.tStop = t  # not accounting for scr refresh
+                            boxL4_6.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'boxL4_6.stopped')
+                            # update status
+                            boxL4_6.status = FINISHED
+                            boxL4_6.setAutoDraw(False)
+                    
+                    # *shipL4_6* updates
+                    
+                    # if shipL4_6 is starting this frame...
+                    if shipL4_6.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        shipL4_6.frameNStart = frameN  # exact frame index
+                        shipL4_6.tStart = t  # local t and not account for scr refresh
+                        shipL4_6.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL4_6, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'shipL4_6.started')
+                        # update status
+                        shipL4_6.status = STARTED
+                        shipL4_6.setAutoDraw(True)
+                    
+                    # if shipL4_6 is active this frame...
+                    if shipL4_6.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if shipL4_6 is stopping this frame...
+                    if shipL4_6.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > shipL4_6.tStartRefresh + dur_test4-frameTolerance:
+                            # keep track of stop time/frame for later
+                            shipL4_6.tStop = t  # not accounting for scr refresh
+                            shipL4_6.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'shipL4_6.stopped')
+                            # update status
+                            shipL4_6.status = FINISHED
+                            shipL4_6.setAutoDraw(False)
+                    
+                    # *boxL4_7* updates
+                    
+                    # if boxL4_7 is starting this frame...
+                    if boxL4_7.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        boxL4_7.frameNStart = frameN  # exact frame index
+                        boxL4_7.tStart = t  # local t and not account for scr refresh
+                        boxL4_7.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL4_7, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'boxL4_7.started')
+                        # update status
+                        boxL4_7.status = STARTED
+                        boxL4_7.setAutoDraw(True)
+                    
+                    # if boxL4_7 is active this frame...
+                    if boxL4_7.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if boxL4_7 is stopping this frame...
+                    if boxL4_7.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > boxL4_7.tStartRefresh + dur_test4-frameTolerance:
+                            # keep track of stop time/frame for later
+                            boxL4_7.tStop = t  # not accounting for scr refresh
+                            boxL4_7.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'boxL4_7.stopped')
+                            # update status
+                            boxL4_7.status = FINISHED
+                            boxL4_7.setAutoDraw(False)
+                    
+                    # *shipL4_7* updates
+                    
+                    # if shipL4_7 is starting this frame...
+                    if shipL4_7.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        shipL4_7.frameNStart = frameN  # exact frame index
+                        shipL4_7.tStart = t  # local t and not account for scr refresh
+                        shipL4_7.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL4_7, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'shipL4_7.started')
+                        # update status
+                        shipL4_7.status = STARTED
+                        shipL4_7.setAutoDraw(True)
+                    
+                    # if shipL4_7 is active this frame...
+                    if shipL4_7.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if shipL4_7 is stopping this frame...
+                    if shipL4_7.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > shipL4_7.tStartRefresh + dur_test4-frameTolerance:
+                            # keep track of stop time/frame for later
+                            shipL4_7.tStop = t  # not accounting for scr refresh
+                            shipL4_7.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'shipL4_7.stopped')
+                            # update status
+                            shipL4_7.status = FINISHED
+                            shipL4_7.setAutoDraw(False)
+                    
+                    # *boxL4_8* updates
+                    
+                    # if boxL4_8 is starting this frame...
+                    if boxL4_8.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        boxL4_8.frameNStart = frameN  # exact frame index
+                        boxL4_8.tStart = t  # local t and not account for scr refresh
+                        boxL4_8.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL4_8, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'boxL4_8.started')
+                        # update status
+                        boxL4_8.status = STARTED
+                        boxL4_8.setAutoDraw(True)
+                    
+                    # if boxL4_8 is active this frame...
+                    if boxL4_8.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if boxL4_8 is stopping this frame...
+                    if boxL4_8.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > boxL4_8.tStartRefresh + dur_test4-frameTolerance:
+                            # keep track of stop time/frame for later
+                            boxL4_8.tStop = t  # not accounting for scr refresh
+                            boxL4_8.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'boxL4_8.stopped')
+                            # update status
+                            boxL4_8.status = FINISHED
+                            boxL4_8.setAutoDraw(False)
+                    
+                    # *shipL4_8* updates
+                    
+                    # if shipL4_8 is starting this frame...
+                    if shipL4_8.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        shipL4_8.frameNStart = frameN  # exact frame index
+                        shipL4_8.tStart = t  # local t and not account for scr refresh
+                        shipL4_8.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL4_8, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'shipL4_8.started')
+                        # update status
+                        shipL4_8.status = STARTED
+                        shipL4_8.setAutoDraw(True)
+                    
+                    # if shipL4_8 is active this frame...
+                    if shipL4_8.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if shipL4_8 is stopping this frame...
+                    if shipL4_8.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > shipL4_8.tStartRefresh + dur_test4-frameTolerance:
+                            # keep track of stop time/frame for later
+                            shipL4_8.tStop = t  # not accounting for scr refresh
+                            shipL4_8.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'shipL4_8.stopped')
+                            # update status
+                            shipL4_8.status = FINISHED
+                            shipL4_8.setAutoDraw(False)
+                    
+                    # *boxL4_9* updates
+                    
+                    # if boxL4_9 is starting this frame...
+                    if boxL4_9.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        boxL4_9.frameNStart = frameN  # exact frame index
+                        boxL4_9.tStart = t  # local t and not account for scr refresh
+                        boxL4_9.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(boxL4_9, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'boxL4_9.started')
+                        # update status
+                        boxL4_9.status = STARTED
+                        boxL4_9.setAutoDraw(True)
+                    
+                    # if boxL4_9 is active this frame...
+                    if boxL4_9.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if boxL4_9 is stopping this frame...
+                    if boxL4_9.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > boxL4_9.tStartRefresh + dur_test4-frameTolerance:
+                            # keep track of stop time/frame for later
+                            boxL4_9.tStop = t  # not accounting for scr refresh
+                            boxL4_9.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'boxL4_9.stopped')
+                            # update status
+                            boxL4_9.status = FINISHED
+                            boxL4_9.setAutoDraw(False)
+                    
+                    # *shipL4_9* updates
+                    
+                    # if shipL4_9 is starting this frame...
+                    if shipL4_9.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+                        # keep track of start time/frame for later
+                        shipL4_9.frameNStart = frameN  # exact frame index
+                        shipL4_9.tStart = t  # local t and not account for scr refresh
+                        shipL4_9.tStartRefresh = tThisFlipGlobal  # on global time
+                        win.timeOnFlip(shipL4_9, 'tStartRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'shipL4_9.started')
+                        # update status
+                        shipL4_9.status = STARTED
+                        shipL4_9.setAutoDraw(True)
+                    
+                    # if shipL4_9 is active this frame...
+                    if shipL4_9.status == STARTED:
+                        # update params
+                        pass
+                    
+                    # if shipL4_9 is stopping this frame...
+                    if shipL4_9.status == STARTED:
+                        # is it time to stop? (based on global clock, using actual start)
+                        if tThisFlipGlobal > shipL4_9.tStartRefresh + dur_test4-frameTolerance:
+                            # keep track of stop time/frame for later
+                            shipL4_9.tStop = t  # not accounting for scr refresh
+                            shipL4_9.frameNStop = frameN  # exact frame index
+                            # add timestamp to datafile
+                            thisExp.timestampOnFlip(win, 'shipL4_9.stopped')
+                            # update status
+                            shipL4_9.status = FINISHED
+                            shipL4_9.setAutoDraw(False)
                     
                     # *test_4_mess* updates
                     
